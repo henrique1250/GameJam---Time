@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://hiba1k87c8hq"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_g4v7s"]
+
+[node name="Node3D" type="CharacterBody3D" unique_id=432094085]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.43814033, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=650808504]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9479072, 0)
+mesh = SubResource("CylinderMesh_g4v7s")
