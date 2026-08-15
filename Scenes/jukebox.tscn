@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bgpqkfmxj2qd0"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_j47mx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j47mx"]
+albedo_color = Color(0.8613993, 0.19650537, 0.2333026, 1)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_7i7ve"]
+
+[node name="Jukebox" type="Area3D" unique_id=1150229189]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=182017174]
+transform = Transform3D(1.0685067, 0, 0, 0, 1.5162014, 0, 0, 0, 0.8727613, 0, 0, 0)
+mesh = SubResource("PrismMesh_j47mx")
+surface_material_override/0 = SubResource("StandardMaterial3D_j47mx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=306791571]
+shape = SubResource("ConvexPolygonShape3D_7i7ve")

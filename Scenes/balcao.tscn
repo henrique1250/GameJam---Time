@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://14035e2f4dy8"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_qwj23"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qwj23"]
+albedo_color = Color(0.951448, 0.5141063, 0.30897716, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dxcp8"]
+size = Vector3(7.4726257, 1, 1)
+
+[node name="Balcão" type="Area3D" unique_id=923772194]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=641541193]
+transform = Transform3D(7.492825, 0, 0, 0, 1, 0, 0, 0, 1.0196328, 0, 0, 0)
+mesh = SubResource("BoxMesh_qwj23")
+surface_material_override/0 = SubResource("StandardMaterial3D_qwj23")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=333883031]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0096588135, 0, 0)
+shape = SubResource("BoxShape3D_dxcp8")

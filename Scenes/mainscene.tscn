@@ -1,14 +1,174 @@
 [gd_scene format=3 uid="uid://vvmb851w8hmb"]
 
-[ext_resource type="PackedScene" uid="uid://hiba1k87c8hq" path="res://Scenes/player.tscn" id="1_5yt03"]
+[ext_resource type="PackedScene" uid="uid://cw8a0irkiwfdg" path="res://Scenes/player.tscn" id="1_5yt03"]
+[ext_resource type="PackedScene" uid="uid://14035e2f4dy8" path="res://Scenes/balcao.tscn" id="2_tcjsh"]
+[ext_resource type="PackedScene" uid="uid://cws1nqstyrdbt" path="res://Scenes/mesa.tscn" id="3_a3v7h"]
+[ext_resource type="PackedScene" uid="uid://c2cirktl8j3ha" path="res://Scenes/sinuquinha.tscn" id="4_3p0ik"]
+[ext_resource type="PackedScene" uid="uid://bgpqkfmxj2qd0" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_nn0u8"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_a3v7h"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_3p0ik"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_3p0ik"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hjw3j"]
+albedo_color = Color(0.33030304, 0.32939374, 2.4065375e-07, 1)
 
 [node name="Node" type="Node" unique_id=807041481]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1044769858]
-transform = Transform3D(3.87973, 0, 0, 0, 1, 0, 0, 0, 3.5797634, 0, 0.023290336, 0)
+transform = Transform3D(5.980626, 0, 0, 0, 1, 0, 0, 0, 5.906405, 0.411556, 0.023290336, 2.4688473)
 mesh = SubResource("PlaneMesh_nn0u8")
 
-[node name="CharacterBody3D" parent="." unique_id=575719195 instance=ExtResource("1_5yt03")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.4822616, 0.5681813, -0.52438784)
+[node name="Player" parent="." unique_id=575719195 instance=ExtResource("1_5yt03")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.4912005, 0.5681813, -2.5084078)
+
+[node name="Paredes" type="Node" parent="." unique_id=185805976]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Paredes" unique_id=77798622]
+transform = Transform3D(1, 0, 0, 0, 2.0137577, 0, 0, 0, 5.542285, 6.8899627, 1.0009136, -0.69086266)
+mesh = SubResource("BoxMesh_a3v7h")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Paredes" unique_id=1283785136]
+transform = Transform3D(1, 0, 0, 0, 2.0137577, 0, 0, 0, 3.0747752, 6.8899627, 1.0009136, 6.868722)
+mesh = SubResource("BoxMesh_a3v7h")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Paredes" unique_id=1024652440]
+transform = Transform3D(1, 0, 0, 0, 2.0137577, 0, 0, 0, 1.3431321, 0.88082266, 1.0009136, 8.048062)
+mesh = SubResource("BoxMesh_a3v7h")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Paredes" unique_id=1976777647]
+transform = Transform3D(0.014811892, 0, 13.255147, 0, 0.79070634, 0, -0.9534747, 0, 0.20591417, 0.2922156, 1.9351295, 8.065483)
+mesh = SubResource("BoxMesh_a3v7h")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Paredes" unique_id=5218802]
+transform = Transform3D(1, 0, 0, 0, 0.36361992, 0, 0, 0, 3.5243082, 6.8899627, 1.8341329, 3.8188715)
+mesh = SubResource("BoxMesh_a3v7h")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Paredes" unique_id=1361988629]
+transform = Transform3D(1, 0, 0, 0, 2.0137577, 0, 0, 0, 11.624304, -6.044003, 1.0009136, 2.518089)
+mesh = SubResource("BoxMesh_a3v7h")
+
+[node name="Balcao" type="Node" parent="." unique_id=1297417226]
+
+[node name="Area3D" parent="Balcao" unique_id=923772194 instance=ExtResource("2_tcjsh")]
+transform = Transform3D(0.78067535, 0, 0, 0, 1, 0, 0, 0, 0.8293056, -0.13460481, 0, -1.2854764)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Balcao" unique_id=635929337]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.2253053, 3.2746677, 0, -1.985627)
+mesh = SubResource("BoxMesh_3p0ik")
+
+[node name="Mesas" type="Node" parent="." unique_id=1931681182]
+
+[node name="Mesa1" type="Node" parent="Mesas" unique_id=788199405]
+
+[node name="Mesa" parent="Mesas/Mesa1" unique_id=252262496 instance=ExtResource("3_a3v7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5448498, 0, 2.1628869)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Mesas/Mesa1" unique_id=1146197642]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 0.7701483, 0, 2.2186825)
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Mesas/Mesa1" unique_id=1483869677]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 2.440599, 0, 2.2186825)
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Mesas/Mesa1" unique_id=1286542695]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 1.5385852, 0, 3.064682)
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Mesas/Mesa1" unique_id=216443673]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 1.5385852, 0, 1.2161365)
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="Mesa2" type="Node" parent="Mesas" unique_id=1265516644]
+
+[node name="Mesa" parent="Mesas/Mesa2" unique_id=749925857 instance=ExtResource("3_a3v7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5811572, 0, 1.6135182)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Mesas/Mesa2" unique_id=1247801569]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -2.3558588, 0, 1.6693139)
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Mesas/Mesa2" unique_id=1027897411]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -0.685408, 0, 1.6693139)
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Mesas/Mesa2" unique_id=1785983181]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.5874218, 0, 2.5153134)
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Mesas/Mesa2" unique_id=1576459393]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.5874218, 0, 0.66676784)
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="Mesa3" type="Node" parent="Mesas" unique_id=1300195762]
+
+[node name="Mesa" parent="Mesas/Mesa3" unique_id=208667658 instance=ExtResource("3_a3v7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9648023, 0, 5.1523075)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Mesas/Mesa3" unique_id=1815018760]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -2.7395039, 0, 5.208103)
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Mesas/Mesa3" unique_id=788576792]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.069053, 0, 5.208103)
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Mesas/Mesa3" unique_id=861251495]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.9710668, 0, 6.054103)
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Mesas/Mesa3" unique_id=753499199]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.9710668, 0, 4.2055573)
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="Mesa4" type="Node" parent="Mesas" unique_id=978021602]
+
+[node name="Mesa" parent="Mesas/Mesa4" unique_id=741533492 instance=ExtResource("3_a3v7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9538858, 0, 5.8390055)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Mesas/Mesa4" unique_id=2071596357]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 1.1791842, 0, 5.894801)
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Mesas/Mesa4" unique_id=1991258583]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 2.8496351, 0, 5.894801)
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Mesas/Mesa4" unique_id=351576577]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 1.9476212, 0, 6.740801)
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Mesas/Mesa4" unique_id=1517527567]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 1.9476212, 0, 4.8922553)
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="Sinuquinha" type="Node" parent="." unique_id=102819934]
+
+[node name="Sinuquinha2" parent="Sinuquinha" unique_id=56849866 instance=ExtResource("4_3p0ik")]
+transform = Transform3D(0.0951246, 0, 0.73773175, 0, 1, 0, -0.64031565, 0, 0.10959663, 4.311169, 0, 2.6318488)
+
+[node name="Jukebox" type="Node" parent="." unique_id=1115974649]
+
+[node name="Jukebox" parent="Jukebox" unique_id=1150229189 instance=ExtResource("5_hjw3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.625959, 0.786793, 2.3932838)
