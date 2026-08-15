@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://38k1yqqbmeu0"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_tj83g"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_je4sl"]
+albedo_color = Color(0.4042037, 0.5725602, 0.23062307, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gvp3l"]
+size = Vector3(3.2004395, 1, 1.5858154)
+
+[node name="Sinuquinha" type="Area3D" unique_id=56849866]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1941829406]
+transform = Transform3D(3.2014227, 0, 0, 0, 1, 0, 0, 0, 1.5923742, 0, 0, 0)
+mesh = SubResource("BoxMesh_tj83g")
+surface_material_override/0 = SubResource("StandardMaterial3D_je4sl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=879953724]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0030517578, 0, -0.005432129)
+shape = SubResource("BoxShape3D_gvp3l")
