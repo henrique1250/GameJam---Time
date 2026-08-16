@@ -1,12 +1,17 @@
 [gd_scene format=3 uid="uid://vvmb851w8hmb"]
 
-[ext_resource type="PackedScene" uid="uid://hiba1k87c8hq" path="res://Scenes/player.tscn" id="1_5yt03"]
+[ext_resource type="PackedScene" uid="uid://hiba1k87c8hq" path="res://Scenes/Player.tscn" id="1_5yt03"]
 [ext_resource type="PackedScene" uid="uid://p4vwukx30wiv" path="res://Scenes/balcao.tscn" id="2_tcjsh"]
 [ext_resource type="PackedScene" uid="uid://m0y2suqxl2eg" path="res://Scenes/mesa.tscn" id="3_a3v7h"]
 [ext_resource type="PackedScene" uid="uid://38k1yqqbmeu0" path="res://Scenes/sinuquinha.tscn" id="4_3p0ik"]
 [ext_resource type="PackedScene" uid="uid://bx2p1frmoo7vp" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_g4v7s"]
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_nn0u8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g4v7s"]
+size = Vector3(2.092041, 1, 1.9853516)
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_hjw3j"]
 
@@ -17,12 +22,21 @@ albedo_color = Color(0.5385352, 0.48196203, 0.11799198, 1)
 
 [node name="CenaPrincipal" type="Node3D" unique_id=1812791378]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1044769858]
-transform = Transform3D(5.450551, 0.0006381143, 0.0059511713, -0.0034772444, 0.9999997, -0.000824235, -0.0056256927, 0.00014225308, 5.7664266, 0.9641671, 0.023290336, 3.1002197)
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=2135340663]
+physics_material_override = SubResource("PhysicsMaterial_g4v7s")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1044769858]
+transform = Transform3D(5.450551, 0.0006381086, 0.0059511918, -0.0034772442, 0.9999997, -0.0008240896, -0.0056256917, 0.00014225308, 5.7664266, 0.9641671, 0.023290336, 3.1002197)
 mesh = SubResource("PlaneMesh_nn0u8")
 
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=220476511]
+transform = Transform3D(5, 0, 0, 0, 1, 0, 0, 0, 5.76, 1.0179682, 0, 2.871523)
+shape = SubResource("BoxShape3D_g4v7s")
+
 [node name="CharacterBody3D" parent="." unique_id=575719195 instance=ExtResource("1_5yt03")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.4822616, 0.5681813, -0.52438784)
+transform = Transform3D(-0.49859893, 0, 0.037404653, 0, 0.5, 0, -0.037404653, 0, -0.49859893, 0.4822616, 0.81545186, -0.52438784)
+platform_floor_layers = 4294967294
+platform_wall_layers = 1
 
 [node name="Balcão" parent="." unique_id=923772194 instance=ExtResource("2_tcjsh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68847704, 0, 0.48864305)
