@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://hiba1k87c8hq"]
 
-[ext_resource type="Script" path="res://Scenes/player_movement.gd" id="1_v0iea"]
+[ext_resource type="Script" uid="uid://clghcn4hevcrk" path="res://Scenes/player_movement.gd" id="1_v0iea"]
+[ext_resource type="Script" uid="uid://dwctts2cvucys" path="res://Scenes/camera_rotation.gd" id="2_kyqiw"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_f60y1"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_v0iea"]
 
-[node name="Player" type="CharacterBody3D" unique_id=575719195]
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=575719195]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 script = ExtResource("1_v0iea")
 
