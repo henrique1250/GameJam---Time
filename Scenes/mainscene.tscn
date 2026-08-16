@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://vvmb851w8hmb"]
 
-[ext_resource type="PackedScene" uid="uid://cw8a0irkiwfdg" path="res://Scenes/player.tscn" id="1_5yt03"]
+[ext_resource type="PackedScene" uid="uid://hiba1k87c8hq" path="res://Scenes/player.tscn" id="1_5yt03"]
 [ext_resource type="PackedScene" uid="uid://14035e2f4dy8" path="res://Scenes/balcao.tscn" id="2_tcjsh"]
 [ext_resource type="PackedScene" uid="uid://cws1nqstyrdbt" path="res://Scenes/mesa.tscn" id="3_a3v7h"]
 [ext_resource type="PackedScene" uid="uid://c2cirktl8j3ha" path="res://Scenes/sinuquinha.tscn" id="4_3p0ik"]
 [ext_resource type="PackedScene" uid="uid://bgpqkfmxj2qd0" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
+[ext_resource type="Script" uid="uid://balnxmcje74xp" path="res://Scenes/camera.gd" id="6_c5s60"]
+[ext_resource type="PackedScene" uid="uid://i5yqwk0mold5" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_nn0u8"]
 
@@ -17,14 +19,16 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hjw3j"]
 albedo_color = Color(0.33030304, 0.32939374, 2.4065375e-07, 1)
 
-[node name="Node" type="Node" unique_id=807041481]
+[sub_resource type="GDScript" id="GDScript_c5s60"]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1044769858]
+[node name="Node" type="Node3D" unique_id=1891772111]
+
+[node name="Chao" type="MeshInstance3D" parent="." unique_id=1044769858]
 transform = Transform3D(5.980626, 0, 0, 0, 1, 0, 0, 0, 5.906405, 0.411556, 0.023290336, 2.4688473)
 mesh = SubResource("PlaneMesh_nn0u8")
 
 [node name="Player" parent="." unique_id=575719195 instance=ExtResource("1_5yt03")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.4912005, 0.5681813, -2.5084078)
+transform = Transform3D(-0.4966643, 0, -0.057659283, 0, 0.5, 0, 0.057659283, 0, -0.4966643, -0.4912005, 0.89867616, -2.5084078)
 
 [node name="Paredes" type="Node" parent="." unique_id=185805976]
 
@@ -65,8 +69,9 @@ mesh = SubResource("BoxMesh_3p0ik")
 
 [node name="Mesa1" type="Node" parent="Mesas" unique_id=788199405]
 
-[node name="Mesa" parent="Mesas/Mesa1" unique_id=252262496 instance=ExtResource("3_a3v7h")]
+[node name="Mesa" parent="Mesas/Mesa1" unique_id=252262496 node_paths=PackedStringArray("marker_foco") instance=ExtResource("3_a3v7h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5448498, 0, 2.1628869)
+marker_foco = NodePath("../../../Markers/Mesa1")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Mesas/Mesa1" unique_id=1146197642]
 transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 0.7701483, 0, 2.2186825)
@@ -90,33 +95,35 @@ surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
 [node name="Mesa2" type="Node" parent="Mesas" unique_id=1265516644]
 
-[node name="Mesa" parent="Mesas/Mesa2" unique_id=749925857 instance=ExtResource("3_a3v7h")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5811572, 0, 1.6135182)
+[node name="Mesa" parent="Mesas/Mesa2" unique_id=749925857 node_paths=PackedStringArray("marker_foco") instance=ExtResource("3_a3v7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5811572, 0, 1.114213)
+marker_foco = NodePath("../../../Markers/Mesa2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Mesas/Mesa2" unique_id=1247801569]
-transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -2.3558588, 0, 1.6693139)
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -2.3558588, 0, 1.1700087)
 mesh = SubResource("CylinderMesh_3p0ik")
 surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Mesas/Mesa2" unique_id=1027897411]
-transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -0.685408, 0, 1.6693139)
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -0.685408, 0, 1.1700087)
 mesh = SubResource("CylinderMesh_3p0ik")
 surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="Mesas/Mesa2" unique_id=1785983181]
-transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.5874218, 0, 2.5153134)
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.5874218, 0, 2.0160081)
 mesh = SubResource("CylinderMesh_3p0ik")
 surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="Mesas/Mesa2" unique_id=1576459393]
-transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.5874218, 0, 0.66676784)
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.5874218, 0, 0.16746259)
 mesh = SubResource("CylinderMesh_3p0ik")
 surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
 [node name="Mesa3" type="Node" parent="Mesas" unique_id=1300195762]
 
-[node name="Mesa" parent="Mesas/Mesa3" unique_id=208667658 instance=ExtResource("3_a3v7h")]
+[node name="Mesa" parent="Mesas/Mesa3" unique_id=208667658 node_paths=PackedStringArray("marker_foco") instance=ExtResource("3_a3v7h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9648023, 0, 5.1523075)
+marker_foco = NodePath("../../../Markers/Mesa3")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Mesas/Mesa3" unique_id=1815018760]
 transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -2.7395039, 0, 5.208103)
@@ -140,8 +147,9 @@ surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
 [node name="Mesa4" type="Node" parent="Mesas" unique_id=978021602]
 
-[node name="Mesa" parent="Mesas/Mesa4" unique_id=741533492 instance=ExtResource("3_a3v7h")]
+[node name="Mesa" parent="Mesas/Mesa4" unique_id=741533492 node_paths=PackedStringArray("marker_foco") instance=ExtResource("3_a3v7h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9538858, 0, 5.8390055)
+marker_foco = NodePath("../../../Markers/Mesa4")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Mesas/Mesa4" unique_id=2071596357]
 transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 1.1791842, 0, 5.894801)
@@ -165,10 +173,48 @@ surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
 [node name="Sinuquinha" type="Node" parent="." unique_id=102819934]
 
-[node name="Sinuquinha2" parent="Sinuquinha" unique_id=56849866 instance=ExtResource("4_3p0ik")]
-transform = Transform3D(0.0951246, 0, 0.73773175, 0, 1, 0, -0.64031565, 0, 0.10959663, 4.311169, 0, 2.6318488)
+[node name="Sinuquinha" parent="Sinuquinha" unique_id=56849866 node_paths=PackedStringArray("marker_foco") instance=ExtResource("4_3p0ik")]
+transform = Transform3D(0.16580501, 0.0023625733, 0.71566737, 0, 0.46692228, -0.0038777136, -0.62296593, 0.00062880863, 0.19047791, 4.311169, 0.23917955, 2.6318488)
+marker_foco = NodePath("../../Markers/Sinuca")
 
 [node name="Jukebox" type="Node" parent="." unique_id=1115974649]
 
-[node name="Jukebox" parent="Jukebox" unique_id=1150229189 instance=ExtResource("5_hjw3j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.625959, 0.786793, 2.3932838)
+[node name="Jukebox" parent="Jukebox" unique_id=1150229189 node_paths=PackedStringArray("marker_foco") instance=ExtResource("5_hjw3j")]
+transform = Transform3D(1.0998267, 0, 0, 0, 1, 0, 0, 0, 1, -4.625959, 0.786793, 2.3932838)
+marker_foco = NodePath("../../Markers/Jukebox")
+
+[node name="Markers" type="Node" parent="." unique_id=1462406723]
+script = SubResource("GDScript_c5s60")
+
+[node name="Camera3D" type="Camera3D" parent="Markers" unique_id=950510579 node_paths=PackedStringArray("marker_geral") groups=["main_camera"]]
+transform = Transform3D(-0.99556196, -0.029393295, 0.08940022, 0.014467021, 0.8908787, 0.45401093, -0.092989616, 0.45328933, -0.88649964, -0.13906878, 2.2566276, -4.264021)
+script = ExtResource("6_c5s60")
+marker_geral = NodePath("../Marker3D")
+
+[node name="Marker3D" type="Marker3D" parent="Markers" unique_id=1466360193]
+transform = Transform3D(-0.9999254, 0, 0.012216892, 0, 1, 0, -0.012216892, 0, -0.9999254, -1.0993695, 1.7563775, -3.1028664)
+
+[node name="Sinuca" type="Marker3D" parent="Markers" unique_id=516258072]
+transform = Transform3D(-0.09118881, 0, -0.99583346, 0, 0.9999999, 0, 0.9958335, 0, -0.0911888, 2.636519, 1.0654941, 2.3090248)
+
+[node name="Jukebox" type="Marker3D" parent="Markers" unique_id=1288744142]
+transform = Transform3D(0.25184414, 0.01996712, 0.9675619, -0.04422488, 0.99898, -0.009104303, -0.96675664, -0.040497445, 0.2524704, -2.2888627, 1.2104731, 2.5608125)
+
+[node name="Mesa1" type="Marker3D" parent="Markers" unique_id=1835891593]
+transform = Transform3D(-0.99992496, 0, -0.012251937, -0.0033011732, 0.9630169, 0.2694207, 0.011798822, 0.26944092, -0.9629447, 1.6812375, 0.9900782, 0)
+
+[node name="Mesa2" type="Marker3D" parent="Markers" unique_id=939784182]
+transform = Transform3D(-0.5863723, 0.34233838, -0.73414695, 0, 0.90630776, 0.42261824, 0.81004155, 0.24781168, -0.53143376, -3.6185849, 1.3247827, 0.25499964)
+
+[node name="Mesa3" type="Marker3D" parent="Markers" unique_id=1143139554]
+transform = Transform3D(0.76604444, 0, -0.6427876, 0, 1, 0, 0.6427876, 0, 0.76604444, -3.6879225, 1.1228527, 6.957042)
+
+[node name="Mesa4" type="Marker3D" parent="Markers" unique_id=610266832]
+transform = Transform3D(-4.371139e-08, 0.50000006, -0.8660255, 0, 0.8660255, 0.50000006, 1, 2.1855696e-08, -3.7855177e-08, 0, 1.6175753, 5.839881)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1703912396]
+transform = Transform3D(1, 0, 0, 0, 0.6178733, 0.78627765, 0, -0.78627765, 0.6178733, 1.3005886, 5.305082, 6.495014)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=482491482]
+
+[node name="Control" parent="CanvasLayer" unique_id=1704514351 instance=ExtResource("8_1o021")]
