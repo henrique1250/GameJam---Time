@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://juarvcb82pyk"
-path="res://.godot/imported/objeto.glb-25c513d67db561fc4a7220f2bb9ac619.scn"
+uid="uid://bru750wppf55y"
+path="res://.godot/imported/PROP_balcao_quina.glb-e73f1491dffa1de8c37a2b69f35ce421.scn"
 
 [deps]
 
-source_file="res://art/assets/objeto.glb"
-dest_files=["res://.godot/imported/objeto.glb-25c513d67db561fc4a7220f2bb9ac619.scn"]
+source_file="res://art/assets/PROP_balcao_quina.glb"
+dest_files=["res://.godot/imported/PROP_balcao_quina.glb-e73f1491dffa1de8c37a2b69f35ce421.scn"]
 
 [params]
 

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://juarvcb82pyk"
-path="res://.godot/imported/objeto.glb-25c513d67db561fc4a7220f2bb9ac619.scn"
+uid="uid://bdjtk7koqgec8"
+path="res://.godot/imported/PROP_balcao-modular.glb-f965eff29088b3b6cfecc02159a75331.scn"
 
 [deps]
 
-source_file="res://art/assets/objeto.glb"
-dest_files=["res://.godot/imported/objeto.glb-25c513d67db561fc4a7220f2bb9ac619.scn"]
+source_file="res://art/assets/PROP_balcao-modular.glb"
+dest_files=["res://.godot/imported/PROP_balcao-modular.glb-f965eff29088b3b6cfecc02159a75331.scn"]
 
 [params]
 

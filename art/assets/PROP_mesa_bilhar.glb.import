@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://juarvcb82pyk"
-path="res://.godot/imported/objeto.glb-25c513d67db561fc4a7220f2bb9ac619.scn"
+uid="uid://tiwuqt5fy43b"
+path="res://.godot/imported/PROP_mesa_bilhar.glb-56bfd11e8c33cf78c7e6211a1591b897.scn"
 
 [deps]
 
-source_file="res://art/assets/objeto.glb"
-dest_files=["res://.godot/imported/objeto.glb-25c513d67db561fc4a7220f2bb9ac619.scn"]
+source_file="res://art/assets/PROP_mesa_bilhar.glb"
+dest_files=["res://.godot/imported/PROP_mesa_bilhar.glb-56bfd11e8c33cf78c7e6211a1591b897.scn"]
 
 [params]
 

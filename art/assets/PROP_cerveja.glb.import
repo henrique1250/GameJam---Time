@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://juarvcb82pyk"
-path="res://.godot/imported/objeto.glb-25c513d67db561fc4a7220f2bb9ac619.scn"
+uid="uid://dkbd1cmb6p6gj"
+path="res://.godot/imported/PROP_cerveja.glb-3fb2620b174400ee7c413e62aa7a72b3.scn"
 
 [deps]
 
-source_file="res://art/assets/objeto.glb"
-dest_files=["res://.godot/imported/objeto.glb-25c513d67db561fc4a7220f2bb9ac619.scn"]
+source_file="res://art/assets/PROP_cerveja.glb"
+dest_files=["res://.godot/imported/PROP_cerveja.glb-3fb2620b174400ee7c413e62aa7a72b3.scn"]
 
 [params]
 

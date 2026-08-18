@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://juarvcb82pyk"
-path="res://.godot/imported/objeto.glb-25c513d67db561fc4a7220f2bb9ac619.scn"
+uid="uid://bk1o7bp34kheh"
+path="res://.godot/imported/PROP_cachaça.glb-fe3924c22eab41fe6bc0afa927ae0867.scn"
 
 [deps]
 
-source_file="res://art/assets/objeto.glb"
-dest_files=["res://.godot/imported/objeto.glb-25c513d67db561fc4a7220f2bb9ac619.scn"]
+source_file="res://art/assets/PROP_cachaça.glb"
+dest_files=["res://.godot/imported/PROP_cachaça.glb-fe3924c22eab41fe6bc0afa927ae0867.scn"]
 
 [params]
 
