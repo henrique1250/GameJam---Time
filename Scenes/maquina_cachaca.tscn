@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://c47p4vvmbt2q1"]
 
 [ext_resource type="Script" uid="uid://d1epopceaoh8b" path="res://Scenes/maquina_cachaca_script.gd" id="1_eidja"]
+[ext_resource type="Script" uid="uid://bw1507flepkgr" path="res://Scenes/copo_script.gd" id="2_ex42q"]
+[ext_resource type="Script" uid="uid://dwaimgshk28xs" path="res://Scenes/minigame_cachaca.gd" id="2_fjlne"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_racnl"]
 
@@ -8,18 +10,33 @@
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_eidja"]
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_eidja"]
+height = 0.40567017
+radius = 0.19189453
+
 [node name="Node3D" type="Node3D" unique_id=994132397]
 
-[node name="Area3D" type="Area3D" parent="." unique_id=63845631 node_paths=PackedStringArray("objeto_para_mostrar")]
+[node name="Maquina" type="Area3D" parent="." unique_id=63845631 node_paths=PackedStringArray("objeto_para_mostrar")]
 script = ExtResource("1_eidja")
-objeto_para_mostrar = NodePath("../Copo")
+objeto_para_mostrar = NodePath("../AreaCopo/Copo")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D" unique_id=1421443986]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Maquina" unique_id=1421443986]
 mesh = SubResource("BoxMesh_racnl")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1061800466]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Maquina" unique_id=1061800466]
 shape = SubResource("BoxShape3D_eidja")
 
-[node name="Copo" type="MeshInstance3D" parent="." unique_id=1325337631]
-transform = Transform3D(0.3, 0, 0, 0, 0.2, 0, 0, 0, 0.3, 3.4037285, -0.37342256, 0)
+[node name="AreaCopo" type="Area3D" parent="." unique_id=1068819746]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.085107, -0.01586032, 0)
+script = ExtResource("2_ex42q")
+
+[node name="Copo" type="MeshInstance3D" parent="AreaCopo" unique_id=1325337631]
+transform = Transform3D(0.3, 0, 0, 0, 0.2, 0, 0, 0, 0.3, 0.016878128, -0.37342256, 0)
 mesh = SubResource("CylinderMesh_eidja")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AreaCopo" unique_id=1248607497]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.37342834, 0)
+shape = SubResource("CylinderShape3D_eidja")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="AreaCopo" unique_id=2056001843]
+script = ExtResource("2_fjlne")
