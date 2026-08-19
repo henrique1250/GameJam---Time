@@ -1,17 +1,23 @@
 [gd_scene format=3 uid="uid://vvmb851w8hmb"]
 
 [ext_resource type="PackedScene" uid="uid://14035e2f4dy8" path="res://Scenes/balcao.tscn" id="2_tcjsh"]
-[ext_resource type="PackedScene" uid="uid://cws1nqstyrdbt" path="res://Scenes/mesa.tscn" id="3_a3v7h"]
-[ext_resource type="PackedScene" uid="uid://c2cirktl8j3ha" path="res://Scenes/sinuquinha.tscn" id="4_3p0ik"]
-[ext_resource type="PackedScene" uid="uid://bgpqkfmxj2qd0" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
+[ext_resource type="PackedScene" path="res://Scenes/mesa.tscn" id="3_a3v7h"]
+[ext_resource type="PackedScene" path="res://Scenes/sinuquinha.tscn" id="4_3p0ik"]
+[ext_resource type="PackedScene" uid="uid://bam4d77bw388b" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
 [ext_resource type="Script" uid="uid://balnxmcje74xp" path="res://Scenes/camera.gd" id="6_c5s60"]
-[ext_resource type="PackedScene" uid="uid://i5yqwk0mold5" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
+[ext_resource type="PackedScene" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
+[ext_resource type="Texture2D" uid="uid://cty7ju75qem45" path="res://models/grid_grey.png" id="8_8ngks"]
 [ext_resource type="Script" uid="uid://88v701y7yngp" path="res://Scenes/carrousel_container.gd" id="8_gjgc6"]
+[ext_resource type="PackedScene" uid="uid://dwxao37vt1t75" path="res://Scenes/npctest.tscn" id="9_1o021"]
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_nn0u8"]
+[sub_resource type="NavigationMesh" id="NavigationMesh_1o021"]
+vertices = PackedVector3Array(-6.414386, 0.5489328, -2.8846922, -6.414386, 0.5489328, 8.115308, 6.335614, 0.5489328, 8.115308, 6.335614, 0.5489328, -2.8846922)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1)]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1o021"]
-albedo_color = Color(0.40392157, 0.4745098, 0.47058824, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_76hng"]
+albedo_texture = ExtResource("8_8ngks")
+uv1_triplanar = true
+uv1_world_triplanar = true
 
 [sub_resource type="GDScript" id="GDScript_c5s60"]
 
@@ -73,15 +79,22 @@ albedo_color = Color(0.12208646, 0.31393474, 0.26200715, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tf7l5"]
 albedo_color = Color(0.64667934, 0.5967524, 0.06002219, 1)
 
+[sub_resource type="BoxMesh" id="BoxMesh_pcysp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1bo1k"]
+albedo_color = Color(0.74138474, 0.7413847, 0.74138457, 1)
+
 [node name="Node" type="Node3D" unique_id=1891772111]
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=1222008231]
+navigation_mesh = SubResource("NavigationMesh_1o021")
+
+[node name="Chão" type="CSGBox3D" parent="NavigationRegion3D" unique_id=374309014]
+transform = Transform3D(13.828772, 0, 0, 0, 1, 0, 0, 0, 11.989378, 0, -0.4510672, 2.6099968)
+material = SubResource("StandardMaterial3D_76hng")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1703912396]
 transform = Transform3D(1, 0, 0, 0, 0.6178733, 0.78627765, 0, -0.78627765, 0.6178733, 1.3005886, 5.305082, 6.495014)
-
-[node name="Chao" type="MeshInstance3D" parent="." unique_id=1044769858]
-transform = Transform3D(5.9928665, 0, 0, 0, 1.0020467, 0, 0, 0, 5.9184937, 0.411556, 0.023290336, 2.4688473)
-mesh = SubResource("PlaneMesh_nn0u8")
-surface_material_override/0 = SubResource("StandardMaterial3D_1o021")
 
 [node name="Markers" type="Node" parent="." unique_id=1462406723]
 script = SubResource("GDScript_c5s60")
@@ -399,6 +412,7 @@ marker_foco = NodePath("../../Markers/Jukebox")
 visible = false
 position = Vector2(600, 200)
 script = ExtResource("8_gjgc6")
+follow_button_focus = true
 position_offset_node = NodePath("Control")
 metadata/_custom_type_script = "uid://88v701y7yngp"
 
@@ -419,8 +433,17 @@ offset_right = 118.46854
 offset_bottom = 77.0
 pivot_offset = Vector2(60, 80)
 
+[node name="Button" type="Button" parent="MusicasJukebox/CarroselContainer/Control/Panel" unique_id=1404979465]
+layout_mode = 0
+offset_left = 26.00104
+offset_top = 122.0
+offset_right = 115.00104
+offset_bottom = 153.0
+scale = Vector2(0.8, 0.8)
+text = "ESCOLHER"
+
 [node name="Panel2" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1689214509]
-modulate = Color(1, 1, 1, 0.97065973)
+modulate = Color(1, 1, 1, 0.95945626)
 z_index = -1
 layout_mode = 0
 offset_left = 138.46854
@@ -430,8 +453,17 @@ offset_bottom = 80.0
 scale = Vector2(0.75, 0.75)
 pivot_offset = Vector2(60, 80)
 
+[node name="Button" type="Button" parent="MusicasJukebox/CarroselContainer/Control/Panel2" unique_id=105265882]
+layout_mode = 0
+offset_left = 26.00104
+offset_top = 122.0
+offset_right = 115.00104
+offset_bottom = 153.0
+scale = Vector2(0.8, 0.8)
+text = "ESCOLHER"
+
 [node name="Panel3" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=884635700]
-modulate = Color(1, 1, 1, 0.94131947)
+modulate = Color(1, 1, 1, 0.9189125)
 z_index = -2
 layout_mode = 0
 offset_left = 278.46854
@@ -441,8 +473,17 @@ offset_bottom = 80.0
 scale = Vector2(0.5, 0.5)
 pivot_offset = Vector2(60, 80)
 
+[node name="Button" type="Button" parent="MusicasJukebox/CarroselContainer/Control/Panel3" unique_id=1670078593]
+layout_mode = 0
+offset_left = 26.00104
+offset_top = 122.0
+offset_right = 115.00104
+offset_bottom = 153.0
+scale = Vector2(0.8, 0.8)
+text = "ESCOLHER"
+
 [node name="Panel4" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1704902061]
-modulate = Color(1, 1, 1, 0.91197914)
+modulate = Color(1, 1, 1, 0.87836874)
 z_index = -3
 layout_mode = 0
 offset_left = 418.46854
@@ -452,8 +493,17 @@ offset_bottom = 80.0
 scale = Vector2(0.25, 0.25)
 pivot_offset = Vector2(59.999985, 80)
 
+[node name="Button" type="Button" parent="MusicasJukebox/CarroselContainer/Control/Panel4" unique_id=67782064]
+layout_mode = 0
+offset_left = 26.00104
+offset_top = 122.0
+offset_right = 115.00104
+offset_bottom = 153.0
+scale = Vector2(0.8, 0.8)
+text = "ESCOLHER"
+
 [node name="Panel5" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1852349736]
-modulate = Color(1, 1, 1, 0.8826389)
+modulate = Color(1, 1, 1, 0.837825)
 z_index = -4
 layout_mode = 0
 offset_left = 558.4685
@@ -463,8 +513,17 @@ offset_bottom = 80.0
 scale = Vector2(0.1, 0.1)
 pivot_offset = Vector2(60, 80)
 
+[node name="Button" type="Button" parent="MusicasJukebox/CarroselContainer/Control/Panel5" unique_id=1525736649]
+layout_mode = 0
+offset_left = 26.00104
+offset_top = 122.0
+offset_right = 115.00104
+offset_bottom = 153.0
+scale = Vector2(0.8, 0.8)
+text = "ESCOLHER"
+
 [node name="Panel6" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=808843665]
-modulate = Color(1, 1, 1, 0.8826389)
+modulate = Color(1, 1, 1, 0.837825)
 z_index = -5
 layout_mode = 0
 offset_left = 698.4685
@@ -473,6 +532,15 @@ offset_right = 818.4685
 offset_bottom = 80.0
 scale = Vector2(0.1, 0.1)
 pivot_offset = Vector2(60, 80)
+
+[node name="Button" type="Button" parent="MusicasJukebox/CarroselContainer/Control/Panel6" unique_id=879888241]
+layout_mode = 0
+offset_left = 26.00104
+offset_top = 122.0
+offset_right = 115.00104
+offset_bottom = 153.0
+scale = Vector2(0.8, 0.8)
+text = "ESCOLHER"
 
 [node name="Left" type="Button" parent="MusicasJukebox/CarroselContainer" unique_id=1063127162]
 offset_left = -16.0
@@ -590,5 +658,21 @@ transform = Transform3D(0.06847341, 0, 0, 0, 0.047, 0, 0, 0, 0.059, -5.0252867, 
 mesh = SubResource("CylinderMesh_bfwm2")
 surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
 
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Itens Aleatorios" unique_id=632935904]
+transform = Transform3D(0.7544788, 0, 0, 0, 0.6439085, 0, 0, 0, 0.6206049, 6.1411104, 0.36124003, -2.262675)
+mesh = SubResource("BoxMesh_pcysp")
+surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Itens Aleatorios" unique_id=1192314815]
+transform = Transform3D(0.7544788, 0, 0, 0, 0.6439085, 0, 0, 0, 0.6206049, 6.1411104, 0.36124003, -1.6534636)
+mesh = SubResource("BoxMesh_pcysp")
+surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
+
+[node name="CharacterBody3D" parent="." unique_id=874120290 instance=ExtResource("9_1o021")]
+
+[connection signal="song_selected" from="MusicasJukebox/CarroselContainer" to="Jukebox/Jukebox" method="_on_carrosel_container_song_selected"]
+[connection signal="pressed" from="MusicasJukebox/CarroselContainer/Control/Panel/Button" to="MusicasJukebox/CarroselContainer" method="_on_button_pressed"]
+[connection signal="pressed" from="MusicasJukebox/CarroselContainer/Control/Panel2/Button" to="MusicasJukebox/CarroselContainer" method="_on_button_pressed"]
+[connection signal="pressed" from="MusicasJukebox/CarroselContainer/Control/Panel3/Button" to="MusicasJukebox/CarroselContainer" method="_on_button_pressed"]
 [connection signal="pressed" from="MusicasJukebox/CarroselContainer/Left" to="MusicasJukebox/CarroselContainer" method="_on_left_pressed"]
 [connection signal="pressed" from="MusicasJukebox/CarroselContainer/Right" to="MusicasJukebox/CarroselContainer" method="_on_right_pressed"]
