@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://vvmb851w8hmb"]
 
 [ext_resource type="PackedScene" uid="uid://14035e2f4dy8" path="res://Scenes/balcao.tscn" id="2_tcjsh"]
-[ext_resource type="PackedScene" path="res://Scenes/mesa.tscn" id="3_a3v7h"]
-[ext_resource type="PackedScene" path="res://Scenes/sinuquinha.tscn" id="4_3p0ik"]
-[ext_resource type="PackedScene" uid="uid://bgpqkfmxj2qd0" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
+[ext_resource type="PackedScene" uid="uid://cws1nqstyrdbt" path="res://Scenes/mesa.tscn" id="3_a3v7h"]
+[ext_resource type="PackedScene" uid="uid://c2cirktl8j3ha" path="res://Scenes/sinuquinha.tscn" id="4_3p0ik"]
+[ext_resource type="PackedScene" uid="uid://bam4d77bw388b" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
 [ext_resource type="Script" uid="uid://balnxmcje74xp" path="res://Scenes/camera.gd" id="6_c5s60"]
-[ext_resource type="PackedScene" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
+[ext_resource type="PackedScene" uid="uid://i5yqwk0mold5" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
 [ext_resource type="Texture2D" uid="uid://cty7ju75qem45" path="res://models/grid_grey.png" id="8_8ngks"]
 [ext_resource type="Script" uid="uid://88v701y7yngp" path="res://Scenes/carrousel_container.gd" id="8_gjgc6"]
-[ext_resource type="PackedScene" path="res://Scenes/npctest.tscn" id="9_1o021"]
+[ext_resource type="PackedScene" uid="uid://dwxao37vt1t75" path="res://Scenes/npctest.tscn" id="9_1o021"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_1o021"]
 vertices = PackedVector3Array(-6.414386, 0.5489328, -2.8846922, -6.414386, 0.5489328, 8.115308, 6.335614, 0.5489328, 8.115308, 6.335614, 0.5489328, -2.8846922)
@@ -128,32 +128,32 @@ transform = Transform3D(0.70710677, 0.3535534, -0.61237246, 0, 0.8660255, 0.5000
 [node name="Paredes" type="Node" parent="." unique_id=185805976]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Paredes" unique_id=77798622]
-transform = Transform3D(1, 0, 0, 0, 2.0137577, 0, 0, 0, 5.542285, 6.8899627, 1.0009136, -0.69086266)
+transform = Transform3D(1, 0, 0, 0, 3.5728855, 0, 0, 0, 5.542285, 6.8899627, 1.6903188, -0.69086266)
 mesh = SubResource("BoxMesh_a3v7h")
 surface_material_override/0 = SubResource("StandardMaterial3D_bvpmc")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Paredes" unique_id=1283785136]
-transform = Transform3D(1, 0, 0, 0, 2.0137577, 0, 0, 0, 3.0747752, 6.8899627, 1.0009136, 6.868722)
+transform = Transform3D(1, 0, 0, 0, 3.403757, 0, 0, 0, 3.0747752, 6.8899627, 1.7758605, 6.868722)
 mesh = SubResource("BoxMesh_a3v7h")
 surface_material_override/0 = SubResource("StandardMaterial3D_dijpm")
 
 [node name="MeshInstance3D6" type="MeshInstance3D" parent="Paredes" unique_id=1024652440]
-transform = Transform3D(1, 0, 0, 0, 2.0137577, 0, 0, 0, 1.3431321, 0.88082266, 1.0009136, 8.048062)
+transform = Transform3D(1, 0, 0, 0, 3.5358806, 0, 0, 0, 1.3431321, 0.88082266, 1.7740271, 8.048062)
 mesh = SubResource("BoxMesh_a3v7h")
 surface_material_override/0 = SubResource("StandardMaterial3D_dijpm")
 
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="Paredes" unique_id=1976777647]
-transform = Transform3D(0.014811892, 0, 13.255147, 0, 0.79070634, 0, -0.9534747, 0, 0.20591417, 0.2922156, 1.9351295, 8.065483)
+transform = Transform3D(0.014811892, 0, 13.255147, 0, 0.79070634, 0, -0.9534747, 0, 0.20591417, 0.2922156, 3.7956462, 8.065483)
 mesh = SubResource("BoxMesh_a3v7h")
 surface_material_override/0 = SubResource("StandardMaterial3D_dijpm")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="Paredes" unique_id=5218802]
-transform = Transform3D(1, 0, 0, 0, 0.36361992, 0, 0, 0, 3.5243082, 6.8899627, 1.8341329, 3.8188715)
+transform = Transform3D(1, 0, 0, 0, 0.36361992, 0, 0, 0, 3.5243082, 6.8899627, 3.3486, 3.8188715)
 mesh = SubResource("BoxMesh_a3v7h")
 surface_material_override/0 = SubResource("StandardMaterial3D_dijpm")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="Paredes" unique_id=1361988629]
-transform = Transform3D(1, 0, 0, 0, 2.0137577, 0, 0, 0, 11.624304, -5.5925856, 1.0009136, 2.518089)
+transform = Transform3D(1, 0, 0, 0, 4.278564, 0, 0, 0, 11.624304, -5.5925856, 1.6416469, 2.518089)
 mesh = SubResource("BoxMesh_a3v7h")
 surface_material_override/0 = SubResource("StandardMaterial3D_xxieg")
 
