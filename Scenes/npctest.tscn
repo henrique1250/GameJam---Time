@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://dwxao37vt1t75"]
+
+[ext_resource type="PackedScene" uid="uid://btlivjxw3otfg" path="res://models/Rembot_NPC.glb" id="1_tenxl"]
+[ext_resource type="Script" uid="uid://cw84l15erg43s" path="res://Scripts/npcgeneric.gd" id="1_xedfs"]
+[ext_resource type="Texture2D" uid="uid://gf1bwe11aowa" path="res://models/npc_manager_skin.png" id="2_hlu4b"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xedfs"]
+albedo_texture = ExtResource("2_hlu4b")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_af6yk"]
+
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=874120290]
+script = ExtResource("1_xedfs")
+
+[node name="Rembot_NPC" parent="." unique_id=161683718 instance=ExtResource("1_tenxl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.049472094)
+
+[node name="Skeleton3D" parent="Rembot_NPC/NPC_MAN_FAT" parent_id_path=PackedInt32Array(161683718, 1224490715) index="0" unique_id=1260469991]
+bones/0/position = Vector3(5.1751456, -0.083839834, -101.43794)
+bones/0/rotation = Quaternion(-0.7104402, -0.045368064, 0.012324087, 0.7021856)
+bones/1/rotation = Quaternion(-0.012061457, 0.005810482, 0.013328481, 0.9998216)
+bones/2/rotation = Quaternion(0.021232393, 0.011244101, 0.026273182, 0.99936604)
+bones/3/rotation = Quaternion(0.021232361, 0.011244106, 0.026273193, 0.99936604)
+bones/4/position = Vector3(-6.92904e-07, 13.803739, 2.4217377e-07)
+bones/4/rotation = Quaternion(-0.067729846, 0.0017403294, -0.0030885367, 0.9976974)
+bones/5/position = Vector3(7.5623393e-07, 8.786706, 2.2207472)
+bones/5/rotation = Quaternion(0.037361708, 0.006383738, -0.04017116, 0.9984737)
+bones/7/rotation = Quaternion(-0.63126016, -0.3567902, 0.57226795, -0.38304147)
+bones/8/position = Vector3(-3.3584797e-07, 11.074217, -7.637352e-06)
+bones/8/rotation = Quaternion(0.40475538, 0.15416147, 0.10523054, 0.89517266)
+bones/9/position = Vector3(-3.608215e-07, 29.211845, 7.7113e-06)
+bones/9/rotation = Quaternion(0.0044906107, -0.007588494, 0.07346846, 0.99725866)
+bones/10/position = Vector3(3.8444996e-06, 23.315805, -2.3599714e-05)
+bones/10/rotation = Quaternion(9.895298e-10, 7.159543e-09, -3.3760439e-09, 1)
+bones/11/position = Vector3(-5.265304, 12.238851, -0.07750052)
+bones/11/rotation = Quaternion(0.60759753, -0.3826872, 0.57757246, 0.38831168)
+bones/12/position = Vector3(-9.364993e-08, 11.074227, 6.5563927e-06)
+bones/12/rotation = Quaternion(0.40044266, -0.226915, -0.08950503, 0.8832576)
+bones/13/position = Vector3(-7.016015e-07, 29.21426, -1.0822096e-06)
+bones/13/rotation = Quaternion(0.005671911, 0.01180028, -0.086001985, 0.99620897)
+bones/14/position = Vector3(-4.9173786e-07, 23.314386, 2.9280686e-06)
+bones/14/rotation = Quaternion(3.3620745e-07, -2.2278984e-08, 9.895299e-09, 1)
+bones/15/rotation = Quaternion(0.025825676, 0.12099247, 0.9889819, -0.08129406)
+bones/16/rotation = Quaternion(-0.14811431, 7.139505e-05, -0.02648555, 0.98861563)
+bones/17/rotation = Quaternion(0.4405726, -0.045860305, 0.04146139, 0.89558566)
+bones/18/position = Vector3(6.5345967e-07, 13.459565, -1.0047643e-07)
+bones/18/rotation = Quaternion(0.3247852, -0.050645404, 0.032254618, 0.94387996)
+bones/20/rotation = Quaternion(-0.059129387, 0.010786119, 0.9972195, -0.04405198)
+bones/21/rotation = Quaternion(-0.08594013, -0.00010421191, 0.024111608, 0.9960086)
+bones/22/rotation = Quaternion(0.4906534, -0.025662873, -0.07878474, 0.8674063)
+bones/23/position = Vector3(-7.0999704e-09, 13.276341, -3.4250752e-07)
+bones/23/rotation = Quaternion(0.35385126, 0.021134332, -0.007731574, 0.93503094)
+bones/24/position = Vector3(-1.9422732e-06, 5.249152, -7.599582e-07)
+
+[node name="humanoid" parent="Rembot_NPC/NPC_MAN_FAT/Skeleton3D" index="0" unique_id=1835627230]
+material_override = SubResource("StandardMaterial3D_xedfs")
+blend_shapes/Angry = -0.49559
+blend_shapes/FAT = 0.73529
+blend_shapes/Boobs = 0.17
+blend_shapes/Pregnant = -0.19118
+blend_shapes/Forehead = -0.45206
+
+[node name="AnimationPlayer" parent="Rembot_NPC" index="1" unique_id=1634125555]
+autoplay = &"idle_1"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2047326653]
+transform = Transform3D(0.5663475, 0, 0, 0, 0.9766559, 0, 0, 0, 0.9766559, 0.053904235, 0.78231364, 0)
+shape = SubResource("CapsuleShape3D_af6yk")
+
+[editable path="Rembot_NPC"]
