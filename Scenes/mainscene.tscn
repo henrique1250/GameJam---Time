@@ -1,22 +1,18 @@
-[gd_scene format=4 uid="uid://vvmb851w8hmb"]
+[gd_scene format=4 uid="uid://clihirji8mhm2"]
 
 [ext_resource type="PackedScene" uid="uid://14035e2f4dy8" path="res://Scenes/balcao.tscn" id="2_tcjsh"]
 [ext_resource type="PackedScene" uid="uid://cws1nqstyrdbt" path="res://Scenes/mesa.tscn" id="3_a3v7h"]
 [ext_resource type="PackedScene" uid="uid://c2cirktl8j3ha" path="res://Scenes/sinuquinha.tscn" id="4_3p0ik"]
-[ext_resource type="PackedScene" uid="uid://tiwuqt5fy43b" path="res://art/assets/PROP_mesa_bilhar.glb" id="5_bfwm2"]
 [ext_resource type="PackedScene" uid="uid://bgpqkfmxj2qd0" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
-[ext_resource type="Script" uid="uid://balnxmcje74xp" path="res://Scenes/camera.gd" id="6_c5s60"]
+[ext_resource type="Script" path="res://Scenes/camera.gd" id="6_c5s60"]
 [ext_resource type="PackedScene" uid="uid://i5yqwk0mold5" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
-[ext_resource type="Script" uid="uid://88v701y7yngp" path="res://Scenes/carrousel_container.gd" id="8_gjgc6"]
+[ext_resource type="Script" path="res://Scenes/carrousel_container.gd" id="8_gjgc6"]
 [ext_resource type="PackedScene" uid="uid://bdjtk7koqgec8" path="res://art/assets/PROP_balcao-modular.glb" id="9_tf7l5"]
 [ext_resource type="Texture2D" uid="uid://cx13svo4nwpdl" path="res://art/assets/PROP_balcao-modular_balcao Set.png" id="10_3swae"]
 [ext_resource type="Shader" uid="uid://q3efolm48w4g" path="res://art/shades/outineassets.gdshader" id="10_tf7l5"]
-[ext_resource type="PackedScene" uid="uid://bj2k1s1fqvxs6" path="res://art/assets/PROP_mesa.glb" id="11_1bo1k"]
-[ext_resource type="Texture2D" uid="uid://c0em808l02h2f" path="res://art/assets/PROP_mesa_mesa_bar.png" id="12_76hng"]
 [ext_resource type="PackedScene" uid="uid://di20lfxa62dov" path="res://art/assets/PROP_cadeira.glb" id="13_hkskg"]
 [ext_resource type="Texture2D" uid="uid://bg7ypwmvduula" path="res://art/assets/PROP_cadeira_Gemini_Generated_Image_2460yx2460yx2460.png" id="14_44wyh"]
 [ext_resource type="PackedScene" uid="uid://bru750wppf55y" path="res://art/assets/PROP_balcao_quina.glb" id="15_xdmf7"]
-[ext_resource type="PackedScene" uid="uid://c7qv7wb6x6ssu" path="res://art/assets/PROP_BKjunkebox.glb" id="16_c35lc"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_nn0u8"]
 
@@ -168,45 +164,15 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_xvqk1")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l3vo5"]
-resource_name = "Material.001"
-cull_mode = 2
-albedo_texture = ExtResource("12_76hng")
-roughness = 0.5
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bvpmc"]
+render_priority = 0
+shader = ExtResource("10_tf7l5")
+shader_parameter/outline_color = Color(0.078431375, 0.078431375, 0.07450981, 1)
+shader_parameter/outline_width = 1.4
+shader_parameter/constant_width = true
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_aewvp"]
-_surfaces = [{
-"aabb": AABB(-0.35552996, -0.3731777, -0.3513533, 0.7110599, 0.7481777, 0.7027066),
-"format": 34896613377,
-"index_count": 912,
-"index_data": PackedByteArray("AAABAAIAAwABAAAAAwAAAAUABAAAAAIABAAFAAAAAwAFAFIAAQADAAgACAADAFIACABSAFMAAQAIAA8ADwAIAFMAUgBUAFMADwBTAA0ABQBVAFIAUgBVAFQAVQBWAFQAUwBUAFcAUwBXAA0AVABWAAcAVAAHAFcAVQBYAFYAWAAHAFYAWQBYAFUABQBZAFUAWAAGAAcAWQAGAFgABgAJAAcAWQAKAAYABgAKAAkABQBaAFkAWQBaAAoABQALAFoABAALAAUAWgBbAAoAWwAJAAoAWgBcAFsACwBcAFoAWwBdAAkAXABdAFsAXgAJAF0AXABeAF0ABwAJAF8AXgBfAAkABwBfAFcAYABeAFwACwBgAFwAYQBfAF4AYABhAF4AVwBfABAAYQAQAF8AVwAQAA0ADgBhAGAADABgAAsADgBgAAwAEQAQAGEAEQBhAA4ADQAQABMAEAARABUAEAAVABMADgAUABEAFAAOAAwAEQAUABUADAALABYAFAAMABYAFwAWAAsABAAXAAsAFAAWABgAFwAYABYAAgAXAAQAAgAYABcABAACABsAAQAYAAIAAQAbAAIAAQAUABgAFwAZABgAGQAUABgABAAaABcAFwAaABkABAAbABwABAAcABoAAQAfABsAHwAcABsAHQAUABkAHQAZABoAHQAaAGIAFAAdACUAJQAdAGIAGgBjAGIAJQBiAGQAHABlABoAGgBlAGMAYgBjAGYAYgBmAGQAYwBnAGYAJwAlAGQAFAAlACcAYwBoAGcAZQBoAGMAZgBnACEAaAAhAGcAZQAeAGgAaAAeACEAaQAeAGUAHABpAGUAIAAhAB4AaQAgAB4AZgAhAGoAZABmAGoAIAAiACEAIgBqACEAZABqACYAJwBkACYAaQBrACAAawAiACAAaQBsAGsAHABsAGkAawBtACIAbABtAGsAbgAiAG0AbABuAG0AIgBvAGoAbgBvACIAbwAmAGoAHABwAGwAcABuAGwAHwBwABwAcQBvAG4AcABxAG4AIwBwAB8AIwBxAHAAAQAjAB8AcQAkAG8AbwAkACYAKgBxACMAKgAkAHEAIwABACoAJAAqACsAKgABACsAJAApACYAJAArACwAJAAsACkAJgApACgAJgAoACcALAAoACkALAArACgALQApACwALQAsACsAFAAnACgAKwAUACgALgAoACkALQAuACkAKwABABQALQArADIAAQAyACsAMgByAC0ALgAvACgALwAUACgAcwAuAC0AcgBzAC0ALwAuAHQAMgAzAHIAAQAzADIAcwB1AC4AdAAuAHUALwB0ADAAMAAUAC8AdAB1AHYAMAB0AHcAdwB0AHYAMAB3ADcAFAAwADcANAB1AHMAdgB1ADEANAAxAHUAdwB2AHgANwB3ADoAOgB3AHgAeAB2AHkAdgAxAHkAeAB5AHoAegB5ADEAewB4AHoAOgB4AHsAegAxADgAewB6ADgANgA4ADEANgAxADQAfAB7ADgAfAA4ADYAOQB7AHwAOQA6AHsAfAA2AH0AfQA2ADQAfAB9AH4AOQB8AH4AfQA0AH8AfgB9AH8AgAB/ADQAfgB/AIAAgAA0AHMAcgCAAHMAgQB+AIAAgQCAAHIAOQB+AIEAMwCBAHIAMwA1AIEANQA5AIEAAQA1ADMANQA8ADkANQABADwAPQA5ADwAPQA6ADkAPQA8AEAAPAABAEAAPQA+ADoAQAA9AD4APgA7ADoANwA6ADsAFAA3ADsAPgA/ADsAFAA7AD8AQAA+AD8AAQBAAD8AAQA/ABQAPQBAAEMAAQBDAEAAPgBBAD8AQQAUAD8APQBCAD4APgBCAEEAPQBDAEQAPQBEAEIAAQBHAEMARwBEAEMARQAUAEEARQBBAEIARQBCAIIAFABFAEoASgBFAIIAFABKAEsASgCCAIMASwBKAIMAQgCEAIIASwCDAEwAFABLABUATAAVAEsAEgAVABQAEgAUAAEAggCFAIMAggCEAIUAAQAPABIADQASAA8AgwCFAIYAgwCGAEwAhACHAIUAhQBJAIYAhQCHAEkAhACIAIcAiABJAIcAiQCIAIQAQgCJAIQAiABGAEkAiQBGAIgARACJAEIAigBGAIkARACKAIkASABJAEYAigBIAEYASABNAEkATQCGAEkAigCLAEgAiwBNAEgARACMAIoAigCMAIsAiwCNAE0AjACNAIsATQCOAIYAjwBNAI0AjACPAI0AjwCOAE0AjgBMAIYAkACPAIwARACQAIwARwCQAEQAkACRAI8AkQCOAI8ATwCQAEcATwCRAJAAAQBPAEcAkQBOAI4AjgBOAEwAUACRAE8ATwABAFAAUABOAJEAUAABABIATgBQABIATgATAEwATAATABUATgASAFEATgBRABMAUQAVABIAUQATABUADQBRABIADQATAFEA"),
-"lods": [0.051695578, PackedByteArray("AAABAAIAAwABAAAABAAAAAIAAwAAAAUABAAFAAAABQAGAAMAAwAGAAcAAwAHAAgAAQADAAgABgAJAAcABQAKAAYABgAKAAkABQALAAoABAALAAUACwAMAAoADAAJAAoABwAJAA0ACAAHAA0ADAAOAAkADwAIAA0AAQAIAA8ADgAQAAkADQAJABAAEQAQAA4ADQASAA8AAQAPABIADQAQABMADgAUABEAFAAOAAwAEAARABUAEQAUABUAEAAVABMAEgAUAAEAFAAMABYADAALABYAEgAVABQAFwAWAAsABAAXAAsAFAAWABgAFwAYABYAAQAUABgAFwAZABgAGQAUABgAAgAYABcAAQAYAAIAAgAXAAQAFwAaABkABAAaABcABAACABsAAQAbAAIABAAcABoABAAbABwAHQAZABoAHQAUABkAHAAeABoAGgAeAB0AHwAcABsAAQAfABsAHAAgAB4AHAAfACAAHQAeACEAIAAhAB4AHwAiACAAIAAiACEAHwAjACIAAQAjAB8AIgAkACEAIwAkACIAHQAhACUAFAAdACUAJQAhACYAJAAmACEAJwAlACYAFAAlACcAJgAoACcAFAAnACgAJgApACgAJAApACYAKgAkACMAIwABACoAJAAqACsAKgABACsAKwAUACgAJAArACwAJAAsACkALAAoACkALAArACgALQApACwALQAsACsALgAoACkALQAuACkALgAvACgALwAUACgALwAuADAAMAAUAC8AMAAuADEALQAxAC4ALQArADIAAQAyACsAKwABABQAMgAzAC0AAQAzADIAMwA0AC0ANAAxAC0ANQA0ADMAAQA1ADMANgAxADQANQA2ADQANwAwADEAFAAwADcANgA4ADEANwAxADgAOQA2ADUAOQA4ADYAOgA3ADgAOQA6ADgANwA6ADsAFAA3ADsANQA8ADkANQABADwAPQA6ADkAPQA5ADwAPgA7ADoAPQA+ADoAFAA7AD8APgA/ADsAAQA/ABQAPAABAEAAPQA8AEAAAQBAAD8AQAA+AD8AQAA9AD4APgBBAD8AQQAUAD8APQBCAD4APgBCAEEAPQBAAEMAAQBDAEAAPQBEAEIAPQBDAEQARQBBAEIARQAUAEEARABGAEIAQgBGAEUARwBEAEMAAQBHAEMARABIAEYARABHAEgARQBGAEkASABJAEYAFABFAEoARQBJAEoAFABKAEsAFABLABUASwBKAEwASgBJAEwATAAVAEsASABNAEkARwBNAEgATgBMAEkATQBOAEkARwBPAE0AAQBPAEcATwBOAE0ATwABAFAAUABOAE8AUAABABIATgBQABIATgATAEwATAATABUATgASAFEATgBRABMAUQAVABIAUQATABUADQBRABIADQATAFEA")],
-"name": "Material.001",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 146,
-"vertex_data": PackedByteArray("Af7//57cAAD/f////38AAAH+////fwAAZ+3//yvdAABw/hrr/38AAHD+GusO3QAAbv7kAIPyAACY8uQAfv4AAPPc///R7QAA2fAFAJj9AACO/QAAwfAAAG/9++og2wAAvuyo/qbbAAD22xrr8f8AAHnbpv4d7QAAh9v//4D/AAAZ2vnq2f4AAFrax/40/gAA/3///4D/AAD/fxDrwf0AAP9/8f3/fwAA/3+H/vn9AAC//Mj+ZdsAAEf8EOv/fwAAfvyH/v9/AAC//Mj+mSQAAG/9++reJAAAAf7//2AjAABw/hrr8CIAAL7sqP5YJAAAjv0AAD0PAABn7f//0yIAAG7+5AB7DQAA2fAFAGYCAACY8uQAgAEAAPPc//8tEgAA9tsa6w0AAAB526b+4RIAABna+eolAQAAWtrH/soBAAD/f4f+BQIAAP9/EOs9AgAAh9v//34AAAD/f///fgAAAP9/GusNAAAACCQa6w0AAADlJfnqJQEAAKQlx/7KAQAAhSSm/uESAAAlDwUAZgIAAHck//9+AAAACyP//y0SAABmDeQAgAEAAJcS///TIgAAkAHkAHsNAABAE6j+WCQAAHACAAA9DwAAjgEa6/AiAACPAvvq3iQAAD8DyP6ZJAAA/QH//2AjAACOARrr/38AALcDEOv/fwAAgAOH/v9/AAD9Af///38AAD8DyP5l2wAAjwL76iDbAAD9Af//ntwAAI4BGusO3QAAQBOo/qbbAABwAgAAwfAAAJcS//8r3QAAkAHkAIPyAAAlDwUAmP0AAIUkpv4d7QAApCXH/jT+AADlJfnq2f4AAGYN5AB+/gAACCQa6/H/AAALI///0e0AAHck//+A/wAA/38a6/H/AAAG7hrry90AAJLdGuty7gAAvOipemvzAAAZ9Kl67OcAAPfwOQrV9gAAv+j/df//AAA79zkKffAAAOf//3WQ6AAA///VdWPmAABp9rUJi+4AAEvzenrn5QAAEO+1CfP1AADD5nh6jfIAAJjm03X5/wAALO336svbAACd2/bqie0AACzt9+ozJAAAS/N6ehcaAACd2/bqdRIAAP//1XWbGQAAw+Z4enENAAAQ77UJCwoAAGn2tQlzEQAA5///dW4XAACY5tN1BQAAADv3OQqBDwAAGfSpehIYAAD38DkKKQkAALzoqXqTDAAAv+j/dQAAAAAG7hrrMyIAAJLdGuuMEQAAbCIa64wRAAA/F/91AAAAAGEk9up1EgAAZhnTdQUAAAA7GXh6cQ0AANIS9+ozJAAAswx6ehcaAADuELUJCwoAAJUJtQlzEQAAAADVdZsZAAAXAP91bhcAAMMIOQqBDwAA5QupehIYAAAHDzkKKQkAAEIXqXqTDAAA+BEa6zMiAADSEvfqy9sAAGEk9uqJ7QAAswx6euflAAA7GXh6jfIAAGYZ03X5/wAA7hC1CfP1AACVCbUJi+4AAAAA1XVj5gAAFwD/dZDoAADDCDkKffAAAOULqXrs5wAABw85CtX2AAA/F/91//8AAEIXqXpr8wAA+BEa68vdAABsIhrrcu4AAA==")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_4jrs7"]
-resource_name = "PROP_mesa_Cube_009"
-_surfaces = [{
-"aabb": AABB(-0.35552996, -0.3731777, -0.3513533, 0.7110599, 0.7481777, 0.7027066),
-"attribute_data": PackedByteArray("Bq/KxPD/kf8Gr5H/Bq/KxK+5ccSvuXHEQMTguUDE4LkpxaeuKcWnrvD/p67w/6euKcWnrinFp65AxOC5QMTgua+5ccSvuXHEBq/KxAavysQGr5H/UAsFE/0FNsAfAGUhDgBGE2kPd/+IHbHEiB13/2kPasSIHbHEaQ9qxEEaEBPqJGMTwSSCIWQfQMBjAHf/gQ5qxIEOMP9jAGrEYwB3/4EOMP9BGhATHw0vwVALBRPfFzjBTN9VICWPRFpbj0UgbJlwWoCkh2U2pWBwO99GcCWPRFpbj0UgbJlwWoCkh2U2pWBwO99GcDSCLiAlj0RawoECWluPRSAxb7H1vnm+58B5ePUYb2BKcKXDfTvfRnBM3219NqVgcOFTa/X3U5nnG1+x9UFhJUoxb7H1QWElShhvYEobX7H1MrbLoDK17qHGZOwUXKgr3u2mG96FZSMTf13kFnVcKxa6IBGygSFBs90hxfKHIM3yhyDN8gsiCP8xIfD/3SHF8kRlN/txZWb8MSHw/wsiCP+HIM3y3SHF8jqqwOvtphveXKgr3jCpE+txZWb8RGU3+zCpE+s6qsDr7aYb3lyoK95QCwUTHwBlIf0FNsAOAEYTaQ93/4gdscRpD2rEiB13/4gdscRpD2rEQRoQE8EkgiHqJGMTZB9AwEEaEBMfDS/B3xc4wVALBRMlj0RaTN9VIFuPRSBsmXBagKSHZTalYHA730ZwJY9EWluPRSBsmXBagKSHZTalYHA730ZwNIIuICWPRFpbj0UgwoECWjFvsfXAeXj1vnm+5xhvYEpwpcN9O99GcDalYHBM32194VNr9RtfsfX3U5nnQWElSjFvsfVBYSVKG1+x9RhvYEoytsugxmTsFDK17qFcqCve7aYb3oVlIxN/XeQWdVwrFrogEbKBIUGz3SHF8ocgzfJQCwUTHwBlIf0FNsAOAEYTQRoQE8EkgiHqJGMTZB9AwGMAd/+BDmrEYwBqxIEOMP9jAHf/gQ4w/0EaEBMfDS/B3xc4wVALBRM0gi4gJY9EWluPRSDCgQJaMW+x9cB5ePW+eb7nGG9gSnClw30730ZwNqVgcEzfbX3hU2v1G1+x9fdTmedBYSVKMW+x9UFhJUobX7H1GG9gSjK2y6DGZOwUMrXuoVyoK97tphvehWUjE39d5BZ1XCsWuiARsoEhQbPdIcXyhyDN8lALBRP9BTbAHwBlIQ4ARhNBGhAT6iRjE8EkgiFkH0DAQRoQEx8NL8FQCwUT3xc4wTSCLiAlj0RawoECWluPRSAxb7H1vnm+58B5ePUYb2BKcKXDfTvfRnBM3219NqVgcOFTa/X3U5nnG1+x9UFhJUoxb7H1QWElShhvYEobX7H1MrbLoDK17qHGZOwUXKgr3u2mG96FZSMTf13kFnVcKxa6IBGygSFBs90hxfKHIM3yggqDbaAC53CvCrK5RQslITYaMSGHG4Vt/yL0cOwatbk2GjEhRQslIeANeW0xGIFt2A+huYkVprkjYqyaL2XyUb5Z2JYmXyXoLG846NBtu5rfdfyWV2tmUixvOOgmXyXoI2KsmtBtu5ovZfJRV2tmUkV/CFqDgE9ZB15TZYdcvWSCCoNtrwqyuaAC53BFCyUhNhoxIYcbhW3/IvRw7Bq1uTYaMSFFCyUh4A15bTEYgW3YD6G5iRWmuUzfVSAjYqyavlnYli9l8lEmXyXoLG846NBtu5rfdfyWV2tmUixvOOgmXyXoI2KsmtBtu5ovZfJRV2tmUkV/CFqDgE9ZB15TZYdcvWSCCoNtrwqyuaAC53BFCyUhNhoxIYcbhW3/IvRw7Bq1uTYaMSFFCyUh4A15bTEYgW3YD6G5iRWmuSNirJq+WdiWL2XyUSZfJegsbzjo0G27mt91/JZXa2ZSLG846CZfJegjYqya0G27mi9l8lFXa2ZSRX8IWoOAT1kHXlNlh1y9ZIIKg22gAudwrwqyuUULJSE2GjEhhxuFbf8i9HDsGrW5NhoxIUULJSHgDXltMRiBbdgPobmJFaa5TN9VICNirJovZfJRvlnYliZfJegsbzjo0G27mt91/JZXa2ZSLG846CZfJegjYqya0G27mi9l8lFXa2ZSRX8IWoOAT1kHXlNlh1y9ZA=="),
-"format": 34896613399,
-"index_count": 912,
-"index_data": PackedByteArray("AAABAAIAAQADAAIABAABAAAAAQAFAAMAAQAEAAYAAQAHAAUAAQAGAAgABwABAAkAAQAIAAoACQABAAsADAABAAoAAQANAAsADgABAAwAAQAPAA0AAQAOABAAAQARAA8AAQAQABIAEQABABMAAQASABQAEwABABQACwEWAAwBCwENARYADgELAQwBDgEMARcAGAAOARcAGAAVAA4BGQAaABsAGQAcABoAGQAbAB0AGQAdAB4AHwAhAA8BHwAgACEAIQAQAQ8BIQARARABEQESARABEQEiABIBIwAkACUAIwAmACQAJwAkACYAJwAoACQAKwATARQBKwApABMBEwEVARQBEwEWARUBFgEXARUBFgEYARcBGAEqABcBGAEsACoALQAuAC8ALQAwAC4ALQAxADAAMQAtADIAMgAtADMAGQFJABoBGQEbAUkAHAEbARkBHAFHABsBRgBHABwBRgAcAUgAOgA7ADwAOgA9ADsAPgA/AEAAPgAdAT8APwAdAR4BPwAeAR8BHwEeASABHwEgAUEAQgBDAEQAQgBFAEMATQAhAUoATQAiASEBIQEiASMBIQEjASQBJAEjASUBJAElASYBJgElAUsAJgFLAEwATgAnASgBKAEnAVAATgBPACcBUQBPAE4AUQBSAE8AKAFQAFMAUwBQAFQAUwBUAFUAVQBUACkBVQApASoBKgEpAVcAKgFXAFYAVgBXAFgAVgBYAFkAWgBbAFwAWgBdAFsAXABbAF4AXABeAF8AYABfAF4AYABeAGEAYgBgAGEAYgBhAGMAZABlAGYAZABnAGUAaABnAGQAaABpAGcAaABqAGkAaABrAGoAawBsAGoAawBtAGwAKwFwACwBKwEtAXAALgEtASsBLgFvAC0BcQBvAC4BcQAuAW4AcgBzAHQAcgB1AHMAcgB2AHUAcgB3AHYAeAB5AHoAeAAvAXkAeQAvATABeQAwATEBMQEwATIBMQEyAXsAfwAzAXwAfwA0ATMBMwE0ATUBMwE1ATYBNgE1ATcBNgE3ATgBOAE3AX0AOAF9AH4AgAA5AYIAgwA5AYAAOQGDAIQAOQGEAIUAOQGFAIYAOgGcADsBOgE8AZwAPQE6ATsBPQE7AZsAmQA9AZsAmQCaAD0BjQCOAI8AjQCQAI4AkQCTAD4BkQCSAJMAkwA/AT4BkwBAAT8BQAFBAT8BQAGUAEEBlQCWAJcAlQCYAJYAnwBCAUMBnwCdAEIBQgFEAUMBQgFFAUQBRQFGAUQBRQFHAUYBRwGeAEYBRwGgAJ4AoQBIAaMApAChAKMApACjAKUAoQBJAUgBSQGiAEgBSQGmAKIApgCnAKIApgCoAKcAqABKAacAqABLAUoBSwGqAEoBSwGpAKoAqQCrAKoAqQCsAKsATAGvAE0BTAFOAa8ATwFOAUwBTwGuAE4BsACuAE8BsABPAa0AsQCyALMAsQBQAbIAsgBQAVEBsgBRAVIBUgFRAVMBUgFTAbQAtQC2ALcAtQC4ALYAuQC3ALYAuQC2ALoAvgBUAbsAvgBVAVQBVAFVAVYBVAFWAVcBVwFWAVgBVwFYAVkBWQFYAbwAWQG8AL0AhwCBAIgAiQCBAIcAgQCJAIoAgQCKAIsAgQCLAIwAWgHOAFsBWgFcAc4AXQFaAVsBXQFbAc0AywBdAc0AywDMAF0BvwDAAMEAvwDCAMAAwwDFAF4BwwDEAMUAxQBfAV4BxQBgAV8BYAFhAV8BYAHGAGEBxwDIAMkAxwDKAMgA0QBiAWMB0QDPAGIBYgFkAWMBYgFlAWQBZQFmAWQBZQFnAWYBZwHQAGYBZwHSANAA0wBoAdUA1gDTANUA1gDVANcA0wBpAWgBaQHUAGgBaQHYANQA2ADZANQA2ADaANkA2gBqAdkA2gBrAWoBawHcAGoBawHbANwA2wDdANwA2wDeAN0AbAHgAG0BbAFuAeAAbwFsAW0BbwFtAeEA4gBvAeEA4gDfAG8B4wDlAHAB4wDkAOUA5QBxAXAB5QByAXEBcgFzAXEBcgHmAHMB6QB0AXUB6QDnAHQBdAF2AXUBdAF3AXYBdwF4AXYBdwF5AXgBeQHoAHgBeQHqAOgAegE0ADUAegE2ADQAegE3ADYANwB6ATgAOAB6ATkAewH6AHwBewF9AfoAfgF9AXsBfgH4AH0B9wD4AH4B9wB+AfkA6wDsAO0A6wDuAOwA7wDwAPEA7wB/AfAA8AB/AYAB8ACAAYEBgQGAAYIBgQGCAfIA8wD0APUA8wD2APQA/gCDAfsA/gCEAYMBgwGEAYUBgwGFAYYBhgGFAYcBhgGHAYgBiAGHAfwAiAH8AP0A/wCJAYoBigGJAQEB/wAAAYkBAgEAAf8AAgEDAQABigEBAQQBBAEBAQUBBAEFAQYBBgEFAYsBBgGLAYwBjAGLAQgBjAEIAQcBBwEIAQkBBwEJAQoB"),
-"lods": [0.051695578, PackedByteArray("AAABAAIAAQADAAIABAABAAAAAQAFAAMAAQAEAAYAAQAHAAUAAQAGAAgABwABAAkAAQAIAAoACQABAAsADAABAAoAAQANAAsADgABAAwAAQAPAA0AAQAOABAAAQARAA8AAQAQABIAEQABABMAAQASABQAEwABABQAFQAWABcAGAAVABcAGQAaABsAGQAcABoAGQAbAB0AGQAdAB4AHwAgACEAIQAiAB8AIwAkACUAIwAmACQAJwAkACYAJwAoACQAKQAqACsAKQAsACoALQAuAC8ALQAwAC4ALQAxADAAMQAtADIAMgAtADMALQA0ADUALQA2ADQALQA3ADYANwAtADgAOAAtADkAOgA7ADwAOgA9ADsAPgA/AEAAPwA+AEEAQgBDAEQAQgBFAEMARgBHAEgASABHAEkASgBLAEwASgBNAEsATgBPAFAAUQBPAE4AUQBSAE8ATgBQAFMAUwBQAFQAUwBUAFUAVQBUAFYAVgBUAFcAVgBXAFgAVgBYAFkAWgBbAFwAWgBdAFsAXABbAF4AXABeAF8AYABfAF4AYABeAGEAYgBgAGEAYgBhAGMAZABlAGYAZABnAGUAaABnAGQAaABpAGcAaABqAGkAaABrAGoAawBsAGoAawBtAGwAbgBvAHAAcQBvAG4AcgBzAHQAcgB1AHMAcgB2AHUAcgB3AHYAeAB5AHoAeQB4AHsAfAB9AH4AfAB/AH0AgACBAIIAgwCBAIAAgQCDAIQAgQCEAIUAgQCFAIYAhwCBAIgAiQCBAIcAgQCJAIoAgQCKAIsAgQCLAIwAjQCOAI8AjQCQAI4AkQCSAJMAkwCUAJEAlQCWAJcAlQCYAJYAmQCaAJsAmgCcAJsAnQCeAJ8AnQCgAJ4AoQCiAKMApAChAKMApACjAKUAoQCmAKIApgCnAKIApgCoAKcAqACpAKcAqQCqAKcAqQCrAKoAqQCsAKsArQCuAK8AsACuAK0AsQCyALMAsgCxALQAtQC2ALcAtQC4ALYAuQC3ALYAuQC2ALoAuwC8AL0AuwC+ALwAvwDAAMEAvwDCAMAAwwDEAMUAxQDGAMMAxwDIAMkAxwDKAMgAywDMAM0AzADOAM0AzwDQANEAzwDSANAA0wDUANUA1gDTANUA1gDVANcA0wDYANQA2ADZANQA2ADaANkA2gDbANkA2wDcANkA2wDdANwA2wDeAN0A3wDgAOEA4gDfAOEA4wDkAOUA5QDmAOMA5wDoAOkA5wDqAOgA6wDsAO0A6wDuAOwA7wDwAPEA8ADvAPIA8wD0APUA8wD2APQA9wD4APkA+QD4APoA+wD8AP0A+wD+APwA/wAAAQEBAgEAAf8AAgEDAQAB/wABAQQBBAEBAQUBBAEFAQYBBgEFAQcBBwEFAQgBBwEIAQkBBwEJAQoB")],
-"material": SubResource("StandardMaterial3D_l3vo5"),
-"name": "Material.001",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 397,
-"vertex_data": PackedByteArray("Af7//57c////f////3//vwH+////fwAAAf7//2AjAABn7f//K93//2ft///TIgAA89z//9Ht///z3P//LRIAAIfb//+A////h9v//34AAAD/f///gP//P/9///9+AP+/dyT//4D//z93JP//fgD/vwsj///R7f8/CyP//y0S/7+XEv//K93/P5cS///TIv+//QH//57c/z/9Af//YCP/v/0B////f/+/89z//9HtdLyY8uQAfv4cwfbbGuvx/9C8h9v//4D/dLxw/hrr/38zKgH+//+e3MvVAf7///9/Mypw/hrrDt3L1QH+//9gIzMqcP4a6/AiMypn7f//K90/ggH+//+e3D+CcP4a6w7d54Ju/uQAg/K4hPbbGuvx/wDA/3///4D//j+H2///gP8AwP9/Guvx//4/CCQa6/H//j93JP//gP/+P2ft//8r3QqgmPLkAH7+jqfz3P//0e0KoG7+5ACD8o6n/3/x/f9/3P+//Mj+Zdvc/378h/7/f9z/vuyo/qbb3P9526b+He3c/1rax/40/tz//3+H/vn93P8/A8j+mSQmwIADh/7/fybAQBOo/lgkJsCFJKb+4RImwKQlx/7KASbA/3+H/gUCJsBH/BDr/3+T1b/8yP5l25PVb/376iDbk9V+/If+/3+T1b7sqP6m2+H/b/376iDbPv6//Mj+Zdvi/479AADB8GH8Gdr56tn+s///f4f++f2z//9/EOvB/bP/WtrH/jT+s/9a2sf+NP7s/hna+erZ/iP9edum/h3tHf/Z8AUAmP1G9b7sqP6m20f/2fAFAJj9x+mO/QAAwfAb6nnbpv4d7Tz/cP4a6w7dYeJv/fvqINuhzI79AADB8G++cP4a6/9/IcBH/BDr/38gwG7+5ACD8qzA2fAFAJj9bsWY8uQAfv55yPbbGuvx/wvdGdr56tn+e9n/fxDrwf2I1P9/Guvx/4HU/38a6/H/9v//f4f++f2C//9///+A/4T//38Q68H97///f/H9/3/4P/9/////f/g//3///34A/z//f4f+BQL/P/9/GusNAP8//38Q6z0C/z8B/v///3///0f8EOv/f///cP4a6/9///9+/If+/3////9/////fwAA/3/x/f9/AACAA4f+/38AAP0B////fwAAtwMQ6/9/AACOARrr/38AAAsj///R7QoACCQa6/H/DAFmDeQA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")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_aewvp")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_76hng"]
+next_pass = SubResource("ShaderMaterial_bvpmc")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hhkeg"]
 resource_name = "Material.002"
@@ -254,7 +220,7 @@ shadow_mesh = SubResource("ArrayMesh_arpjg")
 transform = Transform3D(1, 0, 0, 0, 0.6178733, 0.78627765, 0, -0.78627765, 0.6178733, 1.3005886, 5.305082, 6.495014)
 
 [node name="Chao" type="MeshInstance3D" parent="." unique_id=1044769858]
-transform = Transform3D(7.5053697, 0, 0, 0, 1.0020467, 0, 0, 0, 8.084312, 0.6850893, 0.023290277, 2.8126192)
+transform = Transform3D(7.5053697, 0, 0, 0, 1.0020467, 0, 0, 0, 8.084312, 0.6930596, 0.0232898, 2.8142772)
 mesh = SubResource("PlaneMesh_nn0u8")
 surface_material_override/0 = SubResource("StandardMaterial3D_1o021")
 
@@ -413,21 +379,25 @@ marker_foco = NodePath("../../../Markers/Mesa1")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Mesas/Mesa1" unique_id=1146197642]
 transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 0.7701483, 0, 2.2186825)
+visible = false
 mesh = SubResource("CylinderMesh_3p0ik")
 surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Mesas/Mesa1" unique_id=1483869677]
 transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 2.440599, 0, 2.2186825)
+visible = false
 mesh = SubResource("CylinderMesh_3p0ik")
 surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="Mesas/Mesa1" unique_id=1286542695]
 transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 1.5385852, 0, 3.064682)
+visible = false
 mesh = SubResource("CylinderMesh_3p0ik")
 surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="Mesas/Mesa1" unique_id=216443673]
 transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 1.5385852, 0, 1.2161365)
+visible = false
 mesh = SubResource("CylinderMesh_3p0ik")
 surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
@@ -439,21 +409,25 @@ marker_foco = NodePath("../../../Markers/Mesa2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Mesas/Mesa2" unique_id=1247801569]
 transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -2.3558588, 0, 1.1700087)
+visible = false
 mesh = SubResource("CylinderMesh_3p0ik")
 surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Mesas/Mesa2" unique_id=1027897411]
 transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -0.685408, 0, 1.1700087)
+visible = false
 mesh = SubResource("CylinderMesh_3p0ik")
 surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="Mesas/Mesa2" unique_id=1785983181]
 transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.5874218, 0, 2.0160081)
+visible = false
 mesh = SubResource("CylinderMesh_3p0ik")
 surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="Mesas/Mesa2" unique_id=1576459393]
 transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.5874218, 0, 0.16746259)
+visible = false
 mesh = SubResource("CylinderMesh_3p0ik")
 surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
@@ -465,26 +439,27 @@ marker_foco = NodePath("../../../Markers/Mesa3")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Mesas/Mesa3" unique_id=1815018760]
 transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -2.7395039, 0, 5.208103)
+visible = false
 mesh = SubResource("CylinderMesh_3p0ik")
 surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Mesas/Mesa3" unique_id=788576792]
 transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.069053, 0, 5.208103)
+visible = false
 mesh = SubResource("CylinderMesh_3p0ik")
 surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="Mesas/Mesa3" unique_id=861251495]
 transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.9710668, 0, 6.054103)
+visible = false
 mesh = SubResource("CylinderMesh_3p0ik")
 surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="Mesas/Mesa3" unique_id=753499199]
 transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.9710668, 0, 4.2055573)
+visible = false
 mesh = SubResource("CylinderMesh_3p0ik")
 surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
-
-[node name="PROP_mesa_bilhar" parent="Mesas/Mesa3" unique_id=2092039594 instance=ExtResource("5_bfwm2")]
-transform = Transform3D(0.9576417, 0, -0.2879623, 0, 1, 0, 0.2879623, 0, 0.9576417, 5.7862062, 0, 4.061392)
 
 [node name="Mesa4" type="Node" parent="Mesas" unique_id=978021602]
 
@@ -494,21 +469,25 @@ marker_foco = NodePath("../../../Markers/Mesa4")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Mesas/Mesa4" unique_id=2071596357]
 transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 1.1791842, 0, 5.894801)
+visible = false
 mesh = SubResource("CylinderMesh_3p0ik")
 surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Mesas/Mesa4" unique_id=1991258583]
 transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 2.8496351, 0, 5.894801)
+visible = false
 mesh = SubResource("CylinderMesh_3p0ik")
 surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="Mesas/Mesa4" unique_id=351576577]
 transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 1.9476212, 0, 6.740801)
+visible = false
 mesh = SubResource("CylinderMesh_3p0ik")
 surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="Mesas/Mesa4" unique_id=1517527567]
 transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 1.9476212, 0, 4.8922553)
+visible = false
 mesh = SubResource("CylinderMesh_3p0ik")
 surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
 
@@ -562,13 +541,13 @@ surface_material_override/0 = SubResource("StandardMaterial3D_lqdhn")
 [node name="Sinuquinha" type="Node" parent="." unique_id=102819934]
 
 [node name="Sinuquinha" parent="Sinuquinha" unique_id=56849866 node_paths=PackedStringArray("marker_foco") instance=ExtResource("4_3p0ik")]
-transform = Transform3D(0.16580501, 0.0023625733, 0.71566737, 0, 0.46692228, -0.0038777136, -0.62296593, 0.00062880863, 0.19047791, 4.311169, 0.23917955, 2.6318488)
+transform = Transform3D(0.2572003, 0.005059816, 0.9663449, 0, 0.9999863, -0.0052359635, -0.9663581, 0.0013466914, 0.25719678, 4.311169, 0.44599074, 2.6318488)
 marker_foco = NodePath("../../Markers/Sinuca")
 
 [node name="Jukebox" type="Node" parent="." unique_id=1115974649]
 
 [node name="Jukebox" parent="Jukebox" unique_id=1150229189 node_paths=PackedStringArray("marker_foco") instance=ExtResource("5_hjw3j")]
-transform = Transform3D(1.0998267, 0, 0, 0, 1, 0, 0, 0, 1, -3.8213573, 0.9683466, 2.7644458)
+transform = Transform3D(-4.8074952e-08, 0, 1, 0, 1, 0, -1.0998267, 0, -4.371139e-08, -3.8213573, 0.9683466, 2.7644458)
 marker_foco = NodePath("../../Markers/Jukebox")
 
 [node name="MusicasJukebox" type="CanvasLayer" parent="." unique_id=2131329726]
@@ -578,7 +557,6 @@ visible = false
 position = Vector2(600, 200)
 script = ExtResource("8_gjgc6")
 position_offset_node = NodePath("Control")
-metadata/_custom_type_script = "uid://88v701y7yngp"
 
 [node name="Control" type="Control" parent="MusicasJukebox/CarroselContainer" unique_id=490624705]
 layout_mode = 3
@@ -598,7 +576,7 @@ offset_bottom = 77.0
 pivot_offset = Vector2(60, 80)
 
 [node name="Panel2" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1689214509]
-modulate = Color(1, 1, 1, 0.9539004)
+modulate = Color(1, 1, 1, 0.94747186)
 z_index = -1
 layout_mode = 0
 offset_left = 138.46854
@@ -609,7 +587,7 @@ scale = Vector2(0.75, 0.75)
 pivot_offset = Vector2(60, 80)
 
 [node name="Panel3" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=884635700]
-modulate = Color(1, 1, 1, 0.90780073)
+modulate = Color(1, 1, 1, 0.8949438)
 z_index = -2
 layout_mode = 0
 offset_left = 278.46854
@@ -620,7 +598,7 @@ scale = Vector2(0.5, 0.5)
 pivot_offset = Vector2(60, 80)
 
 [node name="Panel4" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1704902061]
-modulate = Color(1, 1, 1, 0.86170113)
+modulate = Color(1, 1, 1, 0.84241563)
 z_index = -3
 layout_mode = 0
 offset_left = 418.46854
@@ -631,7 +609,7 @@ scale = Vector2(0.25, 0.25)
 pivot_offset = Vector2(59.999985, 80)
 
 [node name="Panel5" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1852349736]
-modulate = Color(1, 1, 1, 0.8156015)
+modulate = Color(1, 1, 1, 0.7898875)
 z_index = -4
 layout_mode = 0
 offset_left = 558.4685
@@ -642,7 +620,7 @@ scale = Vector2(0.1, 0.1)
 pivot_offset = Vector2(60, 80)
 
 [node name="Panel6" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=808843665]
-modulate = Color(1, 1, 1, 0.8156015)
+modulate = Color(1, 1, 1, 0.7898875)
 z_index = -5
 layout_mode = 0
 offset_left = 698.4685
@@ -771,26 +749,26 @@ surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
 [node name="PROP_balcao-modular" parent="." unique_id=509138039 instance=ExtResource("9_tf7l5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4124731)
 
-[node name="canto-balcao" parent="PROP_balcao-modular" index="0" unique_id=1121749061]
+[node name="canto-balcao" parent="PROP_balcao-modular" index="0" unique_id=2078710754]
 transform = Transform3D(1.1116476, 0, 0, 0, 1.1116476, 0, 0, 0, 1.1116476, 3.33, 0.539, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="ponta-esquerda-balcao" parent="PROP_balcao-modular" index="1" unique_id=282666265]
+[node name="ponta-esquerda-balcao" parent="PROP_balcao-modular" index="1" unique_id=676636993]
 transform = Transform3D(-4.859166e-08, 0, -1.1116476, 0, 1.1116476, 0, 1.1116476, 0, -4.859166e-08, -3.44, 0.539, -1.995)
+surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
+
+[node name="ponta-direita-balcao" parent="PROP_balcao-modular" index="2" unique_id=286300098]
+transform = Transform3D(1.1116476, 0, 0, 0, 1.1116476, 0, 0, 0, 1.1116476, 0, 0.539, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
+
+[node name="meio-balcao" parent="PROP_balcao-modular" index="3" unique_id=576034805]
+transform = Transform3D(-4.859166e-08, 0, -1.1116476, 0, 1.1116476, 0, 1.1116476, 0, -4.859166e-08, -3.44, 0.539, -0.885)
+rotation_order = 0
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
 [node name="ponta-esquerda-balcao2" type="MeshInstance3D" parent="PROP_balcao-modular" unique_id=71040627]
 transform = Transform3D(-4.859166e-08, 0, 1.1116476, 0, 1.1116476, 0, -1.1116476, 0, -4.859166e-08, 3.44, 0.539, -1.995)
 mesh = SubResource("ArrayMesh_k84ww")
-surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
-
-[node name="ponta-direita-balcao" parent="PROP_balcao-modular" index="3" unique_id=1581159203]
-transform = Transform3D(1.1116476, 0, 0, 0, 1.1116476, 0, 0, 0, 1.1116476, 0, 0.539, 0)
-surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
-
-[node name="meio-balcao" parent="PROP_balcao-modular" index="4" unique_id=780711517]
-transform = Transform3D(-4.859166e-08, 0, -1.1116476, 0, 1.1116476, 0, 1.1116476, 0, -4.859166e-08, -3.44, 0.539, -0.885)
-rotation_order = 0
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
 [node name="meio-balcao6" type="MeshInstance3D" parent="PROP_balcao-modular" unique_id=2012501740]
@@ -819,98 +797,98 @@ transform = Transform3D(1.1116476, 0, 0, 0, 1.1116476, 0, 0, 0, 1.1116476, -2.22
 mesh = SubResource("ArrayMesh_outli")
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="PROP_mesa" parent="PROP_balcao-modular" unique_id=874562350 instance=ExtResource("11_1bo1k")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 3.4124732)
-
-[node name="mesa_de_bar_003" type="MeshInstance3D" parent="PROP_balcao-modular/PROP_mesa" unique_id=2116659308]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.76155615, 0.37089288, 4)
-mesh = SubResource("ArrayMesh_4jrs7")
-
-[node name="mesa_de_bar_004" type="MeshInstance3D" parent="PROP_balcao-modular/PROP_mesa" unique_id=1999725314]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.761556, 0.37089288, 5)
-mesh = SubResource("ArrayMesh_4jrs7")
-
-[node name="mesa_de_bar_005" type="MeshInstance3D" parent="PROP_balcao-modular/PROP_mesa" unique_id=1070235781]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.761556, 0.37089288, 1)
-mesh = SubResource("ArrayMesh_4jrs7")
-
 [node name="PROP_cadeira" parent="PROP_balcao-modular" unique_id=1872401475 instance=ExtResource("13_hkskg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7692857, 0, 3.6608047)
 
+[node name="Cube_002" parent="PROP_balcao-modular/PROP_cadeira" index="0" unique_id=1788279247]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.209522, 0.40248626, -0.85607815)
+surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
+
 [node name="Cube_003" type="MeshInstance3D" parent="PROP_balcao-modular/PROP_cadeira" unique_id=1364449215]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000116586685, 0.40248626, 4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.81516266, 0.4024858, 2.8093648)
 mesh = SubResource("ArrayMesh_5518m")
+surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
 [node name="Cube_004" type="MeshInstance3D" parent="PROP_balcao-modular/PROP_cadeira" unique_id=338259683]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9998834, 0.40248626, 3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.7230053, 0.40248626, 2.1457052)
 mesh = SubResource("ArrayMesh_5518m")
+surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
 [node name="Cube_005" type="MeshInstance3D" parent="PROP_balcao-modular/PROP_cadeira" unique_id=451463082]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9998834, 0.40248626, -1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.3321247, 0.40248626, -1.8985757)
 mesh = SubResource("ArrayMesh_5518m")
+surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
 [node name="Cube_006" type="MeshInstance3D" parent="PROP_balcao-modular/PROP_cadeira" unique_id=987945672]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.8595057, 0.40248626, -0.24830985)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.1917467, 0.40248626, -1.1468855)
 mesh = SubResource("ArrayMesh_5518m")
+surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
 [node name="Cube_015" type="MeshInstance3D" parent="PROP_balcao-modular/PROP_cadeira" unique_id=2124126725]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.8595057, 0.40248626, 3.7516904)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.5826273, 0.40248626, 2.8973956)
 mesh = SubResource("ArrayMesh_5518m")
+surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
 [node name="Cube_016" type="MeshInstance3D" parent="PROP_balcao-modular/PROP_cadeira" unique_id=1037005382]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.85950565, 0.40248626, 4.7516904)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.6747849, 0.4024858, 3.578165)
 mesh = SubResource("ArrayMesh_5518m")
+surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
 [node name="Cube_017" type="MeshInstance3D" parent="PROP_balcao-modular/PROP_cadeira" unique_id=563797057]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.85950565, 0.40248626, 0.7516904)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.0691442, 0.40248626, -0.10438776)
 mesh = SubResource("ArrayMesh_5518m")
+surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
 [node name="Cube_007" type="MeshInstance3D" parent="PROP_balcao-modular/PROP_cadeira" unique_id=1764192205]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -3.9980235, 0.40248626, 0.5561874)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.330264, 0.40248626, -0.34238827)
 mesh = SubResource("ArrayMesh_5518m")
+surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
 [node name="Cube_009" type="MeshInstance3D" parent="PROP_balcao-modular/PROP_cadeira" unique_id=1456218675]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -3.9980235, 0.40248626, 4.556187)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.7211456, 0.40248626, 3.7018924)
 mesh = SubResource("ArrayMesh_5518m")
+surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
 [node name="Cube_010" type="MeshInstance3D" parent="PROP_balcao-modular/PROP_cadeira" unique_id=2036426242]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.00197649, 0.40248626, 5.556187)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.81330276, 0.4024858, 4.365552)
 mesh = SubResource("ArrayMesh_5518m")
+surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
 [node name="Cube_011" type="MeshInstance3D" parent="PROP_balcao-modular/PROP_cadeira" unique_id=43054391]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.00197649, 0.40248626, 1.5561872)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1.2076621, 0.40248626, 0.700109)
 mesh = SubResource("ArrayMesh_5518m")
+surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
 [node name="Cube_008" type="MeshInstance3D" parent="PROP_balcao-modular/PROP_cadeira" unique_id=708057536]
-transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -3.2136726, 0.40248626, -0.24410772)
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -3.5459137, 0.40248626, -1.1426834)
 mesh = SubResource("ArrayMesh_5518m")
+surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
 [node name="Cube_012" type="MeshInstance3D" parent="PROP_balcao-modular/PROP_cadeira" unique_id=1433551919]
-transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -3.2136726, 0.40248626, 3.7558923)
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -3.9367945, 0.40248626, 2.9015975)
 mesh = SubResource("ArrayMesh_5518m")
+surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
 [node name="Cube_013" type="MeshInstance3D" parent="PROP_balcao-modular/PROP_cadeira" unique_id=2017104713]
-transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 0.78632736, 0.40248626, 4.7558923)
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -0.036922216, 0.40248626, 3.580709)
 mesh = SubResource("ArrayMesh_5518m")
+surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
 [node name="Cube_014" type="MeshInstance3D" parent="PROP_balcao-modular/PROP_cadeira" unique_id=1857699723]
-transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 0.78632736, 0.40248626, 0.7558923)
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -0.42331123, 0.40248626, -0.10018587)
 mesh = SubResource("ArrayMesh_5518m")
+surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
 [node name="PROP_balcao_quina" parent="." unique_id=2111459800 instance=ExtResource("15_xdmf7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4124731)
 
-[node name="canto-balcao-esquerdo" parent="PROP_balcao_quina" index="0" unique_id=1457157806]
+[node name="canto-balcao-esquerdo" parent="PROP_balcao_quina" index="0" unique_id=1020461689]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.33, 0, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
-
-[node name="PROP_BKjunkebox" parent="." unique_id=2122004501 instance=ExtResource("16_c35lc")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.8806853, 0, 2.744285)
 
 [connection signal="pressed" from="MusicasJukebox/CarroselContainer/Left" to="MusicasJukebox/CarroselContainer" method="_on_left_pressed"]
 [connection signal="pressed" from="MusicasJukebox/CarroselContainer/Right" to="MusicasJukebox/CarroselContainer" method="_on_right_pressed"]
 
 [editable path="PROP_balcao-modular"]
-[editable path="PROP_balcao-modular/PROP_mesa"]
 [editable path="PROP_balcao-modular/PROP_cadeira"]
 [editable path="PROP_balcao_quina"]
