@@ -11,9 +11,13 @@ func _on_input_event(_camera: Node, event: InputEvent, _position: Vector3, _norm
 		abrir_minigame()
 
 func abrir_minigame():
+	var minigame_ui = get_node("/root/Node/MaquinaCachaca/AreaCopo/CanvasLayer")
+	
 	if minigame_ui:
 		minigame_ui.visible = true
-		minigame_ui.ativar_minigame()
+		
+		if minigame_ui and minigame_ui.has_method("ativar_minigame"):
+			minigame_ui.ativar_minigame()
 		print("Minigame do copo iniciado!")
 
 
