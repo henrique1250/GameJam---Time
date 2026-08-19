@@ -4,6 +4,8 @@ extends CanvasLayer
 @export var largura_medidor := 200
 @export var largura_alvo := 50
 
+@export var contador: Label
+
 var medidor_y := 0
 var direcao := 1
 var minigame_ativado := false
@@ -81,6 +83,8 @@ func sucesso():
 	resultado_label.text = "ACERTOU!"
 	resultado_label.modulate = Color.GREEN
 	resultado_label.visible = true
+	
+	contador.decrementar(5)
 	print("Acertou")
 	
 func falha():

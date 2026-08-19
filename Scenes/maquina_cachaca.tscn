@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://d1epopceaoh8b" path="res://Scenes/maquina_cachaca_script.gd" id="1_eidja"]
 [ext_resource type="Script" uid="uid://bw1507flepkgr" path="res://Scenes/copo_script.gd" id="2_ex42q"]
 [ext_resource type="Script" uid="uid://dwaimgshk28xs" path="res://Scenes/minigame_cachaca.gd" id="2_fjlne"]
+[ext_resource type="Script" uid="uid://brkienvq8h2uo" path="res://Scenes/meta_counter_script.gd" id="4_nwq4d"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_racnl"]
 
@@ -39,8 +40,9 @@ mesh = SubResource("CylinderMesh_eidja")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.37342834, 0)
 shape = SubResource("CylinderShape3D_eidja")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="AreaCopo" unique_id=2056001843]
+[node name="CanvasLayer" type="CanvasLayer" parent="AreaCopo" unique_id=2056001843 node_paths=PackedStringArray("contador")]
 script = ExtResource("2_fjlne")
+contador = NodePath("../../Meta_UI/Control/Label")
 
 [node name="Panel" type="Panel" parent="AreaCopo/CanvasLayer" unique_id=864901916]
 offset_right = 40.0
@@ -54,8 +56,22 @@ color = Color(0, 1, 0, 1)
 [node name="Medidor" type="ColorRect" parent="AreaCopo/CanvasLayer" unique_id=1470527139]
 offset_right = 40.0
 offset_bottom = 40.0
-color = Color(1, 1, 0, 1)
 
 [node name="ResultadoLabel" type="Label" parent="AreaCopo/CanvasLayer" unique_id=1639414217]
 offset_right = 40.0
 offset_bottom = 23.0
+
+[node name="Meta_UI" type="CanvasLayer" parent="." unique_id=1266422636]
+
+[node name="Control" type="Control" parent="Meta_UI" unique_id=1845393078]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Meta_UI/Control" unique_id=2014142118]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+script = ExtResource("4_nwq4d")
