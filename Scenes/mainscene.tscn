@@ -476,7 +476,7 @@ scale = Vector2(0.8, 0.8)
 text = "ESCOLHER"
 
 [node name="Panel2" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1689214509]
-modulate = Color(1, 1, 1, 0.97065973)
+modulate = Color(1, 1, 1, 0.97093904)
 z_index = -1
 layout_mode = 0
 offset_left = 138.46854
@@ -496,7 +496,7 @@ scale = Vector2(0.8, 0.8)
 text = "ESCOLHER"
 
 [node name="Panel3" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=884635700]
-modulate = Color(1, 1, 1, 0.94131947)
+modulate = Color(1, 1, 1, 0.9418781)
 z_index = -2
 layout_mode = 0
 offset_left = 278.46854
@@ -516,7 +516,7 @@ scale = Vector2(0.8, 0.8)
 text = "ESCOLHER"
 
 [node name="Panel4" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1704902061]
-modulate = Color(1, 1, 1, 0.91197914)
+modulate = Color(1, 1, 1, 0.9128171)
 z_index = -3
 layout_mode = 0
 offset_left = 418.46854
@@ -536,7 +536,7 @@ scale = Vector2(0.8, 0.8)
 text = "ESCOLHER"
 
 [node name="Panel5" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1852349736]
-modulate = Color(1, 1, 1, 0.8826389)
+modulate = Color(1, 1, 1, 0.88375616)
 z_index = -4
 layout_mode = 0
 offset_left = 558.4685
@@ -556,7 +556,7 @@ scale = Vector2(0.8, 0.8)
 text = "ESCOLHER"
 
 [node name="Panel6" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=808843665]
-modulate = Color(1, 1, 1, 0.8826389)
+modulate = Color(1, 1, 1, 0.88375616)
 z_index = -5
 layout_mode = 0
 offset_left = 698.4685
