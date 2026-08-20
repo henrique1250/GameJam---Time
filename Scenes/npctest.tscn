@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://dwxao37vt1t75"]
+[gd_scene format=3 uid="uid://c2jqu2mmho3bo"]
 
 [ext_resource type="PackedScene" uid="uid://btlivjxw3otfg" path="res://models/Rembot_NPC.glb" id="1_tenxl"]
-[ext_resource type="Script" uid="uid://cw84l15erg43s" path="res://Scripts/npcgeneric.gd" id="1_xedfs"]
+[ext_resource type="Script" path="res://Scripts/npcgeneric.gd" id="1_xedfs"]
 [ext_resource type="Texture2D" uid="uid://gf1bwe11aowa" path="res://models/npc_manager_skin.png" id="2_hlu4b"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xedfs"]
@@ -19,10 +19,10 @@ script = ExtResource("1_xedfs")
 [node name="Rembot_NPC" parent="." unique_id=161683718 instance=ExtResource("1_tenxl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.049472094)
 
-[node name="NPC_MAN_FAT" parent="Rembot_NPC" index="0" unique_id=1224490715]
+[node name="NPC_MAN_FAT" parent="Rembot_NPC" index="0" unique_id=102182759]
 transform = Transform3D(-4.3711387e-10, 0.01, -3.5762788e-09, 0, -3.5762788e-09, -0.01, -0.01, -4.3711387e-10, 1.5632411e-16, 0, 0, 0)
 
-[node name="Skeleton3D" parent="Rembot_NPC/NPC_MAN_FAT" index="0" unique_id=1260469991]
+[node name="Skeleton3D" parent="Rembot_NPC/NPC_MAN_FAT" index="0" unique_id=174528181]
 bones/0/position = Vector3(0.25485885, 0.10316253, -101.6469)
 bones/0/rotation = Quaternion(-0.7278235, -0.053503852, 0.012306299, 0.68356335)
 bones/1/rotation = Quaternion(0.0064332103, 0.012255828, 0.022368012, 0.99965405)
@@ -59,7 +59,7 @@ bones/23/position = Vector3(-4.4423934e-05, 13.2763405, -2.113557e-06)
 bones/23/rotation = Quaternion(0.39030123, 0.022531232, -0.017990103, 0.92023563)
 bones/24/position = Vector3(-2.276478e-05, 5.24915, 1.3858298e-06)
 
-[node name="humanoid" parent="Rembot_NPC/NPC_MAN_FAT/Skeleton3D" index="0" unique_id=1835627230]
+[node name="humanoid" parent="Rembot_NPC/NPC_MAN_FAT/Skeleton3D" index="0" unique_id=642773002]
 material_override = SubResource("StandardMaterial3D_xedfs")
 blend_shapes/Angry = -0.49559
 blend_shapes/FAT = 0.73529
@@ -67,7 +67,7 @@ blend_shapes/Boobs = 0.17
 blend_shapes/Pregnant = -0.19118
 blend_shapes/Forehead = -0.45206
 
-[node name="AnimationPlayer" parent="Rembot_NPC" index="1" unique_id=1634125555]
+[node name="AnimationPlayer" parent="Rembot_NPC" index="1" unique_id=1045994651]
 autoplay = &"idle_1"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2047326653]
