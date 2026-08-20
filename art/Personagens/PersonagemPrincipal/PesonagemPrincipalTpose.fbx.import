@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://btlivjxw3otfg"
-path="res://.godot/imported/Rembot_NPC.glb-f2203ae0a1af868551ad87e2223cdd3e.scn"
+uid="uid://dyk7s0wyqbbdu"
+path="res://.godot/imported/PesonagemPrincipalTpose.fbx-aec428c59241a29b77290784d431049e.scn"
 
 [deps]
 
-source_file="res://models/Rembot_NPC.glb"
-dest_files=["res://.godot/imported/Rembot_NPC.glb-f2203ae0a1af868551ad87e2223cdd3e.scn"]
+source_file="res://art/Personagens/PersonagemPrincipal/PesonagemPrincipalTpose.fbx"
+dest_files=["res://.godot/imported/PesonagemPrincipalTpose.fbx-aec428c59241a29b77290784d431049e.scn"]
 
 [params]
 
@@ -30,7 +30,7 @@ meshes/force_disable_compression=false
 skins/use_named_skins=true
 animation/import=true
 animation/fps=30
-animation/trimming=false
+animation/trimming=true
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
@@ -38,5 +38,7 @@ materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
 _subresources={}
-gltf/naming_version=2
-gltf/embedded_image_handling=1
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1
+fbx/naming_version=2

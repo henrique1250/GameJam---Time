@@ -51,11 +51,9 @@ albedo_color = Color(0.8613993, 0.19650537, 0.2333026, 1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_7i7ve"]
 size = Vector3(0.98828125, 1, 0.86517334)
 
-[node name="Jukebox" type="Area3D" unique_id=1150229189 node_paths=PackedStringArray("marker_foco", "audio_player")]
+[node name="Jukebox" type="Area3D" unique_id=1150229189 node_paths=PackedStringArray("marker_foco")]
 script = ExtResource("1_7i7ve")
 marker_foco = NodePath("Marker3D")
-musicas = Array[AudioStream]([ExtResource("2_4tsl3"), ExtResource("3_xu3ex"), ExtResource("4_4n6x2")])
-audio_player = NodePath("AudioStreamPlayer")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=182017174]
 mesh = SubResource("ArrayMesh_ddfc1")
@@ -67,5 +65,3 @@ shape = SubResource("BoxShape3D_7i7ve")
 
 [node name="Marker3D" type="Marker3D" parent="." unique_id=756833660]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4387698, 1.5096095, 0)
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=735909846]
