@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://c47p4vvmbt2q1"]
+
+[ext_resource type="Script" uid="uid://d1epopceaoh8b" path="res://Scenes/maquina_cachaca_script.gd" id="1_eidja"]
+[ext_resource type="Script" uid="uid://bw1507flepkgr" path="res://Scenes/copo_script.gd" id="2_ex42q"]
+[ext_resource type="Script" uid="uid://dwaimgshk28xs" path="res://Scenes/minigame_cachaca.gd" id="2_fjlne"]
+[ext_resource type="Script" uid="uid://brkienvq8h2uo" path="res://Scenes/meta_counter_script.gd" id="4_nwq4d"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_racnl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eidja"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_eidja"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_eidja"]
+height = 0.40567017
+radius = 0.19189453
+
+[node name="Node3D" type="Node3D" unique_id=994132397]
+
+[node name="Maquina" type="Area3D" parent="." unique_id=63845631 node_paths=PackedStringArray("objeto_para_mostrar")]
+script = ExtResource("1_eidja")
+objeto_para_mostrar = NodePath("../AreaCopo/Copo")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Maquina" unique_id=1421443986]
+mesh = SubResource("BoxMesh_racnl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Maquina" unique_id=1061800466]
+shape = SubResource("BoxShape3D_eidja")
+
+[node name="AreaCopo" type="Area3D" parent="." unique_id=1068819746 node_paths=PackedStringArray("minigame_ui")]
+transform = Transform3D(1, 0, 0, 0, 1.183, 0, 0, 0, 1.183, 4.085107, -0.01586032, 0)
+script = ExtResource("2_ex42q")
+minigame_ui = NodePath("CanvasLayer")
+
+[node name="Copo" type="MeshInstance3D" parent="AreaCopo" unique_id=1325337631]
+transform = Transform3D(0.3, 0, 0, 0, 0.2, 0, 0, 0, 0.3, 0.016878128, -0.37342256, 0)
+mesh = SubResource("CylinderMesh_eidja")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AreaCopo" unique_id=1248607497]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.37342834, 0)
+shape = SubResource("CylinderShape3D_eidja")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="AreaCopo" unique_id=2056001843 node_paths=PackedStringArray("contador")]
+script = ExtResource("2_fjlne")
+contador = NodePath("../../Meta_UI/Control/Label")
+
+[node name="Panel" type="Panel" parent="AreaCopo/CanvasLayer" unique_id=864901916]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Alvo" type="ColorRect" parent="AreaCopo/CanvasLayer" unique_id=2022792114]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0, 1, 0, 1)
+
+[node name="Medidor" type="ColorRect" parent="AreaCopo/CanvasLayer" unique_id=1470527139]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ResultadoLabel" type="Label" parent="AreaCopo/CanvasLayer" unique_id=1639414217]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Meta_UI" type="CanvasLayer" parent="." unique_id=1266422636]
+
+[node name="Control" type="Control" parent="Meta_UI" unique_id=1845393078]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Meta_UI/Control" unique_id=2014142118]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+script = ExtResource("4_nwq4d")
