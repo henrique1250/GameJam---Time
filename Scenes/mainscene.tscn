@@ -3,24 +3,21 @@
 [ext_resource type="PackedScene" uid="uid://14035e2f4dy8" path="res://Scenes/balcao.tscn" id="2_tcjsh"]
 [ext_resource type="PackedScene" uid="uid://cws1nqstyrdbt" path="res://Scenes/mesa.tscn" id="3_a3v7h"]
 [ext_resource type="PackedScene" uid="uid://c2cirktl8j3ha" path="res://Scenes/sinuquinha.tscn" id="4_3p0ik"]
-[ext_resource type="PackedScene" uid="uid://bgpqkfmxj2qd0" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
-
+[ext_resource type="PackedScene" uid="uid://bam4d77bw388b" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
 [ext_resource type="Script" path="res://Scenes/camera.gd" id="6_c5s60"]
 [ext_resource type="PackedScene" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
-[ext_resource type="Texture2D" uid="uid://cty7ju75qem45" path="res://models/grid_grey.png" id="8_8ngks"]
 [ext_resource type="Script" uid="uid://88v701y7yngp" path="res://Scenes/carrousel_container.gd" id="8_gjgc6"]
-[ext_resource type="PackedScene" path="res://Scenes/npctest.tscn" id="9_1o021"]
-
-[ext_resource type="Script" uid="uid://balnxmcje74xp" path="res://Scenes/camera.gd" id="6_c5s60"]
-[ext_resource type="PackedScene" uid="uid://i5yqwk0mold5" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
-[ext_resource type="Script" uid="uid://88v701y7yngp" path="res://Scenes/carrousel_container.gd" id="8_gjgc6"]
+[ext_resource type="PackedScene" uid="uid://dwxao37vt1t75" path="res://Scenes/npctest.tscn" id="9_1o021"]
 [ext_resource type="PackedScene" uid="uid://bdjtk7koqgec8" path="res://art/assets/PROP_balcao-modular.glb" id="9_tf7l5"]
 [ext_resource type="Texture2D" uid="uid://cx13svo4nwpdl" path="res://art/assets/PROP_balcao-modular_balcao Set.png" id="10_3swae"]
-[ext_resource type="Shader" uid="uid://q3efolm48w4g" path="res://art/shades/outineassets.gdshader" id="10_tf7l5"]
+[ext_resource type="Shader" path="res://art/shades/outineassets.gdshader" id="10_tf7l5"]
 [ext_resource type="PackedScene" uid="uid://di20lfxa62dov" path="res://art/assets/PROP_cadeira.glb" id="13_hkskg"]
 [ext_resource type="Texture2D" uid="uid://bg7ypwmvduula" path="res://art/assets/PROP_cadeira_Gemini_Generated_Image_2460yx2460yx2460.png" id="14_44wyh"]
 [ext_resource type="PackedScene" uid="uid://bru750wppf55y" path="res://art/assets/PROP_balcao_quina.glb" id="15_xdmf7"]
 
+[sub_resource type="NavigationMesh" id="NavigationMesh_dijpm"]
+vertices = PackedVector3Array(-6.31231, 0.5232898, -4.7700353, -6.31231, 0.5232898, 10.479965, 7.68769, 0.5232898, 10.479965, 7.68769, 0.5232898, -4.7700353)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1)]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_nn0u8"]
 
@@ -227,7 +224,10 @@ shadow_mesh = SubResource("ArrayMesh_arpjg")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1703912396]
 transform = Transform3D(1, 0, 0, 0, 0.6178733, 0.78627765, 0, -0.78627765, 0.6178733, 1.3005886, 5.305082, 6.495014)
 
-[node name="Chao" type="MeshInstance3D" parent="." unique_id=1044769858]
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=73148972]
+navigation_mesh = SubResource("NavigationMesh_dijpm")
+
+[node name="Chao" type="MeshInstance3D" parent="NavigationRegion3D" unique_id=1044769858]
 transform = Transform3D(7.5053697, 0, 0, 0, 1.0020467, 0, 0, 0, 8.084312, 0.6930596, 0.0232898, 2.8142772)
 mesh = SubResource("PlaneMesh_nn0u8")
 surface_material_override/0 = SubResource("StandardMaterial3D_1o021")
@@ -241,7 +241,7 @@ script = ExtResource("6_c5s60")
 marker_geral = NodePath("../Marker3D")
 
 [node name="Marker3D" type="Marker3D" parent="Markers" unique_id=1466360193]
-transform = Transform3D(-0.9999254, 0, 0.012216892, 0, 1, 0, -0.012216892, 0, -0.9999254, -0.4194442, 1.5702965, -3.2415903)
+transform = Transform3D(-0.9999254, 0, 0.012216892, 0, 1, 0, -0.012216892, 0, -0.9999254, -0.4194442, 2.6603856, -3.2415903)
 
 [node name="Sinuca" type="Marker3D" parent="Markers" unique_id=516258072]
 transform = Transform3D(-0.09118881, 0, -0.99583346, 0, 0.9999999, 0, 0.9958335, 0, -0.0911888, 2.636519, 1.0654941, 2.3090248)
@@ -562,11 +562,7 @@ marker_foco = NodePath("../../Markers/Jukebox")
 
 [node name="CarroselContainer" type="Node2D" parent="MusicasJukebox" unique_id=845093110 node_paths=PackedStringArray("position_offset_node")]
 visible = false
-
-position = Vector2(660, 166)
-
 position = Vector2(600, 200)
-
 script = ExtResource("8_gjgc6")
 position_offset_node = NodePath("Control")
 
@@ -588,7 +584,7 @@ offset_bottom = 77.0
 pivot_offset = Vector2(60, 80)
 
 [node name="Panel2" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1689214509]
-modulate = Color(1, 1, 1, 0.983)
+modulate = Color(1, 1, 1, 0.97291666)
 z_index = -1
 layout_mode = 0
 offset_left = 138.46854
@@ -599,7 +595,7 @@ scale = Vector2(0.75, 0.75)
 pivot_offset = Vector2(60, 80)
 
 [node name="Panel3" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=884635700]
-modulate = Color(1, 1, 1, 0.96599996)
+modulate = Color(1, 1, 1, 0.9458333)
 z_index = -2
 layout_mode = 0
 offset_left = 278.46854
@@ -610,7 +606,7 @@ scale = Vector2(0.5, 0.5)
 pivot_offset = Vector2(60, 80)
 
 [node name="Panel4" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1704902061]
-modulate = Color(1, 1, 1, 0.94899994)
+modulate = Color(1, 1, 1, 0.91875)
 z_index = -3
 layout_mode = 0
 offset_left = 418.46854
@@ -621,7 +617,7 @@ scale = Vector2(0.25, 0.25)
 pivot_offset = Vector2(59.999985, 80)
 
 [node name="Panel5" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1852349736]
-modulate = Color(1, 1, 1, 0.93199986)
+modulate = Color(1, 1, 1, 0.89166665)
 z_index = -4
 layout_mode = 0
 offset_left = 558.4685
@@ -632,7 +628,7 @@ scale = Vector2(0.1, 0.1)
 pivot_offset = Vector2(60, 80)
 
 [node name="Panel6" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=808843665]
-modulate = Color(1, 1, 1, 0.93199986)
+modulate = Color(1, 1, 1, 0.89166665)
 z_index = -5
 layout_mode = 0
 offset_left = 698.4685
@@ -760,19 +756,19 @@ surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
 [node name="PROP_balcao-modular" parent="." unique_id=509138039 instance=ExtResource("9_tf7l5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4124731)
 
-[node name="canto-balcao" parent="PROP_balcao-modular" index="0" unique_id=583987978]
+[node name="canto-balcao" parent="PROP_balcao-modular" index="0" unique_id=2037629724]
 transform = Transform3D(1.1116476, 0, 0, 0, 1.1116476, 0, 0, 0, 1.1116476, 3.33, 0.539, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="ponta-esquerda-balcao" parent="PROP_balcao-modular" index="1" unique_id=2086773072]
+[node name="ponta-esquerda-balcao" parent="PROP_balcao-modular" index="1" unique_id=481553875]
 transform = Transform3D(-4.859166e-08, 0, -1.1116476, 0, 1.1116476, 0, 1.1116476, 0, -4.859166e-08, -3.44, 0.539, -1.995)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="ponta-direita-balcao" parent="PROP_balcao-modular" index="2" unique_id=282421442]
+[node name="ponta-direita-balcao" parent="PROP_balcao-modular" index="2" unique_id=831062229]
 transform = Transform3D(1.1116476, 0, 0, 0, 1.1116476, 0, 0, 0, 1.1116476, 0, 0.539, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="meio-balcao" parent="PROP_balcao-modular" index="3" unique_id=1539447607]
+[node name="meio-balcao" parent="PROP_balcao-modular" index="3" unique_id=912588113]
 transform = Transform3D(-4.859166e-08, 0, -1.1116476, 0, 1.1116476, 0, 1.1116476, 0, -4.859166e-08, -3.44, 0.539, -0.885)
 rotation_order = 0
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
@@ -811,7 +807,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 [node name="PROP_cadeira" parent="PROP_balcao-modular" unique_id=1872401475 instance=ExtResource("13_hkskg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7692857, 0, 3.6608047)
 
-[node name="Cube_002" parent="PROP_balcao-modular/PROP_cadeira" index="0" unique_id=1728101013]
+[node name="Cube_002" parent="PROP_balcao-modular/PROP_cadeira" index="0" unique_id=39237107]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.209522, 0.40248626, -0.85607815)
 surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
@@ -893,9 +889,33 @@ surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 [node name="PROP_balcao_quina" parent="." unique_id=2111459800 instance=ExtResource("15_xdmf7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4124731)
 
-[node name="canto-balcao-esquerdo" parent="PROP_balcao_quina" index="0" unique_id=1401271767]
+[node name="canto-balcao-esquerdo" parent="PROP_balcao_quina" index="0" unique_id=1055410311]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.33, 0, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
+
+[node name="MarkerNPC" type="Node" parent="." unique_id=1464157688]
+
+[node name="Npctest" parent="MarkerNPC" unique_id=1672364990 node_paths=PackedStringArray("destination_npc") instance=ExtResource("9_1o021")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02780056, 0, 9.223218)
+destination_npc = [NodePath("../Marker3D"), NodePath("../Marker3D2"), NodePath("../Marker3D3"), NodePath("../Marker3D4"), NodePath("../Marker3D5"), NodePath("../Marker3D6")]
+
+[node name="Marker3D" type="Marker3D" parent="MarkerNPC" unique_id=1560463579]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2928872, 8.0428095)
+
+[node name="Marker3D2" type="Marker3D" parent="MarkerNPC" unique_id=348902130]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.396594, 0.2928872, 8.0428095)
+
+[node name="Marker3D3" type="Marker3D" parent="MarkerNPC" unique_id=222394058]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.396594, 0.2928872, 4.3359413)
+
+[node name="Marker3D4" type="Marker3D" parent="MarkerNPC" unique_id=811583189]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.396594, 0.2928872, -0.119095325)
+
+[node name="Marker3D5" type="Marker3D" parent="MarkerNPC" unique_id=1901556967]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.63617563, 0.2928872, -0.119095325)
+
+[node name="Marker3D6" type="Marker3D" parent="MarkerNPC" unique_id=1914274472]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.625946, 0.2928872, 3.0103922)
 
 [connection signal="pressed" from="MusicasJukebox/CarroselContainer/Left" to="MusicasJukebox/CarroselContainer" method="_on_left_pressed"]
 [connection signal="pressed" from="MusicasJukebox/CarroselContainer/Right" to="MusicasJukebox/CarroselContainer" method="_on_right_pressed"]
