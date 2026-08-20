@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://bgpqkfmxj2qd0" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
 [ext_resource type="Script" uid="uid://balnxmcje74xp" path="res://Scenes/camera.gd" id="6_c5s60"]
 [ext_resource type="PackedScene" uid="uid://i5yqwk0mold5" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
-[ext_resource type="PackedScene" uid="uid://c47p4vvmbt2q1" path="res://Scenes/maquina_cachaca.tscn" id="8_8ngks"]
 [ext_resource type="Script" uid="uid://88v701y7yngp" path="res://Scenes/carrousel_container.gd" id="8_gjgc6"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_nn0u8"]
@@ -421,7 +420,7 @@ offset_bottom = 77.0
 pivot_offset = Vector2(60, 80)
 
 [node name="Panel2" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1689214509]
-modulate = Color(1, 1, 1, 0.92915326)
+modulate = Color(1, 1, 1, 0.9046363)
 z_index = -1
 layout_mode = 0
 offset_left = 138.46854
@@ -432,7 +431,7 @@ scale = Vector2(0.75, 0.75)
 pivot_offset = Vector2(60, 80)
 
 [node name="Panel3" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=884635700]
-modulate = Color(1, 1, 1, 0.8583065)
+modulate = Color(1, 1, 1, 0.80927265)
 z_index = -2
 layout_mode = 0
 offset_left = 278.46854
@@ -443,7 +442,7 @@ scale = Vector2(0.5, 0.5)
 pivot_offset = Vector2(60, 80)
 
 [node name="Panel4" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1704902061]
-modulate = Color(1, 1, 1, 0.78745973)
+modulate = Color(1, 1, 1, 0.713909)
 z_index = -3
 layout_mode = 0
 offset_left = 418.46854
@@ -454,7 +453,7 @@ scale = Vector2(0.25, 0.25)
 pivot_offset = Vector2(59.999985, 80)
 
 [node name="Panel5" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1852349736]
-modulate = Color(1, 1, 1, 0.716613)
+modulate = Color(1, 1, 1, 0.61854535)
 z_index = -4
 layout_mode = 0
 offset_left = 558.4685
@@ -465,7 +464,7 @@ scale = Vector2(0.1, 0.1)
 pivot_offset = Vector2(60, 80)
 
 [node name="Panel6" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=808843665]
-modulate = Color(1, 1, 1, 0.716613)
+modulate = Color(1, 1, 1, 0.61854535)
 z_index = -5
 layout_mode = 0
 offset_left = 698.4685
@@ -590,9 +589,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
 transform = Transform3D(0.06847341, 0, 0, 0, 0.047, 0, 0, 0, 0.059, -5.0252867, 1.4410998, -0.650028)
 mesh = SubResource("CylinderMesh_bfwm2")
 surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
-
-[node name="MaquinaCachaca" parent="." unique_id=994132397 instance=ExtResource("8_8ngks")]
-transform = Transform3D(0.31006327, 0, 0, 0, 0.37752578, 0, 0, 0, 0.4260798, -1.3870196, 0.7345948, -1.4589765)
 
 [connection signal="pressed" from="MusicasJukebox/CarroselContainer/Left" to="MusicasJukebox/CarroselContainer" method="_on_left_pressed"]
 [connection signal="pressed" from="MusicasJukebox/CarroselContainer/Right" to="MusicasJukebox/CarroselContainer" method="_on_right_pressed"]
