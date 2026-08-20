@@ -3,12 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://14035e2f4dy8" path="res://Scenes/balcao.tscn" id="2_tcjsh"]
 [ext_resource type="PackedScene" uid="uid://cws1nqstyrdbt" path="res://Scenes/mesa.tscn" id="3_a3v7h"]
 [ext_resource type="PackedScene" uid="uid://c2cirktl8j3ha" path="res://Scenes/sinuquinha.tscn" id="4_3p0ik"]
-[ext_resource type="PackedScene" uid="uid://bam4d77bw388b" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
-[ext_resource type="Script" uid="uid://balnxmcje74xp" path="res://Scenes/camera.gd" id="6_c5s60"]
-[ext_resource type="PackedScene" uid="uid://i5yqwk0mold5" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
+[ext_resource type="PackedScene" uid="uid://bgpqkfmxj2qd0" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
+[ext_resource type="Script" path="res://Scenes/camera.gd" id="6_c5s60"]
+[ext_resource type="PackedScene" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
 [ext_resource type="Texture2D" uid="uid://cty7ju75qem45" path="res://models/grid_grey.png" id="8_8ngks"]
 [ext_resource type="Script" uid="uid://88v701y7yngp" path="res://Scenes/carrousel_container.gd" id="8_gjgc6"]
-[ext_resource type="PackedScene" uid="uid://dwxao37vt1t75" path="res://Scenes/npctest.tscn" id="9_1o021"]
+[ext_resource type="PackedScene" path="res://Scenes/npctest.tscn" id="9_1o021"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_1o021"]
 vertices = PackedVector3Array(1.4969912, 0.5489328, 3.3653078, 2.7469912, 0.5489328, 3.1153078, 2.7469912, 0.5489328, 2.8653078, 1.2469912, 0.5489328, 1.8653078, -3.2530088, 0.5489328, 1.8653078, -3.2530088, 0.5489328, 2.3653078, -2.0030088, 0.5489328, 2.3653078, -1.7530088, 0.5489328, 2.1153078, -1.0030088, 0.5489328, 3.1153078, -1.0030088, 0.5489328, 4.115308, -0.25300884, 0.5489328, 4.865308, 1.2469912, 0.5489328, 1.1153078, -0.50300884, 0.5489328, 0.8653078, 0.99699116, 0.5489328, 4.615308, -4.003009, 0.5489328, 1.1153078, -4.253009, 0.5489328, 3.8653078, -4.003009, 0.5489328, 0.3653078, -7.003009, 0.5489328, -2.8846922, -6.753009, 0.5489328, 3.8653078, -2.2530088, 0.5489328, -0.6346922, -2.2530088, 0.5489328, -2.8846922, -0.75300884, 0.5489328, 0.11530781, 2.2469912, 0.5489328, -0.13469219, 3.2469912, 0.5489328, -0.13469219, 8.996991, 0.5489328, 1.3653078, 8.996991, 0.5489328, -2.8846922, 4.496991, 0.5489328, 1.3653078, 9.996991, 0.5489328, 3.1153078, 9.996991, 0.5489328, 2.1153078, 9.246991, 0.5489328, 2.1153078, 8.996991, 0.5489328, 3.3653078, 4.246991, 0.5489328, 3.8653078, 4.246991, 0.5489328, 4.865308, 8.996991, 0.5489328, 6.365308, 1.7469912, 0.5489328, 6.865308, 0.99699116, 0.5489328, 6.865308, 0.99699116, 0.5489328, 8.115308, 3.9969912, 0.5489328, 2.3653078, 2.9969912, 0.5489328, 5.865308, 9.996991, 0.5489328, 8.115308, 1.9969912, 0.5489328, 5.865308, 9.996991, 0.5489328, 6.615308, -3.0030088, 1.2989328, 3.6153078, -2.7530088, 1.2989328, 4.115308, -2.2530088, 1.0489328, 3.8653078, -2.5030088, 1.2989328, 3.3653078, -2.0030088, 0.5489328, 5.115308, -0.25300884, 0.5489328, 6.615308, -6.753009, 0.5489328, 6.365308, -7.753009, 0.5489328, 6.615308, -7.753009, 0.5489328, 8.115308, -3.2530088, 0.5489328, 5.115308)
@@ -443,6 +443,7 @@ marker_foco = NodePath("../../Markers da Camera/Jukebox")
 [node name="MusicasJukebox" type="CanvasLayer" parent="." unique_id=2131329726]
 
 [node name="CarroselContainer" type="Node2D" parent="MusicasJukebox" unique_id=845093110 node_paths=PackedStringArray("position_offset_node")]
+visible = false
 position = Vector2(660, 166)
 script = ExtResource("8_gjgc6")
 follow_button_focus = true
