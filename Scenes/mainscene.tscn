@@ -4,6 +4,13 @@
 [ext_resource type="PackedScene" uid="uid://cws1nqstyrdbt" path="res://Scenes/mesa.tscn" id="3_a3v7h"]
 [ext_resource type="PackedScene" uid="uid://c2cirktl8j3ha" path="res://Scenes/sinuquinha.tscn" id="4_3p0ik"]
 [ext_resource type="PackedScene" uid="uid://bgpqkfmxj2qd0" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
+
+[ext_resource type="Script" path="res://Scenes/camera.gd" id="6_c5s60"]
+[ext_resource type="PackedScene" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
+[ext_resource type="Texture2D" uid="uid://cty7ju75qem45" path="res://models/grid_grey.png" id="8_8ngks"]
+[ext_resource type="Script" uid="uid://88v701y7yngp" path="res://Scenes/carrousel_container.gd" id="8_gjgc6"]
+[ext_resource type="PackedScene" path="res://Scenes/npctest.tscn" id="9_1o021"]
+
 [ext_resource type="Script" uid="uid://balnxmcje74xp" path="res://Scenes/camera.gd" id="6_c5s60"]
 [ext_resource type="PackedScene" uid="uid://i5yqwk0mold5" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
 [ext_resource type="Script" uid="uid://88v701y7yngp" path="res://Scenes/carrousel_container.gd" id="8_gjgc6"]
@@ -13,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://di20lfxa62dov" path="res://art/assets/PROP_cadeira.glb" id="13_hkskg"]
 [ext_resource type="Texture2D" uid="uid://bg7ypwmvduula" path="res://art/assets/PROP_cadeira_Gemini_Generated_Image_2460yx2460yx2460.png" id="14_44wyh"]
 [ext_resource type="PackedScene" uid="uid://bru750wppf55y" path="res://art/assets/PROP_balcao_quina.glb" id="15_xdmf7"]
+
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_nn0u8"]
 
@@ -554,7 +562,11 @@ marker_foco = NodePath("../../Markers/Jukebox")
 
 [node name="CarroselContainer" type="Node2D" parent="MusicasJukebox" unique_id=845093110 node_paths=PackedStringArray("position_offset_node")]
 visible = false
+
+position = Vector2(660, 166)
+
 position = Vector2(600, 200)
+
 script = ExtResource("8_gjgc6")
 position_offset_node = NodePath("Control")
 
