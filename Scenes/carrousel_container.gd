@@ -2,6 +2,8 @@
 extends Node2D
 class_name CarroselContainer
 
+signal song_selected(index: int)
+
 @export var spacing: float = 20.0
 
 @export var wraparound_enabled:bool = false
@@ -17,6 +19,9 @@ class_name CarroselContainer
 @export var follow_button_focus: bool = false
 
 @export var position_offset_node: Control = null
+
+
+
 
 func _enter_tree() -> void:
 	add_to_group("jukebox_carrossel") #criando um grupo para utilizar no script da jukebox
@@ -86,3 +91,7 @@ func _on_left_pressed() -> void:
 
 func _on_right_pressed() -> void:
 	_right()
+
+
+func _on_button_pressed() -> void:
+	song_selected.emit(select_index)
