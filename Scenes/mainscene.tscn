@@ -3,26 +3,23 @@
 [ext_resource type="PackedScene" uid="uid://14035e2f4dy8" path="res://Scenes/balcao.tscn" id="2_tcjsh"]
 [ext_resource type="PackedScene" uid="uid://cws1nqstyrdbt" path="res://Scenes/mesa.tscn" id="3_a3v7h"]
 [ext_resource type="PackedScene" uid="uid://c2cirktl8j3ha" path="res://Scenes/sinuquinha.tscn" id="4_3p0ik"]
-[ext_resource type="PackedScene" uid="uid://bam4d77bw388b" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
+[ext_resource type="PackedScene" uid="uid://bgpqkfmxj2qd0" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
 [ext_resource type="Script" uid="uid://balnxmcje74xp" path="res://Scenes/camera.gd" id="6_c5s60"]
 [ext_resource type="PackedScene" uid="uid://i5yqwk0mold5" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
-[ext_resource type="Texture2D" uid="uid://cty7ju75qem45" path="res://models/grid_grey.png" id="8_8ngks"]
 [ext_resource type="Script" uid="uid://88v701y7yngp" path="res://Scenes/carrousel_container.gd" id="8_gjgc6"]
-[ext_resource type="PackedScene" uid="uid://dwxao37vt1t75" path="res://Scenes/npctest.tscn" id="9_1o021"]
+[ext_resource type="PackedScene" uid="uid://bdjtk7koqgec8" path="res://art/assets/PROP_balcao-modular.glb" id="9_tf7l5"]
+[ext_resource type="Texture2D" uid="uid://cx13svo4nwpdl" path="res://art/assets/PROP_balcao-modular_balcao Set.png" id="10_3swae"]
+[ext_resource type="Shader" uid="uid://q3efolm48w4g" path="res://art/shades/outineassets.gdshader" id="10_tf7l5"]
+[ext_resource type="PackedScene" uid="uid://di20lfxa62dov" path="res://art/assets/PROP_cadeira.glb" id="13_hkskg"]
+[ext_resource type="Texture2D" uid="uid://bg7ypwmvduula" path="res://art/assets/PROP_cadeira_Gemini_Generated_Image_2460yx2460yx2460.png" id="14_44wyh"]
+[ext_resource type="PackedScene" uid="uid://bru750wppf55y" path="res://art/assets/PROP_balcao_quina.glb" id="15_xdmf7"]
 
-[sub_resource type="NavigationMesh" id="NavigationMesh_1o021"]
-vertices = PackedVector3Array(1.4969912, 0.5489328, 3.3653078, 2.7469912, 0.5489328, 3.1153078, 2.7469912, 0.5489328, 2.8653078, 1.2469912, 0.5489328, 1.8653078, -3.2530088, 0.5489328, 1.8653078, -3.2530088, 0.5489328, 2.3653078, -2.0030088, 0.5489328, 2.3653078, -1.7530088, 0.5489328, 2.1153078, -1.0030088, 0.5489328, 3.1153078, -1.0030088, 0.5489328, 4.115308, -0.25300884, 0.5489328, 4.865308, 1.2469912, 0.5489328, 1.1153078, -0.50300884, 0.5489328, 0.8653078, 0.99699116, 0.5489328, 4.615308, -4.003009, 0.5489328, 1.1153078, -4.253009, 0.5489328, 3.8653078, -4.003009, 0.5489328, 0.3653078, -7.003009, 0.5489328, -2.8846922, -6.753009, 0.5489328, 3.8653078, -2.2530088, 0.5489328, -0.6346922, -2.2530088, 0.5489328, -2.8846922, -0.75300884, 0.5489328, 0.11530781, 2.2469912, 0.5489328, -0.13469219, 3.2469912, 0.5489328, -0.13469219, 8.996991, 0.5489328, 1.3653078, 8.996991, 0.5489328, -2.8846922, 4.496991, 0.5489328, 1.3653078, 9.996991, 0.5489328, 3.1153078, 9.996991, 0.5489328, 2.1153078, 9.246991, 0.5489328, 2.1153078, 8.996991, 0.5489328, 3.3653078, 4.246991, 0.5489328, 3.8653078, 4.246991, 0.5489328, 4.865308, 8.996991, 0.5489328, 6.365308, 1.7469912, 0.5489328, 6.865308, 0.99699116, 0.5489328, 6.865308, 0.99699116, 0.5489328, 8.115308, 3.9969912, 0.5489328, 2.3653078, 2.9969912, 0.5489328, 5.865308, 9.996991, 0.5489328, 8.115308, 1.9969912, 0.5489328, 5.865308, 9.996991, 0.5489328, 6.615308, -3.0030088, 1.2989328, 3.6153078, -2.7530088, 1.2989328, 4.115308, -2.2530088, 1.0489328, 3.8653078, -2.5030088, 1.2989328, 3.3653078, -2.0030088, 0.5489328, 5.115308, -0.25300884, 0.5489328, 6.615308, -6.753009, 0.5489328, 6.365308, -7.753009, 0.5489328, 6.615308, -7.753009, 0.5489328, 8.115308, -3.2530088, 0.5489328, 5.115308)
-polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Array(5, 4, 6), PackedInt32Array(6, 4, 7), PackedInt32Array(10, 9, 8), PackedInt32Array(12, 11, 3), PackedInt32Array(13, 10, 0), PackedInt32Array(0, 10, 8), PackedInt32Array(0, 8, 3), PackedInt32Array(3, 8, 12), PackedInt32Array(4, 5, 14), PackedInt32Array(14, 5, 15), PackedInt32Array(14, 15, 16), PackedInt32Array(16, 15, 18), PackedInt32Array(16, 18, 17), PackedInt32Array(19, 16, 20), PackedInt32Array(20, 16, 17), PackedInt32Array(7, 12, 8), PackedInt32Array(7, 8, 6), PackedInt32Array(12, 21, 11), PackedInt32Array(11, 21, 22), PackedInt32Array(23, 22, 20), PackedInt32Array(19, 20, 21), PackedInt32Array(21, 20, 22), PackedInt32Array(24, 23, 25), PackedInt32Array(25, 23, 20), PackedInt32Array(24, 26, 23), PackedInt32Array(28, 27, 29), PackedInt32Array(29, 27, 30), PackedInt32Array(31, 26, 32), PackedInt32Array(32, 26, 30), PackedInt32Array(32, 30, 33), PackedInt32Array(36, 35, 34), PackedInt32Array(2, 37, 1), PackedInt32Array(1, 37, 31), PackedInt32Array(38, 32, 36), PackedInt32Array(36, 32, 33), PackedInt32Array(36, 33, 39), PackedInt32Array(34, 40, 38), PackedInt32Array(29, 30, 24), PackedInt32Array(24, 30, 26), PackedInt32Array(33, 41, 39), PackedInt32Array(31, 37, 26), PackedInt32Array(34, 38, 36), PackedInt32Array(45, 44, 42), PackedInt32Array(42, 44, 43), PackedInt32Array(9, 10, 46), PackedInt32Array(46, 10, 47), PackedInt32Array(47, 35, 36), PackedInt32Array(50, 49, 48), PackedInt32Array(15, 51, 18), PackedInt32Array(18, 51, 48), PackedInt32Array(46, 47, 51), PackedInt32Array(51, 47, 36), PackedInt32Array(51, 36, 48), PackedInt32Array(48, 36, 50)]
+[sub_resource type="PlaneMesh" id="PlaneMesh_nn0u8"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_76hng"]
-albedo_texture = ExtResource("8_8ngks")
-uv1_triplanar = true
-uv1_world_triplanar = true
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1o021"]
+albedo_color = Color(0.40392157, 0.4745098, 0.47058824, 1)
 
-[sub_resource type="CylinderMesh" id="CylinderMesh_3p0ik"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hjw3j"]
-albedo_color = Color(0.33030304, 0.32939374, 2.4065375e-07, 1)
+[sub_resource type="GDScript" id="GDScript_c5s60"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_a3v7h"]
 
@@ -35,8 +32,6 @@ albedo_color = Color(0.72156864, 0.8039216, 1, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xxieg"]
 albedo_color = Color(0.7219418, 0.8024342, 1, 1)
 
-[sub_resource type="GDScript" id="GDScript_c5s60"]
-
 [sub_resource type="BoxMesh" id="BoxMesh_3p0ik"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_pcysp"]
@@ -48,6 +43,11 @@ albedo_color = Color(0.40752566, 0.1652529, 0.044275075, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3swae"]
 albedo_color = Color(1, 0.25882354, 0.25882354, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_3p0ik"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hjw3j"]
+albedo_color = Color(0.33030304, 0.32939374, 2.4065375e-07, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_gjgc6"]
 
@@ -89,219 +89,71 @@ albedo_color = Color(0.74138474, 0.7413847, 0.74138457, 1)
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1703912396]
 transform = Transform3D(1, 0, 0, 0, 0.6178733, 0.78627765, 0, -0.78627765, 0.6178733, 1.3005886, 5.305082, 6.495014)
 
-[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=1222008231]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.4023231, 0, 0, 0)
-navigation_mesh = SubResource("NavigationMesh_1o021")
+[node name="Chao" type="MeshInstance3D" parent="." unique_id=1044769858]
+transform = Transform3D(7.5053697, 0, 0, 0, 1.0020467, 0, 0, 0, 8.084312, 0.6930596, 0.0232898, 2.8142772)
+mesh = SubResource("PlaneMesh_nn0u8")
+surface_material_override/0 = SubResource("StandardMaterial3D_1o021")
 
-[node name="Chão" type="CSGBox3D" parent="NavigationRegion3D" unique_id=374309014]
-transform = Transform3D(18.782345, 0, 0, 0, 1, 0, 0, 0, 11.989378, 1.2007666, -0.4510672, 2.6099968)
-material = SubResource("StandardMaterial3D_76hng")
-
-[node name="Mesas" type="Node" parent="NavigationRegion3D" unique_id=1931681182]
-
-[node name="Mesa1" type="Node" parent="NavigationRegion3D/Mesas" unique_id=788199405]
-
-[node name="Mesa" parent="NavigationRegion3D/Mesas/Mesa1" unique_id=252262496 node_paths=PackedStringArray("marker_foco") instance=ExtResource("3_a3v7h")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 2.8390183, 0, 1.9167988)
-collision_layer = 2
-marker_foco = NodePath("../../../../Markers da Camera/Mesa1")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/Mesas/Mesa1" unique_id=1146197642]
-transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 2.0643167, 0.3979044, 1.9725945)
-layers = 3
-mesh = SubResource("CylinderMesh_3p0ik")
-surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="NavigationRegion3D/Mesas/Mesa1" unique_id=1483869677]
-transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 3.7347674, 0.3979044, 1.9725945)
-layers = 3
-mesh = SubResource("CylinderMesh_3p0ik")
-surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="NavigationRegion3D/Mesas/Mesa1" unique_id=1286542695]
-transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 2.8327537, 0.3979044, 2.818594)
-layers = 3
-mesh = SubResource("CylinderMesh_3p0ik")
-surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="NavigationRegion3D/Mesas/Mesa1" unique_id=216443673]
-transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 2.8327537, 0.3979044, 0.9700484)
-layers = 3
-mesh = SubResource("CylinderMesh_3p0ik")
-surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
-
-[node name="Mesa2" type="Node" parent="NavigationRegion3D/Mesas" unique_id=1265516644]
-
-[node name="Mesa" parent="NavigationRegion3D/Mesas/Mesa2" unique_id=749925857 node_paths=PackedStringArray("marker_foco") instance=ExtResource("3_a3v7h")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -2.3127894, 0, 1.0486705)
-collision_layer = 2
-marker_foco = NodePath("../../../../Markers da Camera/Mesa2")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/Mesas/Mesa2" unique_id=1247801569]
-transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -3.087491, 0.42943776, 1.1044662)
-layers = 2
-mesh = SubResource("CylinderMesh_3p0ik")
-surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="NavigationRegion3D/Mesas/Mesa2" unique_id=1027897411]
-transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.4170403, 0.42943776, 1.1044662)
-layers = 2
-mesh = SubResource("CylinderMesh_3p0ik")
-surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="NavigationRegion3D/Mesas/Mesa2" unique_id=1785983181]
-transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -2.3190541, 0.42943776, 1.9504657)
-layers = 2
-mesh = SubResource("CylinderMesh_3p0ik")
-surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="NavigationRegion3D/Mesas/Mesa2" unique_id=1576459393]
-transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -2.3190541, 0.42943776, 0.10192013)
-layers = 2
-mesh = SubResource("CylinderMesh_3p0ik")
-surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
-
-[node name="Mesa3" type="Node" parent="NavigationRegion3D/Mesas" unique_id=1300195762]
-
-[node name="Mesa" parent="NavigationRegion3D/Mesas/Mesa3" unique_id=208667658 node_paths=PackedStringArray("marker_foco") instance=ExtResource("3_a3v7h")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -2.6246178, 0, 5.1523075)
-collision_layer = 3
-marker_foco = NodePath("../../../../Markers da Camera/Mesa3")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/Mesas/Mesa3" unique_id=1815018760]
-transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -3.3993194, 0.45897567, 5.208103)
-layers = 2
-mesh = SubResource("CylinderMesh_3p0ik")
-surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="NavigationRegion3D/Mesas/Mesa3" unique_id=788576792]
-transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.7288686, 0.45897567, 5.208103)
-layers = 2
-mesh = SubResource("CylinderMesh_3p0ik")
-surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="NavigationRegion3D/Mesas/Mesa3" unique_id=861251495]
-transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -2.6308823, 0.45897567, 6.054103)
-layers = 2
-mesh = SubResource("CylinderMesh_3p0ik")
-surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="NavigationRegion3D/Mesas/Mesa3" unique_id=753499199]
-transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -2.6308823, 0.45897567, 4.2055573)
-layers = 2
-mesh = SubResource("CylinderMesh_3p0ik")
-surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
-
-[node name="Mesa4" type="Node" parent="NavigationRegion3D/Mesas" unique_id=978021602]
-
-[node name="Mesa" parent="NavigationRegion3D/Mesas/Mesa4" unique_id=741533492 node_paths=PackedStringArray("marker_foco") instance=ExtResource("3_a3v7h")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 2.5791113, 0, 6.2358475)
-collision_layer = 2
-marker_foco = NodePath("../../../../Markers da Camera/Mesa4")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/Mesas/Mesa4" unique_id=2071596357]
-transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 1.8044097, 0.4444666, 6.291643)
-layers = 2
-mesh = SubResource("CylinderMesh_3p0ik")
-surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="NavigationRegion3D/Mesas/Mesa4" unique_id=1991258583]
-transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 3.4748607, 0.4444666, 6.291643)
-layers = 2
-mesh = SubResource("CylinderMesh_3p0ik")
-surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="NavigationRegion3D/Mesas/Mesa4" unique_id=351576577]
-transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 2.572847, 0.4444666, 7.137643)
-layers = 2
-mesh = SubResource("CylinderMesh_3p0ik")
-surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="NavigationRegion3D/Mesas/Mesa4" unique_id=1517527567]
-transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 2.572847, 0.4444666, 5.2890973)
-layers = 2
-mesh = SubResource("CylinderMesh_3p0ik")
-surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
-
-[node name="Paredes" type="Node" parent="NavigationRegion3D" unique_id=185805976]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/Paredes" unique_id=77798622]
-transform = Transform3D(1, 0, 0, 0, 3.9876442, 0, 0, 0, 5.542285, 10.089212, 1.6903188, -0.69086266)
-layers = 2
-mesh = SubResource("BoxMesh_a3v7h")
-surface_material_override/0 = SubResource("StandardMaterial3D_bvpmc")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="NavigationRegion3D/Paredes" unique_id=1283785136]
-transform = Transform3D(1, 0, 0, 0, 3.6755595, 0, 0, 0, 3.0747752, 10.089212, 1.7758605, 6.868722)
-layers = 2
-mesh = SubResource("BoxMesh_a3v7h")
-surface_material_override/0 = SubResource("StandardMaterial3D_dijpm")
-
-[node name="MeshInstance3D6" type="MeshInstance3D" parent="NavigationRegion3D/Paredes" unique_id=1024652440]
-transform = Transform3D(1, 0, 0, 0, 3.5358806, 0, 0, 0, 1.3431321, 0.88082266, 1.7740271, 8.048062)
-layers = 2
-mesh = SubResource("BoxMesh_a3v7h")
-surface_material_override/0 = SubResource("StandardMaterial3D_dijpm")
-
-[node name="MeshInstance3D5" type="MeshInstance3D" parent="NavigationRegion3D/Paredes" unique_id=1976777647]
-transform = Transform3D(0.014938967, 0, 20.57551, 0, 0.79070634, 0, -0.9616548, 0, 0.3196335, 0.2922156, 3.7956462, 8.065483)
-layers = 2
-mesh = SubResource("BoxMesh_a3v7h")
-surface_material_override/0 = SubResource("StandardMaterial3D_dijpm")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="NavigationRegion3D/Paredes" unique_id=5218802]
-transform = Transform3D(1, 0, 0, 0, 0.5653399, 0, 0, 0, 3.5243082, 10.089212, 3.401472, 3.8188715)
-layers = 2
-mesh = SubResource("BoxMesh_a3v7h")
-surface_material_override/0 = SubResource("StandardMaterial3D_dijpm")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="NavigationRegion3D/Paredes" unique_id=1361988629]
-transform = Transform3D(1, 0, 0, 0, 4.278564, 0, 0, 0, 11.624304, -7.7854867, 1.6416469, 2.518089)
-layers = 2
-mesh = SubResource("BoxMesh_a3v7h")
-surface_material_override/0 = SubResource("StandardMaterial3D_xxieg")
-
-[node name="MeshInstance3D7" type="MeshInstance3D" parent="NavigationRegion3D/Paredes" unique_id=401829545]
-transform = Transform3D(-4.3711385e-08, 0, -19.681662, 0, 4.6695414, 0, 0.99999994, 0, -8.603127e-07, 0.7181144, 1.3425333, -3.8963318)
-layers = 2
-mesh = SubResource("BoxMesh_a3v7h")
-surface_material_override/0 = SubResource("StandardMaterial3D_xxieg")
-
-[node name="Sinuquinha" type="Node" parent="NavigationRegion3D" unique_id=102819934]
-
-[node name="Sinuquinha" parent="NavigationRegion3D/Sinuquinha" unique_id=56849866 node_paths=PackedStringArray("marker_foco") instance=ExtResource("4_3p0ik")]
-transform = Transform3D(0.16580501, 0.0023625733, 0.71566737, 0, 0.46692228, -0.0038777136, -0.62296593, 0.00062880863, 0.19047791, 6.993597, 0.23917955, 3.229662)
-collision_layer = 2
-marker_foco = NodePath("../../../Markers da Camera/Sinuca")
-
-[node name="Markers da Camera" type="Node" parent="." unique_id=1462406723]
+[node name="Markers" type="Node" parent="." unique_id=1462406723]
 script = SubResource("GDScript_c5s60")
 
-[node name="Camera3D" type="Camera3D" parent="Markers da Camera" unique_id=950510579 node_paths=PackedStringArray("marker_geral") groups=["main_camera"]]
-transform = Transform3D(-0.9993134, -0.0046586217, 0.03675659, 0.011395543, 0.90532905, 0.42455798, -0.035254665, 0.4246853, -0.9046544, 0.6106, 2.3232503, -3.834145)
+[node name="Camera3D" type="Camera3D" parent="Markers" unique_id=950510579 node_paths=PackedStringArray("marker_geral") groups=["main_camera"]]
+transform = Transform3D(-0.9993134, -0.004658621, 0.03675659, 0.011395543, 0.90532905, 0.42455798, -0.035254665, 0.4246853, -0.9046544, 0.24687397, 1.8363862, -4.3326197)
 script = ExtResource("6_c5s60")
 marker_geral = NodePath("../Marker3D")
 
-[node name="Marker3D" type="Marker3D" parent="Markers da Camera" unique_id=1466360193]
-transform = Transform3D(-0.9999254, 0, 0.012216892, 0, 1, 0, -0.012216892, 0, -0.9999254, -0.4194442, 2.6276186, -3.3665884)
+[node name="Marker3D" type="Marker3D" parent="Markers" unique_id=1466360193]
+transform = Transform3D(-0.9999254, 0, 0.012216892, 0, 1, 0, -0.012216892, 0, -0.9999254, -0.4194442, 1.5702965, -3.2415903)
 
-[node name="Sinuca" type="Marker3D" parent="Markers da Camera" unique_id=516258072]
+[node name="Sinuca" type="Marker3D" parent="Markers" unique_id=516258072]
 transform = Transform3D(-0.09118881, 0, -0.99583346, 0, 0.9999999, 0, 0.9958335, 0, -0.0911888, 2.636519, 1.0654941, 2.3090248)
 
-[node name="Jukebox" type="Marker3D" parent="Markers da Camera" unique_id=1288744142]
-transform = Transform3D(0.14347991, 0.012535585, 0.9895739, -0.018283466, 0.9997827, -0.010013956, -0.9894841, -0.016656037, 0.14367798, -3.2545512, 1.4598756, 2.6722174)
+[node name="Jukebox" type="Marker3D" parent="Markers" unique_id=1288744142]
+transform = Transform3D(0.25184414, 0.01996712, 0.9675619, -0.04422488, 0.99898, -0.009104303, -0.96675664, -0.040497445, 0.2524704, -2.2888627, 1.2104731, 2.6722174)
 
-[node name="Mesa1" type="Marker3D" parent="Markers da Camera" unique_id=1835891593]
-transform = Transform3D(-0.99992496, 0, -0.012251937, -0.0033011732, 0.9630169, 0.2694207, 0.011798822, 0.26944092, -0.9629447, 1.6812375, 2.2196352, 0)
+[node name="Mesa1" type="Marker3D" parent="Markers" unique_id=1835891593]
+transform = Transform3D(-0.99992496, 0, -0.012251937, -0.0033011732, 0.9630169, 0.2694207, 0.011798822, 0.26944092, -0.9629447, 1.6812375, 0.9900782, 0)
 
-[node name="Mesa2" type="Marker3D" parent="Markers da Camera" unique_id=939784182]
-transform = Transform3D(-0.5863723, 0.34233838, -0.73414695, 0, 0.90630776, 0.42261824, 0.81004155, 0.24781168, -0.53143376, -3.6185849, 2.5805511, 0.25499964)
+[node name="Mesa2" type="Marker3D" parent="Markers" unique_id=939784182]
+transform = Transform3D(-0.5863723, 0.34233838, -0.73414695, 0, 0.90630776, 0.42261824, 0.81004155, 0.24781168, -0.53143376, -3.6185849, 1.3247827, 0.25499964)
 
-[node name="Mesa3" type="Marker3D" parent="Markers da Camera" unique_id=1143139554]
-transform = Transform3D(0.76604444, 0, -0.6427876, 0, 1, 0, 0.6427876, 0, 0.76604444, -3.6879225, 1.9184352, 6.957042)
+[node name="Mesa3" type="Marker3D" parent="Markers" unique_id=1143139554]
+transform = Transform3D(0.76604444, 0, -0.6427876, 0, 1, 0, 0.6427876, 0, 0.76604444, -3.6879225, 1.1228527, 6.957042)
 
-[node name="Mesa4" type="Marker3D" parent="Markers da Camera" unique_id=610266832]
-transform = Transform3D(0.70710677, 0.3535534, -0.61237246, 0, 0.8660255, 0.50000006, 0.70710677, -0.3535534, 0.61237246, 0, 2.341384, 6.3580794)
+[node name="Mesa4" type="Marker3D" parent="Markers" unique_id=610266832]
+transform = Transform3D(0.70710677, 0.3535534, -0.61237246, 0, 0.8660255, 0.50000006, 0.70710677, -0.3535534, 0.61237246, 0, 1.6175753, 6.3580794)
+
+[node name="Paredes" type="Node" parent="." unique_id=185805976]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Paredes" unique_id=77798622]
+transform = Transform3D(1.252384, 0, 0, 0, 2.0137577, 0, 0, 0, 7.570434, 8.798542, 1.0009136, -1.5033581)
+mesh = SubResource("BoxMesh_a3v7h")
+surface_material_override/0 = SubResource("StandardMaterial3D_bvpmc")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Paredes" unique_id=1283785136]
+transform = Transform3D(1.252384, 0, 0, 0, 2.0137577, 0, 0, 0, 4.199961, 8.798542, 1.0009136, 8.822588)
+mesh = SubResource("BoxMesh_a3v7h")
+surface_material_override/0 = SubResource("StandardMaterial3D_dijpm")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Paredes" unique_id=1024652440]
+transform = Transform3D(1.252384, 0, 0, 0, 2.0137577, 0, 0, 0, 1.8346392, 1.2727914, 1.0009136, 10.433497)
+mesh = SubResource("BoxMesh_a3v7h")
+surface_material_override/0 = SubResource("StandardMaterial3D_dijpm")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Paredes" unique_id=1976777647]
+transform = Transform3D(0.020310827, 0, 16.505772, 0, 0.79070634, 0, -1.3074535, 0, 0.25641152, 0.5356292, 1.9351295, 10.457293)
+mesh = SubResource("BoxMesh_a3v7h")
+surface_material_override/0 = SubResource("StandardMaterial3D_dijpm")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Paredes" unique_id=5218802]
+transform = Transform3D(1.252384, 0, 0, 0, 0.36361992, 0, 0, 0, 4.813997, 8.798542, 1.8341329, 4.6566725)
+mesh = SubResource("BoxMesh_a3v7h")
+surface_material_override/0 = SubResource("StandardMaterial3D_dijpm")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Paredes" unique_id=1361988629]
+transform = Transform3D(1.252384, 0, 0, 0, 2.0137577, 0, 0, 0, 15.878113, -6.834401, 1.0009136, 2.8798804)
+mesh = SubResource("BoxMesh_a3v7h")
+surface_material_override/0 = SubResource("StandardMaterial3D_xxieg")
 
 [node name="Botão Voltar Balcão" type="CanvasLayer" parent="." unique_id=482491482]
 
@@ -387,65 +239,193 @@ transform = Transform3D(0.20529608, 0, 0, 0, 0.015647296, 0, 0, 0, 0.22330964, 3
 mesh = SubResource("CylinderMesh_gjgc6")
 surface_material_override/0 = SubResource("StandardMaterial3D_3swae")
 
+[node name="Mesas" type="Node" parent="." unique_id=1931681182]
+
+[node name="Mesa1" type="Node" parent="Mesas" unique_id=788199405]
+
+[node name="Mesa" parent="Mesas/Mesa1" unique_id=252262496 node_paths=PackedStringArray("marker_foco") instance=ExtResource("3_a3v7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5448498, 0, 2.1628869)
+marker_foco = NodePath("../../../Markers/Mesa1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Mesas/Mesa1" unique_id=1146197642]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 0.7701483, 0, 2.2186825)
+visible = false
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Mesas/Mesa1" unique_id=1483869677]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 2.440599, 0, 2.2186825)
+visible = false
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Mesas/Mesa1" unique_id=1286542695]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 1.5385852, 0, 3.064682)
+visible = false
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Mesas/Mesa1" unique_id=216443673]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 1.5385852, 0, 1.2161365)
+visible = false
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="Mesa2" type="Node" parent="Mesas" unique_id=1265516644]
+
+[node name="Mesa" parent="Mesas/Mesa2" unique_id=749925857 node_paths=PackedStringArray("marker_foco") instance=ExtResource("3_a3v7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5811572, 0, 1.114213)
+marker_foco = NodePath("../../../Markers/Mesa2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Mesas/Mesa2" unique_id=1247801569]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -2.3558588, 0, 1.1700087)
+visible = false
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Mesas/Mesa2" unique_id=1027897411]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -0.685408, 0, 1.1700087)
+visible = false
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Mesas/Mesa2" unique_id=1785983181]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.5874218, 0, 2.0160081)
+visible = false
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Mesas/Mesa2" unique_id=1576459393]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.5874218, 0, 0.16746259)
+visible = false
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="Mesa3" type="Node" parent="Mesas" unique_id=1300195762]
+
+[node name="Mesa" parent="Mesas/Mesa3" unique_id=208667658 node_paths=PackedStringArray("marker_foco") instance=ExtResource("3_a3v7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9648023, 0, 5.1523075)
+marker_foco = NodePath("../../../Markers/Mesa3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Mesas/Mesa3" unique_id=1815018760]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -2.7395039, 0, 5.208103)
+visible = false
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Mesas/Mesa3" unique_id=788576792]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.069053, 0, 5.208103)
+visible = false
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Mesas/Mesa3" unique_id=861251495]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.9710668, 0, 6.054103)
+visible = false
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Mesas/Mesa3" unique_id=753499199]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, -1.9710668, 0, 4.2055573)
+visible = false
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="Mesa4" type="Node" parent="Mesas" unique_id=978021602]
+
+[node name="Mesa" parent="Mesas/Mesa4" unique_id=741533492 node_paths=PackedStringArray("marker_foco") instance=ExtResource("3_a3v7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9538858, 0, 5.8390055)
+marker_foco = NodePath("../../../Markers/Mesa4")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Mesas/Mesa4" unique_id=2071596357]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 1.1791842, 0, 5.894801)
+visible = false
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Mesas/Mesa4" unique_id=1991258583]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 2.8496351, 0, 5.894801)
+visible = false
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Mesas/Mesa4" unique_id=351576577]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 1.9476212, 0, 6.740801)
+visible = false
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Mesas/Mesa4" unique_id=1517527567]
+transform = Transform3D(0.33381096, 0, 0, 0, 0.36905986, 0, 0, 0, 0.35217816, 1.9476212, 0, 4.8922553)
+visible = false
+mesh = SubResource("CylinderMesh_3p0ik")
+surface_material_override/0 = SubResource("StandardMaterial3D_hjw3j")
+
 [node name="CaixasCerveja" type="Node" parent="." unique_id=822015859]
 
 [node name="Amarelo" type="MeshInstance3D" parent="CaixasCerveja" unique_id=25730447]
-transform = Transform3D(0.33068457, 0, 0, 0, 0.4004677, 0, 0, 0, 0.7545359, 9.302448, 0.21492386, 0)
+transform = Transform3D(0.41414404, 0, 0, 0, 0.4004677, 0, 0, 0, 1.0306515, 7.9570093, 0.21492386, -0.55968046)
 mesh = SubResource("BoxMesh_gjgc6")
 surface_material_override/0 = SubResource("StandardMaterial3D_gjgc6")
 
 [node name="Amarelo1" type="MeshInstance3D" parent="CaixasCerveja" unique_id=415621797]
-transform = Transform3D(0.32932043, 0, 0.06846421, 0, 0.4004677, 0, -0.030005276, 0, 0.7514233, 9.302448, 0.6049045, 0.7485705)
+transform = Transform3D(0.39840955, 0, 0.095553994, 0, 0.4004677, 0, -0.036300175, 0, 1.0487447, 7.9570093, 0.6049045, 0.46282256)
 mesh = SubResource("BoxMesh_gjgc6")
 surface_material_override/0 = SubResource("StandardMaterial3D_gjgc6")
 
 [node name="Amarelo3" type="MeshInstance3D" parent="CaixasCerveja" unique_id=1215107083]
-transform = Transform3D(0.33037406, 0, 0.032688722, 0, 0.4004677, 0, -0.0143262325, 0, 0.7538274, 9.302448, 0.9282553, 1.4729488)
+transform = Transform3D(0.4071186, 0, 0.045127723, 0, 0.4004677, 0, -0.017654158, 0, 1.0406804, 7.9570093, 0.9282553, 1.4522805)
 mesh = SubResource("BoxMesh_gjgc6")
 surface_material_override/0 = SubResource("StandardMaterial3D_gjgc6")
 
 [node name="Verde" type="MeshInstance3D" parent="CaixasCerveja" unique_id=269523526]
-transform = Transform3D(0.30633846, 0, -0.057777397, 0, 0.3812876, 0, 0.02372206, 0, 0.74611723, 9.271446, 0.22021967, 0.7574146)
+transform = Transform3D(0.39425543, 0, -0.077320814, 0, 0.3812876, 0, 0.030530121, 0, 0.9984942, 7.9181833, 0.22021967, 0.4749031)
 mesh = SubResource("BoxMesh_1o021")
 surface_material_override/0 = SubResource("StandardMaterial3D_8ngks")
 
 [node name="Verde2" type="MeshInstance3D" parent="CaixasCerveja" unique_id=334297041]
-transform = Transform3D(0.3053017, 0, 0.0842615, 0, 0.3812876, 0, -0.034595825, 0, 0.743592, 9.250523, 0.5432003, 1.5043205)
+transform = Transform3D(0.36613074, 0, 0.11816533, 0, 0.3812876, 0, -0.041488778, 0, 1.0427868, 7.891979, 0.5432003, 1.4951324)
 mesh = SubResource("BoxMesh_1o021")
 surface_material_override/0 = SubResource("StandardMaterial3D_8ngks")
 
 [node name="Verde3" type="MeshInstance3D" parent="CaixasCerveja" unique_id=1163738292]
-transform = Transform3D(0.30698943, 0, -0.031141939, 0, 0.38128754, 0, 0.012786162, 0, 0.7477026, 9.268459, 1.0223128, -0.021865457)
+transform = Transform3D(0.3902553, 0, -0.0420815, 0, 0.38128754, 0, 0.016254198, 0, 1.0103564, 7.914441, 1.0223128, -0.5895474)
 mesh = SubResource("BoxMesh_1o021")
 surface_material_override/0 = SubResource("StandardMaterial3D_8ngks")
 
 [node name="Vermelho" type="MeshInstance3D" parent="CaixasCerveja" unique_id=2036451392]
-transform = Transform3D(0.36709565, -0.004983934, 0, 0.0051259557, 0.35692477, 0, 0, 0, 0.7110481, 9.274347, 0.9909228, 0.72011673)
+transform = Transform3D(0.45973572, -0.0049663708, 0, 0.0064195385, 0.35566702, 0, 0, 0, 0.97124976, 7.921816, 0.9909228, 0.4239564)
 mesh = SubResource("BoxMesh_8ngks")
 surface_material_override/0 = SubResource("StandardMaterial3D_lqdhn")
 
 [node name="Vermelho2" type="MeshInstance3D" parent="CaixasCerveja" unique_id=1531119296]
-transform = Transform3D(0.3670655, -0.004983524, 0.009509094, 0.005125956, 0.35692477, -9.90889e-12, -0.004709036, 6.393299e-05, 0.74122614, 9.274347, 0.6253595, -0.012888998)
+transform = Transform3D(0.45753264, -0.0049662893, 0.013030629, 0.0063893013, 0.35569042, -8.810749e-19, -0.0058696275, 6.3711894e-05, 1.0157264, 7.921816, 0.6253595, -0.57728624)
 mesh = SubResource("BoxMesh_8ngks")
 surface_material_override/0 = SubResource("StandardMaterial3D_lqdhn")
 
 [node name="Vermelho3" type="MeshInstance3D" parent="CaixasCerveja" unique_id=103986941]
-transform = Transform3D(0.3670655, -0.004983524, 0.009509094, 0.005125956, 0.35692477, -9.90889e-12, -0.004709036, 6.393299e-05, 0.74122614, 9.272463, 0.17372584, 1.4998624)
+transform = Transform3D(0.45753264, -0.0049662893, 0.013030629, 0.0063893013, 0.35569042, -8.810749e-19, -0.0058696275, 6.3711894e-05, 1.0157264, 7.9194555, 0.17372584, 1.489043)
 mesh = SubResource("BoxMesh_8ngks")
 surface_material_override/0 = SubResource("StandardMaterial3D_lqdhn")
+
+[node name="Sinuquinha" type="Node" parent="." unique_id=102819934]
+
+[node name="Sinuquinha" parent="Sinuquinha" unique_id=56849866 node_paths=PackedStringArray("marker_foco") instance=ExtResource("4_3p0ik")]
+transform = Transform3D(0.2572003, 0.005059816, 0.9663449, 0, 0.9999863, -0.0052359635, -0.9663581, 0.0013466914, 0.25719678, 4.311169, 0.44599074, 2.6318488)
+marker_foco = NodePath("../../Markers/Sinuca")
 
 [node name="Jukebox" type="Node" parent="." unique_id=1115974649]
 
 [node name="Jukebox" parent="Jukebox" unique_id=1150229189 node_paths=PackedStringArray("marker_foco") instance=ExtResource("5_hjw3j")]
-transform = Transform3D(1.951, 0, 0, 0, 1.621, 0, 0, 0, 1.5, -7.018362, 1.4260561, 2.6042411)
-marker_foco = NodePath("../../Markers da Camera/Jukebox")
+transform = Transform3D(-4.8074952e-08, 0, 1, 0, 1, 0, -1.0998267, 0, -4.371139e-08, -3.8213573, 0.9683466, 2.7644458)
+marker_foco = NodePath("../../Markers/Jukebox")
 
 [node name="MusicasJukebox" type="CanvasLayer" parent="." unique_id=2131329726]
 
 [node name="CarroselContainer" type="Node2D" parent="MusicasJukebox" unique_id=845093110 node_paths=PackedStringArray("position_offset_node")]
-position = Vector2(660, 166)
+visible = false
+position = Vector2(600, 200)
 script = ExtResource("8_gjgc6")
-follow_button_focus = true
 position_offset_node = NodePath("Control")
 metadata/_custom_type_script = "uid://88v701y7yngp"
 
@@ -466,17 +446,8 @@ offset_right = 118.46854
 offset_bottom = 77.0
 pivot_offset = Vector2(60, 80)
 
-[node name="Button" type="Button" parent="MusicasJukebox/CarroselContainer/Control/Panel" unique_id=1404979465]
-layout_mode = 0
-offset_left = 26.00104
-offset_top = 122.0
-offset_right = 115.00104
-offset_bottom = 153.0
-scale = Vector2(0.8, 0.8)
-text = "ESCOLHER"
-
 [node name="Panel2" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1689214509]
-modulate = Color(1, 1, 1, 0.97093904)
+modulate = Color(1, 1, 1, 0.983)
 z_index = -1
 layout_mode = 0
 offset_left = 138.46854
@@ -485,15 +456,6 @@ offset_right = 258.46854
 offset_bottom = 80.0
 scale = Vector2(0.75, 0.75)
 pivot_offset = Vector2(60, 80)
-
-[node name="Button" type="Button" parent="MusicasJukebox/CarroselContainer/Control/Panel2" unique_id=105265882]
-layout_mode = 0
-offset_left = 26.00104
-offset_top = 122.0
-offset_right = 115.00104
-offset_bottom = 153.0
-scale = Vector2(0.8, 0.8)
-text = "ESCOLHER"
 
 [node name="Panel3" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=884635700]
 modulate = Color(1, 1, 1, 0.9418781)
@@ -506,15 +468,6 @@ offset_bottom = 80.0
 scale = Vector2(0.5, 0.5)
 pivot_offset = Vector2(60, 80)
 
-[node name="Button" type="Button" parent="MusicasJukebox/CarroselContainer/Control/Panel3" unique_id=1670078593]
-layout_mode = 0
-offset_left = 26.00104
-offset_top = 122.0
-offset_right = 115.00104
-offset_bottom = 153.0
-scale = Vector2(0.8, 0.8)
-text = "ESCOLHER"
-
 [node name="Panel4" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1704902061]
 modulate = Color(1, 1, 1, 0.9128171)
 z_index = -3
@@ -526,17 +479,8 @@ offset_bottom = 80.0
 scale = Vector2(0.25, 0.25)
 pivot_offset = Vector2(59.999985, 80)
 
-[node name="Button" type="Button" parent="MusicasJukebox/CarroselContainer/Control/Panel4" unique_id=67782064]
-layout_mode = 0
-offset_left = 26.00104
-offset_top = 122.0
-offset_right = 115.00104
-offset_bottom = 153.0
-scale = Vector2(0.8, 0.8)
-text = "ESCOLHER"
-
 [node name="Panel5" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1852349736]
-modulate = Color(1, 1, 1, 0.88375616)
+modulate = Color(1, 1, 1, 0.93199986)
 z_index = -4
 layout_mode = 0
 offset_left = 558.4685
@@ -546,17 +490,8 @@ offset_bottom = 80.0
 scale = Vector2(0.1, 0.1)
 pivot_offset = Vector2(60, 80)
 
-[node name="Button" type="Button" parent="MusicasJukebox/CarroselContainer/Control/Panel5" unique_id=1525736649]
-layout_mode = 0
-offset_left = 26.00104
-offset_top = 122.0
-offset_right = 115.00104
-offset_bottom = 153.0
-scale = Vector2(0.8, 0.8)
-text = "ESCOLHER"
-
 [node name="Panel6" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=808843665]
-modulate = Color(1, 1, 1, 0.88375616)
+modulate = Color(1, 1, 1, 0.93199986)
 z_index = -5
 layout_mode = 0
 offset_left = 698.4685
@@ -565,15 +500,6 @@ offset_right = 818.4685
 offset_bottom = 80.0
 scale = Vector2(0.1, 0.1)
 pivot_offset = Vector2(60, 80)
-
-[node name="Button" type="Button" parent="MusicasJukebox/CarroselContainer/Control/Panel6" unique_id=879888241]
-layout_mode = 0
-offset_left = 26.00104
-offset_top = 122.0
-offset_right = 115.00104
-offset_bottom = 153.0
-scale = Vector2(0.8, 0.8)
-text = "ESCOLHER"
 
 [node name="Left" type="Button" parent="MusicasJukebox/CarroselContainer" unique_id=1063127162]
 offset_left = -16.0
