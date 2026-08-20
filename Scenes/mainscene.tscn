@@ -4,9 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://cws1nqstyrdbt" path="res://Scenes/mesa.tscn" id="3_a3v7h"]
 [ext_resource type="PackedScene" uid="uid://c2cirktl8j3ha" path="res://Scenes/sinuquinha.tscn" id="4_3p0ik"]
 [ext_resource type="PackedScene" uid="uid://bgpqkfmxj2qd0" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
-[ext_resource type="Script" path="res://Scenes/camera.gd" id="6_c5s60"]
+[ext_resource type="Script" uid="uid://balnxmcje74xp" path="res://Scenes/camera.gd" id="6_c5s60"]
 [ext_resource type="PackedScene" uid="uid://i5yqwk0mold5" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
-[ext_resource type="Script" path="res://Scenes/carrousel_container.gd" id="8_gjgc6"]
+[ext_resource type="Script" uid="uid://88v701y7yngp" path="res://Scenes/carrousel_container.gd" id="8_gjgc6"]
 [ext_resource type="PackedScene" uid="uid://bdjtk7koqgec8" path="res://art/assets/PROP_balcao-modular.glb" id="9_tf7l5"]
 [ext_resource type="Texture2D" uid="uid://cx13svo4nwpdl" path="res://art/assets/PROP_balcao-modular_balcao Set.png" id="10_3swae"]
 [ext_resource type="Shader" uid="uid://q3efolm48w4g" path="res://art/shades/outineassets.gdshader" id="10_tf7l5"]
@@ -576,7 +576,7 @@ offset_bottom = 77.0
 pivot_offset = Vector2(60, 80)
 
 [node name="Panel2" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1689214509]
-modulate = Color(1, 1, 1, 0.94747186)
+modulate = Color(1, 1, 1, 0.983)
 z_index = -1
 layout_mode = 0
 offset_left = 138.46854
@@ -587,7 +587,7 @@ scale = Vector2(0.75, 0.75)
 pivot_offset = Vector2(60, 80)
 
 [node name="Panel3" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=884635700]
-modulate = Color(1, 1, 1, 0.8949438)
+modulate = Color(1, 1, 1, 0.96599996)
 z_index = -2
 layout_mode = 0
 offset_left = 278.46854
@@ -598,7 +598,7 @@ scale = Vector2(0.5, 0.5)
 pivot_offset = Vector2(60, 80)
 
 [node name="Panel4" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1704902061]
-modulate = Color(1, 1, 1, 0.84241563)
+modulate = Color(1, 1, 1, 0.94899994)
 z_index = -3
 layout_mode = 0
 offset_left = 418.46854
@@ -609,7 +609,7 @@ scale = Vector2(0.25, 0.25)
 pivot_offset = Vector2(59.999985, 80)
 
 [node name="Panel5" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1852349736]
-modulate = Color(1, 1, 1, 0.7898875)
+modulate = Color(1, 1, 1, 0.93199986)
 z_index = -4
 layout_mode = 0
 offset_left = 558.4685
@@ -620,7 +620,7 @@ scale = Vector2(0.1, 0.1)
 pivot_offset = Vector2(60, 80)
 
 [node name="Panel6" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=808843665]
-modulate = Color(1, 1, 1, 0.7898875)
+modulate = Color(1, 1, 1, 0.93199986)
 z_index = -5
 layout_mode = 0
 offset_left = 698.4685
@@ -749,19 +749,19 @@ surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
 [node name="PROP_balcao-modular" parent="." unique_id=509138039 instance=ExtResource("9_tf7l5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4124731)
 
-[node name="canto-balcao" parent="PROP_balcao-modular" index="0" unique_id=2078710754]
+[node name="canto-balcao" parent="PROP_balcao-modular" index="0" unique_id=583987978]
 transform = Transform3D(1.1116476, 0, 0, 0, 1.1116476, 0, 0, 0, 1.1116476, 3.33, 0.539, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="ponta-esquerda-balcao" parent="PROP_balcao-modular" index="1" unique_id=676636993]
+[node name="ponta-esquerda-balcao" parent="PROP_balcao-modular" index="1" unique_id=2086773072]
 transform = Transform3D(-4.859166e-08, 0, -1.1116476, 0, 1.1116476, 0, 1.1116476, 0, -4.859166e-08, -3.44, 0.539, -1.995)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="ponta-direita-balcao" parent="PROP_balcao-modular" index="2" unique_id=286300098]
+[node name="ponta-direita-balcao" parent="PROP_balcao-modular" index="2" unique_id=282421442]
 transform = Transform3D(1.1116476, 0, 0, 0, 1.1116476, 0, 0, 0, 1.1116476, 0, 0.539, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="meio-balcao" parent="PROP_balcao-modular" index="3" unique_id=576034805]
+[node name="meio-balcao" parent="PROP_balcao-modular" index="3" unique_id=1539447607]
 transform = Transform3D(-4.859166e-08, 0, -1.1116476, 0, 1.1116476, 0, 1.1116476, 0, -4.859166e-08, -3.44, 0.539, -0.885)
 rotation_order = 0
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
@@ -800,7 +800,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 [node name="PROP_cadeira" parent="PROP_balcao-modular" unique_id=1872401475 instance=ExtResource("13_hkskg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7692857, 0, 3.6608047)
 
-[node name="Cube_002" parent="PROP_balcao-modular/PROP_cadeira" index="0" unique_id=1788279247]
+[node name="Cube_002" parent="PROP_balcao-modular/PROP_cadeira" index="0" unique_id=1728101013]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.209522, 0.40248626, -0.85607815)
 surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
@@ -882,7 +882,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 [node name="PROP_balcao_quina" parent="." unique_id=2111459800 instance=ExtResource("15_xdmf7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4124731)
 
-[node name="canto-balcao-esquerdo" parent="PROP_balcao_quina" index="0" unique_id=1020461689]
+[node name="canto-balcao-esquerdo" parent="PROP_balcao_quina" index="0" unique_id=1401271767]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.33, 0, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
