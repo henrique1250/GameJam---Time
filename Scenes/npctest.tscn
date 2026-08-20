@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://dwxao37vt1t75"]
+
+[ext_resource type="PackedScene" uid="uid://cigso3cs1wjc1" path="res://models/Rembot_NPC.glb" id="1_tenxl"]
+[ext_resource type="Texture2D" uid="uid://26ahumkcfah4" path="res://models/npc_manager_skin.png" id="2_hlu4b"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hlu4b"]
+albedo_texture = ExtResource("2_hlu4b")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xedfs"]
+
+[node name="Npctest" type="CharacterBody3D" unique_id=1672364990]
+
+[node name="Rembot_NPC" parent="." unique_id=957519674 instance=ExtResource("1_tenxl")]
+
+[node name="Skeleton3D" parent="Rembot_NPC/NPC_MAN_FAT" parent_id_path=PackedInt32Array(957519674, 1051545772) index="0" unique_id=243116717]
+bones/0/position = Vector3(4.84241, -0.035790265, -101.46089)
+bones/0/rotation = Quaternion(-0.7093486, -0.045067217, 0.012440296, 0.70330554)
+bones/1/rotation = Quaternion(-0.0127196945, 0.0057186326, 0.013048164, 0.9998176)
+bones/2/rotation = Quaternion(0.020204524, 0.011033335, 0.025587386, 0.99940753)
+bones/3/rotation = Quaternion(0.020204496, 0.011033319, 0.025587358, 0.99940753)
+bones/4/position = Vector3(-6.92904e-07, 13.803739, 2.4217377e-07)
+bones/4/rotation = Quaternion(-0.06935215, 0.0020675475, -0.0013736766, 0.99758923)
+bones/5/position = Vector3(7.5623393e-07, 8.786706, 2.2207472)
+bones/5/rotation = Quaternion(0.033256717, 0.0066707833, -0.03965839, 0.99863744)
+bones/7/rotation = Quaternion(-0.6316206, -0.35643223, 0.5721352, -0.3829789)
+bones/8/position = Vector3(-3.3584797e-07, 11.074217, -7.637352e-06)
+bones/8/rotation = Quaternion(0.39657494, 0.16505376, 0.08535017, 0.8989999)
+bones/9/position = Vector3(-3.608215e-07, 29.211845, 7.7113e-06)
+bones/9/rotation = Quaternion(0.0067427177, -0.0090275565, 0.113476545, 0.9934768)
+bones/10/position = Vector3(3.8444996e-06, 23.315805, -2.3599714e-05)
+bones/10/rotation = Quaternion(9.895298e-10, 7.159543e-09, -3.3760439e-09, 1)
+bones/11/position = Vector3(-5.265304, 12.238851, -0.07750052)
+bones/11/rotation = Quaternion(0.60909766, -0.38161546, 0.57613105, 0.3891565)
+bones/12/position = Vector3(-9.364993e-08, 11.074227, 6.5563927e-06)
+bones/12/rotation = Quaternion(0.3958945, -0.23788358, -0.07125341, 0.88408256)
+bones/13/position = Vector3(-7.016015e-07, 29.21426, -1.0822096e-06)
+bones/13/rotation = Quaternion(0.0076577854, 0.010878218, -0.12366417, 0.99223495)
+bones/14/position = Vector3(-4.9173786e-07, 23.314386, 2.9280686e-06)
+bones/14/rotation = Quaternion(3.3620745e-07, -2.2278984e-08, 9.895299e-09, 1)
+bones/15/rotation = Quaternion(0.02499273, 0.1202803, 0.9889714, -0.08272622)
+bones/16/rotation = Quaternion(-0.14561617, 1.7069682e-05, -0.026385374, 0.9889893)
+bones/17/rotation = Quaternion(0.43880898, -0.047358483, 0.040513553, 0.8964165)
+bones/18/position = Vector3(6.5345967e-07, 13.459565, -1.0047643e-07)
+bones/18/rotation = Quaternion(0.32664213, -0.05197349, 0.032437902, 0.9431604)
+bones/20/rotation = Quaternion(-0.05960156, 0.008440724, 0.9971254, -0.04601539)
+bones/21/rotation = Quaternion(-0.07913686, -0.00013031888, 0.02386924, 0.99657804)
+bones/22/rotation = Quaternion(0.48850736, -0.027015213, -0.079966925, 0.8684677)
+bones/23/position = Vector3(-7.0999704e-09, 13.276341, -3.4250752e-07)
+bones/23/rotation = Quaternion(0.35385126, 0.021134332, -0.007731574, 0.93503094)
+bones/24/position = Vector3(-1.9422732e-06, 5.249152, -7.599582e-07)
+
+[node name="humanoid" parent="Rembot_NPC/NPC_MAN_FAT/Skeleton3D" index="0" unique_id=1799599618]
+material_override = SubResource("StandardMaterial3D_hlu4b")
+
+[node name="AnimationPlayer" parent="Rembot_NPC" index="1" unique_id=1411351870]
+autoplay = &"idle_1"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=93036034]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7390113, 0)
+shape = SubResource("CapsuleShape3D_xedfs")
+
+[editable path="Rembot_NPC"]
