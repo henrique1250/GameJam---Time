@@ -29,7 +29,7 @@ offset_bottom = 20.0
 pivot_offset = Vector2(20, 20)
 
 [node name="Panel2" type="Panel" parent="CarroselContainer/Control" unique_id=2073992402]
-modulate = Color(1, 1, 1, 0.9564342)
+modulate = Color(1, 1, 1, 0.96695834)
 z_index = -1
 layout_mode = 0
 offset_left = 60.000183
@@ -40,7 +40,7 @@ scale = Vector2(0.756, 0.756)
 pivot_offset = Vector2(20, 20)
 
 [node name="Panel3" type="Panel" parent="CarroselContainer/Control" unique_id=748881432]
-modulate = Color(1, 1, 1, 0.9128683)
+modulate = Color(1, 1, 1, 0.9339167)
 z_index = -2
 layout_mode = 0
 offset_left = 120.00018
@@ -51,7 +51,7 @@ scale = Vector2(0.512, 0.512)
 pivot_offset = Vector2(20, 20)
 
 [node name="Panel4" type="Panel" parent="CarroselContainer/Control" unique_id=1916195125]
-modulate = Color(1, 1, 1, 0.8693025)
+modulate = Color(1, 1, 1, 0.900875)
 z_index = -3
 layout_mode = 0
 offset_left = 180.00018
@@ -62,7 +62,7 @@ scale = Vector2(0.268, 0.268)
 pivot_offset = Vector2(20, 20)
 
 [node name="Panel5" type="Panel" parent="CarroselContainer/Control" unique_id=125974016]
-modulate = Color(1, 1, 1, 0.82573664)
+modulate = Color(1, 1, 1, 0.8678333)
 z_index = -4
 layout_mode = 0
 offset_left = 240.00018
@@ -73,7 +73,7 @@ scale = Vector2(0.1, 0.1)
 pivot_offset = Vector2(20, 20)
 
 [node name="Panel6" type="Panel" parent="CarroselContainer/Control" unique_id=454190929]
-modulate = Color(1, 1, 1, 0.8214515)
+modulate = Color(1, 1, 1, 0.8645833)
 z_index = -5
 layout_mode = 0
 offset_left = 300.00018
