@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://di20lfxa62dov" path="res://art/assets/PROP_cadeira.glb" id="13_hkskg"]
 [ext_resource type="Texture2D" uid="uid://bg7ypwmvduula" path="res://art/assets/PROP_cadeira_Gemini_Generated_Image_2460yx2460yx2460.png" id="14_44wyh"]
 [ext_resource type="PackedScene" uid="uid://bru750wppf55y" path="res://art/assets/PROP_balcao_quina.glb" id="15_xdmf7"]
-[ext_resource type="PackedScene" path="res://Scenes/npc.tscn" id="9_1o021"]
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_nn0u8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1o021"]
