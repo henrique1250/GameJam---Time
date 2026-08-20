@@ -155,9 +155,9 @@ transform = Transform3D(1.252384, 0, 0, 0, 2.0137577, 0, 0, 0, 15.878113, -6.834
 mesh = SubResource("BoxMesh_a3v7h")
 surface_material_override/0 = SubResource("StandardMaterial3D_xxieg")
 
-[node name="Botão Voltar Balcão" type="CanvasLayer" parent="." unique_id=482491482]
+[node name="Botao Voltar Balcao" type="CanvasLayer" parent="." unique_id=482491482]
 
-[node name="Control" parent="Botão Voltar Balcão" unique_id=1704514351 instance=ExtResource("8_1o021")]
+[node name="Control" parent="Botao Voltar Balcao" unique_id=1704514351 instance=ExtResource("8_1o021")]
 metadata/_edit_use_anchors_ = true
 
 [node name="Balcao" type="Node" parent="." unique_id=1297417226]
@@ -506,8 +506,7 @@ offset_left = -16.0
 offset_top = 203.0
 offset_right = 28.0
 offset_bottom = 234.0
-text = "LEFT
-"
+text = "LEFT"
 
 [node name="Right" type="Button" parent="MusicasJukebox/CarroselContainer" unique_id=1352896965]
 offset_left = 121.0
