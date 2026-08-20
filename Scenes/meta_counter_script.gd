@@ -10,11 +10,18 @@ func _ready() -> void:
 	add_theme_font_size_override("font_size", 48)
 	
 func decrementar(valor: int):
-	contador -= valor
+	if contador > 0:
+		contador -= valor
+	else:
+		contador = 0
 	atualizar_contador()
 
 func atualizar_contador():
-	text = "Meta:" + str(contador)
+	if contador > 0:
+		text = "Meta:" + str(contador)
+	else:
+		text = "Meta batida!"
+	
 	print(contador)
 
 
