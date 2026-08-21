@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://djm8ujnpbistr"]
+
+[ext_resource type="Script" uid="uid://dg88jfkd4ygdu" path="res://Scenes/spawn_npc.gd" id="1_b110c"]
+[ext_resource type="PackedScene" uid="uid://dwxao37vt1t75" path="res://Scenes/npctest.tscn" id="2_2cj3g"]
+
+[node name="SpawnNPC" type="Marker3D" unique_id=1718317451]
+script = ExtResource("1_b110c")
+npc_scene = ExtResource("2_2cj3g")
+
+[node name="Timer" type="Timer" parent="." unique_id=656087353]
+wait_time = 5.0
