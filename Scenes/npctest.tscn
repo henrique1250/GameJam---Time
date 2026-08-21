@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dwxao37vt1t75"]
 
 [ext_resource type="PackedScene" uid="uid://cigso3cs1wjc1" path="res://models/Rembot_NPC.glb" id="1_tenxl"]
-[ext_resource type="Script" uid="uid://d0l52xtdtw8jj" path="res://Scripts/npc_movement.gd" id="1_xedfs"]
+[ext_resource type="Script" path="res://Scripts/npc_movement.gd" id="1_xedfs"]
 [ext_resource type="Texture2D" uid="uid://26ahumkcfah4" path="res://models/npc_manager_skin.png" id="2_hlu4b"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hlu4b"]
@@ -14,10 +14,10 @@ script = ExtResource("1_xedfs")
 
 [node name="Rembot_NPC" parent="." unique_id=957519674 instance=ExtResource("1_tenxl")]
 
-[node name="NPC_MAN_FAT" parent="Rembot_NPC" index="0" unique_id=1449288702]
+[node name="NPC_MAN_FAT" parent="Rembot_NPC" index="0" unique_id=1595182035]
 transform = Transform3D(-0.01, -8.7422775e-10, 3.821371e-17, 0, -4.3711387e-10, -0.01, 8.7422775e-10, -0.01, 4.3711387e-10, 0, 0, 0)
 
-[node name="Skeleton3D" parent="Rembot_NPC/NPC_MAN_FAT" index="0" unique_id=1752178924]
+[node name="Skeleton3D" parent="Rembot_NPC/NPC_MAN_FAT" index="0" unique_id=2120889212]
 bones/0/position = Vector3(5.1751456, -0.083839834, -101.43794)
 bones/0/rotation = Quaternion(-0.7104402, -0.045368064, 0.012324087, 0.7021856)
 bones/1/rotation = Quaternion(-0.012061457, 0.005810482, 0.013328481, 0.9998216)
@@ -54,10 +54,10 @@ bones/23/position = Vector3(-7.0999704e-09, 13.276341, -3.4250752e-07)
 bones/23/rotation = Quaternion(0.35385126, 0.021134332, -0.007731574, 0.93503094)
 bones/24/position = Vector3(-1.9422732e-06, 5.249152, -7.599582e-07)
 
-[node name="humanoid" parent="Rembot_NPC/NPC_MAN_FAT/Skeleton3D" index="0" unique_id=661758676]
+[node name="humanoid" parent="Rembot_NPC/NPC_MAN_FAT/Skeleton3D" index="0" unique_id=156526298]
 material_override = SubResource("StandardMaterial3D_hlu4b")
 
-[node name="AnimationPlayer" parent="Rembot_NPC" index="1" unique_id=28791241]
+[node name="AnimationPlayer" parent="Rembot_NPC" index="1" unique_id=787643420]
 autoplay = &"idle_1"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=93036034]
@@ -67,6 +67,7 @@ shape = SubResource("CapsuleShape3D_xedfs")
 [node name="Timer" type="Timer" parent="." unique_id=1614119324]
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=510371630]
+target_desired_distance = 2.5
 path_height_offset = 0.5
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
