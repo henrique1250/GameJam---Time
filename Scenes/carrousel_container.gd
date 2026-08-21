@@ -2,6 +2,7 @@
 extends Node2D
 class_name CarroselContainer
 
+signal song_selected(index: int)
 @export var spacing: float = 20.0
 
 @export var wraparound_enabled:bool = false
@@ -88,9 +89,5 @@ func _on_right_pressed() -> void:
 	_right()
 
 
-#func _on_button_pressed() -> void:
-		#song_selected.emit(select_index)
-
-
 func _on_button_pressed() -> void:
-	pass # Replace with function body.
+	song_selected.emit(select_index)
