@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://bgpqkfmxj2qd0"]
 
-[ext_resource type="Script" path="res://Scenes/jukebox.gd" id="1_7i7ve"]
-[ext_resource type="Shader" uid="uid://q3efolm48w4g" path="res://art/shades/outineassets.gdshader" id="2_4tsl3"]
+[ext_resource type="Script" uid="uid://dya5htpx4a0qb" path="res://Scenes/jukebox.gd" id="1_7i7ve"]
+[ext_resource type="Shader" path="res://art/shades/outineassets.gdshader" id="2_4tsl3"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3bl5i"]
 
