@@ -86,3 +86,11 @@ func _on_left_pressed() -> void:
 
 func _on_right_pressed() -> void:
 	_right()
+
+
+#func _on_button_pressed() -> void:
+		#song_selected.emit(select_index)
+
+
+func _on_button_pressed() -> void:
+	pass # Replace with function body.

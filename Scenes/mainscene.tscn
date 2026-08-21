@@ -1,9 +1,9 @@
-[gd_scene format=4 uid="uid://clihirji8mhm2"]
+[gd_scene format=4 uid="uid://vvmb851w8hmb"]
 
 [ext_resource type="PackedScene" uid="uid://14035e2f4dy8" path="res://Scenes/balcao.tscn" id="2_tcjsh"]
 [ext_resource type="PackedScene" uid="uid://cws1nqstyrdbt" path="res://Scenes/mesa.tscn" id="3_a3v7h"]
 [ext_resource type="PackedScene" uid="uid://c2cirktl8j3ha" path="res://Scenes/sinuquinha.tscn" id="4_3p0ik"]
-[ext_resource type="PackedScene" uid="uid://bam4d77bw388b" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
+[ext_resource type="PackedScene" uid="uid://bgpqkfmxj2qd0" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
 [ext_resource type="Script" path="res://Scenes/camera.gd" id="6_c5s60"]
 [ext_resource type="PackedScene" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
 [ext_resource type="Script" uid="uid://88v701y7yngp" path="res://Scenes/carrousel_container.gd" id="8_gjgc6"]
@@ -561,7 +561,6 @@ marker_foco = NodePath("../../Markers/Jukebox")
 [node name="MusicasJukebox" type="CanvasLayer" parent="." unique_id=2131329726]
 
 [node name="CarroselContainer" type="Node2D" parent="MusicasJukebox" unique_id=845093110 node_paths=PackedStringArray("position_offset_node")]
-visible = false
 position = Vector2(600, 200)
 script = ExtResource("8_gjgc6")
 position_offset_node = NodePath("Control")
@@ -583,8 +582,16 @@ offset_right = 118.46854
 offset_bottom = 77.0
 pivot_offset = Vector2(60, 80)
 
+[node name="Button" type="Button" parent="MusicasJukebox/CarroselContainer/Control/Panel" unique_id=1157554695]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 118.0
+offset_right = 104.0
+offset_bottom = 149.0
+text = "ESCOLHER"
+
 [node name="Panel2" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1689214509]
-modulate = Color(1, 1, 1, 0.97291666)
+modulate = Color(1, 1, 1, 0.97065973)
 z_index = -1
 layout_mode = 0
 offset_left = 138.46854
@@ -594,8 +601,16 @@ offset_bottom = 80.0
 scale = Vector2(0.75, 0.75)
 pivot_offset = Vector2(60, 80)
 
+[node name="Button" type="Button" parent="MusicasJukebox/CarroselContainer/Control/Panel2" unique_id=303236078]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 118.0
+offset_right = 104.0
+offset_bottom = 149.0
+text = "ESCOLHER"
+
 [node name="Panel3" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=884635700]
-modulate = Color(1, 1, 1, 0.9458333)
+modulate = Color(1, 1, 1, 0.94131947)
 z_index = -2
 layout_mode = 0
 offset_left = 278.46854
@@ -605,8 +620,16 @@ offset_bottom = 80.0
 scale = Vector2(0.5, 0.5)
 pivot_offset = Vector2(60, 80)
 
+[node name="Button" type="Button" parent="MusicasJukebox/CarroselContainer/Control/Panel3" unique_id=92530743]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 118.0
+offset_right = 104.0
+offset_bottom = 149.0
+text = "ESCOLHER"
+
 [node name="Panel4" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1704902061]
-modulate = Color(1, 1, 1, 0.91875)
+modulate = Color(1, 1, 1, 0.91197914)
 z_index = -3
 layout_mode = 0
 offset_left = 418.46854
@@ -616,8 +639,16 @@ offset_bottom = 80.0
 scale = Vector2(0.25, 0.25)
 pivot_offset = Vector2(59.999985, 80)
 
+[node name="Button" type="Button" parent="MusicasJukebox/CarroselContainer/Control/Panel4" unique_id=1546594107]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 118.0
+offset_right = 104.0
+offset_bottom = 149.0
+text = "ESCOLHER"
+
 [node name="Panel5" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1852349736]
-modulate = Color(1, 1, 1, 0.89166665)
+modulate = Color(1, 1, 1, 0.8826389)
 z_index = -4
 layout_mode = 0
 offset_left = 558.4685
@@ -627,16 +658,13 @@ offset_bottom = 80.0
 scale = Vector2(0.1, 0.1)
 pivot_offset = Vector2(60, 80)
 
-[node name="Panel6" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=808843665]
-modulate = Color(1, 1, 1, 0.89166665)
-z_index = -5
+[node name="Button" type="Button" parent="MusicasJukebox/CarroselContainer/Control/Panel5" unique_id=1564418738]
 layout_mode = 0
-offset_left = 698.4685
-offset_top = -80.0
-offset_right = 818.4685
-offset_bottom = 80.0
-scale = Vector2(0.1, 0.1)
-pivot_offset = Vector2(60, 80)
+offset_left = 15.0
+offset_top = 118.0
+offset_right = 104.0
+offset_bottom = 149.0
+text = "ESCOLHER"
 
 [node name="Left" type="Button" parent="MusicasJukebox/CarroselContainer" unique_id=1063127162]
 offset_left = -16.0
@@ -756,19 +784,19 @@ surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
 [node name="PROP_balcao-modular" parent="." unique_id=509138039 instance=ExtResource("9_tf7l5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4124731)
 
-[node name="canto-balcao" parent="PROP_balcao-modular" index="0" unique_id=2037629724]
+[node name="canto-balcao" parent="PROP_balcao-modular" index="0" unique_id=1113192452]
 transform = Transform3D(1.1116476, 0, 0, 0, 1.1116476, 0, 0, 0, 1.1116476, 3.33, 0.539, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="ponta-esquerda-balcao" parent="PROP_balcao-modular" index="1" unique_id=481553875]
+[node name="ponta-esquerda-balcao" parent="PROP_balcao-modular" index="1" unique_id=749864981]
 transform = Transform3D(-4.859166e-08, 0, -1.1116476, 0, 1.1116476, 0, 1.1116476, 0, -4.859166e-08, -3.44, 0.539, -1.995)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="ponta-direita-balcao" parent="PROP_balcao-modular" index="2" unique_id=831062229]
+[node name="ponta-direita-balcao" parent="PROP_balcao-modular" index="2" unique_id=637630929]
 transform = Transform3D(1.1116476, 0, 0, 0, 1.1116476, 0, 0, 0, 1.1116476, 0, 0.539, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="meio-balcao" parent="PROP_balcao-modular" index="3" unique_id=912588113]
+[node name="meio-balcao" parent="PROP_balcao-modular" index="3" unique_id=1616685838]
 transform = Transform3D(-4.859166e-08, 0, -1.1116476, 0, 1.1116476, 0, 1.1116476, 0, -4.859166e-08, -3.44, 0.539, -0.885)
 rotation_order = 0
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
@@ -807,7 +835,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 [node name="PROP_cadeira" parent="PROP_balcao-modular" unique_id=1872401475 instance=ExtResource("13_hkskg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7692857, 0, 3.6608047)
 
-[node name="Cube_002" parent="PROP_balcao-modular/PROP_cadeira" index="0" unique_id=39237107]
+[node name="Cube_002" parent="PROP_balcao-modular/PROP_cadeira" index="0" unique_id=2116658170]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.209522, 0.40248626, -0.85607815)
 surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
@@ -889,7 +917,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 [node name="PROP_balcao_quina" parent="." unique_id=2111459800 instance=ExtResource("15_xdmf7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4124731)
 
-[node name="canto-balcao-esquerdo" parent="PROP_balcao_quina" index="0" unique_id=1055410311]
+[node name="canto-balcao-esquerdo" parent="PROP_balcao_quina" index="0" unique_id=657135901]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.33, 0, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
@@ -917,6 +945,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.63617563, 0.2928872, -0.119
 [node name="Marker3D6" type="Marker3D" parent="MarkerNPC" unique_id=1914274472]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.625946, 0.2928872, 3.0103922)
 
+[connection signal="pressed" from="MusicasJukebox/CarroselContainer/Control/Panel/Button" to="MusicasJukebox/CarroselContainer" method="_on_button_pressed"]
+[connection signal="pressed" from="MusicasJukebox/CarroselContainer/Control/Panel2/Button" to="MusicasJukebox/CarroselContainer" method="_on_button_pressed"]
+[connection signal="pressed" from="MusicasJukebox/CarroselContainer/Control/Panel3/Button" to="MusicasJukebox/CarroselContainer" method="_on_button_pressed"]
+[connection signal="pressed" from="MusicasJukebox/CarroselContainer/Control/Panel4/Button" to="MusicasJukebox/CarroselContainer" method="_on_button_pressed"]
+[connection signal="pressed" from="MusicasJukebox/CarroselContainer/Control/Panel5/Button" to="MusicasJukebox/CarroselContainer" method="_on_button_pressed"]
 [connection signal="pressed" from="MusicasJukebox/CarroselContainer/Left" to="MusicasJukebox/CarroselContainer" method="_on_left_pressed"]
 [connection signal="pressed" from="MusicasJukebox/CarroselContainer/Right" to="MusicasJukebox/CarroselContainer" method="_on_right_pressed"]
 
