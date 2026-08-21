@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1b8qmpv1rkyl"
-path.s3tc="res://.godot/imported/CabeloGarcomColor.png-34930023e0795c93272c094f52701c6c.s3tc.ctex"
+uid="uid://qvhyytsa3877"
+path.s3tc="res://.godot/imported/PROP_enguadado_heineken_Gemini_Generated_Image_bvuj96bvuj96bvuj.png-b6eaac0bbedf8c661dc248fc2d69f852.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "76544fcae966dec7e18c07c284613456"
+}
 
 [deps]
 
-source_file="res://art/Personagens/PersonagemPrincipal/PesonagemPrincipalTpose.fbm/CabeloGarcomColor.png"
-dest_files=["res://.godot/imported/CabeloGarcomColor.png-34930023e0795c93272c094f52701c6c.s3tc.ctex"]
+source_file="res://Assets/PROP_enguadado_heineken_Gemini_Generated_Image_bvuj96bvuj96bvuj.png"
+dest_files=["res://.godot/imported/PROP_enguadado_heineken_Gemini_Generated_Image_bvuj96bvuj96bvuj.png-b6eaac0bbedf8c661dc248fc2d69f852.s3tc.ctex"]
 
 [params]
 

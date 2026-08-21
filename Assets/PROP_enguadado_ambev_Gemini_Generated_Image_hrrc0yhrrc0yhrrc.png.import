@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1b8qmpv1rkyl"
-path.s3tc="res://.godot/imported/CabeloGarcomColor.png-34930023e0795c93272c094f52701c6c.s3tc.ctex"
+uid="uid://crryettwhp1n1"
+path.s3tc="res://.godot/imported/PROP_enguadado_ambev_Gemini_Generated_Image_hrrc0yhrrc0yhrrc.png-c8a431c9d5a1f5ec883e9aeaf64b5f9a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "c81a46d513365c769bd490f3949d3602"
+}
 
 [deps]
 
-source_file="res://art/Personagens/PersonagemPrincipal/PesonagemPrincipalTpose.fbm/CabeloGarcomColor.png"
-dest_files=["res://.godot/imported/CabeloGarcomColor.png-34930023e0795c93272c094f52701c6c.s3tc.ctex"]
+source_file="res://Assets/PROP_enguadado_ambev_Gemini_Generated_Image_hrrc0yhrrc0yhrrc.png"
+dest_files=["res://.godot/imported/PROP_enguadado_ambev_Gemini_Generated_Image_hrrc0yhrrc0yhrrc.png-c8a431c9d5a1f5ec883e9aeaf64b5f9a.s3tc.ctex"]
 
 [params]
 
