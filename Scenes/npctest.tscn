@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dwxao37vt1t75"]
 
 [ext_resource type="PackedScene" uid="uid://cigso3cs1wjc1" path="res://models/Rembot_NPC.glb" id="1_tenxl"]
-[ext_resource type="Script" path="res://Scripts/npc_movement.gd" id="1_xedfs"]
+[ext_resource type="Script" uid="uid://d0l52xtdtw8jj" path="res://Scripts/npc_movement.gd" id="1_xedfs"]
 [ext_resource type="Texture2D" uid="uid://26ahumkcfah4" path="res://models/npc_manager_skin.png" id="2_hlu4b"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hlu4b"]
@@ -71,6 +71,7 @@ target_desired_distance = 2.5
 path_height_offset = 0.5
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="navigation_finished" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_navigation_finished"]
 [connection signal="target_reached" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_target_reached"]
 
 [editable path="Rembot_NPC"]
