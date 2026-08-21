@@ -3,13 +3,16 @@
 [ext_resource type="PackedScene" uid="uid://14035e2f4dy8" path="res://Scenes/balcao.tscn" id="2_tcjsh"]
 [ext_resource type="PackedScene" uid="uid://cws1nqstyrdbt" path="res://Scenes/mesa.tscn" id="3_a3v7h"]
 [ext_resource type="PackedScene" uid="uid://c2cirktl8j3ha" path="res://Scenes/sinuquinha.tscn" id="4_3p0ik"]
-[ext_resource type="PackedScene" uid="uid://bgpqkfmxj2qd0" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
+[ext_resource type="PackedScene" uid="uid://bam4d77bw388b" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
 [ext_resource type="Script" path="res://Scenes/camera.gd" id="6_c5s60"]
 [ext_resource type="PackedScene" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
+[ext_resource type="AudioStream" uid="uid://ccl1fdsoepm5a" path="res://songs/artissizm-brazil-funk-475322.mp3" id="8_3swae"]
 [ext_resource type="Script" uid="uid://88v701y7yngp" path="res://Scenes/carrousel_container.gd" id="8_gjgc6"]
+[ext_resource type="AudioStream" uid="uid://0rsg67koir7l" path="res://songs/djelcy-brasil-sem-futuro-brazil-without-a-future-473632.mp3" id="9_1bo1k"]
 [ext_resource type="PackedScene" uid="uid://dwxao37vt1t75" path="res://Scenes/npctest.tscn" id="9_1o021"]
 [ext_resource type="PackedScene" uid="uid://bdjtk7koqgec8" path="res://art/assets/PROP_balcao-modular.glb" id="9_tf7l5"]
 [ext_resource type="Texture2D" uid="uid://cx13svo4nwpdl" path="res://art/assets/PROP_balcao-modular_balcao Set.png" id="10_3swae"]
+[ext_resource type="AudioStream" uid="uid://das3mkxfamg64" path="res://songs/djelcy-sentimental-forro-northeast-brazil-473631.mp3" id="10_76hng"]
 [ext_resource type="Shader" path="res://art/shades/outineassets.gdshader" id="10_tf7l5"]
 [ext_resource type="PackedScene" uid="uid://di20lfxa62dov" path="res://art/assets/PROP_cadeira.glb" id="13_hkskg"]
 [ext_resource type="Texture2D" uid="uid://bg7ypwmvduula" path="res://art/assets/PROP_cadeira_Gemini_Generated_Image_2460yx2460yx2460.png" id="14_44wyh"]
@@ -549,7 +552,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_lqdhn")
 [node name="Sinuquinha" type="Node" parent="." unique_id=102819934]
 
 [node name="Sinuquinha" parent="Sinuquinha" unique_id=56849866 node_paths=PackedStringArray("marker_foco") instance=ExtResource("4_3p0ik")]
-transform = Transform3D(0.2572003, 0.005059816, 0.9663449, 0, 0.9999863, -0.0052359635, -0.9663581, 0.0013466914, 0.25719678, 4.311169, 0.44599074, 2.6318488)
+transform = Transform3D(0.2572003, 0.005059816, 0.9663449, 0, 0.9999863, -0.0052359635, -0.9663581, 0.0013466914, 0.25719678, 5.2483525, 0.44599074, 3.7119367)
 marker_foco = NodePath("../../Markers/Sinuca")
 
 [node name="Jukebox" type="Node" parent="." unique_id=1115974649]
@@ -557,6 +560,7 @@ marker_foco = NodePath("../../Markers/Sinuca")
 [node name="Jukebox" parent="Jukebox" unique_id=1150229189 node_paths=PackedStringArray("marker_foco") instance=ExtResource("5_hjw3j")]
 transform = Transform3D(-4.8074952e-08, 0, 1, 0, 1, 0, -1.0998267, 0, -4.371139e-08, -3.8213573, 0.9683466, 2.7644458)
 marker_foco = NodePath("../../Markers/Jukebox")
+musicas = Array[AudioStream]([ExtResource("8_3swae"), ExtResource("9_1bo1k"), ExtResource("10_76hng")])
 
 [node name="MusicasJukebox" type="CanvasLayer" parent="." unique_id=2131329726]
 
@@ -592,7 +596,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel2" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1689214509]
-modulate = Color(1, 1, 1, 0.9723923)
+modulate = Color(1, 1, 1, 0.97065973)
 z_index = -1
 layout_mode = 0
 offset_left = 138.46854
@@ -611,7 +615,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel3" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=884635700]
-modulate = Color(1, 1, 1, 0.94478464)
+modulate = Color(1, 1, 1, 0.94131947)
 z_index = -2
 layout_mode = 0
 offset_left = 278.46854
@@ -630,7 +634,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel4" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1704902061]
-modulate = Color(1, 1, 1, 0.917177)
+modulate = Color(1, 1, 1, 0.91197914)
 z_index = -3
 layout_mode = 0
 offset_left = 418.46854
@@ -649,7 +653,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel5" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1852349736]
-modulate = Color(1, 1, 1, 0.88956934)
+modulate = Color(1, 1, 1, 0.8826389)
 z_index = -4
 layout_mode = 0
 offset_left = 558.4685
@@ -785,19 +789,19 @@ surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
 [node name="PROP_balcao-modular" parent="." unique_id=509138039 instance=ExtResource("9_tf7l5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4124731)
 
-[node name="canto-balcao" parent="PROP_balcao-modular" index="0" unique_id=1193745474]
+[node name="canto-balcao" parent="PROP_balcao-modular" index="0" unique_id=622707978]
 transform = Transform3D(1.1116476, 0, 0, 0, 1.1116476, 0, 0, 0, 1.1116476, 3.33, 0.539, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="ponta-esquerda-balcao" parent="PROP_balcao-modular" index="1" unique_id=397229117]
+[node name="ponta-esquerda-balcao" parent="PROP_balcao-modular" index="1" unique_id=883175105]
 transform = Transform3D(-4.859166e-08, 0, -1.1116476, 0, 1.1116476, 0, 1.1116476, 0, -4.859166e-08, -3.44, 0.539, -1.995)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="ponta-direita-balcao" parent="PROP_balcao-modular" index="2" unique_id=1584460882]
+[node name="ponta-direita-balcao" parent="PROP_balcao-modular" index="2" unique_id=1730728862]
 transform = Transform3D(1.1116476, 0, 0, 0, 1.1116476, 0, 0, 0, 1.1116476, 0, 0.539, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="meio-balcao" parent="PROP_balcao-modular" index="3" unique_id=1664826592]
+[node name="meio-balcao" parent="PROP_balcao-modular" index="3" unique_id=852470112]
 transform = Transform3D(-4.859166e-08, 0, -1.1116476, 0, 1.1116476, 0, 1.1116476, 0, -4.859166e-08, -3.44, 0.539, -0.885)
 rotation_order = 0
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
@@ -836,7 +840,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 [node name="PROP_cadeira" parent="PROP_balcao-modular" unique_id=1872401475 instance=ExtResource("13_hkskg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7692857, 0, 3.6608047)
 
-[node name="Cube_002" parent="PROP_balcao-modular/PROP_cadeira" index="0" unique_id=598498331]
+[node name="Cube_002" parent="PROP_balcao-modular/PROP_cadeira" index="0" unique_id=791405721]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.209522, 0.40248626, -0.85607815)
 surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
@@ -918,7 +922,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 [node name="PROP_balcao_quina" parent="." unique_id=2111459800 instance=ExtResource("15_xdmf7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4124731)
 
-[node name="canto-balcao-esquerdo" parent="PROP_balcao_quina" index="0" unique_id=1199771957]
+[node name="canto-balcao-esquerdo" parent="PROP_balcao_quina" index="0" unique_id=1303543020]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.33, 0, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
@@ -946,6 +950,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.63617563, 0.2928872, -0.119
 [node name="Marker3D6" type="Marker3D" parent="MarkerNPC" unique_id=1914274472]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.625946, 0.2928872, 3.0103922)
 
+[connection signal="song_selected" from="MusicasJukebox/CarroselContainer" to="Jukebox/Jukebox" method="_on_carrosel_container_song_selected"]
 [connection signal="pressed" from="MusicasJukebox/CarroselContainer/Control/Panel/Button" to="MusicasJukebox/CarroselContainer" method="_on_button_pressed"]
 [connection signal="pressed" from="MusicasJukebox/CarroselContainer/Control/Panel2/Button" to="MusicasJukebox/CarroselContainer" method="_on_button_pressed"]
 [connection signal="pressed" from="MusicasJukebox/CarroselContainer/Control/Panel3/Button" to="MusicasJukebox/CarroselContainer" method="_on_button_pressed"]
