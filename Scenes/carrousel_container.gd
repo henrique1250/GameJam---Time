@@ -91,3 +91,4 @@ func _on_right_pressed() -> void:
 
 func _on_button_pressed() -> void:
 	song_selected.emit(select_index)
+	
