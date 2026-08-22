@@ -2,14 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcs51tfc48lx2"
+uid="uid://dfwfceec2q5vl"
 path.s3tc="res://.godot/imported/rua_bar_Gemini_Generated_Image_fuyxxofuyxxofuyx (1).png-0eab3f8712e1e1a0cd320778873f125b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "bacdd2b784a148bc935277ffcd6b3c06"
 }
 
 [deps]
