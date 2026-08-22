@@ -685,7 +685,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel2" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1689214509]
-modulate = Color(1, 1, 1, 0.97038275)
+modulate = Color(1, 1, 1, 0.97065973)
 z_index = -1
 layout_mode = 0
 offset_left = 138.46854
@@ -704,7 +704,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel3" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=884635700]
-modulate = Color(1, 1, 1, 0.9407655)
+modulate = Color(1, 1, 1, 0.94131947)
 z_index = -2
 layout_mode = 0
 offset_left = 278.46854
@@ -723,7 +723,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel4" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1704902061]
-modulate = Color(1, 1, 1, 0.91114825)
+modulate = Color(1, 1, 1, 0.91197914)
 z_index = -3
 layout_mode = 0
 offset_left = 418.46854
@@ -742,7 +742,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel5" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1852349736]
-modulate = Color(1, 1, 1, 0.881531)
+modulate = Color(1, 1, 1, 0.8826389)
 z_index = -4
 layout_mode = 0
 offset_left = 558.4685
@@ -993,6 +993,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5279219, 0, 1.2527032)
 
 [node name="SpawnNPC" parent="." unique_id=1718317451 instance=ExtResource("18_3swae")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.386898, 0, 10.64687)
+visible = false
 
 [node name="Npctest" parent="SpawnNPC" unique_id=502051294 node_paths=PackedStringArray("destination_npc", "destination_npc_interaction", "marker_saida") instance=ExtResource("9_1o021")]
 destination_npc = [NodePath("../../MarkerNPC/Marker3D"), NodePath("../../MarkerNPC/Marker3D2"), NodePath("../../MarkerNPC/Marker3D3"), NodePath("../../MarkerNPC/Marker3D4"), NodePath("../../MarkerNPC/Marker3D5"), NodePath("../../MarkerNPC/Marker3D6")]
