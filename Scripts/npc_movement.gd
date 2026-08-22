@@ -9,6 +9,11 @@ class_name NpcGeneric
 @onready var navigation_agent: NavigationAgent3D = $NavigationAgent3D
 @onready var idle_timer: Timer = $Timer
 @onready var animation_player: AnimationPlayer = $Rembot_NPC/AnimationPlayer
+@onready var interaction_timer: Timer = $InteractionTimer
+
+
+@export var marker_saida: Marker3D        
+@export var tempo_sentado: float = 10.0  
 
 enum NPC_States {
 	Idle,
@@ -17,6 +22,7 @@ enum NPC_States {
 }
 
 var heading_to_interaction: bool = false
+var heading_to_exit: bool = false
 var SPEED: float = 2.0
 var current_state: NPC_States
 var current_destinition: Marker3D
@@ -42,7 +48,7 @@ func _set_state(new_state: NPC_States) -> void:
 			_sentar_na_cadeira()
 
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_float) -> void:
 	match current_state:
 		NPC_States.Idle:
 			pass
@@ -79,6 +85,12 @@ func move_to_marker() -> void:
 
 func _on_destination_reached() -> void:
 	velocity = Vector3.ZERO
+	
+	if heading_to_exit:
+		heading_to_exit = false
+		queue_free()
+		return
+
 
 	if heading_to_interaction:
 		heading_to_interaction = false
@@ -113,8 +125,22 @@ func _sentar_na_cadeira() -> void:
 	tween.tween_property(self, "global_rotation", marker_sentar.global_rotation, sentar_offset_time)
 	tween.chain().tween_callback(func():
 		animation_player.play("drunk")
+		interaction_timer.start()
+		
 	)
-
+		
 
 func _on_navigation_agent_3d_navigation_finished() -> void:
 	_on_destination_reached()
+
+
+func _on_interaction_timer_timeout() -> void:
+	if current_state != NPC_States.Interact:
+		return
+	if marker_saida == null:
+		push_warning("marker_saida não definido em %s" % name)
+		return
+	current_destinition = marker_saida
+	navigation_agent.target_position = marker_saida.global_position
+	heading_to_exit = true
+	_set_state(NPC_States.Walking)
