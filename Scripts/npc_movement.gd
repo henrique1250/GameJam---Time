@@ -3,8 +3,8 @@ class_name NpcGeneric
 
 @onready var animation_player: AnimationPlayer = $NpcGordoTpose/AnimationPlayer
 
-@export var destination_npc: Array[Marker3D]
-@export var destination_npc_interaction: Array[Marker3D]
+@export var destination_npc: Array = []
+@export var pontos_interacao: Array = []
 @export var sentar_offset_time: float = 0.5
 
 @onready var navigation_agent: NavigationAgent3D = $NavigationAgent3D
@@ -12,7 +12,7 @@ class_name NpcGeneric
 @onready var interaction_timer: Timer = $InteractionTimer
 
 
-@export var marker_saida: Marker3D        
+@export var marker_saida: Array = []      
 @export var tempo_sentado: float = 10.0  
 
 enum NPC_States {
@@ -33,6 +33,9 @@ const WALKS_BEFORE_INTERACTION := 3
 
 func _ready() -> void:
 	_set_state(NPC_States.Idle)
+	destination_npc = get_tree().get_nodes_in_group("pontos_andar")
+	pontos_interacao = get_tree().get_nodes_in_group("pontos_interacao")
+	marker_saida = get_tree().get_nodes_in_group("ponto_saida")
 
 
 func _set_state(new_state: NPC_States) -> void:
@@ -99,9 +102,9 @@ func _on_destination_reached() -> void:
 
 	walk_count += 1
 
-	if walk_count >= WALKS_BEFORE_INTERACTION and destination_npc_interaction.size() > 0:
+	if walk_count >= WALKS_BEFORE_INTERACTION and pontos_interacao.size() > 0:
 		walk_count = 0
-		var marker: Marker3D = destination_npc_interaction.pick_random()
+		var marker: Marker3D = pontos_interacao.pick_random()
 		current_destinition = marker
 		navigation_agent.target_position = marker.global_position
 		heading_to_interaction = true
@@ -137,10 +140,13 @@ func _on_navigation_agent_3d_navigation_finished() -> void:
 func _on_interaction_timer_timeout() -> void:
 	if current_state != NPC_States.Interact:
 		return
-	if marker_saida == null:
-		push_warning("marker_saida não definido em %s" % name)
+
+	if marker_saida.is_empty():
+		push_warning("marker_saida está vazio em %s" % name)
 		return
-	current_destinition = marker_saida
-	navigation_agent.target_position = marker_saida.global_position
+
+	var saida: Marker3D = marker_saida.pick_random()
+	current_destinition = saida
+	navigation_agent.target_position = saida.global_position
 	heading_to_exit = true
 	_set_state(NPC_States.Walking)
