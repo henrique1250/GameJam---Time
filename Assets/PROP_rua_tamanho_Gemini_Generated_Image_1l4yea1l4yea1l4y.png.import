@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://co6l478garjv4"
-path.s3tc="res://.godot/imported/rua_bar_ChatGPT Image 21 de ago_3.png-bff77a26bf49fad6aa2c4401750e779f.s3tc.ctex"
+uid="uid://b4mycuyd1o5te"
+path.s3tc="res://.godot/imported/PROP_rua_tamanho_Gemini_Generated_Image_1l4yea1l4yea1l4y.png-60994279d63a358a155cdcef84a0ef20.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "7bc954fddc8df6df4dc3e2a152ca5981"
+}
 
 [deps]
 
-source_file="res://Assets/rua_bar_ChatGPT Image 21 de ago_3.png"
-dest_files=["res://.godot/imported/rua_bar_ChatGPT Image 21 de ago_3.png-bff77a26bf49fad6aa2c4401750e779f.s3tc.ctex"]
+source_file="res://Assets/PROP_rua_tamanho_Gemini_Generated_Image_1l4yea1l4yea1l4y.png"
+dest_files=["res://.godot/imported/PROP_rua_tamanho_Gemini_Generated_Image_1l4yea1l4yea1l4y.png-60994279d63a358a155cdcef84a0ef20.s3tc.ctex"]
 
 [params]
 

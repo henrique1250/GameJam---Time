@@ -219,7 +219,7 @@ shadow_mesh = SubResource("ArrayMesh_xvqk1")
 transform = Transform3D(1, 0, 0, 0, 0.6178733, 0.78627765, 0, -0.78627765, 0.6178733, 1.3005886, 5.305082, 6.495014)
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=73148972]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.002100706, 0, -0.001267314)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.023842573, 0.007756293, -0.012281299)
 navigation_mesh = SubResource("NavigationMesh_dijpm")
 
 [node name="Chao" type="MeshInstance3D" parent="NavigationRegion3D" unique_id=1044769858]
@@ -359,7 +359,7 @@ marker_foco = NodePath("../../../Markers/Sinuca")
 [node name="PROP_cadeira" parent="NavigationRegion3D" unique_id=1872401475 instance=ExtResource("13_hkskg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7692857, 0, 2.2483315)
 
-[node name="Cube_002" parent="NavigationRegion3D/PROP_cadeira" index="0" unique_id=82784933]
+[node name="Cube_002" parent="NavigationRegion3D/PROP_cadeira" index="0" unique_id=791405721]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.209522, 0.40248626, -0.85607815)
 layers = 2
 surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
@@ -466,7 +466,7 @@ transform = Transform3D(-0.99992496, 0, -0.012251937, -0.0033011732, 0.9630169, 
 transform = Transform3D(-0.5863723, 0.34233838, -0.73414695, 0, 0.90630776, 0.42261824, 0.81004155, 0.24781168, -0.53143376, -3.6185849, 1.3247827, 0.25499964)
 
 [node name="Mesa3" type="Marker3D" parent="Markers" unique_id=1143139554]
-transform = Transform3D(0.76604444, 0, -0.6427876, 0, 1, 0, 0.6427876, 0, 0.76604444, -3.6879225, 1.1228527, 6.957042)
+transform = Transform3D(0.76604444, 0, -0.6427876, 0, 1, 0, 0.6427876, 0, 0.76604444, -2.6021333, 0.996456, 8.3618145)
 
 [node name="Mesa4" type="Marker3D" parent="Markers" unique_id=610266832]
 transform = Transform3D(0.5368285, 0, -0.8436914, 0, 1.0000001, 0, 0.8436914, 0, 0.5368285, 0.0024339855, 1.8010143, 8.082733)
@@ -618,7 +618,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel2" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1689214509]
-modulate = Color(1, 1, 1, 0.97291666)
+modulate = Color(1, 1, 1, 0.96297926)
 z_index = -1
 layout_mode = 0
 offset_left = 138.46854
@@ -637,7 +637,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel3" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=884635700]
-modulate = Color(1, 1, 1, 0.9458333)
+modulate = Color(1, 1, 1, 0.9259585)
 z_index = -2
 layout_mode = 0
 offset_left = 278.46854
@@ -656,7 +656,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel4" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1704902061]
-modulate = Color(1, 1, 1, 0.91875)
+modulate = Color(1, 1, 1, 0.8889378)
 z_index = -3
 layout_mode = 0
 offset_left = 418.46854
@@ -675,7 +675,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel5" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1852349736]
-modulate = Color(1, 1, 1, 0.89166665)
+modulate = Color(1, 1, 1, 0.851917)
 z_index = -4
 layout_mode = 0
 offset_left = 558.4685
@@ -811,19 +811,19 @@ surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
 [node name="PROP_balcao-modular" parent="." unique_id=509138039 instance=ExtResource("9_tf7l5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4124731)
 
-[node name="canto-balcao" parent="PROP_balcao-modular" index="0" unique_id=116096535]
+[node name="canto-balcao" parent="PROP_balcao-modular" index="0" unique_id=622707978]
 transform = Transform3D(1.1116476, 0, 0, 0, 1.1116476, 0, 0, 0, 1.1116476, 3.33, 0.539, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="ponta-esquerda-balcao" parent="PROP_balcao-modular" index="1" unique_id=1624125057]
+[node name="ponta-esquerda-balcao" parent="PROP_balcao-modular" index="1" unique_id=883175105]
 transform = Transform3D(-4.859166e-08, 0, -1.1116476, 0, 1.1116476, 0, 1.1116476, 0, -4.859166e-08, -3.44, 0.539, -1.995)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="ponta-direita-balcao" parent="PROP_balcao-modular" index="2" unique_id=1697189488]
+[node name="ponta-direita-balcao" parent="PROP_balcao-modular" index="2" unique_id=1730728862]
 transform = Transform3D(1.1116476, 0, 0, 0, 1.1116476, 0, 0, 0, 1.1116476, 0, 0.539, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="meio-balcao" parent="PROP_balcao-modular" index="3" unique_id=1703879481]
+[node name="meio-balcao" parent="PROP_balcao-modular" index="3" unique_id=852470112]
 transform = Transform3D(-4.859166e-08, 0, -1.1116476, 0, 1.1116476, 0, 1.1116476, 0, -4.859166e-08, -3.44, 0.539, -0.885)
 rotation_order = 0
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
@@ -862,7 +862,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 [node name="PROP_balcao_quina" parent="." unique_id=2111459800 instance=ExtResource("15_xdmf7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4124731)
 
-[node name="canto-balcao-esquerdo" parent="PROP_balcao_quina" index="0" unique_id=625776994]
+[node name="canto-balcao-esquerdo" parent="PROP_balcao_quina" index="0" unique_id=1303543020]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.33, 0, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
@@ -896,28 +896,28 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.625946, 0.2928872, 3.99859
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0152893, 0.36208212, 10.595781)
 
 [node name="Marker3D" type="Marker3D" parent="Marker Interações/saida" unique_id=409828968]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2034183, 0, -0.19601059)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2034183, 0, -1.555685)
 
 [node name="Marker_Mesa4" type="Marker3D" parent="Marker Interações" unique_id=914145135 groups=["pontos_interacao"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55727196, 0, 6.9969764)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1924182, 0, 6.9969764)
 
 [node name="Marker3D" type="Marker3D" parent="Marker Interações/Marker_Mesa4" unique_id=1733410798]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2034183, 0, -0.19601059)
 
 [node name="Marker_Mesa3" type="Marker3D" parent="Marker Interações" unique_id=2020914431 groups=["pontos_interacao"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4463181, 0.6312568, 6.2878175)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4463181, 0.46845204, 6.1335)
 
 [node name="Marker3D" type="Marker3D" parent="Marker Interações/Marker_Mesa3" unique_id=1613909726]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0307953, 0, -0.26439524)
 
 [node name="Marker_Mesa1" type="Marker3D" parent="Marker Interações" unique_id=492299043 groups=["pontos_interacao"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.786921, 0.5260985, 2.4570637)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5373247, 0.5260985, 2.2654433)
 
 [node name="Marker3D" type="Marker3D" parent="Marker Interações/Marker_Mesa1" unique_id=487616635]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35907364, 0, -1.5662127)
 
 [node name="Marker_Mesa2" type="Marker3D" parent="Marker Interações" unique_id=144453389 groups=["pontos_interacao"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0098517, -0.0028268099, 2.8352747)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.475735, -0.0028268099, 2.8352747)
 
 [node name="Marker3D" type="Marker3D" parent="Marker Interações/Marker_Mesa2" unique_id=500994087]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5279219, 0, 1.2527032)
