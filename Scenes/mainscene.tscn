@@ -1,22 +1,26 @@
 [gd_scene format=4 uid="uid://vvmb851w8hmb"]
 
-[ext_resource type="PackedScene" uid="uid://14035e2f4dy8" path="res://Scenes/balcao.tscn" id="2_tcjsh"]
 [ext_resource type="PackedScene" uid="uid://cws1nqstyrdbt" path="res://Scenes/mesa.tscn" id="3_a3v7h"]
 [ext_resource type="PackedScene" uid="uid://c2cirktl8j3ha" path="res://Scenes/sinuquinha.tscn" id="4_3p0ik"]
 [ext_resource type="PackedScene" uid="uid://bgpqkfmxj2qd0" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
-[ext_resource type="Script" uid="uid://balnxmcje74xp" path="res://Scenes/camera.gd" id="6_c5s60"]
-[ext_resource type="PackedScene" uid="uid://i5yqwk0mold5" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
-[ext_resource type="AudioStream" uid="uid://ccl1fdsoepm5a" path="res://songs/artissizm-brazil-funk-475322.mp3" id="8_3swae"]
+[ext_resource type="Script" path="res://Scenes/camera.gd" id="6_c5s60"]
+[ext_resource type="PackedScene" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
 [ext_resource type="Script" uid="uid://88v701y7yngp" path="res://Scenes/carrousel_container.gd" id="8_gjgc6"]
-[ext_resource type="AudioStream" uid="uid://0rsg67koir7l" path="res://songs/djelcy-brasil-sem-futuro-brazil-without-a-future-473632.mp3" id="9_1bo1k"]
 [ext_resource type="PackedScene" uid="uid://dwxao37vt1t75" path="res://Scenes/npctest.tscn" id="9_1o021"]
+[ext_resource type="AudioStream" uid="uid://cgwedkebfa1nh" path="res://songs/Boteco OST/Provas.wav" id="9_hkskg"]
 [ext_resource type="PackedScene" uid="uid://bdjtk7koqgec8" path="res://art/assets/PROP_balcao-modular.glb" id="9_tf7l5"]
 [ext_resource type="Texture2D" uid="uid://cx13svo4nwpdl" path="res://art/assets/PROP_balcao-modular_balcao Set.png" id="10_3swae"]
-[ext_resource type="AudioStream" uid="uid://das3mkxfamg64" path="res://songs/djelcy-sentimental-forro-northeast-brazil-473631.mp3" id="10_76hng"]
-[ext_resource type="Shader" uid="uid://q3efolm48w4g" path="res://art/shades/outineassets.gdshader" id="10_tf7l5"]
+[ext_resource type="AudioStream" uid="uid://bos3loavpmqhx" path="res://songs/Boteco OST/Copão Veneno.wav" id="10_44wyh"]
+[ext_resource type="Shader" path="res://art/shades/outineassets.gdshader" id="10_tf7l5"]
+[ext_resource type="AudioStream" uid="uid://bq4ahng7rmsq7" path="res://songs/Boteco OST/Boteco Azul.wav" id="11_xdmf7"]
+[ext_resource type="AudioStream" uid="uid://mx7bw6ar4fn5" path="res://songs/Boteco OST/Azul da Cor do Bar.wav" id="12_c35lc"]
 [ext_resource type="PackedScene" uid="uid://di20lfxa62dov" path="res://art/assets/PROP_cadeira.glb" id="13_hkskg"]
 [ext_resource type="Texture2D" uid="uid://bg7ypwmvduula" path="res://art/assets/PROP_cadeira_Gemini_Generated_Image_2460yx2460yx2460.png" id="14_44wyh"]
 [ext_resource type="PackedScene" uid="uid://bru750wppf55y" path="res://art/assets/PROP_balcao_quina.glb" id="15_xdmf7"]
+[ext_resource type="PackedScene" uid="uid://djm8ujnpbistr" path="res://Scenes/spawn_npc.tscn" id="18_3swae"]
+[ext_resource type="PackedScene" uid="uid://bd8vtfer50ls3" path="res://Assets/rua_bar.glb" id="19_1bo1k"]
+[ext_resource type="PackedScene" uid="uid://7ht64rvyhmfs" path="res://Assets/PROP_ypioca_prata.glb" id="19_76hng"]
+[ext_resource type="PackedScene" uid="uid://ij2bnnhp3swh" path="res://Assets/PROP_ypioca_amarela.glb" id="20_hkskg"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_dijpm"]
 vertices = PackedVector3Array(-3.5623102, 0.38094014, 3.1748629, -3.5623102, 0.38094014, 2.4248629, -4.56231, 0.38094014, 2.1748629, -2.8123102, 0.38094014, 4.424863, -2.8123102, 0.38094014, 3.4248629, -4.56231, 0.38094014, 0.92486286, -3.5623102, 0.38094014, 0.67486286, -3.3123102, 0.38094014, -0.07513714, -6.31231, 0.38094014, 6.174863, -4.56231, 0.38094014, 6.174863, -4.56231, 0.38094014, 5.424863, -1.5623102, 0.38094014, -3.8251371, -6.31231, 0.38094014, -3.8251371, -1.8123102, 0.38094014, 0.17486286, -1.8123102, 0.38094014, 0.67486286, -1.0623102, 0.38094014, 0.92486286, -2.0623102, 0.38094014, 4.424863, -1.0623102, 0.38094014, 2.1748629, -1.8123102, 0.38094014, 5.174863, -1.0623102, 0.38094014, 5.424863, -0.31231022, 0.38094014, 1.4248629, 0.6876898, 0.38094014, 1.1748629, 0.9376898, 0.38094014, 0.42486286, -1.0623102, 0.38094014, 6.424863, 0.18768978, 0.38094014, 6.674863, 0.9376898, 0.38094014, 5.424863, 0.9376898, 0.38094014, 3.9248629, 0.6876898, 0.38094014, 3.1748629, -0.31231022, 0.38094014, 2.6748629, 2.1876898, 0.38094014, 0.42486286, 2.6876898, 0.38094014, 1.1748629, 2.6876898, 0.38094014, -3.8251371, 3.1876898, 0.38094014, 2.9248629, 2.4376898, 0.38094014, 3.1748629, 2.1876898, 0.38094014, 3.9248629, 2.6876898, 0.38094014, 5.174863, 3.6876898, 0.38094014, 4.924863, 3.6876898, 0.38094014, 3.9248629, 3.6876898, 0.38094014, 6.424863, 4.43769, 0.38094014, 5.424863, 4.43769, 0.38094014, 1.9248629, 3.1876898, 0.38094014, 1.4248629, 6.18769, 0.38094014, 1.9248629, 7.68769, 0.38094014, -3.8251371, 6.68769, 0.38094014, 2.4248629, 6.68769, 0.38094014, 3.6748629, 7.68769, 0.38094014, 3.6748629, 5.68769, 1.1309402, 3.4248629, 5.68769, 1.3809402, 2.9248629, 5.18769, 1.3809402, 2.9248629, 4.93769, 1.3809402, 3.4248629, 4.93769, 1.3809402, 4.424863, 5.43769, 1.1309402, 4.424863, 3.6876898, 0.38094014, 7.424863, 2.9376898, 0.38094014, 7.674863, 2.6876898, 0.38094014, 8.424863, 5.93769, 0.38094014, 5.674863, 7.68769, 0.38094014, 11.424863, 1.9376898, 0.38094014, 11.424863, 1.9376898, 0.38094014, 8.424863, 1.1876898, 0.38094014, 8.424863, 0.9376898, 0.38094014, 7.674863, 0.18768978, 0.38094014, 7.424863, -3.3123102, 0.38094014, 7.924863, -3.5623102, 0.38094014, 7.174863, -4.56231, 0.38094014, 6.924863, -2.0623102, 0.38094014, 7.924863, -6.31231, 0.38094014, 11.424863)
@@ -83,19 +87,6 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_arpjg")
 
 [sub_resource type="GDScript" id="GDScript_c5s60"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_a3v7h"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bvpmc"]
-albedo_color = Color(0.72156864, 0.8039216, 1, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dijpm"]
-albedo_color = Color(0.72156864, 0.8039216, 1, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xxieg"]
-albedo_color = Color(0.7219418, 0.8024342, 1, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_3p0ik"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_pcysp"]
 
@@ -463,13 +454,13 @@ marker_geral = NodePath("../Marker3D")
 transform = Transform3D(-0.9999254, 0, 0.012216892, 0, 1, 0, -0.012216892, 0, -0.9999254, -0.4194442, 2.6603856, -3.2415903)
 
 [node name="Sinuca" type="Marker3D" parent="Markers" unique_id=516258072]
-transform = Transform3D(-0.09118881, 0, -0.99583346, 0, 0.9999999, 0, 0.9958335, 0, -0.0911888, 2.636519, 1.0654941, 2.3090248)
+transform = Transform3D(0.9327901, -0.019491091, 0.3598927, -5.1991074e-09, 0.9985365, 0.054078814, -0.36042017, -0.05044418, 0.9314251, 6.7095137, 1.878705, 6.8013387)
 
 [node name="Jukebox" type="Marker3D" parent="Markers" unique_id=1288744142]
 transform = Transform3D(0.25184414, 0.01996712, 0.9675619, -0.04422488, 0.99898, -0.009104303, -0.96675664, -0.040497445, 0.2524704, -2.2888627, 1.2104731, 2.6722174)
 
 [node name="Mesa1" type="Marker3D" parent="Markers" unique_id=1835891593]
-transform = Transform3D(-0.99992496, 0, -0.012251937, -0.0033011732, 0.9630169, 0.2694207, 0.011798822, 0.26944092, -0.9629447, 1.6812375, 0.9900782, 0)
+transform = Transform3D(-0.99992496, 0, -0.012251937, -0.0033011732, 0.9630169, 0.2694207, 0.011798822, 0.26944092, -0.9629447, 1.6812375, 1.7576108, 0.067640305)
 
 [node name="Mesa2" type="Marker3D" parent="Markers" unique_id=939784182]
 transform = Transform3D(-0.5863723, 0.34233838, -0.73414695, 0, 0.90630776, 0.42261824, 0.81004155, 0.24781168, -0.53143376, -3.6185849, 1.3247827, 0.25499964)
@@ -478,39 +469,9 @@ transform = Transform3D(-0.5863723, 0.34233838, -0.73414695, 0, 0.90630776, 0.42
 transform = Transform3D(0.76604444, 0, -0.6427876, 0, 1, 0, 0.6427876, 0, 0.76604444, -3.6879225, 1.1228527, 6.957042)
 
 [node name="Mesa4" type="Marker3D" parent="Markers" unique_id=610266832]
-transform = Transform3D(0.70710677, 0.3535534, -0.61237246, 0, 0.8660255, 0.50000006, 0.70710677, -0.3535534, 0.61237246, 0, 1.6175753, 6.3580794)
+transform = Transform3D(0.5368285, 0, -0.8436914, 0, 1.0000001, 0, 0.8436914, 0, 0.5368285, 0.0024339855, 1.8010143, 8.082733)
 
 [node name="Paredes" type="Node" parent="." unique_id=185805976]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Paredes" unique_id=77798622]
-transform = Transform3D(1.252384, 0, 0, 0, 2.0137577, 0, 0, 0, 7.570434, 8.798542, 1.0009136, -1.5033581)
-mesh = SubResource("BoxMesh_a3v7h")
-surface_material_override/0 = SubResource("StandardMaterial3D_bvpmc")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Paredes" unique_id=1283785136]
-transform = Transform3D(1.252384, 0, 0, 0, 2.0137577, 0, 0, 0, 4.199961, 8.798542, 1.0009136, 8.822588)
-mesh = SubResource("BoxMesh_a3v7h")
-surface_material_override/0 = SubResource("StandardMaterial3D_dijpm")
-
-[node name="MeshInstance3D6" type="MeshInstance3D" parent="Paredes" unique_id=1024652440]
-transform = Transform3D(1.252384, 0, 0, 0, 2.0137577, 0, 0, 0, 1.8346392, 1.2727914, 1.0009136, 10.433497)
-mesh = SubResource("BoxMesh_a3v7h")
-surface_material_override/0 = SubResource("StandardMaterial3D_dijpm")
-
-[node name="MeshInstance3D5" type="MeshInstance3D" parent="Paredes" unique_id=1976777647]
-transform = Transform3D(0.020310827, 0, 16.505772, 0, 0.79070634, 0, -1.3074535, 0, 0.25641152, 0.5356292, 1.9351295, 10.457293)
-mesh = SubResource("BoxMesh_a3v7h")
-surface_material_override/0 = SubResource("StandardMaterial3D_dijpm")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="Paredes" unique_id=5218802]
-transform = Transform3D(1.252384, 0, 0, 0, 0.36361992, 0, 0, 0, 4.813997, 8.798542, 1.8341329, 4.6566725)
-mesh = SubResource("BoxMesh_a3v7h")
-surface_material_override/0 = SubResource("StandardMaterial3D_dijpm")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Paredes" unique_id=1361988629]
-transform = Transform3D(1.252384, 0, 0, 0, 2.0137577, 0, 0, 0, 15.878113, -6.834401, 1.0009136, 2.8798804)
-mesh = SubResource("BoxMesh_a3v7h")
-surface_material_override/0 = SubResource("StandardMaterial3D_xxieg")
 
 [node name="Botao Voltar Balcao" type="CanvasLayer" parent="." unique_id=482491482]
 
@@ -518,33 +479,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_xxieg")
 metadata/_edit_use_anchors_ = true
 
 [node name="Balcao" type="Node" parent="." unique_id=1297417226]
-
-[node name="Area3D" parent="Balcao" unique_id=923772194 instance=ExtResource("2_tcjsh")]
-transform = Transform3D(0.24849921, 0, 0, 0, 1, 0, 0, 0, 0.8293056, -0.047583222, 0.030519843, -1.4319713)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Balcao" unique_id=635929337]
-transform = Transform3D(0.7385866, 0, 0, 0, 0.46237355, 0, 0, 0, 1.3381997, 2.8636653, 0.29892373, -2.6615195)
-mesh = SubResource("BoxMesh_3p0ik")
-
-[node name="MeshInstance3D5" type="MeshInstance3D" parent="Balcao" unique_id=648366854]
-transform = Transform3D(0.7385866, 0, 0, 0, 0.46237355, 0, 0, 0, 1.3381997, -3.0502212, 0.28145194, -2.531157)
-mesh = SubResource("BoxMesh_3p0ik")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Balcao" unique_id=1927167764]
-transform = Transform3D(0.47050476, 0, -1.0315322, 0, 0.46237358, 0, 0.569329, 0, 0.85247874, 2.4784136, 0.29916453, -1.8521302)
-mesh = SubResource("BoxMesh_3p0ik")
-
-[node name="MeshInstance3D6" type="MeshInstance3D" parent="Balcao" unique_id=97830545]
-transform = Transform3D(0.4131233, -0.0027409273, 1.1098711, 0, 0.47356427, 0.009346366, -0.61248046, -0.0018487789, 0.74861753, -2.6450925, 0.2858884, -1.7974273)
-mesh = SubResource("BoxMesh_3p0ik")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="Balcao" unique_id=931774168]
-transform = Transform3D(0.011369199, 0, -1.3380412, 0, 0.46237358, 0, 0.7384993, 0, 0.020599365, 1.5248983, 0.29962033, -1.5028296)
-mesh = SubResource("BoxMesh_3p0ik")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Balcao" unique_id=1201726566]
-transform = Transform3D(0.011369215, 0, -1.3380412, 0, 0.46237358, 0, 0.7384993, 0, 0.020599177, -1.6377013, 0.29962033, -1.5028296)
-mesh = SubResource("BoxMesh_3p0ik")
 
 [node name="Banco Balcao" type="Node" parent="." unique_id=1826270539]
 
@@ -646,9 +580,9 @@ surface_material_override/0 = SubResource("StandardMaterial3D_lqdhn")
 [node name="Jukebox" type="Node" parent="." unique_id=1115974649]
 
 [node name="Jukebox" parent="Jukebox" unique_id=1150229189 node_paths=PackedStringArray("marker_foco") instance=ExtResource("5_hjw3j")]
-transform = Transform3D(-4.8074952e-08, 0, 1, 0, 1, 0, -1.0998267, 0, -4.371139e-08, -5.4012656, 0.9683466, 2.7644458)
+transform = Transform3D(-4.8074952e-08, 0, 1, 0, 1, 0, -1.0998267, 0, -4.371139e-08, -4.8590584, 0.9683466, 2.7644458)
 marker_foco = NodePath("../../Markers/Jukebox")
-musicas = Array[AudioStream]([ExtResource("8_3swae"), ExtResource("9_1bo1k"), ExtResource("10_76hng")])
+musicas = Array[AudioStream]([ExtResource("9_hkskg"), ExtResource("10_44wyh"), ExtResource("11_xdmf7"), ExtResource("12_c35lc")])
 
 [node name="MusicasJukebox" type="CanvasLayer" parent="." unique_id=2131329726]
 
@@ -684,7 +618,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel2" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1689214509]
-modulate = Color(1, 1, 1, 0.9099907)
+modulate = Color(1, 1, 1, 0.97102463)
 z_index = -1
 layout_mode = 0
 offset_left = 138.46854
@@ -703,7 +637,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel3" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=884635700]
-modulate = Color(1, 1, 1, 0.8199814)
+modulate = Color(1, 1, 1, 0.94204926)
 z_index = -2
 layout_mode = 0
 offset_left = 278.46854
@@ -722,7 +656,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel4" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1704902061]
-modulate = Color(1, 1, 1, 0.7299721)
+modulate = Color(1, 1, 1, 0.9130739)
 z_index = -3
 layout_mode = 0
 offset_left = 418.46854
@@ -741,7 +675,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel5" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1852349736]
-modulate = Color(1, 1, 1, 0.63996285)
+modulate = Color(1, 1, 1, 0.8840985)
 z_index = -4
 layout_mode = 0
 offset_left = 558.4685
@@ -934,27 +868,76 @@ surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
 [node name="MarkerNPC" type="Node" parent="." unique_id=1464157688]
 
-[node name="Npctest" parent="MarkerNPC" unique_id=1672364990 node_paths=PackedStringArray("destination_npc") instance=ExtResource("9_1o021")]
+[node name="Npctest" parent="MarkerNPC" unique_id=1672364990 instance=ExtResource("9_1o021")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02780056, 0.07146829, 9.223218)
-destination_npc = [NodePath("../Marker3D"), NodePath("../Marker3D2"), NodePath("../Marker3D3"), NodePath("../Marker3D4"), NodePath("../Marker3D5"), NodePath("../Marker3D6")]
+destination_npc = [null, null, null, null]
 
-[node name="Marker3D" type="Marker3D" parent="MarkerNPC" unique_id=1560463579]
+[node name="Marker3D" type="Marker3D" parent="MarkerNPC" unique_id=1560463579 groups=["pontos_andar"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2928872, 8.0428095)
 
-[node name="Marker3D2" type="Marker3D" parent="MarkerNPC" unique_id=348902130]
+[node name="Marker3D2" type="Marker3D" parent="MarkerNPC" unique_id=348902130 groups=["pontos_andar"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.396594, 0.2928872, 7.5939026)
 
-[node name="Marker3D3" type="Marker3D" parent="MarkerNPC" unique_id=222394058]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.026019, 0.2928872, 4.3359413)
+[node name="Marker3D3" type="Marker3D" parent="MarkerNPC" unique_id=222394058 groups=["pontos_andar"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.026019, 0.2928872, -132.41246)
 
-[node name="Marker3D4" type="Marker3D" parent="MarkerNPC" unique_id=811583189]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.396594, 0.2928872, -0.119095325)
+[node name="Marker3D4" type="Marker3D" parent="MarkerNPC" unique_id=811583189 groups=["pontos_andar"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.0572414, 0.63545954, 0.9264982)
 
-[node name="Marker3D5" type="Marker3D" parent="MarkerNPC" unique_id=1901556967]
+[node name="Marker3D5" type="Marker3D" parent="MarkerNPC" unique_id=1901556967 groups=["pontos_andar"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.42869306, 0.2928872, 0.48554564)
 
-[node name="Marker3D6" type="Marker3D" parent="MarkerNPC" unique_id=1914274472]
+[node name="Marker3D6" type="Marker3D" parent="MarkerNPC" unique_id=1914274472 groups=["pontos_andar"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.625946, 0.2928872, 3.9985967)
+
+[node name="Marker Interações" type="Node" parent="." unique_id=1406882408]
+
+[node name="saida" type="Marker3D" parent="Marker Interações" unique_id=944142233 groups=["ponto_saida"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0152893, 0.36208212, 10.595781)
+
+[node name="Marker3D" type="Marker3D" parent="Marker Interações/saida" unique_id=409828968]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2034183, 0, -0.19601059)
+
+[node name="Marker_Mesa4" type="Marker3D" parent="Marker Interações" unique_id=914145135 groups=["pontos_interacao"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55727196, 0, 6.9969764)
+
+[node name="Marker3D" type="Marker3D" parent="Marker Interações/Marker_Mesa4" unique_id=1733410798]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2034183, 0, -0.19601059)
+
+[node name="Marker_Mesa3" type="Marker3D" parent="Marker Interações" unique_id=2020914431 groups=["pontos_interacao"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4463181, 0.6312568, 6.2878175)
+
+[node name="Marker3D" type="Marker3D" parent="Marker Interações/Marker_Mesa3" unique_id=1613909726]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0307953, 0, -0.26439524)
+
+[node name="Marker_Mesa1" type="Marker3D" parent="Marker Interações" unique_id=492299043 groups=["pontos_interacao"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.786921, 0.5260985, 2.4570637)
+
+[node name="Marker3D" type="Marker3D" parent="Marker Interações/Marker_Mesa1" unique_id=487616635]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35907364, 0, -1.5662127)
+
+[node name="Marker_Mesa2" type="Marker3D" parent="Marker Interações" unique_id=144453389 groups=["pontos_interacao"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0338526, 0.17335737, 0.59276485)
+
+[node name="Marker3D" type="Marker3D" parent="Marker Interações/Marker_Mesa2" unique_id=500994087]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5279219, 0, 1.2527032)
+
+[node name="SpawnNPC" parent="." unique_id=1718317451 groups=["pontos_andar", "pontos_interacao"] instance=ExtResource("18_3swae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.386898, 0, 10.64687)
+visible = false
+spawn_interval = 15.0
+
+[node name="Npctest" parent="SpawnNPC" unique_id=502051294 instance=ExtResource("9_1o021")]
+destination_npc = [null, null, null, null, null, null]
+
+[node name="rua_bar" parent="." unique_id=892015153 instance=ExtResource("19_1bo1k")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.4044418, 0, 2.0899363)
+
+[node name="PROP_ypioca_prata" parent="." unique_id=962629802 instance=ExtResource("19_76hng")]
+transform = Transform3D(-0.5154569, 0, -0.8569155, 0, 1, 0, 0.8569155, 0, -0.5154569, 1.5622842, 0.62620175, 2.1111293)
+
+[node name="PROP_ypioca_amarela" parent="." unique_id=878998562 instance=ExtResource("20_hkskg")]
+transform = Transform3D(-0.8886413, 0, 0.45860296, 0, 1, 0, -0.45860296, 0, -0.8886413, 1.7044635, 0.617031, 2.0087495)
 
 [connection signal="song_selected" from="MusicasJukebox/CarroselContainer" to="Jukebox/Jukebox" method="_on_carrosel_container_song_selected"]
 [connection signal="pressed" from="MusicasJukebox/CarroselContainer/Control/Panel/Button" to="MusicasJukebox/CarroselContainer" method="_on_button_pressed"]
