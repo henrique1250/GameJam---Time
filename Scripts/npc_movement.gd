@@ -114,11 +114,6 @@ func _sentar_na_cadeira() -> void:
 	tween.chain().tween_callback(func():
 		animation_player.play("drunk")
 	)
-
-
-func _cai_fora() -> void:
-	print("oi")
-	if current_state == NPC_States.Interact:
 		
 		
 		
