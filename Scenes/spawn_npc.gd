@@ -36,4 +36,4 @@ func spawn_npc() -> void:
 
 	npc_instance.global_transform = global_transform
 
-	get_parent().add_child(npc_instance)
+	get_parent().add_child.call_deferred(npc_instance)
