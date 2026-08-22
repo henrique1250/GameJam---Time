@@ -685,7 +685,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel2" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1689214509]
-modulate = Color(1, 1, 1, 0.97246057)
+modulate = Color(1, 1, 1, 0.97065973)
 z_index = -1
 layout_mode = 0
 offset_left = 138.46854
@@ -704,7 +704,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel3" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=884635700]
-modulate = Color(1, 1, 1, 0.9449212)
+modulate = Color(1, 1, 1, 0.94131947)
 z_index = -2
 layout_mode = 0
 offset_left = 278.46854
@@ -723,7 +723,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel4" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1704902061]
-modulate = Color(1, 1, 1, 0.91738176)
+modulate = Color(1, 1, 1, 0.91197914)
 z_index = -3
 layout_mode = 0
 offset_left = 418.46854
@@ -742,7 +742,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel5" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1852349736]
-modulate = Color(1, 1, 1, 0.88984233)
+modulate = Color(1, 1, 1, 0.8826389)
 z_index = -4
 layout_mode = 0
 offset_left = 558.4685
@@ -938,9 +938,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 [node name="Npctest" parent="MarkerNPC" unique_id=1672364990 instance=ExtResource("9_1o021")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02780056, 0.07146829, 9.223218)
 destination_npc = [null, null, null, null]
-pontos_interacao = []
-sentar_offset_time = 0.5
-tempo_sentado = 10.0
 
 [node name="Marker3D" type="Marker3D" parent="MarkerNPC" unique_id=1560463579 groups=["pontos_andar"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2928872, 8.0428095)
@@ -952,7 +949,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.396594, 0.2928872, 7.593902
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.026019, 0.2928872, -132.41246)
 
 [node name="Marker3D4" type="Marker3D" parent="MarkerNPC" unique_id=811583189 groups=["pontos_andar"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.396594, 0.2928872, -0.119095325)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.0572414, 0.63545954, 0.9264982)
 
 [node name="Marker3D5" type="Marker3D" parent="MarkerNPC" unique_id=1901556967 groups=["pontos_andar"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.42869306, 0.2928872, 0.48554564)
@@ -999,9 +996,6 @@ spawn_interval = 15.0
 
 [node name="Npctest" parent="SpawnNPC" unique_id=502051294 instance=ExtResource("9_1o021")]
 destination_npc = [null, null, null, null, null, null]
-pontos_interacao = []
-sentar_offset_time = 0.5
-tempo_sentado = 10.0
 
 [connection signal="song_selected" from="MusicasJukebox/CarroselContainer" to="Jukebox/Jukebox" method="_on_carrosel_container_song_selected"]
 [connection signal="pressed" from="MusicasJukebox/CarroselContainer/Control/Panel/Button" to="MusicasJukebox/CarroselContainer" method="_on_button_pressed"]
