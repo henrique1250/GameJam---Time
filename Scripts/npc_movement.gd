@@ -14,7 +14,7 @@ class_name NpcGeneric
 
 @export var marker_saida: Array = []      
 @export var tempo_sentado: float = 10.0  
-@export var offset_sentar: Vector3 = Vector3(0, -0.3, 0)
+@export var offset_sentar: Vector3 = Vector3(0, -0.078, 0)
 
 enum NPC_States {
 	Idle,
@@ -64,7 +64,6 @@ func _physics_process(_float) -> void:
 				look_at(look_at_target)
 		NPC_States.Interact:
 			velocity = Vector3.ZERO
-			animation_player.play("gorda_animations/gorda_esperando")
 
 	move_and_slide()
 
