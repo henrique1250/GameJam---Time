@@ -116,5 +116,12 @@ func _sentar_na_cadeira() -> void:
 	)
 
 
+func _cai_fora() -> void:
+	print("oi")
+	if current_state == NPC_States.Interact:
+		
+		
+		
+
 func _on_navigation_agent_3d_navigation_finished() -> void:
 	_on_destination_reached()

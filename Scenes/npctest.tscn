@@ -11,6 +11,7 @@ albedo_texture = ExtResource("2_hlu4b")
 
 [node name="Npctest" type="CharacterBody3D" unique_id=1672364990]
 script = ExtResource("1_xedfs")
+sentar_offset_time = null
 
 [node name="Rembot_NPC" parent="." unique_id=957519674 instance=ExtResource("1_tenxl")]
 
@@ -69,6 +70,12 @@ shape = SubResource("CapsuleShape3D_xedfs")
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=510371630]
 target_desired_distance = 2.5
 path_height_offset = 0.5
+
+[node name="Label3D" type="Label3D" parent="." unique_id=1983967074]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.969698, 0)
+billboard = 1
+no_depth_test = true
+text = "MIM DE!"
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="navigation_finished" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_navigation_finished"]
