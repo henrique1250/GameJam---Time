@@ -363,6 +363,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.6567183, 0.5104849, 4.13783
 [node name="PROP_cerveja_heineken" parent="NavigationRegion3D/Sinuquinha" unique_id=1700984921 instance=ExtResource("5_j1a25")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7077209, 1.1283692, -1.2362056)
 
+[node name="PROP_cerveja_heineken5" parent="NavigationRegion3D/Sinuquinha" unique_id=1277205449 instance=ExtResource("5_j1a25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.50881, 0.7896751, 6.1129646)
+
 [node name="PROP_cerveja_heineken2" parent="NavigationRegion3D/Sinuquinha" unique_id=639597341 instance=ExtResource("5_j1a25")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8900803, 1.1283692, -1.200124)
 
@@ -385,7 +388,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7252326, 0.80858886, 1.466
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7692857, 0, 2.2483315)
 
 [node name="Cube_002" parent="NavigationRegion3D/PROP_cadeira" index="0" unique_id=791405721]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7410476, 0.40248626, -0.46348524)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7410476, 0.44730288, -0.46348524)
 layers = 2
 surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
@@ -420,7 +423,7 @@ mesh = SubResource("ArrayMesh_5518m")
 surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
 [node name="Cube_017" type="MeshInstance3D" parent="NavigationRegion3D/PROP_cadeira" unique_id=563797057]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.390806, 0.40248626, 0.13759232)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.390806, 0.44451934, 0.13759232)
 layers = 2
 mesh = SubResource("ArrayMesh_5518m")
 surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
@@ -441,7 +444,7 @@ mesh = SubResource("ArrayMesh_5518m")
 surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
 [node name="Cube_011" type="MeshInstance3D" parent="NavigationRegion3D/PROP_cadeira" unique_id=43054391]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1.7666439, 0.40248626, 0.7769015)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1.7666439, 0.44099933, 0.7769015)
 layers = 2
 mesh = SubResource("ArrayMesh_5518m")
 surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
@@ -462,7 +465,7 @@ mesh = SubResource("ArrayMesh_5518m")
 surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
 
 [node name="Cube_014" type="MeshInstance3D" parent="NavigationRegion3D/PROP_cadeira" unique_id=1857699723]
-transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -1.146027, 0.40248626, 0.18129635)
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -1.1213518, 0.46677154, 0.18129635)
 layers = 2
 mesh = SubResource("ArrayMesh_5518m")
 surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
@@ -725,7 +728,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel2" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1689214509]
-modulate = Color(1, 1, 1, 0.97065973)
+modulate = Color(1, 1, 1, 0.959375)
 z_index = -1
 layout_mode = 0
 offset_left = 138.46854
@@ -744,7 +747,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel3" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=884635700]
-modulate = Color(1, 1, 1, 0.94131947)
+modulate = Color(1, 1, 1, 0.91875)
 z_index = -2
 layout_mode = 0
 offset_left = 278.46854
@@ -763,7 +766,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel4" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1704902061]
-modulate = Color(1, 1, 1, 0.91197914)
+modulate = Color(1, 1, 1, 0.878125)
 z_index = -3
 layout_mode = 0
 offset_left = 418.46854
@@ -782,7 +785,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel5" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1852349736]
-modulate = Color(1, 1, 1, 0.8826389)
+modulate = Color(1, 1, 1, 0.8375)
 z_index = -4
 layout_mode = 0
 offset_left = 558.4685
@@ -1020,10 +1023,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8222551, 0.0061373115, 5.9
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8222551, 0.0030536056, 1.6145043)
 
 [node name="PROP_cerveja5" parent="." unique_id=1772102346 instance=ExtResource("22_44wyh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.6626797, 0.09245044, 3.6337223)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.654737, 0.09245044, 3.6337223)
 
 [node name="PROP_rua_tamanho" parent="." unique_id=1253847839 instance=ExtResource("32_xbg07")]
 transform = Transform3D(-4.3711385e-08, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, -4.3711385e-08, 0.6171551, 0, 3.1181393)
+
+[node name="PROP_copo_americano" parent="." unique_id=2131427662 instance=ExtResource("6_xodc5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2384598, 0.8017421, 7.3697424)
+
+[node name="PROP_copo_americano2" parent="." unique_id=2088003634 instance=ExtResource("6_xodc5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.720983, 0.78697395, 6.2686906)
+
+[node name="PROP_copo_americano3" parent="." unique_id=472847302 instance=ExtResource("6_xodc5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.629536, 0.78697395, 6.3207636)
 
 [connection signal="song_selected" from="MusicasJukebox/CarroselContainer" to="NavigationRegion3D/Jukebox/Jukebox" method="_on_carrosel_container_song_selected"]
 [connection signal="pressed" from="MusicasJukebox/CarroselContainer/Control/Panel/Button" to="MusicasJukebox/CarroselContainer" method="_on_button_pressed"]
