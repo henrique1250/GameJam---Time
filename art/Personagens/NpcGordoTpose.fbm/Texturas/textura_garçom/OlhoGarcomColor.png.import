@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8nmugfdhlqr6"
-path.s3tc="res://.godot/imported/NormalMapPeleNpcGordo.png-9e846ac7213c04484042b2f0a705752b.s3tc.ctex"
+uid="uid://c13q7sfrpnb8c"
+path.s3tc="res://.godot/imported/OlhoGarcomColor.png-08b8e0bb66af21df9b4e53efc5e7f3d7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://art/Personagens/NpcGordoTpose.fbm/Texturas/NormalMapPeleNpcGordo.png"
-dest_files=["res://.godot/imported/NormalMapPeleNpcGordo.png-9e846ac7213c04484042b2f0a705752b.s3tc.ctex"]
+source_file="res://art/Personagens/NpcGordoTpose.fbm/Texturas/textura_garçom/OlhoGarcomColor.png"
+dest_files=["res://.godot/imported/OlhoGarcomColor.png-08b8e0bb66af21df9b4e53efc5e7f3d7.s3tc.ctex"]
 
 [params]
 
@@ -22,12 +22,12 @@ compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=1
+compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=1
-roughness/src_normal="res://art/Personagens/NpcGordoTpose.fbm/NormalMapPeleNpcGordo.png"
+roughness/mode=0
+roughness/src_normal=""
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

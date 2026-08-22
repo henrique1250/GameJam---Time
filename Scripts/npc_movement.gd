@@ -1,6 +1,7 @@
 extends CharacterBody3D
 class_name NpcGeneric
 
+@onready var animation_player: AnimationPlayer = $NpcGordoTpose/AnimationPlayer
 
 @export var destination_npc: Array[Marker3D]
 @export var destination_npc_interaction: Array[Marker3D]
@@ -8,7 +9,6 @@ class_name NpcGeneric
 
 @onready var navigation_agent: NavigationAgent3D = $NavigationAgent3D
 @onready var idle_timer: Timer = $Timer
-@onready var animation_player: AnimationPlayer = $Rembot_NPC/AnimationPlayer
 @onready var interaction_timer: Timer = $InteractionTimer
 
 
@@ -40,10 +40,10 @@ func _set_state(new_state: NPC_States) -> void:
 
 	match current_state:
 		NPC_States.Idle:
-			animation_player.play(["idle_1", "idle_2", "idle_breathing"].pick_random())
+			animation_player.play(["gorda_animations/gordao_andando", "gorda_animations/gordao_andando", "gorda_animations/gordao_andando"].pick_random())
 			idle_timer.start(1.0 + randf())
 		NPC_States.Walking:
-			animation_player.play("forward")
+			animation_player.play("gorda_animations/gordao_andando")
 		NPC_States.Interact:
 			_sentar_na_cadeira()
 
@@ -60,7 +60,7 @@ func _physics_process(_float) -> void:
 				look_at(look_at_target)
 		NPC_States.Interact:
 			velocity = Vector3.ZERO
-			animation_player.play("drunk")
+			animation_player.play("gorda_animations/gorda_esperando")
 
 	move_and_slide()
 
@@ -124,7 +124,7 @@ func _sentar_na_cadeira() -> void:
 	tween.tween_property(self, "global_position", marker_sentar.global_position, sentar_offset_time)
 	tween.tween_property(self, "global_rotation", marker_sentar.global_rotation, sentar_offset_time)
 	tween.chain().tween_callback(func():
-		animation_player.play("drunk")
+		animation_player.play("gorda_animations/sentado")
 		interaction_timer.start()
 		
 	)

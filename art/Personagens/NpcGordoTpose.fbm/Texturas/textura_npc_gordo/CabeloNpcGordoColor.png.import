@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dij7f2mycj3g4"
-path.s3tc="res://.godot/imported/PeleGarcom.png-31efef88f1ae9497b26dc0e351c831e6.s3tc.ctex"
+uid="uid://dewfp6m0r8qht"
+path.s3tc="res://.godot/imported/CabeloNpcGordoColor.png-b4e3ad38f9a56d2e8c80987e47e6f57e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://art/Personagens/NpcGordoTpose.fbm/Texturas/PeleGarcom.png"
-dest_files=["res://.godot/imported/PeleGarcom.png-31efef88f1ae9497b26dc0e351c831e6.s3tc.ctex"]
+source_file="res://art/Personagens/NpcGordoTpose.fbm/Texturas/textura_npc_gordo/CabeloNpcGordoColor.png"
+dest_files=["res://.godot/imported/CabeloNpcGordoColor.png-b4e3ad38f9a56d2e8c80987e47e6f57e.s3tc.ctex"]
 
 [params]
 
