@@ -35,6 +35,9 @@ alignment = 1
 
 [node name="Label" type="Label" parent="Panel/CenterContainer/VBoxContainer" unique_id=2017355769]
 layout_mode = 2
+text = "Colete Bar"
+horizontal_alignment = 1
+autowrap_mode = 3
 
 [node name="Jogar" type="Button" parent="Panel/CenterContainer/VBoxContainer" unique_id=430957764]
 layout_mode = 2

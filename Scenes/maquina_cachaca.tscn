@@ -29,6 +29,7 @@ shape = SubResource("BoxShape3D_eidja")
 
 [node name="AreaCopo" type="Area3D" parent="." unique_id=1068819746 node_paths=PackedStringArray("minigame_ui")]
 transform = Transform3D(1, 0, 0, 0, 1.183, 0, 0, 0, 1.183, 4.085107, -0.01586032, 0)
+visible = false
 script = ExtResource("2_ex42q")
 minigame_ui = NodePath("CanvasLayer")
 
