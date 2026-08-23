@@ -982,7 +982,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0098517, -0.0028268099, 2.8
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5279219, 0, 1.2527032)
 
 [node name="SpawnNPC" parent="." unique_id=1718317451 groups=["pontos_andar", "pontos_interacao"] instance=ExtResource("18_3swae")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.386898, 0, 10.64687)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.071855, 0, 11.086221)
 visible = false
 spawn_interval = 15.0
 

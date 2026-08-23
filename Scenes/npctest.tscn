@@ -15,9 +15,9 @@
 [ext_resource type="Animation" uid="uid://ue12j2jue7ab" path="res://art/Personagens/NpcGordoTpose.fbm/Animações/gorda_esperando.res" id="7_2xb00"]
 [ext_resource type="Animation" uid="uid://dqmy0np0dhcjh" path="res://art/Personagens/NpcGordoTpose.fbm/Animações/gorda_pedindo.res" id="8_16h2m"]
 [ext_resource type="Animation" uid="uid://c0o4eac7n2534" path="res://art/Personagens/NpcGordoTpose.fbm/Animações/gordao_andando.res" id="9_j4jg1"]
-[ext_resource type="Animation" uid="uid://ibgxmawqk67a" path="res://art/Personagens/NpcGordoTpose.fbm/Animações/idle1.res" id="10_j4jg1"]
+[ext_resource type="Animation" uid="uid://dr28a6j07gypd" path="res://art/Personagens/NpcGordoTpose.fbm/Animações/idle1.res" id="10_j4jg1"]
 [ext_resource type="Animation" uid="uid://bpe88eb3bds3w" path="res://art/Personagens/NpcGordoTpose.fbm/Animações/sentado.res" id="10_piud4"]
-[ext_resource type="Animation" uid="uid://iixvvyip5dc6" path="res://art/Personagens/NpcGordoTpose.fbm/Animações/idle2.res" id="11_piud4"]
+[ext_resource type="Animation" uid="uid://d3qxtw2dbow1i" path="res://art/Personagens/NpcGordoTpose.fbm/Animações/idle2.res" id="11_piud4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fac00"]
 albedo_texture = ExtResource("3_qsw3x")
