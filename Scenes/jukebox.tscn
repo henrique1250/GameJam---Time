@@ -6,6 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://ccl1fdsoepm5a" path="res://songs/artissizm-brazil-funk-475322.mp3" id="3_ladhy"]
 [ext_resource type="AudioStream" uid="uid://0rsg67koir7l" path="res://songs/djelcy-brasil-sem-futuro-brazil-without-a-future-473632.mp3" id="4_4m80m"]
 [ext_resource type="AudioStream" uid="uid://das3mkxfamg64" path="res://songs/djelcy-sentimental-forro-northeast-brazil-473631.mp3" id="5_pyxex"]
+[ext_resource type="PackedScene" uid="uid://b8vufabx44fin" path="res://Assets/PROP_junker_box.glb" id="7_ladhy"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3bl5i"]
 
@@ -62,8 +63,12 @@ musicas = Array[AudioStream]([ExtResource("2_shkyy"), ExtResource("3_ladhy"), Ex
 audio_player = NodePath("AudioStreamPlayer")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=182017174]
+visible = false
 mesh = SubResource("ArrayMesh_ddfc1")
 surface_material_override/0 = SubResource("StandardMaterial3D_j47mx")
+
+[node name="PROP_junker_box" parent="." unique_id=82640100 instance=ExtResource("7_ladhy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.8798972, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=306791571]
 transform = Transform3D(1.091753, 0, 0, 0, 1.4739611, 0, 0, 0, 1, 0.0063969903, 0, -0.0020446777)
