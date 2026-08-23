@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de03ag78fbrbm"
-path.s3tc="res://.godot/imported/PROP_rua_tamanho_ChatGPT Image 21 de ago_3.png-f62015182802d6c1ce8038ff50fde565.s3tc.ctex"
+uid="uid://d0yy4ywm85o3j"
+path.s3tc="res://.godot/imported/LinguaGarcomColor.png-4774995a8164b02aa80c621b42c940f5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/PROP_rua_tamanho_ChatGPT Image 21 de ago_3.png"
-dest_files=["res://.godot/imported/PROP_rua_tamanho_ChatGPT Image 21 de ago_3.png-f62015182802d6c1ce8038ff50fde565.s3tc.ctex"]
+source_file="res://art/Personagens/NpcMagroTpose.fbm/LinguaGarcomColor.png"
+dest_files=["res://.godot/imported/LinguaGarcomColor.png-4774995a8164b02aa80c621b42c940f5.s3tc.ctex"]
 
 [params]
 

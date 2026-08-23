@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" path="res://Scenes/mesa.gd" id="1_t1wyp"]
 [ext_resource type="Texture2D" uid="uid://c0em808l02h2f" path="res://art/assets/PROP_mesa_mesa_bar.png" id="2_o3usn"]
-[ext_resource type="Shader" uid="uid://q3efolm48w4g" path="res://art/shades/outineassets.gdshader" id="3_hc3ql"]
+[ext_resource type="Shader" path="res://art/shades/outineassets.gdshader" id="3_hc3ql"]
+[ext_resource type="PackedScene" uid="uid://2fl6g234y15" path="res://Assets/mesa_bar_coca_skol.glb" id="4_3xvxo"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l3vo5"]
 resource_name = "Material.001"
@@ -64,8 +65,12 @@ marker_foco = NodePath("Marker3D")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1626635257]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2139045, 0)
+visible = false
 mesh = SubResource("ArrayMesh_4jrs7")
 surface_material_override/0 = SubResource("StandardMaterial3D_o3usn")
+
+[node name="mesa_bar_coca_skol" parent="." unique_id=350576428 instance=ExtResource("4_3xvxo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.15445891, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=145673636]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.22070313, 0)

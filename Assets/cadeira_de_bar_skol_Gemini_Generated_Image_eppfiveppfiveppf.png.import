@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de03ag78fbrbm"
-path.s3tc="res://.godot/imported/PROP_rua_tamanho_ChatGPT Image 21 de ago_3.png-f62015182802d6c1ce8038ff50fde565.s3tc.ctex"
+uid="uid://duyqvpohokhvj"
+path.s3tc="res://.godot/imported/cadeira_de_bar_skol_Gemini_Generated_Image_eppfiveppfiveppf.png-dc1ea4fe597c58500cabd79018dbf2f5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "9c463f49bb03d8a2daae035940307092"
+}
 
 [deps]
 
-source_file="res://Assets/PROP_rua_tamanho_ChatGPT Image 21 de ago_3.png"
-dest_files=["res://.godot/imported/PROP_rua_tamanho_ChatGPT Image 21 de ago_3.png-f62015182802d6c1ce8038ff50fde565.s3tc.ctex"]
+source_file="res://Assets/cadeira_de_bar_skol_Gemini_Generated_Image_eppfiveppfiveppf.png"
+dest_files=["res://.godot/imported/cadeira_de_bar_skol_Gemini_Generated_Image_eppfiveppfiveppf.png-dc1ea4fe597c58500cabd79018dbf2f5.s3tc.ctex"]
 
 [params]
 

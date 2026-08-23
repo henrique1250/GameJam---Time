@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de03ag78fbrbm"
-path.s3tc="res://.godot/imported/PROP_rua_tamanho_ChatGPT Image 21 de ago_3.png-f62015182802d6c1ce8038ff50fde565.s3tc.ctex"
+uid="uid://bkhgqsaydjsl7"
+path.s3tc="res://.godot/imported/PeleNpcMagroColor.png-ec6248488fb9783c10b65c5457d8e515.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/PROP_rua_tamanho_ChatGPT Image 21 de ago_3.png"
-dest_files=["res://.godot/imported/PROP_rua_tamanho_ChatGPT Image 21 de ago_3.png-f62015182802d6c1ce8038ff50fde565.s3tc.ctex"]
+source_file="res://art/Personagens/NpcMagroTpose.fbm/PeleNpcMagroColor.png"
+dest_files=["res://.godot/imported/PeleNpcMagroColor.png-ec6248488fb9783c10b65c5457d8e515.s3tc.ctex"]
 
 [params]
 

@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de03ag78fbrbm"
-path.s3tc="res://.godot/imported/PROP_rua_tamanho_ChatGPT Image 21 de ago_3.png-f62015182802d6c1ce8038ff50fde565.s3tc.ctex"
+uid="uid://m14k7ilkbuss"
+path.s3tc="res://.godot/imported/mesa_de_bar_coca_Gemini_Generated_Image_oi9ts9oi9ts9oi9t.png-1728df36345bd395e3bc788d7af9f4dc.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "bb62d69842eaba793354f5caf2733f36"
+}
 
 [deps]
 
-source_file="res://Assets/PROP_rua_tamanho_ChatGPT Image 21 de ago_3.png"
-dest_files=["res://.godot/imported/PROP_rua_tamanho_ChatGPT Image 21 de ago_3.png-f62015182802d6c1ce8038ff50fde565.s3tc.ctex"]
+source_file="res://Assets/mesa_de_bar_coca_Gemini_Generated_Image_oi9ts9oi9ts9oi9t.png"
+dest_files=["res://.godot/imported/mesa_de_bar_coca_Gemini_Generated_Image_oi9ts9oi9ts9oi9t.png-1728df36345bd395e3bc788d7af9f4dc.s3tc.ctex"]
 
 [params]
 
