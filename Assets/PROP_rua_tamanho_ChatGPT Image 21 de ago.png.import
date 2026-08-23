@@ -2,14 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qrh27gi4trcg"
+uid="uid://dq7atdt5fq5tv"
 path.s3tc="res://.godot/imported/PROP_rua_tamanho_ChatGPT Image 21 de ago.png-0dbadd86d6aedc2713ed462900b9fc1c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "fc6644ce508565ebca1f9f5ff5fd966d"
 }
 
 [deps]
