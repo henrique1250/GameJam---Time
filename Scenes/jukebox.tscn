@@ -1,12 +1,14 @@
 [gd_scene format=4 uid="uid://bgpqkfmxj2qd0"]
 
 [ext_resource type="Script" uid="uid://dya5htpx4a0qb" path="res://Scenes/jukebox.gd" id="1_7i7ve"]
-[ext_resource type="Shader" path="res://art/shades/outineassets.gdshader" id="2_4tsl3"]
+[ext_resource type="Shader" uid="uid://q3efolm48w4g" path="res://art/shades/outineassets.gdshader" id="2_4tsl3"]
 [ext_resource type="AudioStream" uid="uid://cgwedkebfa1nh" path="res://songs/Boteco OST/Provas.wav" id="2_ladhy"]
 [ext_resource type="AudioStream" uid="uid://bos3loavpmqhx" path="res://songs/Boteco OST/Copão Veneno.wav" id="3_4m80m"]
 [ext_resource type="AudioStream" uid="uid://mx7bw6ar4fn5" path="res://songs/Boteco OST/Azul da Cor do Bar.wav" id="4_pyxex"]
 [ext_resource type="AudioStream" uid="uid://bq4ahng7rmsq7" path="res://songs/Boteco OST/Boteco Azul.wav" id="5_v1ie0"]
 [ext_resource type="PackedScene" uid="uid://b8vufabx44fin" path="res://Assets/PROP_junker_box.glb" id="7_ladhy"]
+[ext_resource type="AudioStream" uid="uid://dgaejcqslpo4" path="res://songs/sfx/JukeboxRetornar.mp3" id="8_4m80m"]
+[ext_resource type="AudioStream" uid="uid://cfhix2lto14n" path="res://songs/sfx/JukeboxSelecionar.mp3" id="9_pyxex"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3bl5i"]
 
@@ -78,3 +80,9 @@ shape = SubResource("BoxShape3D_7i7ve")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4387698, 1.5096095, 0)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=781400997]
+
+[node name="MudarSong" type="AudioStreamPlayer2D" parent="." unique_id=1174206843]
+stream = ExtResource("8_4m80m")
+
+[node name="SelecSong" type="AudioStreamPlayer2D" parent="." unique_id=380225166]
+stream = ExtResource("9_pyxex")

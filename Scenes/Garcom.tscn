@@ -112,6 +112,11 @@ surface_material_override/5 = SubResource("StandardMaterial3D_5i7ig")
 surface_material_override/6 = SubResource("StandardMaterial3D_rk05p")
 surface_material_override/7 = SubResource("StandardMaterial3D_xgrdc")
 
+[node name="BoneAttachment3D" type="BoneAttachment3D" parent="PesonagemPrincipalTpose/OssoGarcom/Skeleton3D" index="1" unique_id=1975392632]
+transform = Transform3D(-0.03474568, -0.8230824, 0.56685823, -0.09012244, 0.5674702, 0.8184471, -0.9953243, -0.022648955, -0.09389532, -0.00032052115, 0.004300517, 0.0118013695)
+bone_name = "PontaMao.L"
+bone_idx = 7
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PesonagemPrincipalTpose" unique_id=1071711119]
 libraries/Garcom = SubResource("AnimationLibrary_jreok")
 autoplay = &"Garcom/Encostado"
