@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2bia08c71bij"
-path="res://.godot/imported/163_Sem_Titulo_20260823005822.png-7d362fda8bb2adf87170a4fe365ee03f.ctex"
+path="res://.godot/imported/163_Sem_Titulo_20260823005822.png-62f04a258856752629b4bd8a03659ea8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://songs/163_Sem_Titulo_20260823005822.png"
-dest_files=["res://.godot/imported/163_Sem_Titulo_20260823005822.png-7d362fda8bb2adf87170a4fe365ee03f.ctex"]
+source_file="res://songs/songs_caps/163_Sem_Titulo_20260823005822.png"
+dest_files=["res://.godot/imported/163_Sem_Titulo_20260823005822.png-62f04a258856752629b4bd8a03659ea8.ctex"]
 
 [params]
 

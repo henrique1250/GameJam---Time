@@ -3,4 +3,5 @@
 [ext_resource type="Script" uid="uid://88v701y7yngp" path="res://Scenes/carrousel_container.gd" id="1_mwwo4"]
 
 [node name="CarrouselContainer" type="Node2D" unique_id=1844216568]
+visible = false
 script = ExtResource("1_mwwo4")

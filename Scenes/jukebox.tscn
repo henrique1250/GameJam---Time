@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://dya5htpx4a0qb" path="res://Scenes/jukebox.gd" id="1_7i7ve"]
 [ext_resource type="Shader" path="res://art/shades/outineassets.gdshader" id="2_4tsl3"]
-[ext_resource type="AudioStream" uid="uid://cjyku4kb2sv1v" path="res://songs/Ano Oto - AKIRA ARASAWA (youtube).mp3" id="2_shkyy"]
-[ext_resource type="AudioStream" uid="uid://ccl1fdsoepm5a" path="res://songs/artissizm-brazil-funk-475322.mp3" id="3_ladhy"]
-[ext_resource type="AudioStream" uid="uid://0rsg67koir7l" path="res://songs/djelcy-brasil-sem-futuro-brazil-without-a-future-473632.mp3" id="4_4m80m"]
-[ext_resource type="AudioStream" uid="uid://das3mkxfamg64" path="res://songs/djelcy-sentimental-forro-northeast-brazil-473631.mp3" id="5_pyxex"]
+[ext_resource type="AudioStream" uid="uid://cgwedkebfa1nh" path="res://songs/Boteco OST/Provas.wav" id="2_ladhy"]
+[ext_resource type="AudioStream" uid="uid://bos3loavpmqhx" path="res://songs/Boteco OST/Copão Veneno.wav" id="3_4m80m"]
+[ext_resource type="AudioStream" uid="uid://mx7bw6ar4fn5" path="res://songs/Boteco OST/Azul da Cor do Bar.wav" id="4_pyxex"]
+[ext_resource type="AudioStream" uid="uid://bq4ahng7rmsq7" path="res://songs/Boteco OST/Boteco Azul.wav" id="5_v1ie0"]
 [ext_resource type="PackedScene" uid="uid://b8vufabx44fin" path="res://Assets/PROP_junker_box.glb" id="7_ladhy"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3bl5i"]
@@ -59,7 +59,7 @@ size = Vector3(0.98828125, 1, 0.86517334)
 [node name="Jukebox" type="Area3D" unique_id=1150229189 node_paths=PackedStringArray("marker_foco", "audio_player")]
 script = ExtResource("1_7i7ve")
 marker_foco = NodePath("Marker3D")
-musicas = Array[AudioStream]([ExtResource("2_shkyy"), ExtResource("3_ladhy"), ExtResource("4_4m80m"), ExtResource("5_pyxex")])
+musicas = Array[AudioStream]([ExtResource("2_ladhy"), ExtResource("3_4m80m"), ExtResource("4_pyxex"), ExtResource("5_v1ie0")])
 audio_player = NodePath("AudioStreamPlayer")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=182017174]
