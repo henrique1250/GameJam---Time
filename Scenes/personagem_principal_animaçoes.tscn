@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://b71t65l1a2w1x"]
+
+[ext_resource type="PackedScene" uid="uid://j2b7brvtjofr" path="res://art/Personagens/PersonagemPrincipal/PersonagemPrincipalAnimaçoes.fbx" id="1_pp5h7"]
+[ext_resource type="ArrayMesh" uid="uid://dahqk6hcik2e" path="res://Assets/new_array_mesh.tres" id="2_jatb8"]
+
+[node name="PersonagemPrincipalAnimaçoes" unique_id=628231016 instance=ExtResource("1_pp5h7")]
+
+[node name="Skeleton3D" parent="OssoGarcom" parent_id_path=PackedInt32Array(705923145) index="0" unique_id=1143165489]
+bones/2/rotation = Quaternion(-0.22580469, 0, 0, 0.9741726)
+bones/3/rotation = Quaternion(-0.0019900643, -0.014445768, -0.8375002, 0.5462424)
+bones/4/rotation = Quaternion(-0.6371386, 0.3625881, -0.10484096, 0.67200637)
+bones/5/rotation = Quaternion(0.7551295, 0.4368289, -0.008236723, -0.48876595)
+bones/6/rotation = Quaternion(0.14457755, 0.038706258, -0.07369571, 0.9859859)
+bones/7/rotation = Quaternion(-0.012797548, 4.773325e-05, 5.3884683e-05, 0.9999181)
+bones/8/rotation = Quaternion(0.022334998, -0.0077465107, -0.13388966, 0.99071425)
+bones/9/rotation = Quaternion(0.0441404, 0.060917307, -0.26834664, 0.96038055)
+bones/12/rotation = Quaternion(-0.012951267, -0.028708287, -0.26531425, 0.9636475)
+bones/13/rotation = Quaternion(0.008942078, 0.017888865, -0.3006632, 0.9535208)
+bones/14/rotation = Quaternion(0.02805682, 0.014363169, -0.1527092, 0.9877684)
+bones/15/rotation = Quaternion(0.014038213, 0.04437879, -0.35602254, 0.9333174)
+bones/16/rotation = Quaternion(-0.00017067247, 0.030451328, -0.11458984, 0.9929461)
+bones/17/rotation = Quaternion(0.09307265, -0.015574308, -0.1355073, 0.98627216)
+bones/18/rotation = Quaternion(-0.015275848, 0.043282975, -0.29587656, 0.9541228)
+bones/19/rotation = Quaternion(-0.05378193, 0.12510324, -0.48038486, 0.866422)
+bones/20/rotation = Quaternion(-0.34875762, 0.1718708, 0.09890768, 0.91599447)
+bones/21/rotation = Quaternion(0.20713858, 0.19072574, 0.008853881, 0.9594993)
+bones/23/rotation = Quaternion(0.015471165, 0, 0, 0.9998803)
+bones/24/rotation = Quaternion(0.31783342, -0.0066120327, -0.0074462174, 0.94809425)
+bones/39/rotation = Quaternion(0.0052799415, 0.01945988, 0.83618087, 0.5480831)
+bones/40/rotation = Quaternion(-0.65046203, -0.21485709, -0.0187293, 0.72827524)
+bones/41/rotation = Quaternion(-0.644002, 0.35518402, -0.12252291, 0.6664037)
+bones/42/rotation = Quaternion(0.026241222, -0.010996556, 0.026029214, 0.9992563)
+bones/43/rotation = Quaternion(-0.012797549, -4.7736983e-05, -5.3882824e-05, 0.9999181)
+bones/44/rotation = Quaternion(-0.030149134, 0.002902093, 0.617157, 0.78625685)
+bones/45/rotation = Quaternion(-0.07043704, 0.043172456, 0.78301775, 0.6164884)
+bones/46/rotation = Quaternion(0.0004973607, 0.006438016, 0.5430731, 0.83966064)
+bones/47/rotation = Quaternion(-0.044186216, -0.013540383, 0.59961843, 0.7989506)
+bones/48/rotation = Quaternion(-0.06843077, 0.0074897734, 0.7660449, 0.6390903)
+bones/49/rotation = Quaternion(0.0009923191, -0.012635546, 0.51355577, 0.8579627)
+bones/50/rotation = Quaternion(-0.06429672, -0.034977943, 0.5670217, 0.82044435)
+bones/51/rotation = Quaternion(-0.07001168, -0.041359242, 0.79452074, 0.60176784)
+bones/52/rotation = Quaternion(0.002523078, -0.04408347, 0.47127244, 0.8808817)
+bones/53/rotation = Quaternion(0.026944209, 0.045629673, 0.6174512, 0.7848223)
+bones/54/rotation = Quaternion(-0.049456254, 0.15514134, 0.7902555, 0.59074664)
+bones/55/rotation = Quaternion(-0.3083784, 0.31006837, 0.16960263, 0.8831735)
+bones/56/rotation = Quaternion(-0.017435681, 0.17072617, 0.25568846, 0.9514053)
+bones/57/rotation = Quaternion(0.33579424, 0.12835431, 0.15115254, 0.9208259)
+bones/58/rotation = Quaternion(0.0046576415, -4.004026e-07, -0.0460692, 0.9989274)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="OssoGarcom/Skeleton3D" index="0" unique_id=763155201]
+mesh = ExtResource("2_jatb8")
+skeleton = NodePath("..")
+
+[node name="AnimationPlayer" parent="." index="1" unique_id=1447284000]
+autoplay = &"EncostadoBalcao"

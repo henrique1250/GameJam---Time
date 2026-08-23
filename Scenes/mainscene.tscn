@@ -3,15 +3,15 @@
 [ext_resource type="PackedScene" uid="uid://cws1nqstyrdbt" path="res://Scenes/mesa.tscn" id="3_a3v7h"]
 [ext_resource type="PackedScene" uid="uid://c2cirktl8j3ha" path="res://Scenes/sinuquinha.tscn" id="4_3p0ik"]
 [ext_resource type="PackedScene" uid="uid://bgpqkfmxj2qd0" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
-[ext_resource type="Script" path="res://Scenes/camera.gd" id="6_c5s60"]
-[ext_resource type="PackedScene" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
+[ext_resource type="Script" uid="uid://balnxmcje74xp" path="res://Scenes/camera.gd" id="6_c5s60"]
+[ext_resource type="PackedScene" uid="uid://i5yqwk0mold5" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
 [ext_resource type="Script" uid="uid://88v701y7yngp" path="res://Scenes/carrousel_container.gd" id="8_gjgc6"]
 [ext_resource type="PackedScene" uid="uid://dwxao37vt1t75" path="res://Scenes/npctest.tscn" id="9_1o021"]
 [ext_resource type="AudioStream" uid="uid://cgwedkebfa1nh" path="res://songs/Boteco OST/Provas.wav" id="9_hkskg"]
 [ext_resource type="PackedScene" uid="uid://bdjtk7koqgec8" path="res://art/assets/PROP_balcao-modular.glb" id="9_tf7l5"]
 [ext_resource type="Texture2D" uid="uid://cx13svo4nwpdl" path="res://art/assets/PROP_balcao-modular_balcao Set.png" id="10_3swae"]
 [ext_resource type="AudioStream" uid="uid://bos3loavpmqhx" path="res://songs/Boteco OST/Copão Veneno.wav" id="10_44wyh"]
-[ext_resource type="Shader" path="res://art/shades/outineassets.gdshader" id="10_tf7l5"]
+[ext_resource type="Shader" uid="uid://q3efolm48w4g" path="res://art/shades/outineassets.gdshader" id="10_tf7l5"]
 [ext_resource type="AudioStream" uid="uid://bq4ahng7rmsq7" path="res://songs/Boteco OST/Boteco Azul.wav" id="11_xdmf7"]
 [ext_resource type="AudioStream" uid="uid://mx7bw6ar4fn5" path="res://songs/Boteco OST/Azul da Cor do Bar.wav" id="12_c35lc"]
 [ext_resource type="PackedScene" uid="uid://di20lfxa62dov" path="res://art/assets/PROP_cadeira.glb" id="13_hkskg"]
@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://bd8vtfer50ls3" path="res://Assets/rua_bar.glb" id="19_1bo1k"]
 [ext_resource type="PackedScene" uid="uid://7ht64rvyhmfs" path="res://Assets/PROP_ypioca_prata.glb" id="19_76hng"]
 [ext_resource type="PackedScene" uid="uid://ij2bnnhp3swh" path="res://Assets/PROP_ypioca_amarela.glb" id="20_hkskg"]
+[ext_resource type="PackedScene" uid="uid://bkd5m344ukpky" path="res://Scenes/Garcom.tscn" id="22_44wyh"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_dijpm"]
 vertices = PackedVector3Array(-3.5623102, 0.38094014, 3.1748629, -3.5623102, 0.38094014, 2.4248629, -4.56231, 0.38094014, 2.1748629, -2.8123102, 0.38094014, 4.424863, -2.8123102, 0.38094014, 3.4248629, -4.56231, 0.38094014, 0.92486286, -3.5623102, 0.38094014, 0.67486286, -3.3123102, 0.38094014, -0.07513714, -6.31231, 0.38094014, 6.174863, -4.56231, 0.38094014, 6.174863, -4.56231, 0.38094014, 5.424863, -1.5623102, 0.38094014, -3.8251371, -6.31231, 0.38094014, -3.8251371, -1.8123102, 0.38094014, 0.17486286, -1.8123102, 0.38094014, 0.67486286, -1.0623102, 0.38094014, 0.92486286, -2.0623102, 0.38094014, 4.424863, -1.0623102, 0.38094014, 2.1748629, -1.8123102, 0.38094014, 5.174863, -1.0623102, 0.38094014, 5.424863, -0.31231022, 0.38094014, 1.4248629, 0.6876898, 0.38094014, 1.1748629, 0.9376898, 0.38094014, 0.42486286, -1.0623102, 0.38094014, 6.424863, 0.18768978, 0.38094014, 6.674863, 0.9376898, 0.38094014, 5.424863, 0.9376898, 0.38094014, 3.9248629, 0.6876898, 0.38094014, 3.1748629, -0.31231022, 0.38094014, 2.6748629, 2.1876898, 0.38094014, 0.42486286, 2.6876898, 0.38094014, 1.1748629, 2.6876898, 0.38094014, -3.8251371, 3.1876898, 0.38094014, 2.9248629, 2.4376898, 0.38094014, 3.1748629, 2.1876898, 0.38094014, 3.9248629, 2.6876898, 0.38094014, 5.174863, 3.6876898, 0.38094014, 4.924863, 3.6876898, 0.38094014, 3.9248629, 3.6876898, 0.38094014, 6.424863, 4.43769, 0.38094014, 5.424863, 4.43769, 0.38094014, 1.9248629, 3.1876898, 0.38094014, 1.4248629, 6.18769, 0.38094014, 1.9248629, 7.68769, 0.38094014, -3.8251371, 6.68769, 0.38094014, 2.4248629, 6.68769, 0.38094014, 3.6748629, 7.68769, 0.38094014, 3.6748629, 5.68769, 1.1309402, 3.4248629, 5.68769, 1.3809402, 2.9248629, 5.18769, 1.3809402, 2.9248629, 4.93769, 1.3809402, 3.4248629, 4.93769, 1.3809402, 4.424863, 5.43769, 1.1309402, 4.424863, 3.6876898, 0.38094014, 7.424863, 2.9376898, 0.38094014, 7.674863, 2.6876898, 0.38094014, 8.424863, 5.93769, 0.38094014, 5.674863, 7.68769, 0.38094014, 11.424863, 1.9376898, 0.38094014, 11.424863, 1.9376898, 0.38094014, 8.424863, 1.1876898, 0.38094014, 8.424863, 0.9376898, 0.38094014, 7.674863, 0.18768978, 0.38094014, 7.424863, -3.3123102, 0.38094014, 7.924863, -3.5623102, 0.38094014, 7.174863, -4.56231, 0.38094014, 6.924863, -2.0623102, 0.38094014, 7.924863, -6.31231, 0.38094014, 11.424863)
@@ -359,7 +360,7 @@ marker_foco = NodePath("../../../Markers/Sinuca")
 [node name="PROP_cadeira" parent="NavigationRegion3D" unique_id=1872401475 instance=ExtResource("13_hkskg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7692857, 0, 2.2483315)
 
-[node name="Cube_002" parent="NavigationRegion3D/PROP_cadeira" index="0" unique_id=791405721]
+[node name="Cube_002" parent="NavigationRegion3D/PROP_cadeira" index="0" unique_id=82784933]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.209522, 0.40248626, -0.85607815)
 layers = 2
 surface_material_override/0 = SubResource("StandardMaterial3D_76hng")
@@ -618,7 +619,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel2" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1689214509]
-modulate = Color(1, 1, 1, 0.97102463)
+modulate = Color(1, 1, 1, 0.9317917)
 z_index = -1
 layout_mode = 0
 offset_left = 138.46854
@@ -637,7 +638,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel3" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=884635700]
-modulate = Color(1, 1, 1, 0.94204926)
+modulate = Color(1, 1, 1, 0.86358345)
 z_index = -2
 layout_mode = 0
 offset_left = 278.46854
@@ -656,7 +657,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel4" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1704902061]
-modulate = Color(1, 1, 1, 0.9130739)
+modulate = Color(1, 1, 1, 0.7953751)
 z_index = -3
 layout_mode = 0
 offset_left = 418.46854
@@ -675,7 +676,7 @@ offset_bottom = 149.0
 text = "ESCOLHER"
 
 [node name="Panel5" type="Panel" parent="MusicasJukebox/CarroselContainer/Control" unique_id=1852349736]
-modulate = Color(1, 1, 1, 0.8840985)
+modulate = Color(1, 1, 1, 0.72716683)
 z_index = -4
 layout_mode = 0
 offset_left = 558.4685
@@ -811,19 +812,19 @@ surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
 [node name="PROP_balcao-modular" parent="." unique_id=509138039 instance=ExtResource("9_tf7l5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4124731)
 
-[node name="canto-balcao" parent="PROP_balcao-modular" index="0" unique_id=622707978]
+[node name="canto-balcao" parent="PROP_balcao-modular" index="0" unique_id=116096535]
 transform = Transform3D(1.1116476, 0, 0, 0, 1.1116476, 0, 0, 0, 1.1116476, 3.33, 0.539, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="ponta-esquerda-balcao" parent="PROP_balcao-modular" index="1" unique_id=883175105]
+[node name="ponta-esquerda-balcao" parent="PROP_balcao-modular" index="1" unique_id=1624125057]
 transform = Transform3D(-4.859166e-08, 0, -1.1116476, 0, 1.1116476, 0, 1.1116476, 0, -4.859166e-08, -3.44, 0.539, -1.995)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="ponta-direita-balcao" parent="PROP_balcao-modular" index="2" unique_id=1730728862]
+[node name="ponta-direita-balcao" parent="PROP_balcao-modular" index="2" unique_id=1697189488]
 transform = Transform3D(1.1116476, 0, 0, 0, 1.1116476, 0, 0, 0, 1.1116476, 0, 0.539, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="meio-balcao" parent="PROP_balcao-modular" index="3" unique_id=852470112]
+[node name="meio-balcao" parent="PROP_balcao-modular" index="3" unique_id=1703879481]
 transform = Transform3D(-4.859166e-08, 0, -1.1116476, 0, 1.1116476, 0, 1.1116476, 0, -4.859166e-08, -3.44, 0.539, -0.885)
 rotation_order = 0
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
@@ -862,7 +863,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 [node name="PROP_balcao_quina" parent="." unique_id=2111459800 instance=ExtResource("15_xdmf7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4124731)
 
-[node name="canto-balcao-esquerdo" parent="PROP_balcao_quina" index="0" unique_id=1303543020]
+[node name="canto-balcao-esquerdo" parent="PROP_balcao_quina" index="0" unique_id=625776994]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.33, 0, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
@@ -938,6 +939,9 @@ transform = Transform3D(-0.5154569, 0, -0.8569155, 0, 1, 0, 0.8569155, 0, -0.515
 
 [node name="PROP_ypioca_amarela" parent="." unique_id=878998562 instance=ExtResource("20_hkskg")]
 transform = Transform3D(-0.8886413, 0, 0.45860296, 0, 1, 0, -0.45860296, 0, -0.8886413, 1.7044635, 0.617031, 2.0087495)
+
+[node name="Node3D" parent="." unique_id=609313992 instance=ExtResource("22_44wyh")]
+transform = Transform3D(-0.9997785, 0, -0.021047145, 0, 1, 0, 0.021047145, 0, -0.9997785, 0, 0, -2.3550923)
 
 [connection signal="song_selected" from="MusicasJukebox/CarroselContainer" to="Jukebox/Jukebox" method="_on_carrosel_container_song_selected"]
 [connection signal="pressed" from="MusicasJukebox/CarroselContainer/Control/Panel/Button" to="MusicasJukebox/CarroselContainer" method="_on_button_pressed"]
