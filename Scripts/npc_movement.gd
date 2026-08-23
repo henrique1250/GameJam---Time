@@ -14,7 +14,6 @@ class_name NpcGeneric
 
 @export var marker_saida: Array = []      
 @export var tempo_sentado: float = 10.0  
-@export var offset_sentar: Vector3 = Vector3(0, -0.078, 0)
 
 enum NPC_States {
 	Idle,
@@ -64,6 +63,7 @@ func _physics_process(_float) -> void:
 				look_at(look_at_target)
 		NPC_States.Interact:
 			velocity = Vector3.ZERO
+			animation_player.play("gorda_animations/gorda_esperando")
 
 	move_and_slide()
 
@@ -116,24 +116,20 @@ func _on_destination_reached() -> void:
 		current_state = NPC_States.Walking
 
 
-
 func _sentar_na_cadeira() -> void:
 	if current_destinition == null:
 		return
 
 	var marker_sentar: Marker3D = current_destinition
-	var posicao_final: Vector3 = marker_sentar.global_position + offset_sentar
 
 	var tween := create_tween()
 	tween.set_parallel(true)
-	tween.tween_property(self, "global_position", posicao_final, sentar_offset_time)
+	tween.tween_property(self, "global_position", marker_sentar.global_position, sentar_offset_time)
 	tween.tween_property(self, "global_rotation", marker_sentar.global_rotation, sentar_offset_time)
 	tween.chain().tween_callback(func():
-		var anim: Animation = animation_player.get_animation("gorda_animations/sentado")
-		if anim:
-			anim.loop_mode = Animation.LOOP_NONE
 		animation_player.play("gorda_animations/sentado")
 		interaction_timer.start()
+		
 	)
 		
 

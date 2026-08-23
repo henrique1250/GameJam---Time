@@ -16,13 +16,10 @@ marker_foco = NodePath("Marker3D")
 musicas = Array[AudioStream]([ExtResource("2_shkyy"), ExtResource("3_ladhy"), ExtResource("4_4m80m"), ExtResource("5_pyxex")])
 audio_player = NodePath("AudioStreamPlayer")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=182017174]
-
-[node name="PROP_junker_box" parent="MeshInstance3D" unique_id=82640100 instance=ExtResource("6_shkyy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.8341746, 0)
+[node name="PROP_junker_box" parent="." unique_id=1385049685 instance=ExtResource("6_shkyy")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=306791571]
-transform = Transform3D(1.091753, 0, 0, 0, 1.4739611, 0, 0, 0, 1, 0.0063969903, 0, -0.0020446777)
+transform = Transform3D(0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0063969903, 0, -0.0020446777)
 shape = SubResource("BoxShape3D_7i7ve")
 
 [node name="Marker3D" type="Marker3D" parent="." unique_id=756833660]
