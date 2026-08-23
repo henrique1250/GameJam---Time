@@ -43,7 +43,7 @@ func _set_state(new_state: NPC_States) -> void:
 
 	match current_state:
 		NPC_States.Idle:
-			animation_player.play(["gorda_animations/gordao_andando", "gorda_animations/gordao_andando", "gorda_animations/gordao_andando"].pick_random())
+			animation_player.play(["gorda_animations/idle1", "gorda_animations/idle2"].pick_random())
 			idle_timer.start(1.0 + randf())
 		NPC_States.Walking:
 			animation_player.play("gorda_animations/gordao_andando")
