@@ -2,14 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0kebifs8eq6u"
+uid="uid://ppxyv73wrsa6"
 path.s3tc="res://.godot/imported/PROP_rua_tamanho_Gemini_Generated_Image_1l4yea1l4yea1l4y.png-60994279d63a358a155cdcef84a0ef20.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "7bc954fddc8df6df4dc3e2a152ca5981"
 }
 
 [deps]
