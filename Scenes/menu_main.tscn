@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://d3counudqf1r2"]
 
 [ext_resource type="Script" uid="uid://cpg2ihvv2d32t" path="res://Scenes/menu_main.gd" id="1_savw8"]
+[ext_resource type="AudioStream" uid="uid://mx7bw6ar4fn5" path="res://songs/Boteco OST/Azul da Cor do Bar.wav" id="2_6aj48"]
 
 [node name="Menu" type="Control" unique_id=1873914623]
 layout_mode = 3
@@ -19,6 +20,18 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="Titulo" type="Label" parent="Panel" unique_id=2017355769]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 99.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 72
+text = "Calote Bar"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
 [node name="CenterContainer" type="CenterContainer" parent="Panel" unique_id=1661120906]
 layout_mode = 1
 anchors_preset = -1
@@ -33,12 +46,6 @@ layout_mode = 2
 theme_override_constants/separation = 15
 alignment = 1
 
-[node name="Label" type="Label" parent="Panel/CenterContainer/VBoxContainer" unique_id=2017355769]
-layout_mode = 2
-text = "Colete Bar"
-horizontal_alignment = 1
-autowrap_mode = 3
-
 [node name="Jogar" type="Button" parent="Panel/CenterContainer/VBoxContainer" unique_id=430957764]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
@@ -48,3 +55,7 @@ text = "Jogar"
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 text = "Sair"
+
+[node name="Musica" type="AudioStreamPlayer2D" parent="." unique_id=1118797825]
+stream = ExtResource("2_6aj48")
+autoplay = true
