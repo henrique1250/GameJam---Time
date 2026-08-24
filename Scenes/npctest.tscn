@@ -7,11 +7,14 @@
 [ext_resource type="Script" uid="uid://cd3mvguta5asf" path="res://Scripts/interacao_cachaca.gd" id="4_af6yk"]
 [ext_resource type="Texture2D" uid="uid://dewfp6m0r8qht" path="res://art/Personagens/NpcGordoTpose.fbm/Texturas/textura_npc_gordo/CabeloNpcGordoColor.png" id="5_lchqh"]
 [ext_resource type="Script" uid="uid://bw1507flepkgr" path="res://Scenes/copo_script.gd" id="5_odf6x"]
+[ext_resource type="Texture2D" uid="uid://crjr2p8vsroi2" path="res://art/Personagens/NpcGordoTpose.fbm/Texturas/textura_npc_gordo/BigodeNpcGordoColor.png" id="5_piud4"]
 [ext_resource type="Script" uid="uid://dwaimgshk28xs" path="res://Scenes/minigame_cachaca.gd" id="6_2eopg"]
 [ext_resource type="Texture2D" uid="uid://dcdagqwbo2e5v" path="res://art/Personagens/NpcGordoTpose.fbm/Texturas/textura_npc_gordo/SobrancelhaNpcGordoColor.png" id="6_vdk52"]
 [ext_resource type="Script" uid="uid://brkienvq8h2uo" path="res://Scenes/meta_counter_script.gd" id="7_2eopg"]
 [ext_resource type="Animation" uid="uid://ue12j2jue7ab" path="res://art/Personagens/NpcGordoTpose.fbm/Animações/gorda_esperando.res" id="7_2xb00"]
+[ext_resource type="Texture2D" uid="uid://hwo47gmbw0th" path="res://art/Personagens/NpcGordoTpose.fbm/Texturas/textura_npc_gordo/npc_gordo_camisa.jpg" id="7_j4jg1"]
 [ext_resource type="Animation" uid="uid://dqmy0np0dhcjh" path="res://art/Personagens/NpcGordoTpose.fbm/Animações/gorda_pedindo.res" id="8_16h2m"]
+[ext_resource type="Texture2D" uid="uid://jkjq3e2i6wns" path="res://art/Personagens/NpcGordoTpose.fbm/Texturas/textura_npc_gordo/npc_gordo_calça.jpg" id="8_piud4"]
 [ext_resource type="Animation" uid="uid://c0o4eac7n2534" path="res://art/Personagens/NpcGordoTpose.fbm/Animações/gordao_andando.res" id="9_j4jg1"]
 [ext_resource type="Animation" uid="uid://dr28a6j07gypd" path="res://art/Personagens/NpcGordoTpose.fbm/Animações/idle1.res" id="10_j4jg1"]
 [ext_resource type="Animation" uid="uid://bpe88eb3bds3w" path="res://art/Personagens/NpcGordoTpose.fbm/Animações/sentado.res" id="10_piud4"]
@@ -23,20 +26,20 @@ albedo_texture = ExtResource("3_qsw3x")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ca3jf"]
 albedo_texture = ExtResource("4_6nps6")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2xb00"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_283lc"]
+albedo_texture = ExtResource("5_piud4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ikvym"]
 albedo_texture = ExtResource("5_lchqh")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_16h2m"]
-albedo_texture = ExtResource("5_lchqh")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j4jg1"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y8p4k"]
 albedo_texture = ExtResource("6_vdk52")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_piud4"]
-albedo_texture = ExtResource("6_vdk52")
+albedo_texture = ExtResource("7_j4jg1")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wd7ag"]
-albedo_texture = ExtResource("5_lchqh")
+albedo_texture = ExtResource("8_piud4")
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lchqh"]
 
@@ -143,9 +146,9 @@ bones/71/rotation = Quaternion(0.57087994, 0.020723905, 0.0073774937, 0.8207389)
 [node name="NpcGordo" parent="NpcGordoTpose/OssoRef/Skeleton3D" index="0" unique_id=851441552]
 surface_material_override/0 = SubResource("StandardMaterial3D_fac00")
 surface_material_override/1 = SubResource("StandardMaterial3D_ca3jf")
-surface_material_override/2 = SubResource("StandardMaterial3D_2xb00")
-surface_material_override/3 = SubResource("StandardMaterial3D_16h2m")
-surface_material_override/4 = SubResource("StandardMaterial3D_j4jg1")
+surface_material_override/2 = SubResource("StandardMaterial3D_283lc")
+surface_material_override/3 = SubResource("StandardMaterial3D_ikvym")
+surface_material_override/4 = SubResource("StandardMaterial3D_y8p4k")
 surface_material_override/5 = SubResource("StandardMaterial3D_piud4")
 surface_material_override/6 = SubResource("StandardMaterial3D_wd7ag")
 
