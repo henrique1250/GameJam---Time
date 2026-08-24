@@ -41,6 +41,15 @@
 [ext_resource type="PackedScene" uid="uid://balnx1f3wa6m1" path="res://Assets/PROP_cerveja_skol.glb" id="33_okbyl"]
 [ext_resource type="AudioStream" uid="uid://cpqkksgcekvei" path="res://songs/sfx/Ambiente.mp3" id="38_m7b6h"]
 
+[sub_resource type="Environment" id="Environment_jijtd"]
+background_mode = 1
+background_color = Color(0.9887337, 0.9906592, 0.9022112, 1)
+ambient_light_source = 3
+tonemap_mode = 4
+tonemap_exposure = 1.2
+tonemap_agx_contrast = 1.14
+ssr_enabled = true
+
 [sub_resource type="NavigationMesh" id="NavigationMesh_dijpm"]
 vertices = PackedVector3Array(-3.3123102, 0.38094014, -0.07513714, -2.5623102, 0.38094014, -0.07513714, -2.5623102, 0.38094014, -0.32513714, -3.3123102, 0.38094014, -0.57513714, -4.56231, 0.38094014, 5.424863, -4.81231, 0.38094014, 3.6748629, -6.31231, 0.38094014, 3.9248629, -6.31231, 0.38094014, 11.424863, -4.56231, 0.38094014, 6.924863, -3.3123102, 0.38094014, 4.424863, -2.5623102, 0.38094014, 4.424863, -2.8123102, 0.38094014, 3.4248629, -3.5623102, 0.38094014, 3.1748629, 1.1876898, 0.38094014, 8.924863, -2.0623102, 0.38094014, 7.924863, -3.3123102, 0.38094014, 7.924863, 2.1876898, 0.38094014, 11.424863, -3.5623102, 0.38094014, 0.67486286, -3.5623102, 0.38094014, 2.4248629, -4.56231, 0.38094014, 2.1748629, -3.3123102, 0.38094014, -1.0751371, -4.56231, 0.38094014, -1.3251371, -4.56231, 0.38094014, 0.92486286, -3.5623102, 0.38094014, 7.174863, -3.5623102, 0.38094014, 5.174863, -6.31231, 0.38094014, -3.8251371, -6.31231, 0.63094014, 1.6748629, -4.81231, 0.38094014, 1.9248629, -4.56231, 0.38094014, -3.8251371, 2.1876898, 0.38094014, 9.174863, 0.6876898, 0.38094014, 7.174863, -1.0623102, 0.38094014, 6.674863, -2.5623102, 0.38094014, -3.8251371, -2.5623102, 0.38094014, -2.3251371, 2.4376898, 0.38094014, -2.3251371, 2.4376898, 0.38094014, -3.8251371, 2.4376898, 0.38094014, 2.9248629, 2.9376898, 0.38094014, 3.1748629, 3.4376898, 0.38094014, 1.9248629, 2.4376898, 0.38094014, 1.6748629, 5.18769, 0.38094014, 1.9248629, 5.68769, 0.38094014, 2.4248629, 6.18769, 0.38094014, -0.07513714, 5.68769, 0.38094014, 3.9248629, 6.18769, 0.38094014, 3.9248629, 1.9376898, 0.63094014, 1.1748629, 3.9376898, 0.38094014, -0.32513714, 1.9376898, 0.38094014, -0.32513714, 4.43769, 0.38094014, -0.82513714, 7.68769, 0.38094014, -0.32513714, 7.68769, 0.38094014, -3.8251371, 4.43769, 0.38094014, -3.8251371, 1.6876898, 0.38094014, 3.9248629, 2.6876898, 0.38094014, 4.924863, -0.5623102, 0.38094014, 3.1748629, -1.0623102, 0.38094014, 2.1748629, 6.18769, 0.38094014, 5.674863, 4.93769, 0.38094014, 5.674863, 3.9376898, 0.38094014, 7.174863, 3.1876898, 0.38094014, 8.924863, 7.68769, 0.38094014, 11.424863, 7.68769, 0.38094014, 5.924863, 0.43768978, 0.38094014, 0.92486286, -1.0623102, 0.38094014, 0.92486286, 0.43768978, 0.38094014, 3.9248629, -1.0623102, 0.38094014, 5.424863, 1.6876898, 0.63094014, 6.174863, 2.9376898, 0.38094014, 6.174863, 3.9376898, 0.38094014, 5.674863, -0.31231022, 0.38094014, 1.4248629, 0.9376898, 0.88094014, 2.1748629, 1.4376898, 0.88094014, 2.9248629, 1.4376898, 1.1309402, 2.1748629, 4.68769, 1.1309402, 3.4248629, 4.68769, 1.3809402, 2.9248629, 4.18769, 1.3809402, 2.9248629, 3.9376898, 1.3809402, 3.4248629, 3.9376898, 1.3809402, 4.424863, 4.43769, 1.1309402, 4.424863)
 polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Array(5, 4, 6), PackedInt32Array(6, 4, 8), PackedInt32Array(6, 8, 7), PackedInt32Array(10, 9, 11), PackedInt32Array(11, 9, 12), PackedInt32Array(14, 13, 15), PackedInt32Array(15, 13, 16), PackedInt32Array(15, 16, 7), PackedInt32Array(3, 0, 17), PackedInt32Array(19, 18, 12), PackedInt32Array(20, 3, 21), PackedInt32Array(21, 3, 17), PackedInt32Array(21, 17, 22), PackedInt32Array(23, 15, 8), PackedInt32Array(8, 15, 7), PackedInt32Array(24, 4, 9), PackedInt32Array(9, 4, 5), PackedInt32Array(9, 5, 12), PackedInt32Array(12, 5, 19), PackedInt32Array(27, 26, 22), PackedInt32Array(22, 26, 21), PackedInt32Array(21, 26, 25), PackedInt32Array(22, 19, 27), PackedInt32Array(27, 19, 5), PackedInt32Array(25, 28, 21), PackedInt32Array(13, 29, 16), PackedInt32Array(31, 30, 14), PackedInt32Array(14, 30, 13), PackedInt32Array(35, 34, 32), PackedInt32Array(32, 34, 33), PackedInt32Array(37, 36, 38), PackedInt32Array(38, 36, 39), PackedInt32Array(42, 41, 40), PackedInt32Array(43, 41, 44), PackedInt32Array(44, 41, 42), PackedInt32Array(38, 39, 45), PackedInt32Array(45, 47, 38), PackedInt32Array(38, 47, 46), PackedInt32Array(38, 46, 40), PackedInt32Array(40, 46, 42), PackedInt32Array(42, 46, 48), PackedInt32Array(42, 48, 49), PackedInt32Array(49, 48, 51), PackedInt32Array(49, 51, 50), PackedInt32Array(36, 37, 52), PackedInt32Array(52, 37, 53), PackedInt32Array(11, 55, 54), PackedInt32Array(44, 56, 43), PackedInt32Array(43, 56, 57), PackedInt32Array(58, 57, 59), PackedInt32Array(59, 57, 61), PackedInt32Array(59, 61, 16), PackedInt32Array(16, 61, 60), PackedInt32Array(47, 45, 62), PackedInt32Array(2, 63, 1), PackedInt32Array(64, 52, 53), PackedInt32Array(31, 65, 30), PackedInt32Array(30, 65, 66), PackedInt32Array(66, 65, 64), PackedInt32Array(66, 64, 53), PackedInt32Array(10, 11, 65), PackedInt32Array(65, 11, 54), PackedInt32Array(65, 54, 64), PackedInt32Array(16, 29, 59), PackedInt32Array(57, 56, 61), PackedInt32Array(68, 67, 53), PackedInt32Array(53, 67, 66), PackedInt32Array(69, 63, 62), PackedInt32Array(62, 63, 2), PackedInt32Array(62, 2, 47), PackedInt32Array(67, 68, 58), PackedInt32Array(58, 68, 57), PackedInt32Array(63, 69, 55), PackedInt32Array(55, 69, 54), PackedInt32Array(72, 71, 70), PackedInt32Array(74, 73, 75), PackedInt32Array(75, 73, 76), PackedInt32Array(76, 73, 78), PackedInt32Array(76, 78, 77)]
@@ -224,8 +233,20 @@ albedo_color = Color(0.64667934, 0.5967524, 0.06002219, 1)
 
 [node name="Node" type="Node3D" unique_id=1891772111]
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1703912396]
-transform = Transform3D(1, 0, 0, 0, 0.6178733, 0.78627765, 0, -0.78627765, 0.6178733, 1.3005886, 5.305082, 6.495014)
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1571031639]
+environment = SubResource("Environment_jijtd")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=115124192]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5948529, 6.3426237, -1.1408954)
+omni_range = 130.0
+omni_attenuation = 0.6
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="." unique_id=1262811417]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5450759, 6.3426237, 7.5058284)
+light_color = Color(0.84, 0.67829996, 0.54599994, 1)
+shadow_enabled = true
+omni_range = 130.0
+omni_attenuation = 0.6
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=73148972]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.002100706, 0, -0.001267314)
