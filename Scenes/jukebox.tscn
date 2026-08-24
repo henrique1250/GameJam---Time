@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://bgpqkfmxj2qd0"]
 
 [ext_resource type="Script" uid="uid://dya5htpx4a0qb" path="res://Scenes/jukebox.gd" id="1_7i7ve"]
-[ext_resource type="Shader" uid="uid://q3efolm48w4g" path="res://art/shades/outineassets.gdshader" id="2_4tsl3"]
+[ext_resource type="Shader" path="res://art/shades/outineassets.gdshader" id="2_4tsl3"]
 [ext_resource type="AudioStream" uid="uid://cgwedkebfa1nh" path="res://songs/Boteco OST/Provas.wav" id="2_ladhy"]
 [ext_resource type="AudioStream" uid="uid://bos3loavpmqhx" path="res://songs/Boteco OST/Copão Veneno.wav" id="3_4m80m"]
 [ext_resource type="AudioStream" uid="uid://mx7bw6ar4fn5" path="res://songs/Boteco OST/Azul da Cor do Bar.wav" id="4_pyxex"]
@@ -80,6 +80,7 @@ shape = SubResource("BoxShape3D_7i7ve")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4387698, 1.5096095, 0)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=781400997]
+bus = &"Music"
 
 [node name="MudarSong" type="AudioStreamPlayer2D" parent="." unique_id=1174206843]
 stream = ExtResource("8_4m80m")
