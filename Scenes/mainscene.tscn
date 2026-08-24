@@ -43,8 +43,15 @@
 [ext_resource type="PackedScene" uid="uid://comkb54p5rq7r" path="res://Assets/PROP_rua_tamanho.glb" id="32_xbg07"]
 [ext_resource type="PackedScene" uid="uid://balnx1f3wa6m1" path="res://Assets/PROP_cerveja_skol.glb" id="33_okbyl"]
 [ext_resource type="AudioStream" uid="uid://cpqkksgcekvei" path="res://songs/sfx/Ambiente.mp3" id="38_m7b6h"]
-[ext_resource type="PackedScene" uid="uid://kgtpyq5nfgkx" path="res://Scenes/npcmagro.tscn" id="44_wpqw8"]
+[ext_resource type="PackedScene" uid="uid://vy0aa6bcia64" path="res://Scenes/npcmagro.tscn" id="44_wpqw8"]
 [ext_resource type="Script" uid="uid://brkienvq8h2uo" path="res://Scenes/meta_counter_script.gd" id="45_epgqu"]
+[ext_resource type="PackedScene" uid="uid://bn2eeyerfwmq8" path="res://art/assets/PROP_quadro_3.glb" id="46_1kwc2"]
+[ext_resource type="PackedScene" uid="uid://bvull4aedei7a" path="res://art/assets/PROP_quadro_1.glb" id="47_c8e4o"]
+[ext_resource type="PackedScene" uid="uid://drki7dw767wvf" path="res://art/assets/PROP_quadro_2.glb" id="48_m8rf6"]
+[ext_resource type="PackedScene" uid="uid://cjwy2p86brh1q" path="res://art/assets/PROP_quadro_4.glb" id="49_c8e4o"]
+[ext_resource type="PackedScene" uid="uid://bck6jbef5xmg" path="res://art/assets/PROP_quadro_5.glb" id="50_m8rf6"]
+[ext_resource type="PackedScene" uid="uid://bxfyd2cf2fwj1" path="res://art/assets/PROP_rua_bar.glb" id="51_06c8f"]
+[ext_resource type="PackedScene" uid="uid://b4aabjn81p145" path="res://art/assets/PROP_prateleira.glb" id="52_yijut"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_dijpm"]
 vertices = PackedVector3Array(-3.3123102, 0.38094014, -0.07513714, -2.5623102, 0.38094014, -0.07513714, -2.5623102, 0.38094014, -0.32513714, -3.3123102, 0.38094014, -0.57513714, -4.56231, 0.38094014, 5.424863, -4.81231, 0.38094014, 3.6748629, -6.31231, 0.38094014, 3.9248629, -6.31231, 0.38094014, 11.424863, -4.56231, 0.38094014, 6.924863, -3.3123102, 0.38094014, 4.424863, -2.5623102, 0.38094014, 4.424863, -2.8123102, 0.38094014, 3.4248629, -3.5623102, 0.38094014, 3.1748629, 1.1876898, 0.38094014, 8.924863, -2.0623102, 0.38094014, 7.924863, -3.3123102, 0.38094014, 7.924863, 2.1876898, 0.38094014, 11.424863, -3.5623102, 0.38094014, 0.67486286, -3.5623102, 0.38094014, 2.4248629, -4.56231, 0.38094014, 2.1748629, -3.3123102, 0.38094014, -1.0751371, -4.56231, 0.38094014, -1.3251371, -4.56231, 0.38094014, 0.92486286, -3.5623102, 0.38094014, 7.174863, -3.5623102, 0.38094014, 5.174863, -6.31231, 0.38094014, -3.8251371, -6.31231, 0.63094014, 1.6748629, -4.81231, 0.38094014, 1.9248629, -4.56231, 0.38094014, -3.8251371, 2.1876898, 0.38094014, 9.174863, 0.6876898, 0.38094014, 7.174863, -1.0623102, 0.38094014, 6.674863, -2.5623102, 0.38094014, -2.3251371, -1.0623102, 0.38094014, -2.3251371, -0.8123102, 0.38094014, -2.8251371, -2.5623102, 0.38094014, -3.8251371, 2.4376898, 0.38094014, -2.3251371, 2.4376898, 0.38094014, -3.8251371, 4.43769, 0.38094014, -3.8251371, 4.43769, 0.38094014, -2.3251371, 5.43769, 0.38094014, -2.3251371, 7.68769, 0.38094014, -0.32513714, 7.68769, 0.38094014, -3.8251371, 2.6876898, 0.63094014, 1.9248629, 2.6876898, 0.38094014, 2.6748629, 2.9376898, 0.38094014, 2.9248629, 3.4376898, 0.38094014, 1.9248629, 6.18769, 0.38094014, 0.42486286, 5.18769, 0.38094014, 1.9248629, 5.68769, 0.38094014, 2.4248629, 3.4376898, 0.38094014, 5.424863, 2.9376898, 0.38094014, 6.174863, 3.6876898, 0.38094014, 6.924863, 5.18769, 0.38094014, 5.424863, 6.93769, 0.38094014, 4.674863, 7.18769, 0.38094014, 3.4248629, 6.18769, 0.38094014, 2.9248629, 1.6876898, 0.63094014, 0.92486286, 3.9376898, 0.38094014, -0.32513714, 1.9376898, 0.38094014, -0.32513714, 2.9376898, 0.38094014, 9.174863, 4.43769, 0.38094014, -0.82513714, 3.6876898, 0.38094014, 8.174863, 7.68769, 0.38094014, 11.424863, 7.68769, 0.38094014, 4.924863, 2.6876898, 0.38094014, 4.924863, 1.9376898, 0.63094014, 5.924863, -0.5623102, 0.38094014, 1.6748629, -1.0623102, 0.38094014, 0.92486286, -1.0623102, 0.38094014, 2.1748629, -0.5623102, 0.38094014, 3.1748629, 1.6876898, 0.38094014, 3.9248629, 0.43768978, 0.38094014, 0.92486286, -1.0623102, 0.38094014, 5.424863, 0.43768978, 0.38094014, 3.9248629, 4.68769, 1.1309402, 3.4248629, 4.68769, 1.3809402, 2.9248629, 4.18769, 1.3809402, 2.9248629, 3.9376898, 1.3809402, 3.4248629, 3.9376898, 1.3809402, 4.424863, 4.43769, 1.1309402, 4.424863)
@@ -162,25 +169,17 @@ albedo_color = Color(0.40752566, 0.1652529, 0.044275075, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3swae"]
 albedo_color = Color(1, 0.25882354, 0.25882354, 1)
 
-[sub_resource type="BoxMesh" id="BoxMesh_lqdhn"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pcysp"]
-albedo_color = Color(0.28386262, 0.4023979, 0.22610688, 1)
-
-[sub_resource type="CylinderMesh" id="CylinderMesh_1o021"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p00ao"]
-albedo_color = Color(0.12208646, 0.31393474, 0.26200715, 1)
-
 [sub_resource type="CylinderMesh" id="CylinderMesh_bfwm2"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tf7l5"]
 albedo_color = Color(0.64667934, 0.5967524, 0.06002219, 1)
 
-[node name="Node" type="Node3D" unique_id=1891772111]
+[sub_resource type="Environment" id="Environment_epgqu"]
+background_mode = 1
+background_color = Color(0.94176567, 0.8696018, 0.5246647, 1)
+ambient_light_source = 3
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1703912396]
-transform = Transform3D(1, 0, 0, 0, 0.6178733, 0.78627765, 0, -0.78627765, 0.6178733, 1.3005886, 5.305082, 6.495014)
+[node name="Node" type="Node3D" unique_id=1891772111]
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=73148972]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.002100706, 0, -0.001267314)
@@ -620,7 +619,7 @@ offset_bottom = 202.0
 text = "ESCOLHER"
 
 [node name="Panel2" type="Panel" parent="NavigationRegion3D/MusicasJukebox/CarroselContainer/Control" unique_id=1689214509]
-modulate = Color(1, 1, 1, 0.9674399)
+modulate = Color(1, 1, 1, 0.97065973)
 z_index = -1
 layout_mode = 0
 offset_left = 169.08728
@@ -648,7 +647,7 @@ scale = Vector2(0.2, 0.19947544)
 texture = ExtResource("25_vamgo")
 
 [node name="Panel3" type="Panel" parent="NavigationRegion3D/MusicasJukebox/CarroselContainer/Control" unique_id=884635700]
-modulate = Color(1, 1, 1, 0.9348797)
+modulate = Color(1, 1, 1, 0.94131947)
 z_index = -2
 layout_mode = 0
 offset_left = 369.08728
@@ -676,7 +675,7 @@ offset_bottom = 202.5
 text = "ESCOLHER"
 
 [node name="Panel4" type="Panel" parent="NavigationRegion3D/MusicasJukebox/CarroselContainer/Control" unique_id=1704902061]
-modulate = Color(1, 1, 1, 0.9023196)
+modulate = Color(1, 1, 1, 0.91197914)
 z_index = -3
 layout_mode = 0
 offset_left = 569.0873
@@ -858,31 +857,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_3swae")
 
 [node name="Itens Aleatorios" type="Node" parent="." unique_id=1664783920]
 
-[node name="Prateleira" type="MeshInstance3D" parent="Itens Aleatorios" unique_id=1277308768]
-transform = Transform3D(0.15556201, 0, 0, 0, 0.13022026, 0, 0, 0, 1.3659409, -6.1460905, 0.98536456, 0.48585916)
-mesh = SubResource("BoxMesh_lqdhn")
-surface_material_override/0 = SubResource("StandardMaterial3D_pcysp")
-
-[node name="Prateleira2" type="MeshInstance3D" parent="Itens Aleatorios" unique_id=1622439357]
-transform = Transform3D(0.15556201, 0, 0, 0, 0.13022026, 0, 0, 0, 1.3659409, -6.1460905, 1.3333601, -1.2216194)
-mesh = SubResource("BoxMesh_lqdhn")
-surface_material_override/0 = SubResource("StandardMaterial3D_pcysp")
-
-[node name="Quadro" type="MeshInstance3D" parent="Itens Aleatorios" unique_id=118218061]
-transform = Transform3D(-2.1855694e-08, -0.23466851, 0, 0.5, -1.0257687e-08, 0, 0, 0, 0.6105756, -6.3359785, 1.2678611, 5.114518)
-mesh = SubResource("CylinderMesh_1o021")
-surface_material_override/0 = SubResource("StandardMaterial3D_p00ao")
-
-[node name="Quadro2" type="MeshInstance3D" parent="Itens Aleatorios" unique_id=766627534]
-transform = Transform3D(-1.3113417e-08, -0.140267, 0, 0.3, -6.1312653e-09, 0, 0, 0, 0.36607218, -6.3359785, 1.5278018, 5.89253)
-mesh = SubResource("CylinderMesh_1o021")
-surface_material_override/0 = SubResource("StandardMaterial3D_p00ao")
-
-[node name="Quadro3" type="MeshInstance3D" parent="Itens Aleatorios" unique_id=1456089888]
-transform = Transform3D(-1.5298985e-08, -0.16406229, 0, 0.35, -7.171391e-09, 0, 0, 0, 0.4275395, -6.3359785, 1.0091109, 5.89253)
-mesh = SubResource("CylinderMesh_1o021")
-surface_material_override/0 = SubResource("StandardMaterial3D_p00ao")
-
 [node name="Cerveja Prateleira 1" type="Node" parent="Itens Aleatorios" unique_id=1611795202]
 
 [node name="Cervejinha" type="MeshInstance3D" parent="Itens Aleatorios/Cerveja Prateleira 1" unique_id=1633076048]
@@ -1058,7 +1032,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8222551, 0.0061373115, 5.9
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8222551, 0.0030536056, 1.6145043)
 
 [node name="PROP_rua_tamanho" parent="." unique_id=1253847839 instance=ExtResource("32_xbg07")]
-transform = Transform3D(-4.3711385e-08, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, -4.3711385e-08, 0.6171551, 0, 3.1181393)
+transform = Transform3D(-4.3711385e-08, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, -4.3711385e-08, 0.6171551, 0, -53.571228)
+
+[node name="PROP_rua_tamanho2" parent="." unique_id=877021475 instance=ExtResource("32_xbg07")]
+transform = Transform3D(-4.3711385e-08, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, -4.3711385e-08, -94.12479, 0, 3.1181393)
 
 [node name="PROP_copo_americano" parent="." unique_id=2131427662 instance=ExtResource("6_xodc5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2384598, 0.8017421, 7.3697424)
@@ -1090,6 +1067,53 @@ offset_right = 40.0
 offset_bottom = 23.0
 theme_override_colors/font_color = Color(1, 1, 0, 1)
 script = ExtResource("45_epgqu")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=872673061]
+environment = SubResource("Environment_epgqu")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=517859516]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.63457656, 6.0065355, -1.7756174)
+light_color = Color(0.9855109, 0.8257737, 0.762233, 1)
+omni_range = 37.0
+omni_attenuation = 0.6
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="." unique_id=480101899]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6396494, 6.0055294, 9.009324)
+omni_range = 37.0
+omni_attenuation = 0.6
+
+[node name="PROP_quadro_3" parent="." unique_id=1833386140 instance=ExtResource("46_1kwc2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8673017, 1.9498774, -2.845521)
+
+[node name="PROP_quadro_1" parent="." unique_id=873540559 instance=ExtResource("47_c8e4o")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -6.191348, 1.5339491, 7.287838)
+
+[node name="PROP_quadro_7" parent="." unique_id=179355859 instance=ExtResource("47_c8e4o")]
+transform = Transform3D(-0.9999999, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -0.9999999, 0.5508137, 1.5339491, 9.140977)
+
+[node name="PROP_quadro_2" parent="." unique_id=589421705 instance=ExtResource("48_m8rf6")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -6.178368, 1.9254996, 5.993024)
+
+[node name="PROP_quadro_5" parent="." unique_id=105846603 instance=ExtResource("49_c8e4o")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -6.177401, 1.7225533, 5.0318694)
+
+[node name="PROP_quadro_6" parent="." unique_id=1443820019 instance=ExtResource("50_m8rf6")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.4058557, 2.1719282, 6.375109)
+
+[node name="PROP_quadro_4" parent="." unique_id=968971334 instance=ExtResource("49_c8e4o")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.329071, 1.6278334, 7.3338265)
+
+[node name="PROP_rua_bar" parent="." unique_id=671284054 instance=ExtResource("51_06c8f")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.61883116, 0, 1.9718723)
+
+[node name="PROP_prateleira" parent="." unique_id=548209243 instance=ExtResource("52_yijut")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -6.0924873, 1.003733, 0.13438368)
+
+[node name="PROP_prateleira2" parent="." unique_id=30778258 instance=ExtResource("52_yijut")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -6.0924873, 1.3444234, -1.2191823)
+
+[node name="PROP_prateleira3" parent="." unique_id=1885583028 instance=ExtResource("52_yijut")]
+transform = Transform3D(0.999229, 0, 0.039259832, 0, 1, 0, -0.039259832, 0, 0.999229, -1.7311964, 1.7003254, -3.952106)
 
 [connection signal="song_selected" from="NavigationRegion3D/MusicasJukebox/CarroselContainer" to="NavigationRegion3D/Jukebox/Jukebox" method="_on_carrosel_container_song_selected"]
 [connection signal="pressed" from="NavigationRegion3D/MusicasJukebox/CarroselContainer/Control/Panel/Button" to="NavigationRegion3D/MusicasJukebox/CarroselContainer" method="_on_button_pressed"]
