@@ -50,6 +50,7 @@ func _set_state(new_state: NPC_States) -> void:
 			animation_player.play("gorda_animations/gordao_andando")
 		NPC_States.Interact:
 			_sentar_na_cadeira()
+			EventBus.npc_iniciou_interacao.emit(self)
 
 
 func _physics_process(_float) -> void:
@@ -148,6 +149,8 @@ func _on_interaction_timer_timeout() -> void:
 	if marker_saida.is_empty():
 		push_warning("marker_saida está vazio em %s" % name)
 		return
+	
+	EventBus.npc_finalizou_interacao.emit(self)
 
 	var saida: Marker3D = marker_saida.pick_random()
 	current_destinition = saida
