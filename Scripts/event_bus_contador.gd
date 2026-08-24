@@ -11,3 +11,11 @@ func incrementar(valor: int) -> void:
 		if contador > meta:
 			contador = meta
 	contador_atualizado.emit(contador, meta)
+	
+func _encontrar_npc_dono() -> NpcGeneric:
+	var node: Node = self
+	while node:
+		if node is NpcGeneric:
+			return node
+		node = node.get_parent()
+	return null

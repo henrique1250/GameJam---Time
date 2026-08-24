@@ -37,6 +37,8 @@ func _on_input_event(_camera: Node, event: InputEvent, _position: Vector3, _norm
 		return
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		abrir_minigame()
+		
+		
 
 func abrir_minigame() -> void:
 	if minigame_ui:
