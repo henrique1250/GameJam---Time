@@ -6,11 +6,6 @@
 [node name="SpawnNPC" type="Node3D" unique_id=871026153]
 script = ExtResource("1_b110c")
 npc_scene = ExtResource("2_2cj3g")
-spawn_on_start = null
-spawn_interval = null
-max_npc = null
-spawned_count = null
-occupied_radius = null
 
 [node name="Timer" type="Timer" parent="." unique_id=656087353]
 wait_time = 5.0

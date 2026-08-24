@@ -1,6 +1,7 @@
 extends Area3D
 
 @export var objeto_para_mostrar: MeshInstance3D
+var pode_interagir: bool = true
 
 func _ready() -> void:
 	input_event.connect(_on_input_event)
