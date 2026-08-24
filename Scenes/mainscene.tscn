@@ -52,6 +52,7 @@
 [ext_resource type="PackedScene" uid="uid://bck6jbef5xmg" path="res://art/assets/PROP_quadro_5.glb" id="50_m8rf6"]
 [ext_resource type="PackedScene" uid="uid://bxfyd2cf2fwj1" path="res://art/assets/PROP_rua_bar.glb" id="51_06c8f"]
 [ext_resource type="PackedScene" uid="uid://b4aabjn81p145" path="res://art/assets/PROP_prateleira.glb" id="52_yijut"]
+[ext_resource type="PackedScene" uid="uid://d37survckqb6y" path="res://Assets/PROP_cerveja_schin.glb" id="53_bbmo8"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_dijpm"]
 vertices = PackedVector3Array(-6.31231, 0.38094014, -3.8251371, -6.31231, 0.38094014, -2.5751371, -4.56231, 0.38094014, -2.8251371, -4.56231, 0.38094014, -3.8251371, -2.5623102, 0.38094014, -2.3251371, -1.0623102, 0.38094014, -2.3251371, -0.8123102, 0.38094014, -2.8251371, -2.5623102, 0.38094014, -3.8251371, 2.4376898, 0.38094014, -2.3251371, 2.4376898, 0.38094014, -3.8251371, 4.43769, 0.38094014, -3.8251371, 4.43769, 0.38094014, -2.3251371, 5.43769, 0.38094014, -2.3251371, 7.68769, 0.38094014, -0.32513714, 7.68769, 0.38094014, -3.8251371, -3.3123102, 0.38094014, -0.07513714, -2.5623102, 0.38094014, -0.07513714, -2.5623102, 0.38094014, -0.32513714, -3.3123102, 0.38094014, -0.57513714, 1.1876898, 0.38094014, 8.924863, -2.0623102, 0.38094014, 7.924863, -3.3123102, 0.38094014, 7.924863, -6.31231, 0.38094014, 11.424863, 2.1876898, 0.38094014, 11.424863, -3.3123102, 0.38094014, 4.424863, -2.5623102, 0.38094014, 4.424863, -2.8123102, 0.38094014, 3.4248629, -3.5623102, 0.38094014, 3.1748629, 0.6876898, 0.38094014, 7.174863, -1.0623102, 0.38094014, 6.674863, -3.5623102, 0.38094014, 0.67486286, -3.5623102, 0.38094014, 2.4248629, -4.56231, 0.38094014, 2.1748629, -4.81231, 0.38094014, 3.6748629, -3.3123102, 0.38094014, -1.0751371, -4.81231, 0.38094014, -0.57513714, -4.56231, 0.38094014, 0.92486286, -3.5623102, 0.38094014, 7.174863, -4.56231, 0.38094014, 6.924863, -4.56231, 0.38094014, 5.424863, -3.5623102, 0.38094014, 5.174863, -4.81231, 0.38094014, 1.9248629, -6.31231, 0.38094014, 3.9248629, -6.31231, 0.38094014, -1.3251371, -6.31231, 0.63094014, 1.6748629, 2.1876898, 0.38094014, 9.174863, 2.6876898, 0.63094014, 1.9248629, 2.6876898, 0.38094014, 2.6748629, 2.9376898, 0.38094014, 2.9248629, 3.4376898, 0.38094014, 1.9248629, 5.18769, 0.38094014, 5.424863, 3.6876898, 0.38094014, 6.924863, 3.6876898, 0.38094014, 8.174863, 6.18769, 0.38094014, 6.674863, 3.4376898, 0.38094014, 5.424863, 2.9376898, 0.38094014, 6.174863, 1.6876898, 0.63094014, 0.92486286, 3.9376898, 0.38094014, -0.32513714, 1.9376898, 0.38094014, -0.32513714, 2.9376898, 0.38094014, 9.174863, 7.68769, 0.38094014, 11.424863, 7.68769, 0.38094014, 6.924863, 6.18769, 0.38094014, 0.42486286, 4.43769, 0.38094014, -0.82513714, 5.18769, 0.38094014, 1.9248629, 5.68769, 0.38094014, 2.4248629, 2.6876898, 0.38094014, 4.924863, 1.9376898, 0.63094014, 5.924863, -0.5623102, 0.38094014, 1.6748629, -1.0623102, 0.38094014, 0.92486286, -1.0623102, 0.38094014, 2.1748629, -0.5623102, 0.38094014, 3.1748629, 1.6876898, 0.38094014, 3.9248629, 0.43768978, 0.38094014, 0.92486286, -1.0623102, 0.38094014, 5.424863, 0.43768978, 0.38094014, 3.9248629, 4.68769, 1.1309402, 3.4248629, 4.68769, 1.3809402, 2.9248629, 4.18769, 1.3809402, 2.9248629, 3.9376898, 1.3809402, 3.4248629, 3.9376898, 1.3809402, 4.424863, 4.43769, 1.1309402, 4.424863)
@@ -168,11 +169,6 @@ albedo_color = Color(0.40752566, 0.1652529, 0.044275075, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3swae"]
 albedo_color = Color(1, 0.25882354, 0.25882354, 1)
-
-[sub_resource type="CylinderMesh" id="CylinderMesh_bfwm2"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tf7l5"]
-albedo_color = Color(0.64667934, 0.5967524, 0.06002219, 1)
 
 [sub_resource type="Environment" id="Environment_epgqu"]
 background_mode = 1
@@ -520,6 +516,18 @@ transform = Transform3D(1.1116476, 0, 0, 0, 1.1116476, 0, 0, 0, 1.1116476, -2.22
 mesh = SubResource("ArrayMesh_outli")
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
+[node name="PROP_cerveja_skol" parent="NavigationRegion3D/PROP_balcao-modular" unique_id=258721186 instance=ExtResource("33_okbyl")]
+transform = Transform3D(0.8381378, 0, 0.5454585, 0, 1, 0, -0.5454585, 0, 0.8381378, -6.0561805, 1.0198816, 1.3992195)
+
+[node name="PROP_cerveja_skol2" parent="NavigationRegion3D/PROP_balcao-modular" unique_id=1884734988 instance=ExtResource("33_okbyl")]
+transform = Transform3D(-0.055176824, 0, 0.9984765, 0, 1, 0, -0.9984765, 0, -0.055176824, -6.0561805, 1.0198816, 1.5258833)
+
+[node name="PROP_cerveja_skol3" parent="NavigationRegion3D/PROP_balcao-modular" unique_id=14243429 instance=ExtResource("33_okbyl")]
+transform = Transform3D(-0.055176824, 0, 0.9984765, 0, 1, 0, -0.9984765, 0, -0.055176824, -6.0561805, 1.0198816, 1.6439531)
+
+[node name="PROP_cerveja_skol4" parent="NavigationRegion3D/PROP_balcao-modular" unique_id=1703756140 instance=ExtResource("33_okbyl")]
+transform = Transform3D(-0.28527027, 0, 0.958447, 0, 1, 0, -0.958447, 0, -0.28527027, -6.141993, 1.0198816, 1.7788296)
+
 [node name="Engradados" type="Node" parent="NavigationRegion3D" unique_id=1228504307]
 
 [node name="PROP_enguadado_cervejaria" parent="NavigationRegion3D/Engradados" unique_id=1973819900 instance=ExtResource("30_okbyl")]
@@ -578,6 +586,7 @@ volume_slider_node = NodePath("../../MusicasJukebox/CarroselContainer/VolumeSlid
 [node name="MusicasJukebox" type="CanvasLayer" parent="NavigationRegion3D" unique_id=2131329726]
 
 [node name="CarroselContainer" type="Node2D" parent="NavigationRegion3D/MusicasJukebox" unique_id=845093110 node_paths=PackedStringArray("position_offset_node")]
+visible = false
 position = Vector2(1104, 87)
 script = ExtResource("8_gjgc6")
 follow_button_focus = true
@@ -906,46 +915,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_3swae")
 
 [node name="Cerveja Prateleira 2" type="Node" parent="Itens Aleatorios" unique_id=691435136]
 
-[node name="Cervejinha" type="MeshInstance3D" parent="Itens Aleatorios/Cerveja Prateleira 2" unique_id=327485538]
-transform = Transform3D(0.085755005, 0, 0, 0, 0.047, 0, 0, 0, 0.08059052, -6.1167407, 1.4410998, -0.81531405)
-mesh = SubResource("CylinderMesh_bfwm2")
-surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
-
-[node name="Cervejinha2" type="MeshInstance3D" parent="Itens Aleatorios/Cerveja Prateleira 2" unique_id=392631520]
-transform = Transform3D(0.085755005, 0, 0, 0, 0.047, 0, 0, 0, 0.08059052, -6.1191316, 1.4410998, -1.0163314)
-mesh = SubResource("CylinderMesh_bfwm2")
-surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
-
-[node name="Cervejinha3" type="MeshInstance3D" parent="Itens Aleatorios/Cerveja Prateleira 2" unique_id=254039803]
-transform = Transform3D(0.085755005, 0, 0, 0, 0.047, 0, 0, 0, 0.08059052, -6.1236987, 1.4410998, -1.2534716)
-mesh = SubResource("CylinderMesh_bfwm2")
-surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
-
-[node name="Cervejinha4" type="MeshInstance3D" parent="Itens Aleatorios/Cerveja Prateleira 2" unique_id=1538255193]
-transform = Transform3D(0.085755005, 0, 0, 0, 0.047, 0, 0, 0, 0.08059052, -6.1090255, 1.4410998, -0.7238653)
-mesh = SubResource("CylinderMesh_bfwm2")
-surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
-
-[node name="Cervejinha5" type="MeshInstance3D" parent="Itens Aleatorios/Cerveja Prateleira 2" unique_id=1165849907]
-transform = Transform3D(0.085755005, 0, 0, 0, 0.047, 0, 0, 0, 0.08059052, -6.1472907, 1.4410998, -1.744178)
-mesh = SubResource("CylinderMesh_bfwm2")
-surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
-
-[node name="Cervejinha6" type="MeshInstance3D" parent="Itens Aleatorios/Cerveja Prateleira 2" unique_id=1630631749]
-transform = Transform3D(0.085755005, 0, 0, 0, 0.047, 0, 0, 0, 0.08059052, -6.123925, 1.4410998, -0.9102559)
-mesh = SubResource("CylinderMesh_bfwm2")
-surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
-
-[node name="Cervejinha7" type="MeshInstance3D" parent="Itens Aleatorios/Cerveja Prateleira 2" unique_id=2004616686]
-transform = Transform3D(0.085755005, 0, 0, 0, 0.047, 0, 0, 0, 0.08059052, -6.123925, 1.4410998, -1.352591)
-mesh = SubResource("CylinderMesh_bfwm2")
-surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
-
-[node name="Cervejinha8" type="MeshInstance3D" parent="Itens Aleatorios/Cerveja Prateleira 2" unique_id=971733240]
-transform = Transform3D(0.085755005, 0, 0, 0, 0.047, 0, 0, 0, 0.08059052, -6.123925, 1.4410998, -1.4475803)
-mesh = SubResource("CylinderMesh_bfwm2")
-surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
-
 [node name="PROP_balcao_quina" parent="." unique_id=2111459800 instance=ExtResource("15_xdmf7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4124731)
 
@@ -1140,16 +1109,43 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -6.1
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -6.177401, 1.7225533, 5.84199)
 
 [node name="PROP_quadro_6" parent="Quadros" unique_id=1443820019 instance=ExtResource("50_m8rf6")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.4058557, 2.1719282, 6.375109)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.407307, 2.1719282, 6.698991)
 
 [node name="PROP_quadro_4" parent="Quadros" unique_id=968971334 instance=ExtResource("49_c8e4o")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.329071, 1.6278334, 7.3338265)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.379971, 1.6278334, 7.8605595)
 
 [node name="PROP_prateleira2" parent="." unique_id=30778258 instance=ExtResource("52_yijut")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -6.0924873, 1.3444234, -1.2191823)
 
 [node name="PROP_prateleira3" parent="." unique_id=1885583028 instance=ExtResource("52_yijut")]
 transform = Transform3D(0.999229, 0, 0.039259832, 0, 1, 0, -0.039259832, 0, 0.999229, -1.7311964, 1.7003254, -3.952106)
+
+[node name="PROP_cerveja_schin" parent="." unique_id=1728678915 instance=ExtResource("53_bbmo8")]
+transform = Transform3D(0.6012155, 0, 0.7990869, 0, 1, 0, -0.7990869, 0, 0.6012155, -6.0584526, 1.0216341, 0.5631966)
+
+[node name="PROP_cerveja_schin2" parent="." unique_id=411781459 instance=ExtResource("53_bbmo8")]
+transform = Transform3D(0.6012155, 0, 0.7990869, 0, 1, 0, -0.7990869, 0, 0.6012155, -6.0584526, 1.0216341, 0.4606011)
+
+[node name="PROP_copo_americano" parent="." unique_id=592770934 instance=ExtResource("6_xodc5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.035524, 1.3741945, -0.8735658)
+
+[node name="PROP_copo_americano2" parent="." unique_id=1138663695 instance=ExtResource("6_xodc5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.035524, 1.3741945, -0.96147215)
+
+[node name="PROP_copo_americano3" parent="." unique_id=1504198971 instance=ExtResource("6_xodc5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.994327, 1.3741945, -1.0519707)
+
+[node name="PROP_copo_americano7" parent="." unique_id=1775204410 instance=ExtResource("6_xodc5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.0984416, 1.3741945, -1.1245749)
+
+[node name="PROP_copo_americano4" parent="." unique_id=694338664 instance=ExtResource("6_xodc5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.035524, 1.3741945, -1.3894536)
+
+[node name="PROP_copo_americano5" parent="." unique_id=2025886257 instance=ExtResource("6_xodc5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.035524, 1.3741945, -1.4986236)
+
+[node name="PROP_copo_americano6" parent="." unique_id=917367992 instance=ExtResource("6_xodc5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.0783763, 1.3741945, -1.5832634)
 
 [connection signal="song_selected" from="NavigationRegion3D/MusicasJukebox/CarroselContainer" to="NavigationRegion3D/Jukebox/Jukebox" method="_on_carrosel_container_song_selected"]
 [connection signal="pressed" from="NavigationRegion3D/MusicasJukebox/CarroselContainer/Control/Panel/Button" to="NavigationRegion3D/MusicasJukebox/CarroselContainer" method="_on_button_pressed"]
