@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://kgtpyq5nfgkx"]
 
-[ext_resource type="Script" uid="uid://r1brlu57j7hw" path="res://Scenes/npc_funcoes.gd" id="1_1ydeb"]
 [ext_resource type="Texture2D" uid="uid://bxmpnfi6cgkek" path="res://art/Personagens/NpcMagroTpose.fbm/npc_magro_camisa.jpg" id="2_3ed2f"]
 [ext_resource type="PackedScene" uid="uid://c2ggdesf5wav8" path="res://art/Personagens/NpcMagroTpose.fbm/NpcMagroTpose.fbx" id="2_uv1lh"]
 [ext_resource type="Texture2D" uid="uid://hg6ddrd4s3ne" path="res://art/Personagens/NpcMagroTpose.fbm/npc_magro_shorts.jpg" id="3_1ydeb"]
@@ -20,6 +19,8 @@ albedo_texture = ExtResource("2_3ed2f")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mgwu6"]
 albedo_texture = ExtResource("3_1ydeb")
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xedfs"]
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6jih2"]
 _data = {
 &"andando": ExtResource("3_p3y1d"),
@@ -28,8 +29,6 @@ _data = {
 &"sentado": ExtResource("6_yacm3"),
 &"sentando_cadeira": ExtResource("7_mgwu6")
 }
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xedfs"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_sw5lj"]
 
@@ -42,70 +41,65 @@ radius = 0.19189453
 [sub_resource type="LabelSettings" id="LabelSettings_cive5"]
 
 [node name="NpcMagro" type="CharacterBody3D" unique_id=1672364990]
-script = ExtResource("1_1ydeb")
-anim_idle = &"magro_animacoes/parado"
-anim_walk = &"magro_animacoes/andando"
-anim_sit = &"magro_animacoes/pedindo"
 
 [node name="NpcMagroTpose" parent="." unique_id=1675511800 instance=ExtResource("2_uv1lh")]
 
 [node name="Skeleton3D" parent="NpcMagroTpose/OssoRef" parent_id_path=PackedInt32Array(1675511800, 33396774) index="0" unique_id=1394379630]
-bones/0/position = Vector3(0, -0.0046562976, 0.005764486)
-bones/1/rotation = Quaternion(-0.3127393, 0.002816562, 0.00020883577, 0.9498348)
-bones/2/rotation = Quaternion(-0.14433117, -0.053032618, -0.026218683, 0.9877594)
-bones/3/rotation = Quaternion(0.017850287, -0.04410661, -0.78990084, 0.6113858)
-bones/4/rotation = Quaternion(-0.6278066, 0.11050088, -0.03492117, 0.76969403)
-bones/5/rotation = Quaternion(-0.44251746, -0.33624348, 0.0053562922, 0.8313182)
-bones/6/rotation = Quaternion(0.20682989, 0.0033938694, 0.09326154, 0.97391593)
-bones/8/rotation = Quaternion(-0.0076151327, 0.023278581, -0.22278248, 0.97456044)
-bones/9/rotation = Quaternion(-0.05175648, -0.03227359, -0.25525218, 0.9649488)
-bones/10/rotation = Quaternion(-0.092070214, -0.034295335, -0.34133592, 0.9347924)
-bones/11/rotation = Quaternion(-0.027637789, 0.031540893, -0.21338932, 0.9760668)
-bones/12/rotation = Quaternion(-0.053610444, -0.022878952, -0.2569245, 0.96467215)
-bones/13/rotation = Quaternion(-0.09307234, -0.018241728, -0.3216767, 0.94208753)
-bones/14/rotation = Quaternion(-0.086349756, 0.04733512, -0.15785256, 0.9825404)
-bones/15/rotation = Quaternion(-0.025235895, 0.0022311804, -0.27650732, 0.9606778)
-bones/16/rotation = Quaternion(-0.09334398, 0.009726282, -0.26507536, 0.9596496)
-bones/17/rotation = Quaternion(0.08202989, 0.004218475, -0.22529419, 0.9708223)
-bones/18/rotation = Quaternion(-0.037263166, -0.07354707, -0.27958703, 0.95657384)
-bones/19/rotation = Quaternion(-0.08016953, -0.08649366, -0.25527427, 0.9596494)
-bones/20/rotation = Quaternion(-0.33986685, 0.19386424, -0.31597796, 0.86432934)
-bones/21/rotation = Quaternion(-0.0046563665, -2.8438512e-07, -0.04606895, 0.9989274)
-bones/23/rotation = Quaternion(-0.041132558, -0.025299834, -0.01235963, 0.9987569)
-bones/24/rotation = Quaternion(-0.22662814, -0.0062544253, 0.009294827, 0.97391695)
-bones/29/position = Vector3(-5.5879353e-11, 0.00014971501, -0.0007692387)
-bones/37/rotation = Quaternion(0.93843144, -0.0007561165, 0.06316071, -0.3396418)
-bones/43/rotation = Quaternion(0.01785019, 0.044106346, 0.78990084, 0.611386)
-bones/44/rotation = Quaternion(-0.62780666, -0.11050079, 0.034921277, 0.76969403)
-bones/45/rotation = Quaternion(-0.44251743, 0.33624354, -0.0053562447, 0.8313182)
-bones/63/rotation = Quaternion(0.9968953, 5.9446004e-09, -7.526352e-08, -0.07873866)
-bones/64/rotation = Quaternion(0.68400085, 0.07846679, -0.08160883, 0.7206426)
-bones/65/rotation = Quaternion(-0.72813493, -0.014638938, 0.0049976474, 0.68525934)
-bones/66/rotation = Quaternion(0.26445827, -1.3152504e-09, -0.00016519464, 0.96439713)
-bones/68/rotation = Quaternion(0.68400073, -0.07846667, 0.0816087, 0.72064275)
-bones/69/rotation = Quaternion(-0.7281348, 0.014638936, -0.0049976553, 0.6852594)
-bones/70/rotation = Quaternion(0.26445836, -8.63109e-10, 0.00016519558, 0.9643972)
+bones/1/rotation = Quaternion(-0.19312897, 0.07621561, 0.03700845, 0.97750854)
+bones/2/rotation = Quaternion(-0.13622944, -0.01288082, 0.006981443, 0.990569)
+bones/3/rotation = Quaternion(0.02115296, -0.05062751, -0.80396354, 0.59214205)
+bones/4/rotation = Quaternion(-0.13977847, -0.17262696, -0.48227555, 0.84739137)
+bones/5/rotation = Quaternion(-0.353446, -0.025530497, 0.025695704, 0.93475336)
+bones/6/rotation = Quaternion(0.2068299, 0.0033938559, 0.09326156, 0.97391593)
+bones/8/rotation = Quaternion(-0.007615121, 0.02327855, -0.2227825, 0.97456044)
+bones/9/rotation = Quaternion(-0.05175648, -0.032273605, -0.25525218, 0.9649488)
+bones/10/rotation = Quaternion(-0.092070214, -0.034295358, -0.34133592, 0.9347924)
+bones/11/rotation = Quaternion(-0.027637789, 0.03154089, -0.21338935, 0.9760668)
+bones/12/rotation = Quaternion(-0.05361043, -0.022878958, -0.2569245, 0.96467215)
+bones/13/rotation = Quaternion(-0.09307237, -0.018241726, -0.32167682, 0.9420875)
+bones/14/rotation = Quaternion(-0.08634975, 0.04733512, -0.15785256, 0.9825404)
+bones/15/rotation = Quaternion(-0.025235891, 0.002231179, -0.27650732, 0.9606778)
+bones/16/rotation = Quaternion(-0.093343996, 0.009726294, -0.26507536, 0.9596496)
+bones/17/rotation = Quaternion(0.08202991, 0.0042184843, -0.22529411, 0.97082233)
+bones/18/rotation = Quaternion(-0.037263166, -0.073547095, -0.27958703, 0.95657384)
+bones/19/rotation = Quaternion(-0.08016953, -0.08649365, -0.25527433, 0.9596494)
+bones/20/rotation = Quaternion(-0.33986685, 0.19386423, -0.315978, 0.86432934)
+bones/21/rotation = Quaternion(-0.0046563726, -2.7409496e-07, -0.046068948, 0.9989274)
+bones/23/rotation = Quaternion(-0.037336815, 0.059584662, 0.07119619, 0.99498075)
+bones/24/rotation = Quaternion(-0.18855909, 0.019247284, 0.025693834, 0.981537)
+bones/29/position = Vector3(-5.9604643e-10, 0.00014971438, -0.00076923927)
+bones/37/rotation = Quaternion(0.93843144, -0.0007561118, 0.06316072, -0.3396418)
+bones/43/rotation = Quaternion(0.03715529, 0.06303521, 0.8110213, 0.58042276)
+bones/44/rotation = Quaternion(-0.3163419, 0.02410296, 0.44884303, 0.8353963)
+bones/45/rotation = Quaternion(-0.40980276, 0.014298767, -0.04993987, 0.91069394)
+bones/63/rotation = Quaternion(0.999264, -9.1597645e-09, -0.038362287, -3.5164713e-10)
+bones/64/rotation = Quaternion(0.24539438, 0.0010715651, -0.0067727775, 0.9693991)
+bones/65/rotation = Quaternion(-0.068819575, -0.0001237922, 0.0063561248, 0.9976089)
+bones/66/rotation = Quaternion(0.2644583, 3.3039012e-09, -0.00016519478, 0.96439713)
+bones/68/rotation = Quaternion(-0.08723026, 0.0011711607, 0.0062282793, 0.9961681)
+bones/69/rotation = Quaternion(-0.06881957, 0.00012379332, -0.0063561248, 0.9976089)
+bones/70/rotation = Quaternion(0.33394548, 3.822606e-09, 0.00020860134, 0.9425924)
 
 [node name="NpcMagro" parent="NpcMagroTpose/OssoRef/Skeleton3D" index="0" unique_id=895252749]
 surface_material_override/3 = SubResource("StandardMaterial3D_yacm3")
 surface_material_override/4 = SubResource("StandardMaterial3D_mgwu6")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="NpcMagroTpose" unique_id=1677941393]
-libraries/magro_animacoes = SubResource("AnimationLibrary_6jih2")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=93036034]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NpcMagroTpose" unique_id=93036034]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.94560957, 0)
 shape = SubResource("CapsuleShape3D_xedfs")
 
-[node name="Timer" type="Timer" parent="." unique_id=1614119324]
+[node name="Timer" type="Timer" parent="NpcMagroTpose" unique_id=1614119324]
 one_shot = true
 
-[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=510371630]
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="NpcMagroTpose" unique_id=510371630]
 target_desired_distance = 2.5
 path_height_offset = 0.4
 
-[node name="InteractionTimer" type="Timer" parent="." unique_id=738062159]
+[node name="InteractionTimer" type="Timer" parent="NpcMagroTpose" unique_id=738062159]
 wait_time = 10.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="NpcMagroTpose" unique_id=1677941393]
+libraries/magro_animacoes = SubResource("AnimationLibrary_6jih2")
 
 [node name="Area3D" type="Area3D" parent="." unique_id=500277582 node_paths=PackedStringArray("objeto_para_mostrar")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9639602, 0)
@@ -174,9 +168,9 @@ label_settings = SubResource("LabelSettings_cive5")
 script = ExtResource("16_upmjd")
 metadata/_edit_use_anchors_ = true
 
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
-[connection signal="navigation_finished" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_navigation_finished"]
-[connection signal="target_reached" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_target_reached"]
-[connection signal="timeout" from="InteractionTimer" to="." method="_on_interaction_timer_timeout"]
+[connection signal="timeout" from="NpcMagroTpose/Timer" to="." method="_on_timer_timeout"]
+[connection signal="navigation_finished" from="NpcMagroTpose/NavigationAgent3D" to="." method="_on_navigation_agent_3d_navigation_finished"]
+[connection signal="target_reached" from="NpcMagroTpose/NavigationAgent3D" to="." method="_on_navigation_agent_3d_target_reached"]
+[connection signal="timeout" from="NpcMagroTpose/InteractionTimer" to="." method="_on_interaction_timer_timeout"]
 
 [editable path="NpcMagroTpose"]

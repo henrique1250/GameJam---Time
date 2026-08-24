@@ -1,20 +1,25 @@
 extends CharacterBody3D
-class_name NpcGeneric
 
-@onready var animation_player: AnimationPlayer = $NpcGordoTpose/AnimationPlayer
+class_name NpcGeneric
 
 @export var destination_npc: Array = []
 @export var pontos_interacao: Array = []
 @export var sentar_offset_time: float = 0.5
 
-@onready var navigation_agent: NavigationAgent3D = $NavigationAgent3D
-@onready var idle_timer: Timer = $Timer
-@onready var interaction_timer: Timer = $InteractionTimer
+@onready var animation_player: AnimationPlayer = find_child("AnimationPlayer", true, false)
+@onready var navigation_agent: NavigationAgent3D = find_child("NavigationAgent3D", true, false)
+@onready var idle_timer: Timer = find_child("Timer", true, false)
+@onready var interaction_timer: Timer = find_child("InteractionTimer", true, false)
 
 
 @export var marker_saida: Array = []      
 @export var tempo_sentado: float = 10.0  
 @export var offset_sentar: Vector3 = Vector3(0, -0.078, 0)
+
+
+@export var anim_idle: StringName = "idle"
+@export var anim_walk: StringName = "walk"
+@export var anim_sit: StringName = "sit"
 
 enum NPC_States {
 	Idle,
@@ -44,10 +49,10 @@ func _set_state(new_state: NPC_States) -> void:
 
 	match current_state:
 		NPC_States.Idle:
-			animation_player.play(["gorda_animations/idle1", "gorda_animations/idle2"].pick_random())
+			animation_player.play(anim_idle)
 			idle_timer.start(1.0 + randf())
 		NPC_States.Walking:
-			animation_player.play("gorda_animations/gordao_andando")
+			animation_player.play(anim_walk)
 		NPC_States.Interact:
 			_sentar_na_cadeira()
 			EventBus.npc_iniciou_interacao.emit(self)
@@ -130,10 +135,10 @@ func _sentar_na_cadeira() -> void:
 	tween.tween_property(self, "global_position", posicao_final, sentar_offset_time)
 	tween.tween_property(self, "global_rotation", marker_sentar.global_rotation, sentar_offset_time)
 	tween.chain().tween_callback(func():
-		var anim: Animation = animation_player.get_animation("gorda_animations/gorda_pedindo")
+		var anim: Animation = animation_player.get_animation(anim_sit)
 		if anim:
 			anim.loop_mode = Animation.LOOP_NONE
-		animation_player.play("gorda_animations/gorda_pedindo")
+		animation_player.play(anim_sit)
 		interaction_timer.start()
 	)
 		

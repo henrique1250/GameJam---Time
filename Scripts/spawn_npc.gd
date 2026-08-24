@@ -1,6 +1,6 @@
 extends Node3D
 
-@export var npc_scene: PackedScene
+@export var npc_scene: Array[PackedScene] = []
 @export var spawn_on_start: bool = true
 @export var spawn_interval:float = 5.0
 @export var max_npc = 10
@@ -33,15 +33,14 @@ func _on_spawn_timer_timeout() -> void:
 			
 
 func spawn_npc() -> void:
-	if not npc_scene:
+	if npc_scene.is_empty():
 		push_warning("Nenhuma cena de NPC atribuída no Spawner!")
 		return
-	
-	var npc_instance = npc_scene.instantiate() as CharacterBody3D
-	
+
+	var scene_to_spawn: PackedScene = npc_scene.pick_random()
+	var npc_instance = scene_to_spawn.instantiate() as CharacterBody3D
 
 	npc_instance.global_transform = global_transform
-
 	get_parent().add_child.call_deferred(npc_instance)
 	
 func _get_free_spawn_point() -> Marker3D:
