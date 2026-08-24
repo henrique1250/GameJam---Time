@@ -129,10 +129,10 @@ func _sentar_na_cadeira() -> void:
 	tween.tween_property(self, "global_position", posicao_final, sentar_offset_time)
 	tween.tween_property(self, "global_rotation", marker_sentar.global_rotation, sentar_offset_time)
 	tween.chain().tween_callback(func():
-		var anim: Animation = animation_player.get_animation("gorda_animations/sentado")
+		var anim: Animation = animation_player.get_animation("gorda_animations/gorda_pedindo")
 		if anim:
 			anim.loop_mode = Animation.LOOP_NONE
-		animation_player.play("gorda_animations/sentado")
+		animation_player.play("gorda_animations/gorda_pedindo")
 		interaction_timer.start()
 	)
 		
