@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://b7tvqu7we4pm3"]
+
+[ext_resource type="Script" uid="uid://cuaf3a5tdivwi" path="res://Scenes/fim_de_jogo.gd" id="1_k5e77"]
+
+[node name="FimDeJogo" type="Control" unique_id=1360956839]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_k5e77")
+
+[node name="Panel" type="Panel" parent="." unique_id=761441168]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Tituilo" type="Label" parent="Panel" unique_id=1086785673]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 72
+text = "Fim de Jogo"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="CenterContainer" type="CenterContainer" parent="Panel" unique_id=915644730]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/CenterContainer" unique_id=1094350424]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Denovo" type="Button" parent="Panel/CenterContainer/VBoxContainer" unique_id=434628309]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Jogar Novamente"
+
+[node name="Voltar" type="Button" parent="Panel/CenterContainer/VBoxContainer" unique_id=1684761126]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Voltar ao Menu"
