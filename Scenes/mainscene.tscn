@@ -178,6 +178,9 @@ albedo_color = Color(0.64667934, 0.5967524, 0.06002219, 1)
 background_mode = 1
 background_color = Color(0.94176567, 0.8696018, 0.5246647, 1)
 ambient_light_source = 3
+ssr_enabled = true
+ssil_enabled = true
+glow_enabled = true
 
 [node name="Node" type="Node3D" unique_id=1891772111]
 
@@ -578,8 +581,7 @@ volume_slider_node = NodePath("../../MusicasJukebox/CarroselContainer/VolumeSlid
 [node name="MusicasJukebox" type="CanvasLayer" parent="NavigationRegion3D" unique_id=2131329726]
 
 [node name="CarroselContainer" type="Node2D" parent="NavigationRegion3D/MusicasJukebox" unique_id=845093110 node_paths=PackedStringArray("position_offset_node")]
-visible = false
-position = Vector2(969, 273)
+position = Vector2(1104, 87)
 script = ExtResource("8_gjgc6")
 follow_button_focus = true
 position_offset_node = NodePath("Control")
@@ -588,9 +590,9 @@ position_offset_node = NodePath("Control")
 layout_mode = 3
 anchors_preset = 0
 offset_left = -59.08728
-offset_top = 38.0
-offset_right = -19.087296
-offset_bottom = 78.0
+offset_top = 332.0
+offset_right = -19.087273
+offset_bottom = 372.0
 
 [node name="Panel" type="Panel" parent="NavigationRegion3D/MusicasJukebox/CarroselContainer/Control" unique_id=1753493338]
 z_index = 1
@@ -619,7 +621,7 @@ offset_bottom = 202.0
 text = "ESCOLHER"
 
 [node name="Panel2" type="Panel" parent="NavigationRegion3D/MusicasJukebox/CarroselContainer/Control" unique_id=1689214509]
-modulate = Color(1, 1, 1, 0.97065973)
+modulate = Color(1, 1, 1, 0.95694727)
 z_index = -1
 layout_mode = 0
 offset_left = 169.08728
@@ -647,7 +649,7 @@ scale = Vector2(0.2, 0.19947544)
 texture = ExtResource("25_vamgo")
 
 [node name="Panel3" type="Panel" parent="NavigationRegion3D/MusicasJukebox/CarroselContainer/Control" unique_id=884635700]
-modulate = Color(1, 1, 1, 0.94131947)
+modulate = Color(1, 1, 1, 0.9138945)
 z_index = -2
 layout_mode = 0
 offset_left = 369.08728
@@ -675,7 +677,7 @@ offset_bottom = 202.5
 text = "ESCOLHER"
 
 [node name="Panel4" type="Panel" parent="NavigationRegion3D/MusicasJukebox/CarroselContainer/Control" unique_id=1704902061]
-modulate = Color(1, 1, 1, 0.91197914)
+modulate = Color(1, 1, 1, 0.87084174)
 z_index = -3
 layout_mode = 0
 offset_left = 569.0873
@@ -703,24 +705,24 @@ scale = Vector2(0.2056081, 0.11968519)
 texture = ExtResource("28_kpw6h")
 
 [node name="Left" type="Button" parent="NavigationRegion3D/MusicasJukebox/CarroselContainer" unique_id=1063127162]
-offset_left = -16.0
-offset_top = 203.0
-offset_right = 28.0
-offset_bottom = 234.0
+offset_left = 7.0
+offset_top = 495.0
+offset_right = 51.0
+offset_bottom = 526.0
 text = "LEFT"
 
 [node name="Right" type="Button" parent="NavigationRegion3D/MusicasJukebox/CarroselContainer" unique_id=1352896965]
-offset_left = 121.0
-offset_top = 202.0
-offset_right = 177.0
-offset_bottom = 233.0
+offset_left = 144.0
+offset_top = 494.0
+offset_right = 200.0
+offset_bottom = 525.0
 text = "RIGHT"
 
 [node name="VolumeSlider" type="VSlider" parent="NavigationRegion3D/MusicasJukebox/CarroselContainer" unique_id=825472254]
-offset_left = -580.0
-offset_top = 149.0
-offset_right = -564.0
-offset_bottom = 274.0
+offset_left = -408.0
+offset_top = 108.0
+offset_right = -392.0
+offset_bottom = 233.0
 
 [node name="Label" type="Label" parent="NavigationRegion3D/MusicasJukebox/CarroselContainer/VolumeSlider" unique_id=791397075]
 layout_mode = 0
@@ -754,7 +756,7 @@ marker_geral = NodePath("../Marker3D")
 stream = ExtResource("25_jijtd")
 
 [node name="Marker3D" type="Marker3D" parent="Markers" unique_id=1466360193]
-transform = Transform3D(-0.9999254, 0, 0.012216892, 0, 1, 0, -0.012216892, 0, -0.9999254, -0.4194442, 1.9255321, -2.3814335)
+transform = Transform3D(-0.9999254, -0.005735483, 0.010786874, 0, 0.8829475, 0.46947154, -0.012216892, 0.4694365, -0.88288164, 0.5946119, 2.1676383, -2.3814335)
 
 [node name="Sinuca" type="Marker3D" parent="Markers" unique_id=516258072]
 transform = Transform3D(0.9327901, -0.019491091, 0.3598927, -5.1991074e-09, 0.9985365, 0.054078814, -0.36042017, -0.05044418, 0.9314251, 6.7095137, 1.878705, 6.8013387)
@@ -858,36 +860,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_3swae")
 [node name="Itens Aleatorios" type="Node" parent="." unique_id=1664783920]
 
 [node name="Cerveja Prateleira 1" type="Node" parent="Itens Aleatorios" unique_id=1611795202]
-
-[node name="Cervejinha" type="MeshInstance3D" parent="Itens Aleatorios/Cerveja Prateleira 1" unique_id=1633076048]
-transform = Transform3D(0.085755005, 0, 0, 0, 0.047, 0, 0, 0, 0.08059052, -6.1090255, 1.1044446, 1.0679004)
-mesh = SubResource("CylinderMesh_bfwm2")
-surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
-
-[node name="Cervejinha2" type="MeshInstance3D" parent="Itens Aleatorios/Cerveja Prateleira 1" unique_id=2091121885]
-transform = Transform3D(0.085755005, 0, 0, 0, 0.047, 0, 0, 0, 0.08059052, -6.1090255, 1.1044446, 0.866883)
-mesh = SubResource("CylinderMesh_bfwm2")
-surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
-
-[node name="Cervejinha3" type="MeshInstance3D" parent="Itens Aleatorios/Cerveja Prateleira 1" unique_id=1033194894]
-transform = Transform3D(0.085755005, 0, 0, 0, 0.047, 0, 0, 0, 0.08059052, -6.1090255, 1.1044446, 0.5183927)
-mesh = SubResource("CylinderMesh_bfwm2")
-surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
-
-[node name="Cervejinha4" type="MeshInstance3D" parent="Itens Aleatorios/Cerveja Prateleira 1" unique_id=1776527843]
-transform = Transform3D(0.085755005, 0, 0, 0, 0.047, 0, 0, 0, 0.08059052, -6.1090255, 1.1044446, 0.43601167)
-mesh = SubResource("CylinderMesh_bfwm2")
-surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
-
-[node name="Cervejinha5" type="MeshInstance3D" parent="Itens Aleatorios/Cerveja Prateleira 1" unique_id=68383844]
-transform = Transform3D(0.085755005, 0, 0, 0, 0.047, 0, 0, 0, 0.08059052, -6.1090255, 1.1044446, 0.13903642)
-mesh = SubResource("CylinderMesh_bfwm2")
-surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
-
-[node name="Cervejinha6" type="MeshInstance3D" parent="Itens Aleatorios/Cerveja Prateleira 1" unique_id=1929879324]
-transform = Transform3D(0.085755005, 0, 0, 0, 0.047, 0, 0, 0, 0.08059052, -6.1090255, 1.1044446, 0.9707257)
-mesh = SubResource("CylinderMesh_bfwm2")
-surface_material_override/0 = SubResource("StandardMaterial3D_tf7l5")
 
 [node name="Cerveja Prateleira 2" type="Node" parent="Itens Aleatorios" unique_id=691435136]
 
@@ -1073,12 +1045,29 @@ environment = SubResource("Environment_epgqu")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=517859516]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.63457656, 6.0065355, -1.7756174)
-light_color = Color(0.9855109, 0.8257737, 0.762233, 1)
+light_color = Color(0.98540896, 0.9072869, 0.87794244, 1)
+shadow_enabled = true
 omni_range = 37.0
 omni_attenuation = 0.6
 
+[node name="OmniLight3D3" type="OmniLight3D" parent="." unique_id=1969341608]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.9795504, 6.0065355, 13.112538)
+light_color = Color(0.98540896, 0.9072869, 0.87794244, 1)
+shadow_enabled = true
+omni_range = 37.0
+omni_attenuation = 0.6
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="." unique_id=1492946671]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6523557, 6.0065355, 20.10925)
+light_color = Color(0.98540896, 0.9072869, 0.87794244, 1)
+shadow_enabled = true
+omni_range = 10.213
+omni_attenuation = 0.6
+
 [node name="OmniLight3D2" type="OmniLight3D" parent="." unique_id=480101899]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6396494, 6.0055294, 9.009324)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.91534233, 6.0055294, 8.034904)
+light_color = Color(0.9843137, 0.90588236, 0.8784314, 1)
+shadow_enabled = true
 omni_range = 37.0
 omni_attenuation = 0.6
 
@@ -1086,16 +1075,16 @@ omni_attenuation = 0.6
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8673017, 1.9498774, -2.845521)
 
 [node name="PROP_quadro_1" parent="." unique_id=873540559 instance=ExtResource("47_c8e4o")]
-transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -6.191348, 1.5339491, 7.287838)
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -6.191348, 1.5339491, 4.090364)
 
 [node name="PROP_quadro_7" parent="." unique_id=179355859 instance=ExtResource("47_c8e4o")]
-transform = Transform3D(-0.9999999, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -0.9999999, 0.5508137, 1.5339491, 9.140977)
+transform = Transform3D(-0.9999999, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -0.9999999, 0.5508137, 1.5339491, 9.969757)
 
 [node name="PROP_quadro_2" parent="." unique_id=589421705 instance=ExtResource("48_m8rf6")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -6.178368, 1.9254996, 5.993024)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -6.178368, 2.081974, 4.9540467)
 
 [node name="PROP_quadro_5" parent="." unique_id=105846603 instance=ExtResource("49_c8e4o")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -6.177401, 1.7225533, 5.0318694)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -6.177401, 1.7225533, 5.84199)
 
 [node name="PROP_quadro_6" parent="." unique_id=1443820019 instance=ExtResource("50_m8rf6")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.4058557, 2.1719282, 6.375109)
@@ -1104,7 +1093,7 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.40
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.329071, 1.6278334, 7.3338265)
 
 [node name="PROP_rua_bar" parent="." unique_id=671284054 instance=ExtResource("51_06c8f")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.61883116, 0, 1.9718723)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.61883116, 0, 3.1567934)
 
 [node name="PROP_prateleira" parent="." unique_id=548209243 instance=ExtResource("52_yijut")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -6.0924873, 1.003733, 0.13438368)
