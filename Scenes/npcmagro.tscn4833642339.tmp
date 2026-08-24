@@ -30,8 +30,6 @@ _data = {
 height = 0.40567017
 radius = 0.19189453
 
-[sub_resource type="LabelSettings" id="LabelSettings_cive5"]
-
 [node name="NpcMagro" type="CharacterBody3D" unique_id=1672364990]
 
 [node name="NpcMagroTpose" parent="." unique_id=1675511800 instance=ExtResource("2_uv1lh")]
@@ -152,7 +150,6 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 theme_override_colors/font_color = Color(1, 1, 0, 1)
-label_settings = SubResource("LabelSettings_cive5")
 script = ExtResource("16_upmjd")
 metadata/_edit_use_anchors_ = true
 

@@ -7,7 +7,7 @@
 [ext_resource type="Script" uid="uid://cd3mvguta5asf" path="res://Scripts/interacao_cachaca.gd" id="4_af6yk"]
 [ext_resource type="Texture2D" uid="uid://dewfp6m0r8qht" path="res://art/Personagens/NpcGordoTpose.fbm/Texturas/textura_npc_gordo/CabeloNpcGordoColor.png" id="5_lchqh"]
 [ext_resource type="Script" uid="uid://bw1507flepkgr" path="res://Scenes/copo_script.gd" id="5_odf6x"]
-[ext_resource type="Script" path="res://Scenes/minigame_cachaca.gd" id="6_2eopg"]
+[ext_resource type="Script" uid="uid://dwaimgshk28xs" path="res://Scenes/minigame_cachaca.gd" id="6_2eopg"]
 [ext_resource type="Texture2D" uid="uid://dcdagqwbo2e5v" path="res://art/Personagens/NpcGordoTpose.fbm/Texturas/textura_npc_gordo/SobrancelhaNpcGordoColor.png" id="6_vdk52"]
 [ext_resource type="Script" uid="uid://brkienvq8h2uo" path="res://Scenes/meta_counter_script.gd" id="7_2eopg"]
 [ext_resource type="Animation" uid="uid://ue12j2jue7ab" path="res://art/Personagens/NpcGordoTpose.fbm/Animações/gorda_esperando.res" id="7_2xb00"]

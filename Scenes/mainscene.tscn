@@ -602,7 +602,6 @@ volume_slider_node = NodePath("../../MusicasJukebox/CarroselContainer/VolumeSlid
 [node name="MusicasJukebox" type="CanvasLayer" parent="NavigationRegion3D" unique_id=2131329726]
 
 [node name="CarroselContainer" type="Node2D" parent="NavigationRegion3D/MusicasJukebox" unique_id=845093110 node_paths=PackedStringArray("position_offset_node")]
-visible = false
 position = Vector2(969, 273)
 script = ExtResource("8_gjgc6")
 follow_button_focus = true
@@ -745,7 +744,14 @@ offset_left = -580.0
 offset_top = 149.0
 offset_right = -564.0
 offset_bottom = 274.0
-value = 40.0
+
+[node name="Label" type="Label" parent="NavigationRegion3D/MusicasJukebox/CarroselContainer/VolumeSlider" unique_id=791397075]
+layout_mode = 0
+offset_left = -99.0
+offset_top = 47.0
+offset_right = -32.0
+offset_bottom = 70.0
+text = "VOLUME"
 
 [node name="Garcom" parent="NavigationRegion3D" unique_id=609313992 instance=ExtResource("32_vamgo")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.28318048, 0.010484576, -2.0220118)

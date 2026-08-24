@@ -88,7 +88,7 @@ func sucesso():
 	resultado_label.modulate = Color.GREEN
 	resultado_label.visible = true
 	
-	contador.decrementar(5)
+	ContadorGlobal.incrementar(5)
 	print("Acertou")
 	
 	await get_tree().create_timer(1.0).timeout

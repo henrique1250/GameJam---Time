@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://ddbp5k10fpfe4"]
+
+[ext_resource type="Script" uid="uid://cj3ualv7k4tdf" path="res://Scripts/event_bus_contador.gd" id="1_acl2r"]
+
+[node name="EventBusContador" type="Node3D" unique_id=570312145]
+script = ExtResource("1_acl2r")

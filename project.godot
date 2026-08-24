@@ -22,6 +22,7 @@ buses/default_bus_layout="uid://dyxtp740c3gs4"
 [autoload]
 
 EventBus="*uid://ij1l0cv76fns"
+ContadorGlobal="*uid://cj3ualv7k4tdf"
 
 [display]
 
