@@ -50,4 +50,14 @@ func _set_bus_volume(value: float) -> void:
 		AudioServer.set_bus_volume_db(bus_index, linear_to_db(value))
 
 func _on_v_slider_value_changed(value: float) -> void:
-	_set_bus_volume(value)
+	# assume que o VSlider vai de 0.0 a 1.0
+	var bus_index = AudioServer.get_bus_index(audio_bus_name)
+	if bus_index == -1:
+		push_warning("Bus de áudio '%s' não encontrado" % audio_bus_name)
+		return
+	
+	if value <= 0.0:
+		AudioServer.set_bus_mute(bus_index, true)
+	else:
+		AudioServer.set_bus_mute(bus_index, false)
+		AudioServer.set_bus_volume_db(bus_index, linear_to_db(value))

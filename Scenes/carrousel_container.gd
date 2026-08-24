@@ -17,6 +17,8 @@ signal song_selected(index: int)
 @export var select_index: int = 0
 @export var follow_button_focus: bool = false
 
+@export var audio_bus_name: String = "Music"
+
 @export var position_offset_node: Control = null
 
 func _enter_tree() -> void:
@@ -92,3 +94,16 @@ func _on_right_pressed() -> void:
 func _on_button_pressed() -> void:
 	song_selected.emit(select_index)
 	
+
+
+func _on_volume_slider_value_changed(value: float) -> void:
+	var bus_index = AudioServer.get_bus_index(audio_bus_name)
+	if bus_index == -1:
+		push_warning("Bus de áudio '%s' não encontrado" % audio_bus_name)
+		return
+	
+	if value <= 0.0:
+		AudioServer.set_bus_mute(bus_index, true)
+	else:
+		AudioServer.set_bus_mute(bus_index, false)
+		AudioServer.set_bus_volume_db(bus_index, linear_to_db(value))
