@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b7tvqu7we4pm3"]
 
-[ext_resource type="Script" uid="uid://cuaf3a5tdivwi" path="res://Scenes/fim_de_jogo.gd" id="1_k5e77"]
+[ext_resource type="Script" uid="uid://cuaf3a5tdivwi" path="res://Scripts/fim_de_jogo.gd" id="1_k5e77"]
 
 [node name="FimDeJogo" type="Control" unique_id=1360956839]
 layout_mode = 3

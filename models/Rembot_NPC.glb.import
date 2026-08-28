@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cigso3cs1wjc1"
-path="res://.godot/imported/Rembot_NPC.glb-f2203ae0a1af868551ad87e2223cdd3e.scn"
+path="res://.godot/imported/Rembot_NPC.glb-90baecdbf81871c6393de2a239f0fb7b.scn"
 
 [deps]
 
-source_file="res://models/Rembot_NPC.glb"
-dest_files=["res://.godot/imported/Rembot_NPC.glb-f2203ae0a1af868551ad87e2223cdd3e.scn"]
+source_file="res://Models/Rembot_NPC.glb"
+dest_files=["res://.godot/imported/Rembot_NPC.glb-90baecdbf81871c6393de2a239f0fb7b.scn"]
 
 [params]
 

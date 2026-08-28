@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://vy0aa6bcia64"]
 
-[ext_resource type="Script" uid="uid://r1brlu57j7hw" path="res://Scenes/npc_funcoes.gd" id="1_1ydeb"]
+[ext_resource type="Script" uid="uid://r1brlu57j7hw" path="res://Scripts/npc_funcoes.gd" id="1_1ydeb"]
 [ext_resource type="Texture2D" uid="uid://bxmpnfi6cgkek" path="res://art/Personagens/NpcMagroTpose.fbm/npc_magro_camisa.jpg" id="2_3ed2f"]
 [ext_resource type="PackedScene" uid="uid://c2ggdesf5wav8" path="res://art/Personagens/NpcMagroTpose.fbm/NpcMagroTpose.fbx" id="2_uv1lh"]
 [ext_resource type="Texture2D" uid="uid://hg6ddrd4s3ne" path="res://art/Personagens/NpcMagroTpose.fbm/npc_magro_shorts.jpg" id="3_1ydeb"]
@@ -10,9 +10,9 @@
 [ext_resource type="Animation" uid="uid://bca1xp63y7lpr" path="res://art/Personagens/NpcMagroTpose.fbm/sentado.res" id="6_yacm3"]
 [ext_resource type="Animation" uid="uid://byej7vvmv37ah" path="res://art/Personagens/NpcMagroTpose.fbm/animacoes/sentando_cadeira.res" id="7_mgwu6"]
 [ext_resource type="Script" uid="uid://cd3mvguta5asf" path="res://Scripts/interacao_cachaca.gd" id="13_i08dk"]
-[ext_resource type="Script" uid="uid://bw1507flepkgr" path="res://Scenes/copo_script.gd" id="14_5r46w"]
-[ext_resource type="Script" uid="uid://dwaimgshk28xs" path="res://Scenes/minigame_cachaca.gd" id="15_m0hu1"]
-[ext_resource type="Script" uid="uid://brkienvq8h2uo" path="res://Scenes/meta_counter_script.gd" id="16_upmjd"]
+[ext_resource type="Script" uid="uid://bw1507flepkgr" path="res://Scripts/copo_script.gd" id="14_5r46w"]
+[ext_resource type="Script" uid="uid://dwaimgshk28xs" path="res://Scripts/minigame_cachaca.gd" id="15_m0hu1"]
+[ext_resource type="Script" uid="uid://brkienvq8h2uo" path="res://Scripts/meta_counter_script.gd" id="16_upmjd"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yacm3"]
 albedo_texture = ExtResource("2_3ed2f")

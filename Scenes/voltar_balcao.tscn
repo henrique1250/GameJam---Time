@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://i5yqwk0mold5"]
 
-[ext_resource type="Texture2D" uid="uid://wvxw0h842frg" path="res://art/assets/Default.png" id="1_up6w5"]
+[ext_resource type="Texture2D" uid="uid://wvxw0h842frg" path="res://art/Assests_Ambiente/Default.png" id="1_up6w5"]
 [ext_resource type="Script" uid="uid://b6p5ln84knoxy" path="res://Scripts/voltar_balcao.gd" id="2_up6w5"]
 
 [node name="Control" type="TextureButton" unique_id=1704514351]

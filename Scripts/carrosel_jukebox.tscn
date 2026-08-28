@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cjflv2btrxvum"]
 
-[ext_resource type="Script" uid="uid://88v701y7yngp" path="res://Scenes/carrousel_container.gd" id="1_ch8p2"]
+[ext_resource type="Script" uid="uid://88v701y7yngp" path="res://Scripts/carrousel_container.gd" id="1_ch8p2"]
 
 [node name="Node2D" type="Node2D" unique_id=272346233]
 

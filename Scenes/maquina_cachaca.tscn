@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://c47p4vvmbt2q1"]
 
-[ext_resource type="Script" uid="uid://d1epopceaoh8b" path="res://Scenes/maquina_cachaca_script.gd" id="1_eidja"]
-[ext_resource type="Script" uid="uid://bw1507flepkgr" path="res://Scenes/copo_script.gd" id="2_ex42q"]
-[ext_resource type="Script" uid="uid://dwaimgshk28xs" path="res://Scenes/minigame_cachaca.gd" id="2_fjlne"]
-[ext_resource type="Script" uid="uid://brkienvq8h2uo" path="res://Scenes/meta_counter_script.gd" id="4_nwq4d"]
+[ext_resource type="Script" uid="uid://d1epopceaoh8b" path="res://Scripts/maquina_cachaca_script.gd" id="1_eidja"]
+[ext_resource type="Script" uid="uid://bw1507flepkgr" path="res://Scripts/copo_script.gd" id="2_ex42q"]
+[ext_resource type="Script" uid="uid://dwaimgshk28xs" path="res://Scripts/minigame_cachaca.gd" id="2_fjlne"]
+[ext_resource type="Script" uid="uid://brkienvq8h2uo" path="res://Scripts/meta_counter_script.gd" id="4_nwq4d"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_racnl"]
 

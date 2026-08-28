@@ -1,58 +1,58 @@
 [gd_scene format=4 uid="uid://vvmb851w8hmb"]
 
-[ext_resource type="Texture2D" uid="uid://buf87c4vykob8" path="res://Assets/grid_grey.png" id="1_c35lc"]
+[ext_resource type="Texture2D" uid="uid://buf87c4vykob8" path="res://Assets_Objetos/grid_grey.png" id="1_c35lc"]
 [ext_resource type="PackedScene" uid="uid://cws1nqstyrdbt" path="res://Scenes/mesa.tscn" id="3_a3v7h"]
-[ext_resource type="PackedScene" uid="uid://2fl6g234y15" path="res://Assets/mesa_bar_coca_skol.glb" id="3_wpqw8"]
+[ext_resource type="PackedScene" uid="uid://2fl6g234y15" path="res://Assets_Objetos/mesa_bar_coca_skol.glb" id="3_wpqw8"]
 [ext_resource type="PackedScene" uid="uid://c2cirktl8j3ha" path="res://Scenes/sinuquinha.tscn" id="4_3p0ik"]
-[ext_resource type="PackedScene" uid="uid://cs08sskh8ugor" path="res://art/assets/mesa_coca.glb" id="4_epgqu"]
+[ext_resource type="PackedScene" uid="uid://cs08sskh8ugor" path="res://art/Assests_Ambiente/mesa_coca.glb" id="4_epgqu"]
 [ext_resource type="AudioStream" uid="uid://df6qipa8h3yxq" path="res://songs/sfx/Sinuca.mp3" id="4_jijtd"]
-[ext_resource type="PackedScene" uid="uid://dq8r3qx3v51nb" path="res://Assets/PROP_cerveja_brahma.glb" id="4_qkhv8"]
+[ext_resource type="PackedScene" uid="uid://dq8r3qx3v51nb" path="res://Assets_Objetos/PROP_cerveja_brahma.glb" id="4_qkhv8"]
 [ext_resource type="PackedScene" uid="uid://bgpqkfmxj2qd0" path="res://Scenes/jukebox.tscn" id="5_hjw3j"]
-[ext_resource type="PackedScene" uid="uid://bvf5q3ifins6d" path="res://Assets/PROP_cerveja_heineken.glb" id="5_j1a25"]
-[ext_resource type="Script" uid="uid://balnxmcje74xp" path="res://Scenes/camera.gd" id="6_c5s60"]
-[ext_resource type="PackedScene" uid="uid://kv58n18wn0ax" path="res://Assets/PROP_enguadados.glb" id="6_xdmf7"]
-[ext_resource type="PackedScene" uid="uid://0v37sbgbd5au" path="res://Assets/PROP_copo_americano.glb" id="6_xodc5"]
-[ext_resource type="PackedScene" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
-[ext_resource type="Script" uid="uid://88v701y7yngp" path="res://Scenes/carrousel_container.gd" id="8_gjgc6"]
+[ext_resource type="PackedScene" uid="uid://bvf5q3ifins6d" path="res://Assets_Objetos/PROP_cerveja_heineken.glb" id="5_j1a25"]
+[ext_resource type="Script" uid="uid://balnxmcje74xp" path="res://Scripts/camera.gd" id="6_c5s60"]
+[ext_resource type="PackedScene" uid="uid://kv58n18wn0ax" path="res://Assets_Objetos/PROP_enguadados.glb" id="6_xdmf7"]
+[ext_resource type="PackedScene" uid="uid://0v37sbgbd5au" path="res://Assets_Objetos/PROP_copo_americano.glb" id="6_xodc5"]
+[ext_resource type="PackedScene" uid="uid://i5yqwk0mold5" path="res://Scenes/voltar_balcao.tscn" id="8_1o021"]
+[ext_resource type="Script" uid="uid://88v701y7yngp" path="res://Scripts/carrousel_container.gd" id="8_gjgc6"]
 [ext_resource type="PackedScene" uid="uid://dwxao37vt1t75" path="res://Scenes/npctest.tscn" id="9_1o021"]
 [ext_resource type="AudioStream" uid="uid://cgwedkebfa1nh" path="res://songs/Boteco OST/Provas.wav" id="9_hkskg"]
-[ext_resource type="PackedScene" uid="uid://bdjtk7koqgec8" path="res://art/assets/PROP_balcao-modular.glb" id="9_tf7l5"]
-[ext_resource type="Texture2D" uid="uid://cx13svo4nwpdl" path="res://art/assets/PROP_balcao-modular_balcao Set.png" id="10_3swae"]
+[ext_resource type="PackedScene" uid="uid://bdjtk7koqgec8" path="res://art/Assests_Ambiente/PROP_balcao-modular.glb" id="9_tf7l5"]
+[ext_resource type="Texture2D" uid="uid://cx13svo4nwpdl" path="res://art/Assests_Ambiente/PROP_balcao-modular_balcao Set.png" id="10_3swae"]
 [ext_resource type="AudioStream" uid="uid://bos3loavpmqhx" path="res://songs/Boteco OST/Copão Veneno.wav" id="10_44wyh"]
-[ext_resource type="Shader" path="res://art/shades/outineassets.gdshader" id="10_tf7l5"]
-[ext_resource type="PackedScene" uid="uid://c4saxnctce3mq" path="res://Assets/cadeira_de_bar_skol.glb" id="11_s0kuw"]
+[ext_resource type="Shader" uid="uid://q3efolm48w4g" path="res://art/shades/outineassets.gdshader" id="10_tf7l5"]
+[ext_resource type="PackedScene" uid="uid://c4saxnctce3mq" path="res://Assets_Objetos/cadeira_de_bar_skol.glb" id="11_s0kuw"]
 [ext_resource type="AudioStream" uid="uid://bq4ahng7rmsq7" path="res://songs/Boteco OST/Boteco Azul.wav" id="11_xdmf7"]
-[ext_resource type="PackedScene" uid="uid://ckq1urjj2kc4q" path="res://art/assets/cadeira_coca.glb" id="12_8bb11"]
+[ext_resource type="PackedScene" uid="uid://ckq1urjj2kc4q" path="res://art/Assests_Ambiente/cadeira_coca.glb" id="12_8bb11"]
 [ext_resource type="AudioStream" uid="uid://mx7bw6ar4fn5" path="res://songs/Boteco OST/Azul da Cor do Bar.wav" id="12_c35lc"]
-[ext_resource type="PackedScene" uid="uid://di20lfxa62dov" path="res://art/assets/PROP_cadeira.glb" id="13_hkskg"]
-[ext_resource type="PackedScene" uid="uid://bru750wppf55y" path="res://art/assets/PROP_balcao_quina.glb" id="15_xdmf7"]
+[ext_resource type="PackedScene" uid="uid://di20lfxa62dov" path="res://art/Assests_Ambiente/PROP_cadeira.glb" id="13_hkskg"]
+[ext_resource type="PackedScene" uid="uid://bru750wppf55y" path="res://art/Assests_Ambiente/PROP_balcao_quina.glb" id="15_xdmf7"]
 [ext_resource type="PackedScene" uid="uid://djm8ujnpbistr" path="res://Scripts/spawn_npc.tscn" id="18_3swae"]
-[ext_resource type="PackedScene" uid="uid://7ht64rvyhmfs" path="res://Assets/PROP_ypioca_prata.glb" id="19_76hng"]
-[ext_resource type="PackedScene" uid="uid://ij2bnnhp3swh" path="res://Assets/PROP_ypioca_amarela.glb" id="20_hkskg"]
-[ext_resource type="PackedScene" uid="uid://dkbd1cmb6p6gj" path="res://art/assets/PROP_cerveja.glb" id="22_44wyh"]
+[ext_resource type="PackedScene" uid="uid://7ht64rvyhmfs" path="res://Assets_Objetos/PROP_ypioca_prata.glb" id="19_76hng"]
+[ext_resource type="PackedScene" uid="uid://ij2bnnhp3swh" path="res://Assets_Objetos/PROP_ypioca_amarela.glb" id="20_hkskg"]
+[ext_resource type="PackedScene" uid="uid://dkbd1cmb6p6gj" path="res://art/Assests_Ambiente/PROP_cerveja.glb" id="22_44wyh"]
 [ext_resource type="AudioStream" uid="uid://j0pi6l8pq2ee" path="res://songs/sfx/Selecionar.mp3" id="25_jijtd"]
 [ext_resource type="Texture2D" uid="uid://djw5oo8j2soyy" path="res://songs/songs_caps/Provas.png" id="25_mp7gq"]
 [ext_resource type="Texture2D" uid="uid://d2bia08c71bij" path="res://songs/songs_caps/163_Sem_Titulo_20260823005822.png" id="25_vamgo"]
 [ext_resource type="Texture2D" uid="uid://onu645idhofd" path="res://songs/songs_caps/Boteco Azul.png" id="27_fwdu2"]
 [ext_resource type="Texture2D" uid="uid://bapptsny58s2t" path="res://songs/songs_caps/163_Sem_Titulo_20260823005659.png" id="28_kpw6h"]
-[ext_resource type="PackedScene" uid="uid://m3d2cr7yckin" path="res://Assets/PROP_enguadado_ambev.glb" id="29_vamgo"]
-[ext_resource type="PackedScene" uid="uid://ckpuhwn8pqsld" path="res://Assets/PROP_enguadado_cervejaria.glb" id="30_okbyl"]
-[ext_resource type="PackedScene" uid="uid://ddfo8d5v7jtvl" path="res://Assets/PROP_enguadado_heineken.glb" id="31_mp7gq"]
-[ext_resource type="PackedScene" uid="uid://b5jmdgps4sux0" path="res://art/assets/freezer_com_prateleiras.glb" id="31_yijut"]
+[ext_resource type="PackedScene" uid="uid://m3d2cr7yckin" path="res://Assets_Objetos/PROP_enguadado_ambev.glb" id="29_vamgo"]
+[ext_resource type="PackedScene" uid="uid://ckpuhwn8pqsld" path="res://Assets_Objetos/PROP_enguadado_cervejaria.glb" id="30_okbyl"]
+[ext_resource type="PackedScene" uid="uid://ddfo8d5v7jtvl" path="res://Assets_Objetos/PROP_enguadado_heineken.glb" id="31_mp7gq"]
+[ext_resource type="PackedScene" uid="uid://b5jmdgps4sux0" path="res://art/Assests_Ambiente/freezer_com_prateleiras.glb" id="31_yijut"]
 [ext_resource type="PackedScene" uid="uid://bkd5m344ukpky" path="res://Scenes/Garcom.tscn" id="32_vamgo"]
-[ext_resource type="PackedScene" uid="uid://comkb54p5rq7r" path="res://Assets/PROP_rua_tamanho.glb" id="32_xbg07"]
-[ext_resource type="PackedScene" uid="uid://balnx1f3wa6m1" path="res://Assets/PROP_cerveja_skol.glb" id="33_okbyl"]
+[ext_resource type="PackedScene" uid="uid://comkb54p5rq7r" path="res://Assets_Objetos/PROP_rua_tamanho.glb" id="32_xbg07"]
+[ext_resource type="PackedScene" uid="uid://balnx1f3wa6m1" path="res://Assets_Objetos/PROP_cerveja_skol.glb" id="33_okbyl"]
 [ext_resource type="AudioStream" uid="uid://cpqkksgcekvei" path="res://songs/sfx/Ambiente.mp3" id="38_m7b6h"]
 [ext_resource type="PackedScene" uid="uid://vy0aa6bcia64" path="res://Scenes/npcmagro.tscn" id="44_wpqw8"]
-[ext_resource type="Script" uid="uid://brkienvq8h2uo" path="res://Scenes/meta_counter_script.gd" id="45_epgqu"]
-[ext_resource type="PackedScene" uid="uid://bn2eeyerfwmq8" path="res://art/assets/PROP_quadro_3.glb" id="46_1kwc2"]
-[ext_resource type="PackedScene" uid="uid://bvull4aedei7a" path="res://art/assets/PROP_quadro_1.glb" id="47_c8e4o"]
-[ext_resource type="PackedScene" uid="uid://drki7dw767wvf" path="res://art/assets/PROP_quadro_2.glb" id="48_m8rf6"]
-[ext_resource type="PackedScene" uid="uid://cjwy2p86brh1q" path="res://art/assets/PROP_quadro_4.glb" id="49_c8e4o"]
-[ext_resource type="PackedScene" uid="uid://bck6jbef5xmg" path="res://art/assets/PROP_quadro_5.glb" id="50_m8rf6"]
-[ext_resource type="PackedScene" uid="uid://bxfyd2cf2fwj1" path="res://art/assets/PROP_rua_bar.glb" id="51_06c8f"]
-[ext_resource type="PackedScene" uid="uid://b4aabjn81p145" path="res://art/assets/PROP_prateleira.glb" id="52_yijut"]
-[ext_resource type="PackedScene" uid="uid://d37survckqb6y" path="res://Assets/PROP_cerveja_schin.glb" id="53_bbmo8"]
+[ext_resource type="Script" uid="uid://brkienvq8h2uo" path="res://Scripts/meta_counter_script.gd" id="45_epgqu"]
+[ext_resource type="PackedScene" uid="uid://bn2eeyerfwmq8" path="res://art/Assests_Ambiente/PROP_quadro_3.glb" id="46_1kwc2"]
+[ext_resource type="PackedScene" uid="uid://bvull4aedei7a" path="res://art/Assests_Ambiente/PROP_quadro_1.glb" id="47_c8e4o"]
+[ext_resource type="PackedScene" uid="uid://drki7dw767wvf" path="res://art/Assests_Ambiente/PROP_quadro_2.glb" id="48_m8rf6"]
+[ext_resource type="PackedScene" uid="uid://cjwy2p86brh1q" path="res://art/Assests_Ambiente/PROP_quadro_4.glb" id="49_c8e4o"]
+[ext_resource type="PackedScene" uid="uid://bck6jbef5xmg" path="res://art/Assests_Ambiente/PROP_quadro_5.glb" id="50_m8rf6"]
+[ext_resource type="PackedScene" uid="uid://bxfyd2cf2fwj1" path="res://art/Assests_Ambiente/PROP_rua_bar.glb" id="51_06c8f"]
+[ext_resource type="PackedScene" uid="uid://b4aabjn81p145" path="res://art/Assests_Ambiente/PROP_prateleira.glb" id="52_yijut"]
+[ext_resource type="PackedScene" uid="uid://d37survckqb6y" path="res://Assets_Objetos/PROP_cerveja_schin.glb" id="53_bbmo8"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_dijpm"]
 vertices = PackedVector3Array(-6.31231, 0.38094014, -3.8251371, -6.31231, 0.38094014, -2.5751371, -4.56231, 0.38094014, -2.8251371, -4.56231, 0.38094014, -3.8251371, -2.5623102, 0.38094014, -2.3251371, -1.0623102, 0.38094014, -2.3251371, -0.8123102, 0.38094014, -2.8251371, -2.5623102, 0.38094014, -3.8251371, 2.4376898, 0.38094014, -2.3251371, 2.4376898, 0.38094014, -3.8251371, 4.43769, 0.38094014, -3.8251371, 4.43769, 0.38094014, -2.3251371, 5.43769, 0.38094014, -2.3251371, 7.68769, 0.38094014, -0.32513714, 7.68769, 0.38094014, -3.8251371, -3.3123102, 0.38094014, -0.07513714, -2.5623102, 0.38094014, -0.07513714, -2.5623102, 0.38094014, -0.32513714, -3.3123102, 0.38094014, -0.57513714, 1.1876898, 0.38094014, 8.924863, -2.0623102, 0.38094014, 7.924863, -3.3123102, 0.38094014, 7.924863, -6.31231, 0.38094014, 11.424863, 2.1876898, 0.38094014, 11.424863, -3.3123102, 0.38094014, 4.424863, -2.5623102, 0.38094014, 4.424863, -2.8123102, 0.38094014, 3.4248629, -3.5623102, 0.38094014, 3.1748629, 0.6876898, 0.38094014, 7.174863, -1.0623102, 0.38094014, 6.674863, -3.5623102, 0.38094014, 0.67486286, -3.5623102, 0.38094014, 2.4248629, -4.56231, 0.38094014, 2.1748629, -4.81231, 0.38094014, 3.6748629, -3.3123102, 0.38094014, -1.0751371, -4.81231, 0.38094014, -0.57513714, -4.56231, 0.38094014, 0.92486286, -3.5623102, 0.38094014, 7.174863, -4.56231, 0.38094014, 6.924863, -4.56231, 0.38094014, 5.424863, -3.5623102, 0.38094014, 5.174863, -4.81231, 0.38094014, 1.9248629, -6.31231, 0.38094014, 3.9248629, -6.31231, 0.38094014, -1.3251371, -6.31231, 0.63094014, 1.6748629, 2.1876898, 0.38094014, 9.174863, 2.6876898, 0.63094014, 1.9248629, 2.6876898, 0.38094014, 2.6748629, 2.9376898, 0.38094014, 2.9248629, 3.4376898, 0.38094014, 1.9248629, 5.18769, 0.38094014, 5.424863, 3.6876898, 0.38094014, 6.924863, 3.6876898, 0.38094014, 8.174863, 6.18769, 0.38094014, 6.674863, 3.4376898, 0.38094014, 5.424863, 2.9376898, 0.38094014, 6.174863, 1.6876898, 0.63094014, 0.92486286, 3.9376898, 0.38094014, -0.32513714, 1.9376898, 0.38094014, -0.32513714, 2.9376898, 0.38094014, 9.174863, 7.68769, 0.38094014, 11.424863, 7.68769, 0.38094014, 6.924863, 6.18769, 0.38094014, 0.42486286, 4.43769, 0.38094014, -0.82513714, 5.18769, 0.38094014, 1.9248629, 5.68769, 0.38094014, 2.4248629, 2.6876898, 0.38094014, 4.924863, 1.9376898, 0.63094014, 5.924863, -0.5623102, 0.38094014, 1.6748629, -1.0623102, 0.38094014, 0.92486286, -1.0623102, 0.38094014, 2.1748629, -0.5623102, 0.38094014, 3.1748629, 1.6876898, 0.38094014, 3.9248629, 0.43768978, 0.38094014, 0.92486286, -1.0623102, 0.38094014, 5.424863, 0.43768978, 0.38094014, 3.9248629, 4.68769, 1.1309402, 3.4248629, 4.68769, 1.3809402, 2.9248629, 4.18769, 1.3809402, 2.9248629, 3.9376898, 1.3809402, 3.4248629, 3.9376898, 1.3809402, 4.424863, 4.43769, 1.1309402, 4.424863)
@@ -364,7 +364,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7252326, 0.80858886, 1.466
 [node name="PROP_cadeira" parent="NavigationRegion3D" unique_id=1872401475 instance=ExtResource("13_hkskg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7692857, 0, 2.2483315)
 
-[node name="Cube_002" parent="NavigationRegion3D/PROP_cadeira" index="0" unique_id=2071145648]
+[node name="Cube_002" parent="NavigationRegion3D/PROP_cadeira" index="0" unique_id=1646256897]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7410476, 0.44730288, -0.46348524)
 layers = 2
 mesh = null
@@ -468,19 +468,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.007080078, -0.39557555, 0.
 [node name="PROP_balcao-modular" parent="NavigationRegion3D" unique_id=509138039 instance=ExtResource("9_tf7l5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.002100706, 0, -1.4112058)
 
-[node name="canto-balcao" parent="NavigationRegion3D/PROP_balcao-modular" index="0" unique_id=585559824]
+[node name="canto-balcao" parent="NavigationRegion3D/PROP_balcao-modular" index="0" unique_id=1837612347]
 transform = Transform3D(1.1116476, 0, 0, 0, 1.1116476, 0, 0, 0, 1.1116476, 3.33, 0.539, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="ponta-esquerda-balcao" parent="NavigationRegion3D/PROP_balcao-modular" index="1" unique_id=1356122891]
+[node name="ponta-esquerda-balcao" parent="NavigationRegion3D/PROP_balcao-modular" index="1" unique_id=20031512]
 transform = Transform3D(-4.859166e-08, 0, -1.1116476, 0, 1.1116476, 0, 1.1116476, 0, -4.859166e-08, -3.44, 0.539, -1.995)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="ponta-direita-balcao" parent="NavigationRegion3D/PROP_balcao-modular" index="2" unique_id=1710642892]
+[node name="ponta-direita-balcao" parent="NavigationRegion3D/PROP_balcao-modular" index="2" unique_id=1098215896]
 transform = Transform3D(1.1116476, 0, 0, 0, 1.1116476, 0, 0, 0, 1.1116476, 0, 0.539, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 
-[node name="meio-balcao" parent="NavigationRegion3D/PROP_balcao-modular" index="3" unique_id=1342960557]
+[node name="meio-balcao" parent="NavigationRegion3D/PROP_balcao-modular" index="3" unique_id=479233675]
 transform = Transform3D(-4.859166e-08, 0, -1.1116476, 0, 1.1116476, 0, 1.1116476, 0, -4.859166e-08, -3.44, 0.539, -0.885)
 rotation_order = 0
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
@@ -627,7 +627,7 @@ offset_bottom = 202.0
 text = "ESCOLHER"
 
 [node name="Panel2" type="Panel" parent="NavigationRegion3D/MusicasJukebox/CarroselContainer/Control" unique_id=1689214509]
-modulate = Color(1, 1, 1, 0.97065973)
+modulate = Color(1, 1, 1, 0.97291666)
 z_index = -1
 layout_mode = 0
 offset_left = 169.08728
@@ -655,7 +655,7 @@ scale = Vector2(0.2, 0.19947544)
 texture = ExtResource("25_vamgo")
 
 [node name="Panel3" type="Panel" parent="NavigationRegion3D/MusicasJukebox/CarroselContainer/Control" unique_id=884635700]
-modulate = Color(1, 1, 1, 0.94131947)
+modulate = Color(1, 1, 1, 0.9458333)
 z_index = -2
 layout_mode = 0
 offset_left = 369.08728
@@ -683,7 +683,7 @@ offset_bottom = 202.5
 text = "ESCOLHER"
 
 [node name="Panel4" type="Panel" parent="NavigationRegion3D/MusicasJukebox/CarroselContainer/Control" unique_id=1704902061]
-modulate = Color(1, 1, 1, 0.91197914)
+modulate = Color(1, 1, 1, 0.91875)
 z_index = -3
 layout_mode = 0
 offset_left = 569.0873
@@ -918,7 +918,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_3swae")
 [node name="PROP_balcao_quina" parent="." unique_id=2111459800 instance=ExtResource("15_xdmf7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4124731)
 
-[node name="canto-balcao-esquerdo" parent="PROP_balcao_quina" index="0" unique_id=1374101507]
+[node name="canto-balcao-esquerdo" parent="PROP_balcao_quina" index="0" unique_id=189965130]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.33, 0, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_1bo1k")
 

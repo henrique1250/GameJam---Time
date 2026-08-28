@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://c2cirktl8j3ha"]
 
-[ext_resource type="Script" path="res://Scenes/sinuquinha.gd" id="1_je4sl"]
-[ext_resource type="Texture2D" uid="uid://d140wicl544nk" path="res://art/assets/PROP_mesa_bilhar_ChatGPT Image 17 de ago. de 2026, 13_26_25.png" id="2_gvp3l"]
+[ext_resource type="Script" uid="uid://fw888ht5s2tw" path="res://Scripts/sinuquinha.gd" id="1_je4sl"]
+[ext_resource type="Texture2D" uid="uid://d140wicl544nk" path="res://art/Assests_Ambiente/PROP_mesa_bilhar_ChatGPT Image 17 de ago. de 2026, 13_26_25.png" id="2_gvp3l"]
 [ext_resource type="Shader" uid="uid://q3efolm48w4g" path="res://art/shades/outineassets.gdshader" id="3_eel6x"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oroyi"]
