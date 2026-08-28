@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bbru5ekosyfjl"]
+
+[node name="Transicao" type="Control" unique_id=818743870]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=1916742451]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Texto" type="Label" parent="Panel" unique_id=157127187]
+custom_minimum_size = Vector2(0.5, 0)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 49.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 36
+text = "Após o falecimento do seu avô, você herda o antigo bar que ele administrava com paixão por décadas. Sem emprego fixo e com uma grande dívida a ser paga, você decide assumir o negócio. Agora, aprender a arte de servir drinques e pagar as dívidas que ameaçam tirar tudo de você."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="Panel" unique_id=2142657513]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/CenterContainer" unique_id=556005229]
+layout_mode = 2
