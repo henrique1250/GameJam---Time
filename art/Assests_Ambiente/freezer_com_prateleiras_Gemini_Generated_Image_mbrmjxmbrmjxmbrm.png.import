@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djaxnvv6g00k"
-path.s3tc="res://.godot/imported/freezer_com_prateleiras_Gemini_Generated_Image_mbrmjxmbrmjxmbrm.png-3094bef2ec7a199bfd3dd54219674eff.s3tc.ctex"
+path.s3tc="res://.godot/imported/freezer_com_prateleiras_Gemini_Generated_Image_mbrmjxmbrmjxmbrm.png-0d9aae6145ce7ee04d66626a0b546a8c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/freezer_com_prateleiras_Gemini_Generated_Image_mbrmjxmbrmjxmbrm.png"
-dest_files=["res://.godot/imported/freezer_com_prateleiras_Gemini_Generated_Image_mbrmjxmbrmjxmbrm.png-3094bef2ec7a199bfd3dd54219674eff.s3tc.ctex"]
+source_file="res://Art/Assests_Ambiente/freezer_com_prateleiras_Gemini_Generated_Image_mbrmjxmbrmjxmbrm.png"
+dest_files=["res://.godot/imported/freezer_com_prateleiras_Gemini_Generated_Image_mbrmjxmbrmjxmbrm.png-0d9aae6145ce7ee04d66626a0b546a8c.s3tc.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bl2j2dpb0is3k"
-path.s3tc="res://.godot/imported/PeleGarcom.png-2912e70f2cbd969c48ba5cfbe3d93d44.s3tc.ctex"
+path.s3tc="res://.godot/imported/PeleGarcom.png-2ad2208118d4b1f8bc364365b1ecf2fe.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://art/Personagens/PersonagemPrincipal/PesonagemPrincipalTpose.fbm/PeleGarcom.png"
-dest_files=["res://.godot/imported/PeleGarcom.png-2912e70f2cbd969c48ba5cfbe3d93d44.s3tc.ctex"]
+source_file="res://Art/Personagens/PersonagemPrincipal/PesonagemPrincipalTpose.fbm/PeleGarcom.png"
+dest_files=["res://.godot/imported/PeleGarcom.png-2ad2208118d4b1f8bc364365b1ecf2fe.s3tc.ctex"]
 
 [params]
 

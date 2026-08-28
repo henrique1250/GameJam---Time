@@ -1,8 +1,8 @@
 [gd_scene format=4 uid="uid://cws1nqstyrdbt"]
 
 [ext_resource type="Script" uid="uid://cca4ml8ejrpij" path="res://Scripts/mesa.gd" id="1_t1wyp"]
-[ext_resource type="Texture2D" uid="uid://c0em808l02h2f" path="res://art/Assests_Ambiente/PROP_mesa_mesa_bar.png" id="2_o3usn"]
-[ext_resource type="Shader" uid="uid://q3efolm48w4g" path="res://art/shades/outineassets.gdshader" id="3_hc3ql"]
+[ext_resource type="Texture2D" uid="uid://c0em808l02h2f" path="res://Art/Assests_Ambiente/PROP_mesa_mesa_bar.png" id="2_o3usn"]
+[ext_resource type="Shader" uid="uid://q3efolm48w4g" path="res://Art/shades/outineassets.gdshader" id="3_hc3ql"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l3vo5"]
 resource_name = "Material.001"

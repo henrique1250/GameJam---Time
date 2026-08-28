@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b4aabjn81p145"
-path="res://.godot/imported/PROP_prateleira.glb-0d97c4c07fa8d562a816ab043858649c.scn"
+path="res://.godot/imported/PROP_prateleira.glb-5b655843f2b024510241373aa4226cd4.scn"
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/PROP_prateleira.glb"
-dest_files=["res://.godot/imported/PROP_prateleira.glb-0d97c4c07fa8d562a816ab043858649c.scn"]
+source_file="res://Art/Assests_Ambiente/PROP_prateleira.glb"
+dest_files=["res://.godot/imported/PROP_prateleira.glb-5b655843f2b024510241373aa4226cd4.scn"]
 
 [params]
 

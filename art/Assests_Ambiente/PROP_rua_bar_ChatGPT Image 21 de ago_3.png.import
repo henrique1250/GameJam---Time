@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dn31hdxn8m4hr"
-path.s3tc="res://.godot/imported/PROP_rua_bar_ChatGPT Image 21 de ago_3.png-87b239327746b047d0855744c00be41c.s3tc.ctex"
+path.s3tc="res://.godot/imported/PROP_rua_bar_ChatGPT Image 21 de ago_3.png-bb9075167eaf167de614723922e51c86.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/PROP_rua_bar_ChatGPT Image 21 de ago_3.png"
-dest_files=["res://.godot/imported/PROP_rua_bar_ChatGPT Image 21 de ago_3.png-87b239327746b047d0855744c00be41c.s3tc.ctex"]
+source_file="res://Art/Assests_Ambiente/PROP_rua_bar_ChatGPT Image 21 de ago_3.png"
+dest_files=["res://.godot/imported/PROP_rua_bar_ChatGPT Image 21 de ago_3.png-bb9075167eaf167de614723922e51c86.s3tc.ctex"]
 
 [params]
 

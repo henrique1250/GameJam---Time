@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bkhgqsaydjsl7"
-path.s3tc="res://.godot/imported/PeleNpcMagroColor.png-ec6248488fb9783c10b65c5457d8e515.s3tc.ctex"
+path.s3tc="res://.godot/imported/PeleNpcMagroColor.png-a723d2d465d889d9ac20da0866143f7d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://art/Personagens/NpcMagroTpose.fbm/PeleNpcMagroColor.png"
-dest_files=["res://.godot/imported/PeleNpcMagroColor.png-ec6248488fb9783c10b65c5457d8e515.s3tc.ctex"]
+source_file="res://Art/Personagens/NpcMagroTpose.fbm/PeleNpcMagroColor.png"
+dest_files=["res://.godot/imported/PeleNpcMagroColor.png-a723d2d465d889d9ac20da0866143f7d.s3tc.ctex"]
 
 [params]
 

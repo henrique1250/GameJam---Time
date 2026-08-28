@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://j2b7brvtjofr"
-path="res://.godot/imported/PersonagemPrincipalAnimaçoes.fbx-24be1988471e1d0ad98abe7d10babbb2.scn"
+path="res://.godot/imported/PersonagemPrincipalAnimaçoes.fbx-873278dcb759f4727d445552962a2d7f.scn"
 
 [deps]
 
-source_file="res://art/Personagens/PersonagemPrincipal/PersonagemPrincipalAnimaçoes.fbx"
-dest_files=["res://.godot/imported/PersonagemPrincipalAnimaçoes.fbx-24be1988471e1d0ad98abe7d10babbb2.scn"]
+source_file="res://Art/Personagens/PersonagemPrincipal/PersonagemPrincipalAnimaçoes.fbx"
+dest_files=["res://.godot/imported/PersonagemPrincipalAnimaçoes.fbx-873278dcb759f4727d445552962a2d7f.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 "EncostadoBalcao": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://art/Personagens/PersonagemPrincipal/PersonagemGarcom/Encostado.res",
+"save_to_file/fallback_path": "res://Art/Personagens/PersonagemPrincipal/PersonagemGarcom/Encostado.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://b2i8nubhyplgs",
 "settings/loop_mode": 0,
@@ -2097,7 +2097,7 @@ _subresources={
 },
 "LimpandoBalcao": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://art/Personagens/PersonagemPrincipal/PersonagemGarcom/Balcao_Limpo.res",
+"save_to_file/fallback_path": "res://Art/Personagens/PersonagemPrincipal/PersonagemGarcom/Balcao_Limpo.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://drcos6h36mrc2",
 "settings/loop_mode": 0,
@@ -4153,7 +4153,7 @@ _subresources={
 },
 "LimpandoCopo": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://art/Personagens/PersonagemPrincipal/PersonagemGarcom/Copor_Limpo.res",
+"save_to_file/fallback_path": "res://Art/Personagens/PersonagemPrincipal/PersonagemGarcom/Copor_Limpo.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://clixm2hy4yfyq",
 "settings/loop_mode": 0,

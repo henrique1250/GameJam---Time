@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cuc7t85q00kx8"
-path="res://.godot/imported/ROUPA_personagem.glb-746bd1278b8a3d504fa964ec7ebab147.scn"
+path="res://.godot/imported/ROUPA_personagem.glb-bd22a0e0d04d43c4812801d420548532.scn"
 
 [deps]
 
-source_file="res://art/Personagens/PersonagemPrincipal/PesonagemPrincipalTpose.fbm/ROUPA_personagem.glb"
-dest_files=["res://.godot/imported/ROUPA_personagem.glb-746bd1278b8a3d504fa964ec7ebab147.scn"]
+source_file="res://Art/Personagens/PersonagemPrincipal/PesonagemPrincipalTpose.fbm/ROUPA_personagem.glb"
+dest_files=["res://.godot/imported/ROUPA_personagem.glb-bd22a0e0d04d43c4812801d420548532.scn"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvuqn1sb0tmed"
-path.s3tc="res://.godot/imported/OlhoGarcomColor.png-47a47727efd925f428cd2fd42ce8c69c.s3tc.ctex"
+path.s3tc="res://.godot/imported/OlhoGarcomColor.png-0dfddb1950087bf7edd3d7392596dab6.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://art/Personagens/PersonagemPrincipal/PesonagemPrincipalTpose.fbm/OlhoGarcomColor.png"
-dest_files=["res://.godot/imported/OlhoGarcomColor.png-47a47727efd925f428cd2fd42ce8c69c.s3tc.ctex"]
+source_file="res://Art/Personagens/PersonagemPrincipal/PesonagemPrincipalTpose.fbm/OlhoGarcomColor.png"
+dest_files=["res://.godot/imported/OlhoGarcomColor.png-0dfddb1950087bf7edd3d7392596dab6.s3tc.ctex"]
 
 [params]
 

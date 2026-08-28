@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bdjtk7koqgec8"
-path="res://.godot/imported/PROP_balcao-modular.glb-55789c0a673424048ede8393963739a6.scn"
+path="res://.godot/imported/PROP_balcao-modular.glb-d2f86391d4102be385470a070f897ea9.scn"
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/PROP_balcao-modular.glb"
-dest_files=["res://.godot/imported/PROP_balcao-modular.glb-55789c0a673424048ede8393963739a6.scn"]
+source_file="res://Art/Assests_Ambiente/PROP_balcao-modular.glb"
+dest_files=["res://.godot/imported/PROP_balcao-modular.glb-d2f86391d4102be385470a070f897ea9.scn"]
 
 [params]
 

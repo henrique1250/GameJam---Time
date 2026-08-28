@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://wa76aconwtdy"
-path="res://.godot/imported/Pano.fbx-05400e5fdfe064f1b33b39a7894d0b6e.scn"
+path="res://.godot/imported/Pano.fbx-687ddc1f01674d697209cb27ea88095c.scn"
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/Pano.fbx"
-dest_files=["res://.godot/imported/Pano.fbx-05400e5fdfe064f1b33b39a7894d0b6e.scn"]
+source_file="res://Art/Assests_Ambiente/Pano.fbx"
+dest_files=["res://.godot/imported/Pano.fbx-687ddc1f01674d697209cb27ea88095c.scn"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4px34en45f20"
-path.s3tc="res://.godot/imported/ChineloNpcMagro.png-07aa777a258403f12b5bca64d33aa585.s3tc.ctex"
+path.s3tc="res://.godot/imported/ChineloNpcMagro.png-081e1e9ccb901d432ba811771e542a93.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://art/Personagens/NpcMagroTpose.fbm/ChineloNpcMagro.png"
-dest_files=["res://.godot/imported/ChineloNpcMagro.png-07aa777a258403f12b5bca64d33aa585.s3tc.ctex"]
+source_file="res://Art/Personagens/NpcMagroTpose.fbm/ChineloNpcMagro.png"
+dest_files=["res://.godot/imported/ChineloNpcMagro.png-081e1e9ccb901d432ba811771e542a93.s3tc.ctex"]
 
 [params]
 

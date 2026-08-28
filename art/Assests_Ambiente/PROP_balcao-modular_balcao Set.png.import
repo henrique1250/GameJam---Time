@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cx13svo4nwpdl"
-path.s3tc="res://.godot/imported/PROP_balcao-modular_balcao Set.png-17857bb20978d90f7ddca4c97d7b0f49.s3tc.ctex"
+path.s3tc="res://.godot/imported/PROP_balcao-modular_balcao Set.png-241a1e5ab92a99677cfcd0f787c88d07.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/PROP_balcao-modular_balcao Set.png"
-dest_files=["res://.godot/imported/PROP_balcao-modular_balcao Set.png-17857bb20978d90f7ddca4c97d7b0f49.s3tc.ctex"]
+source_file="res://Art/Assests_Ambiente/PROP_balcao-modular_balcao Set.png"
+dest_files=["res://.godot/imported/PROP_balcao-modular_balcao Set.png-241a1e5ab92a99677cfcd0f787c88d07.s3tc.ctex"]
 
 [params]
 

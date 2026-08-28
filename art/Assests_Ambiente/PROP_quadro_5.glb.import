@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bck6jbef5xmg"
-path="res://.godot/imported/PROP_quadro_5.glb-6020980d7b9b1231b0fb1bfeb239a364.scn"
+path="res://.godot/imported/PROP_quadro_5.glb-47d20d2274e76ae2ece0af8679237b77.scn"
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/PROP_quadro_5.glb"
-dest_files=["res://.godot/imported/PROP_quadro_5.glb-6020980d7b9b1231b0fb1bfeb239a364.scn"]
+source_file="res://Art/Assests_Ambiente/PROP_quadro_5.glb"
+dest_files=["res://.godot/imported/PROP_quadro_5.glb-47d20d2274e76ae2ece0af8679237b77.scn"]
 
 [params]
 

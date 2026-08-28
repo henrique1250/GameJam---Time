@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dyk7s0wyqbbdu"
-path="res://.godot/imported/PesonagemPrincipalTpose.fbx-aec428c59241a29b77290784d431049e.scn"
+path="res://.godot/imported/PesonagemPrincipalTpose.fbx-b453fd4987e4372f17a5f95c2bb5d23f.scn"
 
 [deps]
 
-source_file="res://art/Personagens/PersonagemPrincipal/PesonagemPrincipalTpose.fbx"
-dest_files=["res://.godot/imported/PesonagemPrincipalTpose.fbx-aec428c59241a29b77290784d431049e.scn"]
+source_file="res://Art/Personagens/PersonagemPrincipal/PesonagemPrincipalTpose.fbx"
+dest_files=["res://.godot/imported/PesonagemPrincipalTpose.fbx-b453fd4987e4372f17a5f95c2bb5d23f.scn"]
 
 [params]
 

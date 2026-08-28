@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://juarvcb82pyk"
-path="res://.godot/imported/objeto.glb-c9029c677cb851afaae34c1eff425dce.scn"
+path="res://.godot/imported/objeto.glb-9e278de873d3f284362216b62581c3f6.scn"
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/objeto.glb"
-dest_files=["res://.godot/imported/objeto.glb-c9029c677cb851afaae34c1eff425dce.scn"]
+source_file="res://Art/Assests_Ambiente/objeto.glb"
+dest_files=["res://.godot/imported/objeto.glb-9e278de873d3f284362216b62581c3f6.scn"]
 
 [params]
 

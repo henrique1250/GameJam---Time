@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bk1o7bp34kheh"
-path="res://.godot/imported/PROP_cachaça.glb-4b04750ced6c4ae9c6bbaaede85541e1.scn"
+path="res://.godot/imported/PROP_cachaça.glb-25500186e73f35038e94ab6fc1d11456.scn"
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/PROP_cachaça.glb"
-dest_files=["res://.godot/imported/PROP_cachaça.glb-4b04750ced6c4ae9c6bbaaede85541e1.scn"]
+source_file="res://Art/Assests_Ambiente/PROP_cachaça.glb"
+dest_files=["res://.godot/imported/PROP_cachaça.glb-25500186e73f35038e94ab6fc1d11456.scn"]
 
 [params]
 

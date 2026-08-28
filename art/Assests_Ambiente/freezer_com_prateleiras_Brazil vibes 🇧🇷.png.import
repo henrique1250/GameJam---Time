@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvkop0ifunq5"
-path.s3tc="res://.godot/imported/freezer_com_prateleiras_Brazil vibes 🇧🇷.png-2999cd11a7c8748dba0bb25194e268a0.s3tc.ctex"
+path.s3tc="res://.godot/imported/freezer_com_prateleiras_Brazil vibes 🇧🇷.png-9462eb6e4d8ebb720b495efb73ccf6b7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/freezer_com_prateleiras_Brazil vibes 🇧🇷.png"
-dest_files=["res://.godot/imported/freezer_com_prateleiras_Brazil vibes 🇧🇷.png-2999cd11a7c8748dba0bb25194e268a0.s3tc.ctex"]
+source_file="res://Art/Assests_Ambiente/freezer_com_prateleiras_Brazil vibes 🇧🇷.png"
+dest_files=["res://.godot/imported/freezer_com_prateleiras_Brazil vibes 🇧🇷.png-9462eb6e4d8ebb720b495efb73ccf6b7.s3tc.ctex"]
 
 [params]
 

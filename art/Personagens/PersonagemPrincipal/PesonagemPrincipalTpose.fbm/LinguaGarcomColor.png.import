@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgtgno4qop3ii"
-path.s3tc="res://.godot/imported/LinguaGarcomColor.png-198a938dc65be83db3e80071a7a78fac.s3tc.ctex"
+path.s3tc="res://.godot/imported/LinguaGarcomColor.png-d39f42693f60241d33e378798e7bd1f1.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://art/Personagens/PersonagemPrincipal/PesonagemPrincipalTpose.fbm/LinguaGarcomColor.png"
-dest_files=["res://.godot/imported/LinguaGarcomColor.png-198a938dc65be83db3e80071a7a78fac.s3tc.ctex"]
+source_file="res://Art/Personagens/PersonagemPrincipal/PesonagemPrincipalTpose.fbm/LinguaGarcomColor.png"
+dest_files=["res://.godot/imported/LinguaGarcomColor.png-d39f42693f60241d33e378798e7bd1f1.s3tc.ctex"]
 
 [params]
 

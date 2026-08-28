@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1b8qmpv1rkyl"
-path.s3tc="res://.godot/imported/CabeloGarcomColor.png-34930023e0795c93272c094f52701c6c.s3tc.ctex"
+path.s3tc="res://.godot/imported/CabeloGarcomColor.png-f9a79a79cd0305093d9e704f8bdc79b7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://art/Personagens/PersonagemPrincipal/PesonagemPrincipalTpose.fbm/CabeloGarcomColor.png"
-dest_files=["res://.godot/imported/CabeloGarcomColor.png-34930023e0795c93272c094f52701c6c.s3tc.ctex"]
+source_file="res://Art/Personagens/PersonagemPrincipal/PesonagemPrincipalTpose.fbm/CabeloGarcomColor.png"
+dest_files=["res://.godot/imported/CabeloGarcomColor.png-f9a79a79cd0305093d9e704f8bdc79b7.s3tc.ctex"]
 
 [params]
 

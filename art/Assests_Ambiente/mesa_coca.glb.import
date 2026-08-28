@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cs08sskh8ugor"
-path="res://.godot/imported/mesa_coca.glb-17dbcdde8511aec9b7f02b5528061a23.scn"
+path="res://.godot/imported/mesa_coca.glb-950f1b510e320ec4cb51a1ffe0a335ab.scn"
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/mesa_coca.glb"
-dest_files=["res://.godot/imported/mesa_coca.glb-17dbcdde8511aec9b7f02b5528061a23.scn"]
+source_file="res://Art/Assests_Ambiente/mesa_coca.glb"
+dest_files=["res://.godot/imported/mesa_coca.glb-950f1b510e320ec4cb51a1ffe0a335ab.scn"]
 
 [params]
 

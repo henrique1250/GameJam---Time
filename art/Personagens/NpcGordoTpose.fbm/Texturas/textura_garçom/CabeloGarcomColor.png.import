@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://o0l0tuip23rt"
-path="res://.godot/imported/CabeloGarcomColor.png-9ab266b55879b1434244daf7844ad679.ctex"
+path="res://.godot/imported/CabeloGarcomColor.png-5579ff0ee4ac3f0c5f88add7f0653c22.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Personagens/NpcGordoTpose.fbm/Texturas/textura_garçom/CabeloGarcomColor.png"
-dest_files=["res://.godot/imported/CabeloGarcomColor.png-9ab266b55879b1434244daf7844ad679.ctex"]
+source_file="res://Art/Personagens/NpcGordoTpose.fbm/Texturas/textura_garçom/CabeloGarcomColor.png"
+dest_files=["res://.godot/imported/CabeloGarcomColor.png-5579ff0ee4ac3f0c5f88add7f0653c22.ctex"]
 
 [params]
 

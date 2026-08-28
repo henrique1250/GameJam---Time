@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bj2k1s1fqvxs6"
-path="res://.godot/imported/PROP_mesa.glb-02a7c33fb462dd4bbcf73da1200facb5.scn"
+path="res://.godot/imported/PROP_mesa.glb-4db65dfe87e76253df86304d2ed579ba.scn"
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/PROP_mesa.glb"
-dest_files=["res://.godot/imported/PROP_mesa.glb-02a7c33fb462dd4bbcf73da1200facb5.scn"]
+source_file="res://Art/Assests_Ambiente/PROP_mesa.glb"
+dest_files=["res://.godot/imported/PROP_mesa.glb-4db65dfe87e76253df86304d2ed579ba.scn"]
 
 [params]
 

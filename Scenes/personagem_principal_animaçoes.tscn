@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b71t65l1a2w1x"]
 
-[ext_resource type="PackedScene" uid="uid://j2b7brvtjofr" path="res://art/Personagens/PersonagemPrincipal/PersonagemPrincipalAnimaçoes.fbx" id="1_pp5h7"]
+[ext_resource type="PackedScene" uid="uid://j2b7brvtjofr" path="res://Art/Personagens/PersonagemPrincipal/PersonagemPrincipalAnimaçoes.fbx" id="1_pp5h7"]
 [ext_resource type="ArrayMesh" uid="uid://dahqk6hcik2e" path="res://Assets_Objetos/new_array_mesh.tres" id="2_jatb8"]
 
 [node name="PersonagemPrincipalAnimaçoes" unique_id=628231016 instance=ExtResource("1_pp5h7")]

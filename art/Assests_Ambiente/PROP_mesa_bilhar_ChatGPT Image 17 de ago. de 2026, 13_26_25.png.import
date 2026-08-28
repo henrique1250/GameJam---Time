@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d140wicl544nk"
-path.s3tc="res://.godot/imported/PROP_mesa_bilhar_ChatGPT Image 17 de ago. de 2026, 13_26_25.png-7e585b232643bb93b6f4dda06d4b56cd.s3tc.ctex"
+path.s3tc="res://.godot/imported/PROP_mesa_bilhar_ChatGPT Image 17 de ago. de 2026, 13_26_25.png-24320d5dfc804a58f443020830251d5c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/PROP_mesa_bilhar_ChatGPT Image 17 de ago. de 2026, 13_26_25.png"
-dest_files=["res://.godot/imported/PROP_mesa_bilhar_ChatGPT Image 17 de ago. de 2026, 13_26_25.png-7e585b232643bb93b6f4dda06d4b56cd.s3tc.ctex"]
+source_file="res://Art/Assests_Ambiente/PROP_mesa_bilhar_ChatGPT Image 17 de ago. de 2026, 13_26_25.png"
+dest_files=["res://.godot/imported/PROP_mesa_bilhar_ChatGPT Image 17 de ago. de 2026, 13_26_25.png-24320d5dfc804a58f443020830251d5c.s3tc.ctex"]
 
 [params]
 

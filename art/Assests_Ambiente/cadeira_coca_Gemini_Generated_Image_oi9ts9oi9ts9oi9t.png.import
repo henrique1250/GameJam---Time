@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4acvie111hpq"
-path.s3tc="res://.godot/imported/cadeira_coca_Gemini_Generated_Image_oi9ts9oi9ts9oi9t.png-fa12a38951690162f05060fe1257e39a.s3tc.ctex"
+path.s3tc="res://.godot/imported/cadeira_coca_Gemini_Generated_Image_oi9ts9oi9ts9oi9t.png-780bb7f72604cc6a2491bc9d5b496ebc.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/cadeira_coca_Gemini_Generated_Image_oi9ts9oi9ts9oi9t.png"
-dest_files=["res://.godot/imported/cadeira_coca_Gemini_Generated_Image_oi9ts9oi9ts9oi9t.png-fa12a38951690162f05060fe1257e39a.s3tc.ctex"]
+source_file="res://Art/Assests_Ambiente/cadeira_coca_Gemini_Generated_Image_oi9ts9oi9ts9oi9t.png"
+dest_files=["res://.godot/imported/cadeira_coca_Gemini_Generated_Image_oi9ts9oi9ts9oi9t.png-780bb7f72604cc6a2491bc9d5b496ebc.s3tc.ctex"]
 
 [params]
 

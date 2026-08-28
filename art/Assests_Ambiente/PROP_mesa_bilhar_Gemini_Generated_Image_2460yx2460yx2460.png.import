@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxis7xoqxt0ua"
-path.s3tc="res://.godot/imported/PROP_mesa_bilhar_Gemini_Generated_Image_2460yx2460yx2460.png-c1e94bf644406c9b516c81b5bab12af5.s3tc.ctex"
+path.s3tc="res://.godot/imported/PROP_mesa_bilhar_Gemini_Generated_Image_2460yx2460yx2460.png-4076ec29595b41d5064da9cacd174993.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/PROP_mesa_bilhar_Gemini_Generated_Image_2460yx2460yx2460.png"
-dest_files=["res://.godot/imported/PROP_mesa_bilhar_Gemini_Generated_Image_2460yx2460yx2460.png-c1e94bf644406c9b516c81b5bab12af5.s3tc.ctex"]
+source_file="res://Art/Assests_Ambiente/PROP_mesa_bilhar_Gemini_Generated_Image_2460yx2460yx2460.png"
+dest_files=["res://.godot/imported/PROP_mesa_bilhar_Gemini_Generated_Image_2460yx2460yx2460.png-4076ec29595b41d5064da9cacd174993.s3tc.ctex"]
 
 [params]
 

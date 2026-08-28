@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bucqmrkjx4617"
-path.s3tc="res://.godot/imported/PROP_quadro_1_transferir (22).png-2a2bc71b569f6f87caf1f1eb8b92e0f7.s3tc.ctex"
+path.s3tc="res://.godot/imported/PROP_quadro_1_transferir (22).png-77154cf3e931f28de050bb473b4f2e05.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/PROP_quadro_1_transferir (22).png"
-dest_files=["res://.godot/imported/PROP_quadro_1_transferir (22).png-2a2bc71b569f6f87caf1f1eb8b92e0f7.s3tc.ctex"]
+source_file="res://Art/Assests_Ambiente/PROP_quadro_1_transferir (22).png"
+dest_files=["res://.godot/imported/PROP_quadro_1_transferir (22).png-77154cf3e931f28de050bb473b4f2e05.s3tc.ctex"]
 
 [params]
 

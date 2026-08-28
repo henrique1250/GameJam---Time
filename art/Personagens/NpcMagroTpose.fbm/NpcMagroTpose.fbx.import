@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c2ggdesf5wav8"
-path="res://.godot/imported/NpcMagroTpose.fbx-f262ff3d8cdd9d307dc2e7a9ee02516a.scn"
+path="res://.godot/imported/NpcMagroTpose.fbx-dcc8bc33eafffe02950a20275f8a97af.scn"
 
 [deps]
 
-source_file="res://art/Personagens/NpcMagroTpose.fbm/NpcMagroTpose.fbx"
-dest_files=["res://.godot/imported/NpcMagroTpose.fbx-f262ff3d8cdd9d307dc2e7a9ee02516a.scn"]
+source_file="res://Art/Personagens/NpcMagroTpose.fbm/NpcMagroTpose.fbx"
+dest_files=["res://.godot/imported/NpcMagroTpose.fbx-dcc8bc33eafffe02950a20275f8a97af.scn"]
 
 [params]
 

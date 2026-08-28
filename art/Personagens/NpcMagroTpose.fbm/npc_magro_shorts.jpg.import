@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hg6ddrd4s3ne"
-path.s3tc="res://.godot/imported/npc_magro_shorts.jpg-36ddc9d795d65bfab028b8cf68977e4f.s3tc.ctex"
+path.s3tc="res://.godot/imported/npc_magro_shorts.jpg-626dfa198045784bf8d3cf0256dc5c99.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://art/Personagens/NpcMagroTpose.fbm/npc_magro_shorts.jpg"
-dest_files=["res://.godot/imported/npc_magro_shorts.jpg-36ddc9d795d65bfab028b8cf68977e4f.s3tc.ctex"]
+source_file="res://Art/Personagens/NpcMagroTpose.fbm/npc_magro_shorts.jpg"
+dest_files=["res://.godot/imported/npc_magro_shorts.jpg-626dfa198045784bf8d3cf0256dc5c99.s3tc.ctex"]
 
 [params]
 

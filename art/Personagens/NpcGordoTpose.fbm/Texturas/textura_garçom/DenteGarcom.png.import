@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cib54vcw8nayv"
-path.s3tc="res://.godot/imported/DenteGarcom.png-bd350403a601e4c61d63d4b90184b796.s3tc.ctex"
+path.s3tc="res://.godot/imported/DenteGarcom.png-ac9586bf2a4b32084eab969af249ecf5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://art/Personagens/NpcGordoTpose.fbm/Texturas/textura_garçom/DenteGarcom.png"
-dest_files=["res://.godot/imported/DenteGarcom.png-bd350403a601e4c61d63d4b90184b796.s3tc.ctex"]
+source_file="res://Art/Personagens/NpcGordoTpose.fbm/Texturas/textura_garçom/DenteGarcom.png"
+dest_files=["res://.godot/imported/DenteGarcom.png-ac9586bf2a4b32084eab969af249ecf5.s3tc.ctex"]
 
 [params]
 

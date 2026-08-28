@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btkl1up0umae5"
-path.s3tc="res://.godot/imported/PROP_rua_bar_Gemini_Generated_Image_ktsef9ktsef9ktse.png-1d08b2242a6c3c628e65f98e3d8e1688.s3tc.ctex"
+path.s3tc="res://.godot/imported/PROP_rua_bar_Gemini_Generated_Image_ktsef9ktsef9ktse.png-24cd0414b55e4f7286cac4aa598340a1.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/PROP_rua_bar_Gemini_Generated_Image_ktsef9ktsef9ktse.png"
-dest_files=["res://.godot/imported/PROP_rua_bar_Gemini_Generated_Image_ktsef9ktsef9ktse.png-1d08b2242a6c3c628e65f98e3d8e1688.s3tc.ctex"]
+source_file="res://Art/Assests_Ambiente/PROP_rua_bar_Gemini_Generated_Image_ktsef9ktsef9ktse.png"
+dest_files=["res://.godot/imported/PROP_rua_bar_Gemini_Generated_Image_ktsef9ktsef9ktse.png-24cd0414b55e4f7286cac4aa598340a1.s3tc.ctex"]
 
 [params]
 

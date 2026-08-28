@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjcd18o3jvok6"
-path="res://.godot/imported/SobrancelhaGarcomColor.png-a8fe8ddb0357aa8b57c0345909044ae6.ctex"
+path="res://.godot/imported/SobrancelhaGarcomColor.png-3b6d4fa3a922720c38583ef1b5e5f864.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Personagens/NpcGordoTpose.fbm/Texturas/textura_garçom/SobrancelhaGarcomColor.png"
-dest_files=["res://.godot/imported/SobrancelhaGarcomColor.png-a8fe8ddb0357aa8b57c0345909044ae6.ctex"]
+source_file="res://Art/Personagens/NpcGordoTpose.fbm/Texturas/textura_garçom/SobrancelhaGarcomColor.png"
+dest_files=["res://.godot/imported/SobrancelhaGarcomColor.png-3b6d4fa3a922720c38583ef1b5e5f864.ctex"]
 
 [params]
 

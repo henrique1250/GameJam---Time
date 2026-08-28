@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://de87k83banp2n"
-path.s3tc="res://.godot/imported/PROP_quadro_3___ O Brasil que a gente gosta tem feira de rua, pastel com cald.png-c5984ee99c33c606f65bc30615341d9d.s3tc.ctex"
+path.s3tc="res://.godot/imported/PROP_quadro_3___ O Brasil que a gente gosta tem feira de rua, pastel com cald.png-ced239a2c9bf227b2c765a603ab560eb.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/PROP_quadro_3___ O Brasil que a gente gosta tem feira de rua, pastel com cald.png"
-dest_files=["res://.godot/imported/PROP_quadro_3___ O Brasil que a gente gosta tem feira de rua, pastel com cald.png-c5984ee99c33c606f65bc30615341d9d.s3tc.ctex"]
+source_file="res://Art/Assests_Ambiente/PROP_quadro_3___ O Brasil que a gente gosta tem feira de rua, pastel com cald.png"
+dest_files=["res://.godot/imported/PROP_quadro_3___ O Brasil que a gente gosta tem feira de rua, pastel com cald.png-ced239a2c9bf227b2c765a603ab560eb.s3tc.ctex"]
 
 [params]
 

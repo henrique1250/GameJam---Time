@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://dub3juuyufov"]
-
-[ext_resource type="Script" uid="uid://ij1l0cv76fns" path="res://Scripts/event_bis.gd" id="1_i4w0d"]
-
-[node name="Node3D" type="Node3D" unique_id=95934313]
-script = ExtResource("1_i4w0d")

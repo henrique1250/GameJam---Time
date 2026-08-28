@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://tiwuqt5fy43b"
-path="res://.godot/imported/PROP_mesa_bilhar.glb-f99e5bc771159c9f9aa311ab004a81f3.scn"
+path="res://.godot/imported/PROP_mesa_bilhar.glb-a2c589d7732dced7d1b690cf06b4a6ca.scn"
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/PROP_mesa_bilhar.glb"
-dest_files=["res://.godot/imported/PROP_mesa_bilhar.glb-f99e5bc771159c9f9aa311ab004a81f3.scn"]
+source_file="res://Art/Assests_Ambiente/PROP_mesa_bilhar.glb"
+dest_files=["res://.godot/imported/PROP_mesa_bilhar.glb-a2c589d7732dced7d1b690cf06b4a6ca.scn"]
 
 [params]
 

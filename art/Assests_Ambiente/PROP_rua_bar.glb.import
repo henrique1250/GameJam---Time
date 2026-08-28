@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bxfyd2cf2fwj1"
-path="res://.godot/imported/PROP_rua_bar.glb-a2c0f825e6e58677838bb9eeb65557cb.scn"
+path="res://.godot/imported/PROP_rua_bar.glb-e8d723cda7669022b195ed7c7aa45d79.scn"
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/PROP_rua_bar.glb"
-dest_files=["res://.godot/imported/PROP_rua_bar.glb-a2c0f825e6e58677838bb9eeb65557cb.scn"]
+source_file="res://Art/Assests_Ambiente/PROP_rua_bar.glb"
+dest_files=["res://.godot/imported/PROP_rua_bar.glb-e8d723cda7669022b195ed7c7aa45d79.scn"]
 
 [params]
 

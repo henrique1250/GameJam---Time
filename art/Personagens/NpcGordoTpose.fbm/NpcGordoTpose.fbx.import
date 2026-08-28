@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://2bbcf6kk7j3n"
-path="res://.godot/imported/NpcGordoTpose.fbx-da007598fabfb64e7f4ea8394200dd64.scn"
+path="res://.godot/imported/NpcGordoTpose.fbx-3d63fa2d861fc2cbcafaa29154c46766.scn"
 
 [deps]
 
-source_file="res://art/Personagens/NpcGordoTpose.fbm/NpcGordoTpose.fbx"
-dest_files=["res://.godot/imported/NpcGordoTpose.fbx-da007598fabfb64e7f4ea8394200dd64.scn"]
+source_file="res://Art/Personagens/NpcGordoTpose.fbm/NpcGordoTpose.fbx"
+dest_files=["res://.godot/imported/NpcGordoTpose.fbx-3d63fa2d861fc2cbcafaa29154c46766.scn"]
 
 [params]
 

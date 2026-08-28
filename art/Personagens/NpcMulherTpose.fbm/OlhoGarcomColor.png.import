@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dallkjwllf351"
-path.s3tc="res://.godot/imported/OlhoGarcomColor.png-7189349e5e3c0d9cee7e59e749fabace.s3tc.ctex"
+path.s3tc="res://.godot/imported/OlhoGarcomColor.png-6b0c390ea5d93456f9cbaa1cb4b03f3a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://art/Personagens/NpcMulherTpose.fbm/OlhoGarcomColor.png"
-dest_files=["res://.godot/imported/OlhoGarcomColor.png-7189349e5e3c0d9cee7e59e749fabace.s3tc.ctex"]
+source_file="res://Art/Personagens/NpcMulherTpose.fbm/OlhoGarcomColor.png"
+dest_files=["res://.godot/imported/OlhoGarcomColor.png-6b0c390ea5d93456f9cbaa1cb4b03f3a.s3tc.ctex"]
 
 [params]
 

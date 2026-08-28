@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dcdeicr6y8ihl"
-path.s3tc="res://.godot/imported/npc_mulher_camisa.jpg-bd296fa95dd9f41d2c61531018f509c5.s3tc.ctex"
+path.s3tc="res://.godot/imported/npc_mulher_camisa.jpg-2f25cacdfea5bb98c2aaa86aab0c1087.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://art/Personagens/NpcMulherTpose.fbm/npc_mulher_camisa.jpg"
-dest_files=["res://.godot/imported/npc_mulher_camisa.jpg-bd296fa95dd9f41d2c61531018f509c5.s3tc.ctex"]
+source_file="res://Art/Personagens/NpcMulherTpose.fbm/npc_mulher_camisa.jpg"
+dest_files=["res://.godot/imported/npc_mulher_camisa.jpg-2f25cacdfea5bb98c2aaa86aab0c1087.s3tc.ctex"]
 
 [params]
 

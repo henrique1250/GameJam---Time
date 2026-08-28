@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://uyjx8w4i7xmk"
-path="res://.godot/imported/NpcMulherAnimacoes.fbx-e9c9783845b00560ea2186bcadacee86.scn"
+path="res://.godot/imported/NpcMulherAnimacoes.fbx-081bb2ce88555c9c74b3e645147f598d.scn"
 
 [deps]
 
-source_file="res://art/Personagens/NpcMulherTpose.fbm/NpcMulherAnimacoes.fbx"
-dest_files=["res://.godot/imported/NpcMulherAnimacoes.fbx-e9c9783845b00560ea2186bcadacee86.scn"]
+source_file="res://Art/Personagens/NpcMulherTpose.fbm/NpcMulherAnimacoes.fbx"
+dest_files=["res://.godot/imported/NpcMulherAnimacoes.fbx-081bb2ce88555c9c74b3e645147f598d.scn"]
 
 [params]
 

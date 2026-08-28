@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3x76h3pfpk3w"
-path.s3tc="res://.godot/imported/PekeNpcMulherColor.png-97af2276cba9f3cc2bf1e83cc0b2482d.s3tc.ctex"
+path.s3tc="res://.godot/imported/PekeNpcMulherColor.png-6837973151d2240895508976a4997547.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://art/Personagens/NpcMulherTpose.fbm/PekeNpcMulherColor.png"
-dest_files=["res://.godot/imported/PekeNpcMulherColor.png-97af2276cba9f3cc2bf1e83cc0b2482d.s3tc.ctex"]
+source_file="res://Art/Personagens/NpcMulherTpose.fbm/PekeNpcMulherColor.png"
+dest_files=["res://.godot/imported/PekeNpcMulherColor.png-6837973151d2240895508976a4997547.s3tc.ctex"]
 
 [params]
 

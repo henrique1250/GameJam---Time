@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://bcbp6n2l2xqpq"]
 
-[ext_resource type="PackedScene" uid="uid://dqexq5pxbmyfv" path="res://art/Personagens/NpcMulherTpose.fbm/NpcMulherTpose.fbx" id="1_si8ba"]
-[ext_resource type="Animation" uid="uid://3ylbmp3u7ehl" path="res://art/Personagens/NpcMagroTpose.fbm/animacoes/andando.res" id="4_nbg0w"]
-[ext_resource type="Animation" uid="uid://b1eerv0vmp488" path="res://art/Personagens/NpcMagroTpose.fbm/animacoes/parado.res" id="5_75cyh"]
-[ext_resource type="Animation" uid="uid://cys20tewxnbax" path="res://art/Personagens/NpcMagroTpose.fbm/animacoes/pedindo.res" id="6_j6jy1"]
-[ext_resource type="Animation" uid="uid://bca1xp63y7lpr" path="res://art/Personagens/NpcMagroTpose.fbm/sentado.res" id="7_q7f7l"]
-[ext_resource type="Animation" uid="uid://byej7vvmv37ah" path="res://art/Personagens/NpcMagroTpose.fbm/animacoes/sentando_cadeira.res" id="8_3lidg"]
+[ext_resource type="PackedScene" uid="uid://dqexq5pxbmyfv" path="res://Art/Personagens/NpcMulherTpose.fbm/NpcMulherTpose.fbx" id="1_si8ba"]
+[ext_resource type="Animation" uid="uid://3ylbmp3u7ehl" path="res://Art/Personagens/NpcMagroTpose.fbm/animacoes/andando.res" id="4_nbg0w"]
+[ext_resource type="Animation" uid="uid://b1eerv0vmp488" path="res://Art/Personagens/NpcMagroTpose.fbm/animacoes/parado.res" id="5_75cyh"]
+[ext_resource type="Animation" uid="uid://cys20tewxnbax" path="res://Art/Personagens/NpcMagroTpose.fbm/animacoes/pedindo.res" id="6_j6jy1"]
+[ext_resource type="Animation" uid="uid://bca1xp63y7lpr" path="res://Art/Personagens/NpcMagroTpose.fbm/sentado.res" id="7_q7f7l"]
+[ext_resource type="Animation" uid="uid://byej7vvmv37ah" path="res://Art/Personagens/NpcMagroTpose.fbm/animacoes/sentando_cadeira.res" id="8_3lidg"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4ibi7"]
 

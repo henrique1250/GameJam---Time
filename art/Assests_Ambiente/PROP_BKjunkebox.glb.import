@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c7qv7wb6x6ssu"
-path="res://.godot/imported/PROP_BKjunkebox.glb-c4feab2909d9e207b89aaeef4115be9c.scn"
+path="res://.godot/imported/PROP_BKjunkebox.glb-9deaed54fb49600b515c649c97793e7d.scn"
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/PROP_BKjunkebox.glb"
-dest_files=["res://.godot/imported/PROP_BKjunkebox.glb-c4feab2909d9e207b89aaeef4115be9c.scn"]
+source_file="res://Art/Assests_Ambiente/PROP_BKjunkebox.glb"
+dest_files=["res://.godot/imported/PROP_BKjunkebox.glb-9deaed54fb49600b515c649c97793e7d.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://difpchos6sv5q"
-path="res://.godot/imported/NpcMagroAnimacoes.fbx-ad7a9cec2748c961659fae31e231b736.scn"
+path="res://.godot/imported/NpcMagroAnimacoes.fbx-74c364954b90ba445af60054a133818e.scn"
 
 [deps]
 
-source_file="res://art/Personagens/NpcMagroTpose.fbm/NpcMagroAnimacoes.fbx"
-dest_files=["res://.godot/imported/NpcMagroAnimacoes.fbx-ad7a9cec2748c961659fae31e231b736.scn"]
+source_file="res://Art/Personagens/NpcMagroTpose.fbm/NpcMagroAnimacoes.fbx"
+dest_files=["res://.godot/imported/NpcMagroAnimacoes.fbx-74c364954b90ba445af60054a133818e.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 "NpcMagroAndando": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://art/Personagens/NpcMagroTpose.fbm/animacoes/andando.res",
+"save_to_file/fallback_path": "res://Art/Personagens/NpcMagroTpose.fbm/animacoes/andando.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://3ylbmp3u7ehl",
 "settings/loop_mode": 0,
@@ -2097,7 +2097,7 @@ _subresources={
 },
 "NpcMagroParado": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://art/Personagens/NpcMagroTpose.fbm/animacoes/parado.res",
+"save_to_file/fallback_path": "res://Art/Personagens/NpcMagroTpose.fbm/animacoes/parado.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://b1eerv0vmp488",
 "settings/loop_mode": 0,
@@ -4153,7 +4153,7 @@ _subresources={
 },
 "NpcMagroPedindoAlgo": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://art/Personagens/NpcMagroTpose.fbm/animacoes/pedindo.res",
+"save_to_file/fallback_path": "res://Art/Personagens/NpcMagroTpose.fbm/animacoes/pedindo.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://cys20tewxnbax",
 "settings/loop_mode": 0,
@@ -6209,7 +6209,7 @@ _subresources={
 },
 "NpcMagroSentado": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://art/Personagens/NpcMagroTpose.fbm/sentado.res",
+"save_to_file/fallback_path": "res://Art/Personagens/NpcMagroTpose.fbm/sentado.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bca1xp63y7lpr",
 "settings/loop_mode": 0,
@@ -8265,7 +8265,7 @@ _subresources={
 },
 "NpcMagroSentamdoCadeira": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://art/Personagens/NpcMagroTpose.fbm/animacoes/sentando_cadeira.res",
+"save_to_file/fallback_path": "res://Art/Personagens/NpcMagroTpose.fbm/animacoes/sentando_cadeira.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://byej7vvmv37ah",
 "settings/loop_mode": 0,

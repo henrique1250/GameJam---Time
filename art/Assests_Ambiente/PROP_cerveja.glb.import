@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dkbd1cmb6p6gj"
-path="res://.godot/imported/PROP_cerveja.glb-778bcff95f9fc0cf62067d9088e4e358.scn"
+path="res://.godot/imported/PROP_cerveja.glb-75094c8b02f5ee9d70773b7ba2a76e80.scn"
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/PROP_cerveja.glb"
-dest_files=["res://.godot/imported/PROP_cerveja.glb-778bcff95f9fc0cf62067d9088e4e358.scn"]
+source_file="res://Art/Assests_Ambiente/PROP_cerveja.glb"
+dest_files=["res://.godot/imported/PROP_cerveja.glb-75094c8b02f5ee9d70773b7ba2a76e80.scn"]
 
 [params]
 

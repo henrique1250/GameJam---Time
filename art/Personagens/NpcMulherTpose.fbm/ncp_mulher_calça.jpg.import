@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bstuto6fx0lx1"
-path="res://.godot/imported/ncp_mulher_calça.jpg-045fd0508af59b9e72b655aec8a8e595.ctex"
+path="res://.godot/imported/ncp_mulher_calça.jpg-a60914705427801924a2cb8133b7ba19.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Personagens/NpcMulherTpose.fbm/ncp_mulher_calça.jpg"
-dest_files=["res://.godot/imported/ncp_mulher_calça.jpg-045fd0508af59b9e72b655aec8a8e595.ctex"]
+source_file="res://Art/Personagens/NpcMulherTpose.fbm/ncp_mulher_calça.jpg"
+dest_files=["res://.godot/imported/ncp_mulher_calça.jpg-a60914705427801924a2cb8133b7ba19.ctex"]
 
 [params]
 

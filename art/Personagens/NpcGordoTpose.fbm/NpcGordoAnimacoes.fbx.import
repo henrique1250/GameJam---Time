@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://06erpq3dn1lg"
-path="res://.godot/imported/NpcGordoAnimacoes.fbx-b997c9a97cd36f34d4f4404beba82c7a.scn"
+path="res://.godot/imported/NpcGordoAnimacoes.fbx-ca56a3851959850b246687067d602af4.scn"
 
 [deps]
 
-source_file="res://art/Personagens/NpcGordoTpose.fbm/NpcGordoAnimacoes.fbx"
-dest_files=["res://.godot/imported/NpcGordoAnimacoes.fbx-b997c9a97cd36f34d4f4404beba82c7a.scn"]
+source_file="res://Art/Personagens/NpcGordoTpose.fbm/NpcGordoAnimacoes.fbx"
+dest_files=["res://.godot/imported/NpcGordoAnimacoes.fbx-ca56a3851959850b246687067d602af4.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 "NpcGordoAndando": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://art/Personagens/NpcGordoTpose.fbm/Animações/gordao_andando.res",
+"save_to_file/fallback_path": "res://Art/Personagens/NpcGordoTpose.fbm/Animações/gordao_andando.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://c0o4eac7n2534",
 "settings/loop_mode": 0,
@@ -2097,7 +2097,7 @@ _subresources={
 },
 "PedindoAlgo": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://art/Personagens/NpcGordoTpose.fbm/Animações/gorda_pedindo.res",
+"save_to_file/fallback_path": "res://Art/Personagens/NpcGordoTpose.fbm/Animações/gorda_pedindo.res",
 "save_to_file/keep_custom_tracks": false,
 "save_to_file/path": "uid://dqmy0np0dhcjh",
 "settings/loop_mode": 0,
@@ -4153,7 +4153,7 @@ _subresources={
 },
 "SentadoCadeiraParado": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://art/Personagens/NpcGordoTpose.fbm/Animações/sentado.res",
+"save_to_file/fallback_path": "res://Art/Personagens/NpcGordoTpose.fbm/Animações/sentado.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bpe88eb3bds3w",
 "settings/loop_mode": 0,
@@ -6209,7 +6209,7 @@ _subresources={
 },
 "SentandoNaCadeira": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://art/Personagens/NpcGordoTpose.fbm/Animações/gorda_esperando.res",
+"save_to_file/fallback_path": "res://Art/Personagens/NpcGordoTpose.fbm/Animações/gorda_esperando.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://ue12j2jue7ab",
 "settings/loop_mode": 0,

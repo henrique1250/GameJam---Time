@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5vdd24iuwmsp"
-path.s3tc="res://.godot/imported/PROP_quadro_5_De Paolla Oliveira a Safadão_ relembre os melhores momentos da.png-7afd5b57b59ff070f70e035c51a6831a.s3tc.ctex"
+path.s3tc="res://.godot/imported/PROP_quadro_5_De Paolla Oliveira a Safadão_ relembre os melhores momentos da.png-d449ac499371ce4ed3795f553d9d4184.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/PROP_quadro_5_De Paolla Oliveira a Safadão_ relembre os melhores momentos da.png"
-dest_files=["res://.godot/imported/PROP_quadro_5_De Paolla Oliveira a Safadão_ relembre os melhores momentos da.png-7afd5b57b59ff070f70e035c51a6831a.s3tc.ctex"]
+source_file="res://Art/Assests_Ambiente/PROP_quadro_5_De Paolla Oliveira a Safadão_ relembre os melhores momentos da.png"
+dest_files=["res://.godot/imported/PROP_quadro_5_De Paolla Oliveira a Safadão_ relembre os melhores momentos da.png-d449ac499371ce4ed3795f553d9d4184.s3tc.ctex"]
 
 [params]
 

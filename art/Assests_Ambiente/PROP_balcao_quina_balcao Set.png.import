@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gmlmmrm2avcb"
-path.s3tc="res://.godot/imported/PROP_balcao_quina_balcao Set.png-2335fffde1fd08a818fdde925cd074bf.s3tc.ctex"
+path.s3tc="res://.godot/imported/PROP_balcao_quina_balcao Set.png-536a505763665f819cc38418d1ccd2f4.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/PROP_balcao_quina_balcao Set.png"
-dest_files=["res://.godot/imported/PROP_balcao_quina_balcao Set.png-2335fffde1fd08a818fdde925cd074bf.s3tc.ctex"]
+source_file="res://Art/Assests_Ambiente/PROP_balcao_quina_balcao Set.png"
+dest_files=["res://.godot/imported/PROP_balcao_quina_balcao Set.png-536a505763665f819cc38418d1ccd2f4.s3tc.ctex"]
 
 [params]
 

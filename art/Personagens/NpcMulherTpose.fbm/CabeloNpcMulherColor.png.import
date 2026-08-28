@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cues0v71x2whi"
-path.s3tc="res://.godot/imported/CabeloNpcMulherColor.png-2fbd837bf1e3de7e993a5e38718a666c.s3tc.ctex"
+path.s3tc="res://.godot/imported/CabeloNpcMulherColor.png-262d9f6ed7630be86cff2322a81eae04.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://art/Personagens/NpcMulherTpose.fbm/CabeloNpcMulherColor.png"
-dest_files=["res://.godot/imported/CabeloNpcMulherColor.png-2fbd837bf1e3de7e993a5e38718a666c.s3tc.ctex"]
+source_file="res://Art/Personagens/NpcMulherTpose.fbm/CabeloNpcMulherColor.png"
+dest_files=["res://.godot/imported/CabeloNpcMulherColor.png-262d9f6ed7630be86cff2322a81eae04.s3tc.ctex"]
 
 [params]
 

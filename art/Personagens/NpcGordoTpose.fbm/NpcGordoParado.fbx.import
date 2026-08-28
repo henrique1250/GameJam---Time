@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dm6qnw25dmm8l"
-path="res://.godot/imported/NpcGordoParado.fbx-67eedd41a159dff7204bf3bba60bec95.scn"
+path="res://.godot/imported/NpcGordoParado.fbx-dabcf3afe539faaeef5b1c5783e75fec.scn"
 
 [deps]
 
-source_file="res://art/Personagens/NpcGordoTpose.fbm/NpcGordoParado.fbx"
-dest_files=["res://.godot/imported/NpcGordoParado.fbx-67eedd41a159dff7204bf3bba60bec95.scn"]
+source_file="res://Art/Personagens/NpcGordoTpose.fbm/NpcGordoParado.fbx"
+dest_files=["res://.godot/imported/NpcGordoParado.fbx-dabcf3afe539faaeef5b1c5783e75fec.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 "NpcGordoParado1": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://art/Personagens/NpcGordoTpose.fbm/Animações/idle1.res",
+"save_to_file/fallback_path": "res://Art/Personagens/NpcGordoTpose.fbm/Animações/idle1.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://dr28a6j07gypd",
 "settings/loop_mode": 0,
@@ -2097,7 +2097,7 @@ _subresources={
 },
 "NpcGordoParado2": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://art/Personagens/NpcGordoTpose.fbm/Animações/idle2.res",
+"save_to_file/fallback_path": "res://Art/Personagens/NpcGordoTpose.fbm/Animações/idle2.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://d3qxtw2dbow1i",
 "settings/loop_mode": 0,

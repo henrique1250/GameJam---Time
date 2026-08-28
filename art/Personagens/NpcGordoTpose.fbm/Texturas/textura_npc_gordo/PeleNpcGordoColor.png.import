@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dy8w4kvp8pnts"
-path.s3tc="res://.godot/imported/PeleNpcGordoColor.png-718d903625a1e318f6ae88be14469b2d.s3tc.ctex"
+path.s3tc="res://.godot/imported/PeleNpcGordoColor.png-dfc7f910ea240eec579237d6bca7ac07.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://art/Personagens/NpcGordoTpose.fbm/Texturas/textura_npc_gordo/PeleNpcGordoColor.png"
-dest_files=["res://.godot/imported/PeleNpcGordoColor.png-718d903625a1e318f6ae88be14469b2d.s3tc.ctex"]
+source_file="res://Art/Personagens/NpcGordoTpose.fbm/Texturas/textura_npc_gordo/PeleNpcGordoColor.png"
+dest_files=["res://.godot/imported/PeleNpcGordoColor.png-dfc7f910ea240eec579237d6bca7ac07.s3tc.ctex"]
 
 [params]
 

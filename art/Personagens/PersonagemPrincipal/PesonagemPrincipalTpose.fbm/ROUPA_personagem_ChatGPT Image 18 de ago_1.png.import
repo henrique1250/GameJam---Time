@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3r1bbwlpmn7v"
-path.s3tc="res://.godot/imported/ROUPA_personagem_ChatGPT Image 18 de ago_1.png-451b7995bd97d025db294786539cad7b.s3tc.ctex"
+path.s3tc="res://.godot/imported/ROUPA_personagem_ChatGPT Image 18 de ago_1.png-ac4b81826a68a76549f6a29fac9adc1b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://art/Personagens/PersonagemPrincipal/PesonagemPrincipalTpose.fbm/ROUPA_personagem_ChatGPT Image 18 de ago_1.png"
-dest_files=["res://.godot/imported/ROUPA_personagem_ChatGPT Image 18 de ago_1.png-451b7995bd97d025db294786539cad7b.s3tc.ctex"]
+source_file="res://Art/Personagens/PersonagemPrincipal/PesonagemPrincipalTpose.fbm/ROUPA_personagem_ChatGPT Image 18 de ago_1.png"
+dest_files=["res://.godot/imported/ROUPA_personagem_ChatGPT Image 18 de ago_1.png-ac4b81826a68a76549f6a29fac9adc1b.s3tc.ctex"]
 
 [params]
 

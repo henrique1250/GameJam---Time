@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0em808l02h2f"
-path.s3tc="res://.godot/imported/PROP_mesa_mesa_bar.png-b448361ce927e6276c6023d5b1bbb312.s3tc.ctex"
+path.s3tc="res://.godot/imported/PROP_mesa_mesa_bar.png-14e529b0be620129cc72342d17773430.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/PROP_mesa_mesa_bar.png"
-dest_files=["res://.godot/imported/PROP_mesa_mesa_bar.png-b448361ce927e6276c6023d5b1bbb312.s3tc.ctex"]
+source_file="res://Art/Assests_Ambiente/PROP_mesa_mesa_bar.png"
+dest_files=["res://.godot/imported/PROP_mesa_mesa_bar.png-14e529b0be620129cc72342d17773430.s3tc.ctex"]
 
 [params]
 

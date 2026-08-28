@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwvlyujgv33uv"
-path.s3tc="res://.godot/imported/PROP_rua_bar__CALL ME_ _ Brasil.png-532513667abef55f4362b77b6c8a9779.s3tc.ctex"
+path.s3tc="res://.godot/imported/PROP_rua_bar__CALL ME_ _ Brasil.png-a20ff72caed86c8427431e23d7225c0e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/PROP_rua_bar__CALL ME_ _ Brasil.png"
-dest_files=["res://.godot/imported/PROP_rua_bar__CALL ME_ _ Brasil.png-532513667abef55f4362b77b6c8a9779.s3tc.ctex"]
+source_file="res://Art/Assests_Ambiente/PROP_rua_bar__CALL ME_ _ Brasil.png"
+dest_files=["res://.godot/imported/PROP_rua_bar__CALL ME_ _ Brasil.png-a20ff72caed86c8427431e23d7225c0e.s3tc.ctex"]
 
 [params]
 

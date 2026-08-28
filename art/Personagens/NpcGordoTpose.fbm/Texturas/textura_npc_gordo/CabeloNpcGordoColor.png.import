@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dewfp6m0r8qht"
-path.s3tc="res://.godot/imported/CabeloNpcGordoColor.png-b4e3ad38f9a56d2e8c80987e47e6f57e.s3tc.ctex"
+path.s3tc="res://.godot/imported/CabeloNpcGordoColor.png-6e18422dea24c5841e770af558b90562.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://art/Personagens/NpcGordoTpose.fbm/Texturas/textura_npc_gordo/CabeloNpcGordoColor.png"
-dest_files=["res://.godot/imported/CabeloNpcGordoColor.png-b4e3ad38f9a56d2e8c80987e47e6f57e.s3tc.ctex"]
+source_file="res://Art/Personagens/NpcGordoTpose.fbm/Texturas/textura_npc_gordo/CabeloNpcGordoColor.png"
+dest_files=["res://.godot/imported/CabeloNpcGordoColor.png-6e18422dea24c5841e770af558b90562.s3tc.ctex"]
 
 [params]
 

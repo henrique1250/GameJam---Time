@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b5jmdgps4sux0"
-path="res://.godot/imported/freezer_com_prateleiras.glb-7b379761a6f4b27eee08be35503fc09e.scn"
+path="res://.godot/imported/freezer_com_prateleiras.glb-88289f26835eacc2b5228e3d3df85f96.scn"
 
 [deps]
 
-source_file="res://art/Assests_Ambiente/freezer_com_prateleiras.glb"
-dest_files=["res://.godot/imported/freezer_com_prateleiras.glb-7b379761a6f4b27eee08be35503fc09e.scn"]
+source_file="res://Art/Assests_Ambiente/freezer_com_prateleiras.glb"
+dest_files=["res://.godot/imported/freezer_com_prateleiras.glb-88289f26835eacc2b5228e3d3df85f96.scn"]
 
 [params]
 
