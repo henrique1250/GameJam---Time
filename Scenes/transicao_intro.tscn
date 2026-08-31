@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://bbru5ekosyfjl"]
 
+[ext_resource type="Script" uid="uid://xfy6nc68fbmq" path="res://Scripts/transicao.gd" id="1_hlg7a"]
+[ext_resource type="PackedScene" uid="uid://bff4isfiivvdi" path="res://Scenes/Transition_Control_Fade.tscn" id="2_fh83m"]
+
 [node name="Transicao" type="Control" unique_id=818743870]
 layout_mode = 3
 anchors_preset = 15
@@ -7,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_hlg7a")
 
 [node name="Panel" type="Panel" parent="." unique_id=1916742451]
 layout_mode = 1
@@ -40,3 +44,13 @@ metadata/_edit_use_anchors_ = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel/CenterContainer" unique_id=556005229]
 layout_mode = 2
+
+[node name="Proximo" type="Button" parent="Panel/CenterContainer/VBoxContainer" unique_id=530576494]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 24
+text = "Passar
+"
+
+[node name="Transition_Control" parent="." unique_id=1214809758 instance=ExtResource("2_fh83m")]
+layout_mode = 1

@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cpg2ihvv2d32t" path="res://Scripts/menu_main.gd" id="1_savw8"]
 [ext_resource type="AudioStream" uid="uid://mx7bw6ar4fn5" path="res://songs/Boteco OST/Azul da Cor do Bar.wav" id="2_6aj48"]
 [ext_resource type="Texture2D" uid="uid://bavvu7wnp0rc0" path="res://Models/Captura_de_tela_2026-08-16_154451.png" id="2_stxgw"]
+[ext_resource type="PackedScene" uid="uid://bff4isfiivvdi" path="res://Scenes/Transition_Control_Fade.tscn" id="4_jbiok"]
 
 [node name="Menu" type="Control" unique_id=1873914623]
 layout_mode = 3
@@ -69,3 +70,6 @@ text = "Sair"
 [node name="Musica" type="AudioStreamPlayer2D" parent="." unique_id=1118797825]
 stream = ExtResource("2_6aj48")
 autoplay = true
+
+[node name="TranstionControl" parent="." unique_id=1214809758 instance=ExtResource("4_jbiok")]
+layout_mode = 1
