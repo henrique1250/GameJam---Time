@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d3counudqf1r2"]
 
-[ext_resource type="Script" uid="uid://cpg2ihvv2d32t" path="res://Scenes/menu_main.gd" id="1_savw8"]
+[ext_resource type="Script" path="res://Scenes/menu_main.gd" id="1_savw8"]
 [ext_resource type="AudioStream" uid="uid://mx7bw6ar4fn5" path="res://songs/Boteco OST/Azul da Cor do Bar.wav" id="2_6aj48"]
 [ext_resource type="Texture2D" uid="uid://bavvu7wnp0rc0" path="res://models/Captura_de_tela_2026-08-16_154451.png" id="2_stxgw"]
 
