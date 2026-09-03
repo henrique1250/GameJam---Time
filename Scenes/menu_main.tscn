@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://d3counudqf1r2"]
 
-[ext_resource type="Script" path="res://Scenes/menu_main.gd" id="1_savw8"]
+[ext_resource type="Script" uid="uid://cpg2ihvv2d32t" path="res://Scenes/menu_main.gd" id="1_savw8"]
 [ext_resource type="AudioStream" uid="uid://mx7bw6ar4fn5" path="res://songs/Boteco OST/Azul da Cor do Bar.wav" id="2_6aj48"]
+[ext_resource type="PackedScene" uid="uid://ct1tyi0j05rqv" path="res://Scenes/transicao_control_fade.tscn" id="2_jbiok"]
 [ext_resource type="Texture2D" uid="uid://bavvu7wnp0rc0" path="res://models/Captura_de_tela_2026-08-16_154451.png" id="2_stxgw"]
 
 [node name="Menu" type="Control" unique_id=1873914623]
@@ -12,6 +13,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_savw8")
+
+[node name="TransicaoControlFade" parent="." unique_id=237411764 instance=ExtResource("2_jbiok")]
+layout_mode = 1
 
 [node name="Panel" type="Panel" parent="." unique_id=272452765]
 layout_mode = 1

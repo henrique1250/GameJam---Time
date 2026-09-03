@@ -12,26 +12,43 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_uccdk")
 
-[node name="Panel" type="Panel" parent="." unique_id=915297249]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="TransicaoControlFade" parent="." unique_id=237411764 instance=ExtResource("1_1hwrh")]
+layout_mode = 1
 
-[node name="Label" type="Label" parent="Panel" unique_id=1686705094]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+[node name="Panel" type="Panel" parent="." unique_id=915297249]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Texto" type="Label" parent="Panel" unique_id=1686705094]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 1.0
+offset_right = -6.0
+offset_bottom = 259.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 32
+text = "Após o falecimento do seu avô, você herda o bar que ele tinha. Sem emprego fixo e com contas a pagar, você decide assumir o negócio. Aprenda a arte de servir drinques e pague as dívidas que ameaçam tirar tudo de você."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
 
 [node name="CenterContainer" type="CenterContainer" parent="Panel" unique_id=357284113]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel/CenterContainer" unique_id=1214434364]
 layout_mode = 2
 
 [node name="Button" type="Button" parent="Panel/CenterContainer/VBoxContainer" unique_id=1985984072]
 layout_mode = 2
-
-[node name="TransicaoControlFade" parent="." unique_id=237411764 instance=ExtResource("1_1hwrh")]
-layout_mode = 1
+theme_override_font_sizes/font_size = 32
+text = "Seguir"
