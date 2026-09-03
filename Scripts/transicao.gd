@@ -1,7 +1,7 @@
 extends Control
 
 @onready var botao_passar = $Panel/CenterContainer/VBoxContainer/Button
-@onready var transition_control = $TransicaoControlFade
+@onready var transition_control = $TransicaoControlFade/TransitionControl
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

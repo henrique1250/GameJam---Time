@@ -2,6 +2,56 @@
 
 [ext_resource type="Script" uid="uid://cpaca8l18n24v" path="res://Scripts/transicao_field.gd" id="1_ksak7"]
 
+[sub_resource type="Animation" id="Animation_ksak7"]
+resource_name = "Fade"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4274523, 0.6333333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"change_scene"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_5bi0h"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ii1da"]
+_data = {
+&"Fade": SubResource("Animation_ksak7"),
+&"RESET": SubResource("Animation_5bi0h")
+}
+
 [node name="TransicaoControlFade" type="Control" unique_id=237411764]
 layout_mode = 3
 anchors_preset = 15
@@ -10,11 +60,17 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1901815771]
+[node name="TransitionControl" type="CanvasLayer" parent="." unique_id=1901815771]
 script = ExtResource("1_ksak7")
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=2064636615]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Background" type="ColorRect" parent="TransitionControl" unique_id=2064636615]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer" unique_id=825975198]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TransitionControl" unique_id=825975198]
+libraries/ = SubResource("AnimationLibrary_ii1da")
