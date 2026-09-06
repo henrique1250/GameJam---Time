@@ -20,3 +20,7 @@ func _on_botao_sair_pressed():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+
+func _on_button_pressed() -> void:
+	transition_control.fade_to_scene("res://Scenes/controle_game.tscn")
