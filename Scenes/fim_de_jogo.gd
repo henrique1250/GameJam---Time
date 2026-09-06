@@ -14,5 +14,5 @@ func _on_botao_denovo_pressed():
 func _on_botao_voltar_pressed():
 	get_tree().change_scene_to_file("res://Scenes/menu_main.tscn")
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass

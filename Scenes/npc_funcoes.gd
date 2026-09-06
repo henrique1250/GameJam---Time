@@ -21,6 +21,8 @@ class_name NpcGeneric
 @export var anim_walk: StringName = "walk"
 @export var anim_sit: StringName = "sit"
 
+
+
 enum NPC_States {
 	Idle,
 	Walking,
@@ -162,3 +164,7 @@ func _on_interaction_timer_timeout() -> void:
 	navigation_agent.target_position = saida.global_position
 	heading_to_exit = true
 	_set_state(NPC_States.Walking)
+
+
+func _on_navigation_agent_3d_target_reached() -> void:
+	pass # Replace with function body.
