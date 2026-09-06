@@ -70,6 +70,12 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 24
 text = "Sair"
 
+[node name="Button" type="Button" parent="Panel/CenterContainer/VBoxContainer" unique_id=1696499827]
+layout_mode = 2
+text = "Controles"
+
 [node name="Musica" type="AudioStreamPlayer2D" parent="." unique_id=1118797825]
 stream = ExtResource("2_6aj48")
 autoplay = true
+
+[connection signal="pressed" from="Panel/CenterContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]

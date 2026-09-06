@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://b3t48pqpmfncu"]
+
+[ext_resource type="Script" uid="uid://c23m5rtibnvpd" path="res://Scripts/controle_game.gd" id="1_8r050"]
+[ext_resource type="Texture2D" uid="uid://dpxy2ww0ons3s" path="res://Assets/Images/link.png" id="1_qdqqu"]
+[ext_resource type="Texture2D" uid="uid://wvxw0h842frg" path="res://art/assets/Default.png" id="3_qsis4"]
+
+[node name="Controles" type="Control" unique_id=851683869]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8r050")
+
+[node name="Panel" type="Panel" parent="." unique_id=1247427696]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Panel" unique_id=798141028]
+texture_filter = 1
+layout_mode = 0
+offset_left = 1134.0
+offset_top = 427.0
+offset_right = 1369.0
+offset_bottom = 653.0
+texture = ExtResource("1_qdqqu")
+
+[node name="Label" type="Label" parent="Panel" unique_id=1533652481]
+texture_filter = 1
+layout_mode = 0
+offset_left = 496.0
+offset_top = 480.0
+offset_right = 1076.0
+offset_bottom = 579.0
+text = "Sai clicando em tudo por ai, é um point-click sobre administrar um bar onde você apenas com o mouse nessa fase do desenvolvimento irá conseguir fazer as ações e os minigames do projeto"
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="." unique_id=1034334083]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 100.0
+offset_right = 109.0
+offset_bottom = 192.0
+rotation = -1.5709083
+icon = ExtResource("3_qsis4")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
