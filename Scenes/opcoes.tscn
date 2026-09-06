@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://ddqed6isv3t1f"]
+
+[ext_resource type="Script" uid="uid://bpqvtbnemls7u" path="res://Scripts/opcoes.gd" id="1_hedds"]
+
+[node name="Opcoes" type="Control" unique_id=1935843921]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 404.0
+offset_top = 192.0
+offset_right = 404.0
+offset_bottom = 192.0
+mouse_filter = 2
+script = ExtResource("1_hedds")
+
+[node name="Panel2" type="Panel" parent="." unique_id=985560416]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 37.0
+offset_right = 1100.0
+offset_bottom = 592.0
+
+[node name="Menu" type="Button" parent="Panel2" unique_id=2073163000]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 239.0
+offset_right = 244.0
+offset_bottom = 272.0
+text = "MENU"
+
+[node name="Quit" type="Button" parent="Panel2" unique_id=1283005566]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 297.0
+offset_right = 233.0
+offset_bottom = 337.0
+text = "QUIT"
+
+[connection signal="pressed" from="Panel2/Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="Panel2/Quit" to="." method="_on_quit_pressed"]
